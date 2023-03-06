@@ -1,4 +1,4 @@
-[Return to parent folder (DATA)](..)
+[Return to parent folder (DATA)](../DATA/index.md)
 
 # Overview
 
