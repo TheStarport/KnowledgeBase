@@ -5,6 +5,4 @@ The EXE folder contains the executables for both the server and client and dynam
 # EXE Folder
 * [dacomsrv.ini](./dacomsrv.ini)
 * [dacom.ini](./dacom.ini)
-* [flserver.exe](./flserver.exe)
-* [freelancer.exe](./freelancer.exe)
 * [freelancer.ini](./freelancer.ini)
