@@ -1,5 +1,3 @@
-[Return to parent folder (EXE)](..)
-
 # Overview
 This file handles configuration of the application's start-time settings and library loading.
 
@@ -90,4 +88,9 @@ Calls values from the Windows API. Entries under this block are defined as a key
 | Type | string | no       |        |
 
 ### [MaterialMap]
-This block is unused.
+| Key       | Value  | Multiple | Remark                                                                               |
+| --------- | ------ | -------- | ------------------------------------------------------------------------------------ |
+| DcDtEtTwo | string |          | Predefined material types                                                            |
+| EcEtOcOt  | string |          | Predefined material types                                                            |
+| DcDtEcEt  | string |          | Predefined material types                                                            |
+| name      | string | yes      | All entries here appear to be regexp for a material name to override a material type |
