@@ -1,4 +1,4 @@
-[[Return to parent folder (Root)|Modding Database]]
+[Return to parent folder (Root)](..)
 
 The DATA folder contains the bulk of Freelancer's content. Most of the non-logical content is found here, stored in a variety of file formats.
 
