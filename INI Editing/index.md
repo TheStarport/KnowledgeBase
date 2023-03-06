@@ -13,7 +13,7 @@ When creating or modifying the database, please follow these guidelines:
 * Files must be spelled in full lowercase, while folders are capitalized but not full uppercase.
 * Always prefix any page with "MDB:"
 
-*In the case two files are named the same but cannot share the same page, include the name of the parent folder(s) until a differentiation is clear, separating folders by a dash (for instance, MDB:data-ships-loadouts.ini).
+* In the case two files are named the same but cannot share the same page, include the name of the parent folder(s) until a differentiation is clear, separating folders by a dash (for instance, MDB:data-ships-loadouts.ini).
 
 When creating pages for specific files, please follow this structure:
 
