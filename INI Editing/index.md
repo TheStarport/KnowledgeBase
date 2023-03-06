@@ -1,8 +1,8 @@
 # Root Folder
 
-* [[DATA|MDB:DATA]]
-* [[DLLS|MDB:DLLS]]
-* [[EXE|MDB:EXE]]
+* [DATA](./DATA/index.md)
+* [DLLS](./DLLS/index.md)
+* [EXE](./EXE/index.md)
 
 ## Guidelines For Editors
 When creating or modifying the database, please follow these guidelines:
@@ -17,5 +17,4 @@ When creating or modifying the database, please follow these guidelines:
 
 When creating pages for specific files, please follow this structure:
 
-[[MDB:examplefile.ext]]
-
+[examplefile.ext](./examplefile.ext)
