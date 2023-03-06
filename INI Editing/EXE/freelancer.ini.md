@@ -8,12 +8,12 @@ This game configuratuion file primarily determines which DLLs and called by FLse
 Each of the following sections can only be written once, preferably in the order shown.
 
 ### [Freelancer]
-| Key           | Value              | Multiple | Remark                                            |
-| ------------- | ------------------ | -------- | ------------------------------------------------- |
-| data path     | directory          | no       | Path to the game data, relative to freelancer.exe |
-| local_server  | dll                | no       |                                                   |
-| initial_world | Files:InitialWorld | no       | Relative to _data path_                           |
-| AppGUID       | GUID               | no       |                                                   |
+| Key           | Value              | Multiple | Remark                                                                     |
+| ------------- | ------------------ | -------- | -------------------------------------------------------------------------- |
+| data path     | directory          | no       | Path to the game data, relative to freelancer.exe                          |
+| local_server  | dll                | no       |                                                                            |
+| initial_world | Files:InitialWorld | no       | Relative to _data path_                                                    |
+| AppGUID       | GUID               | no       | Unique identifier for the Frelancer application. No reason to change this. |
 
 ### [Display]
 | Key        | Value            | Multiple | Remark |
@@ -44,14 +44,14 @@ This block allows you to pre-fill name and description values for FLServer.exe
 | death_penalty | integer | no       | Percentage of your cargo (commoditied and unmounted equipment) lost at death in MP |
 
 ### [Initial MP DLLs]
-Initials DLL files called by FLServer.exe
+Initials DLL files called by FLServer.exe when it starts.
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
 | path | directory                                                                | no       | relative to freelancer.exe |
 | DLL  | dll, [string], [LOWEST / BELOW_NORMAL / NORMAL / ABOVE_NORMAL / HIGHEST] | yes      |
 
 ### [Initial SP DLLs]
-Initial DLL files called by Freelancer.exe
+Initial DLL files called when you start a new game or load a game.
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
 | path | directory                                                                | no       | relative to freelancer.exe |
