@@ -1,4 +1,4 @@
-[[Return to parent folder (DATA)|MDB:DATA]]
+[Return to parent folder](..)
 
 # cameras.ini 
 
