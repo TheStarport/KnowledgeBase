@@ -1,3 +1,5 @@
+[Return to parent folder (EXE)](..)
+
 # Overview
 This file handles configuration of the application's start-time settings and library loading.
 
