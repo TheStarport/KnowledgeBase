@@ -1,4 +1,4 @@
-[Return to parent folder (EXE)](../EXE)
+[Return to parent folder (EXE)](../EXE/index.md)
 
 # Overview
 This file handles configuration of the application's start-time settings and library loading.
