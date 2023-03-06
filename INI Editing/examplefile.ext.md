@@ -34,9 +34,9 @@ comment can be any of the following:
 
 Please avoid writing information in the comment where possible and use the below table instead.
 
-|Parameter|Information|
-|--|--|
-|param|If a parameter is a number: Range: X to Y (use +-infty for no limit, say -infty to 0).<br><br>If a parameter has subvalues (separated by commas): Subvalues: A, B, C. (optional) can be added to any value to denote it is not necessary (IE Subvalues: A (optional), B.)<br><br>Description of the parameter.  |
-|param|Second param|
-|frequent item|See [[MDB:param frequent item]] for more information.|
-|nickname|See [[MDB:param nickname]] for more information.|
+| Parameter     | Information                                                                                                                                                                                                                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| param         | If a parameter is a number: Range: X to Y (use +-infty for no limit, say -infty to 0).<br><br>If a parameter has subvalues (separated by commas): Subvalues: A, B, C. (optional) can be added to any value to denote it is not necessary (IE Subvalues: A (optional), B.)<br><br>Description of the parameter. |
+| param         | Second param                                                                                                                                                                                                                                                                                                   |
+| frequent item | See [[MDB:param frequent item]] for more information.                                                                                                                                                                                                                                                          |
+| nickname      | See [[MDB:param nickname]] for more information.                                                                                                                                                                                                                                                               |
