@@ -1,4 +1,4 @@
-[Return to parent folder (EXE)](..)
+[Return to parent folder (EXE)](../EXE)
 
 # Overview
 This file handles configuration of the application's start-time settings and library loading.
