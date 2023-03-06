@@ -1,4 +1,4 @@
-[Return to parent folder (EXE)](..)
+[Return to parent folder (EXE)](../EXE)
 
 # Overview
 
