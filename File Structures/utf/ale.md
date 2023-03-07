@@ -147,8 +147,6 @@ Possible values for source and target are:
 
 | Name      | Type     | Description            |
 | --------- | -------- | ---------------------- |
-| type      | uint16   | Must be 0x0105.        |
-| name      | uint32   | Property name.         |
 | flags     | uint32   |                        |
 | translate | curve[3] | Translation animation. |
 | rotate    | curve[3] | Rotation animation.    |

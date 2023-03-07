@@ -1,62 +1,80 @@
 # Material library
 
-Materials can be embedded into other UTF files such as .3db, .cmp, etc.
+Materials are either stored in separate file (.mat) or embedded into model files (.3db, .cmp, .dfm, etc).
 
 Certain assets cannot have reference to external material file and will require materials to be embedded directly in model file, such as starspheres, cutscene props and deformable models.
 
-## Single pass material
+## Material types
 
-| Type                   | Alpha | Description                                                                                                     |
-| ---------------------- | ----- | --------------------------------------------------------------------------------------------------------------- |
-| DcDt                   | No    | Diffuse color + Diffuse texture.                                                                                |
-| DcDtTwo                | No    | Two-sided variant of DcDt.                                                                                      |
-| DcDtEc                 | No    | Diffuse color + Diffuse texture + Emission color.                                                               |
-| DcDtEcTwo              | No    | Two-sided variant of DcDtEc.                                                                                    |
-| DcDtOcOt               | Yes   | Diffuse color + Diffuse texture + Opacity color + Opacity texture.                                              |
-| DcDtOcOtTwo            | Yes   | Two-sided variant of DcDtOcOt.                                                                                  |
-| DcDtEcOcOt             | Yes   | Diffuse color + Diffuse texture + Emission color + Opacity color + Opacity texture.                             |
-| DcDtEcOcOtTwo          | Yes   | Two-sided variant of DcDtEcOcOt.                                                                                |
-| DcDtEt                 | No    | Diffuse color + Diffuse texture + Emission texture.                                                             |
-| EcEt                   | No    | Emission color + Emission texture.                                                                              |
-| Nebula                 | Yes   | Diffuse texture tinted by vertex color with blending (ADD, SRCALPHA, ONE).                                      |
-| NebulaTwo              | Yes   | Two-sided variant of Nebula.                                                                                    |
-| BtDetailMapMaterial    | No    | Diffuse texture with detail texture blended in overlay mode. Detail texture uses second UV texture mapping set. |
-| BtDetailMapMaterialTwo | No    | Two-sided variant of DetailMaterial.                                                                            |
-| NomadMaterial          | Yes   | Special material for nomad ships.                                                                               |
-| NomadMaterialNoBendy   | Yes   | Ditto.                                                                                                          |
-| GlassMaterial          | Yes   | Transparent material used for cockpit.                                                                          |
-| GFGlassMaterial        | Yes   | Ditto.                                                                                                          |
-| HighGlassMaterial      | Yes   | Ditto.                                                                                                          |
-| PlanetWaterMaterial    | Yes   | Multiply blending mode material.                                                                                |
-| AtmosphereMaterial     | Yes   |                                                                                                                 |
-| ExclusionZoneMaterial  | Yes   | Material for exclusion zone shells.                                                                             |
-| HUDIconMaterial        | Yes   | Material for HUD icons.                                                                                         |
-| HUDAnimMaterial        | Yes   | Animated material for HUD. Animation is toggled in settings.                                                    |
-| NullMaterial           | No    | Fallback material.                                                                                              |
+| Type                          | Alpha | Description                                                                                                     |
+| ----------------------------- | ----- | --------------------------------------------------------------------------------------------------------------- |
+| DcDt                          | No    | Diffuse color + Diffuse texture.                                                                                |
+| DcDtTwo                       | No    | Two-sided variant of DcDt.                                                                                      |
+| DcDtEc                        | No    | Diffuse color + Diffuse texture + Emission color.                                                               |
+| DcDtEcTwo                     | No    | Two-sided variant of DcDtEc.                                                                                    |
+| DcDtOcOt                      | Yes   | Diffuse color + Diffuse texture + Opacity color + Opacity texture.                                              |
+| DcDtOcOtTwo                   | Yes   | Two-sided variant of DcDtOcOt.                                                                                  |
+| DcDtEcOcOt                    | Yes   | Diffuse color + Diffuse texture + Emission color + Opacity color + Opacity texture.                             |
+| DcDtEcOcOtTwo                 | Yes   | Two-sided variant of DcDtEcOcOt.                                                                                |
+| DcDtEt                        | No    | Diffuse color + Diffuse texture + Emission texture.                                                             |
+| EcEt                          | No    | Emission color + Emission texture.                                                                              |
+| Nebula                        | Yes   | Diffuse texture tinted by vertex color with blending (ADD, SRCALPHA, ONE).                                      |
+| NebulaTwo                     | Yes   | Two-sided variant of Nebula.                                                                                    |
+| BtDetailMapMaterial           | No    | Diffuse texture with detail texture blended in overlay mode. Detail texture uses second UV texture mapping set. |
+| BtDetailMapMaterialTwo        | No    | Two-sided variant of DetailMaterial.                                                                            |
+| NomadMaterial                 | Yes   | Special material for nomad ships.                                                                               |
+| NomadMaterialNoBendy          | Yes   | Ditto.                                                                                                          |
+| GlassMaterial                 | Yes   | Transparent material used for cockpit.                                                                          |
+| GFGlassMaterial               | Yes   | Ditto.                                                                                                          |
+| HighGlassMaterial             | Yes   | Ditto.                                                                                                          |
+| PlanetWaterMaterial           | Yes   | Multiply blending mode material.                                                                                |
+| AtmosphereMaterial            | Yes   |                                                                                                                 |
+| ExclusionZoneMaterial         | Yes   | Material for exclusion zone shells.                                                                             |
+| HUDIconMaterial               | Yes   | Material for HUD icons.                                                                                         |
+| HUDAnimMaterial               | Yes   | Animated material for HUD. Animation is toggled in settings.                                                    |
+| NullMaterial                  | No    | Fallback material.                                                                                              |
+| DetailMapMaterial             | No    |                                                                                                                 |
+| DetailMap2Dm1Msk2PassMaterial | No    |                                                                                                                 |
+| IllumDetailMapMaterial        | No    |                                                                                                                 |
+| Masked2DetailMapMaterial      | No    |                                                                                                                 |
 
 * NomadMaterial and NomadMaterialNoBendy do not display when environment map is used for the object.
 * ❗ Material type can be overridden by matching regexp in [MaterialMap] of dacom.ini.
 
-When model uses both transparent and non-transparent (opaque) materials it should be multi-part compound and any mesh groups using transparent material(s) should be kept in parts separate from mesh groups using opaque materials, i.e. transparent cockpit glass should be in part separate from hull it is attached to. Mesh groups with opaque materials are drawn front to back, afterwards mesh groups with transparent materials are drawn front to back with depth buffer write disabled.
+When model uses both transparent and non-transparent (opaque) materials it should be multi-part compound and any mesh groups using transparent material(s) should be kept in parts separate from mesh groups using opaque materials, i.e. transparent cockpit glass should be in part separate from hull it is attached to. Mesh groups with opaque materials are drawn front to back, afterwards mesh groups with transparent materials are drawn back to front with depth buffer write disabled.
 
-### Properties
+### Material properties
 
-| Name     | Type     | Description                  |
-| -------- | -------- | ---------------------------- |
-| Ac       | float[3] | Ambient color.               |
-| Dc       | float[3] | Diffuse color.               |
-| Oc       | float    | Opacity color (alpha).       |
-| Ec       | float[3] | Emission color.              |
-| Sc       | float[3] | Specular color.              |
-| Sp       | float    | Specular power.              |
-| Dt_name  | string   | Diffuse texture name.        |
-| Dt_flags | uint32   | Diffuse texture wrap flags.  |
-| Et_name  | string   | Emission texture name.       |
-| Et_flags | uint32   | Emission texture wrap flags. |
-| Bt_name  | string   | Detail texture name.         |
-| Bt_flags | uint32   | Detail texture wrap flags.   |
-| Nt_name  | string   | Nomad texture name.          |
-| Nt_flags | uint32   | Nomad texture wrap flags.    |
+| Name      | Type     | Description                               |
+| --------- | -------- | ----------------------------------------- |
+| Ac        | float[3] | Ambient color.                            |
+| Dc        | float[3] | Diffuse color.                            |
+| Oc        | float    | Opacity color (alpha).                    |
+| Ec        | float[3] | Emission color.                           |
+| Sc        | float[3] | Specular color.                           |
+| Sp        | float    | Specular power.                           |
+| Dt_name   | string   | Diffuse texture name.                     |
+| Dt_flags  | uint32   | Diffuse texture wrap flags.               |
+| Et_name   | string   | Emission texture name.                    |
+| Et_flags  | uint32   | Emission texture wrap flags.              |
+| Bt_name   | string   | Detail texture name.                      |
+| Bt_flags  | uint32   | Detail texture wrap flags.                |
+| Nt_name   | string   | Nomad texture name.                       |
+| Nt_flags  | uint32   | Nomad texture wrap flags.                 |
+| Alpha     | float    | Opacity level.                            |
+| Fade      | float    | Steep view angle fade factor.             |
+| Scale     | float    | Vertex offset scaling?                    |
+| Dm_name   | string   | Diffuse mask texture name.                |
+| Dm_flags  | uint32   | Diffuse mask texture wrap flags.          |
+| TileRate  | float    | Diffuse mask texture tiling multiplier.   |
+| Dm0_name  | string   | Diffuse mask 0 texture name.              |
+| Dm0_flags | uint32   | Diffuse mask 0 texture wrap flags.        |
+| TileRate0 | float    | Diffuse mask 0 texture tiling multiplier. |
+| Dm1_name  | string   | Diffuse mask 1 texture name.              |
+| Dm1_flags | uint32   | Diffuse mask 1 texture wrap flags.        |
+| TileRate1 | float    | Diffuse mask 1 texture tiling multiplier. |
+| flip u    | uint32   | Flip texture horizontally.                |
+| flip v    | uint32   | Flip texture vertically.                  |
 
 * Ac is used in AtmosphereMaterial, but can be applied to many other materials to override ambient color from scene.
 * Oc is used in any transparent material.
@@ -65,33 +83,7 @@ When model uses both transparent and non-transparent (opaque) materials it shoul
 * Et_name and Et_flags are used in DcDtEt and EcEt.
 * Bt_name and Bt_flags are used in BtDetailMapMaterial and BtDetailMapMaterialTwo.
 * Nt_name and Nt_flags are used in NomadMaterial and NomadMaterialNoBendy.
-
-## Two-pass material
-
-| Type                          | Alpha | Description |
-| ----------------------------- | ----- | ----------- |
-| DetailMapMaterial             | No    |             |
-| DetailMap2Dm1Msk2PassMaterial | No    |             |
-| IllumDetailMapMaterial        | No    |             |
-| Masked2DetailMapMaterial      | No    |             |
-
-### Properties
-
-| Name      | Type     | Description                               |
-| --------- | -------- | ----------------------------------------- |
-| Dc        | float[3] | Diffuse color.                            |     
-| Dt_name   | string   | Diffuse texture name.                     |     
-| Dt_flags  | uint32   | Diffuse texture wrap flags.               |     
-| Dm_name   | string   | Diffuse mask texture name.                |     
-| Dm_flags  | uint32   | Diffuse mask texture wrap flags.          |     
-| TileRate  | float    | Diffuse mask texture tiling multiplier.   |     
-| Dm0_name  | string   | Diffuse mask 0 texture name.              |     
-| Dm0_flags | uint32   | Diffuse mask 0 texture wrap flags.        |     
-| TileRate0 | float    | Diffuse mask 0 texture tiling multiplier. |     
-| Dm1_name  | string   | Diffuse mask 1 texture name.              |     
-| Dm1_flags | uint32   | Diffuse mask 1 texture wrap flags.        |     
-| TileRate1 | float    | Diffuse mask 1 texture tiling multiplier. |     
-
+* Alpha, Fade and Scale are used in AtmosphereMaterial.
 * Dm_name, Dm_flags and TileRate are used in DetailMapMaterial.
 * Dm0_name, Dm0_flags and TileRate0 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
 * Dm1_name, Dm1_flags and TileRate1 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
