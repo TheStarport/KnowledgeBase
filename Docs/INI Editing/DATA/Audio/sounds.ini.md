@@ -29,12 +29,12 @@ streamer = BOOL ;optional
 ```
 
 | Parameter              | Information                                                                                                                                                                       |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------- | ----------------------------------------------------------------------------------------------- |
 | nickname               | The nickname used to refer to the sound in other ini files. This should be unique.                                                                                                |
 | file                   | Path to the sound file, relative to the DATA path.                                                                                                                                |
 | attenuation (optional) | Range: -infty to 0. Tones down the sound's volume.                                                                                                                                |
 | type (optional)        | Can be **ambience**, **interface**, **music** or **voice**. Do not specify if using sounds not fitting in any type (fire sounds, engines, shields and such do not have a type).   |
-| range (optional)       | Subvalues: MIN (optional), MAX.<br>Range: 0 to infty.<br>Distance through which the sound will be heard. If only one value is given, it is considered to be equivalent to 0, MAX. |
+| range (optional)       | Subvalues: MIN (optional), MAX.<br/>Range: 0 to infty.<br/>Distance through which the sound will be heard. If only one value is given, it is considered to be equivalent to 0, MAX. |
 | crv_pitch              | Defines the progression of the pitch for the tonal portion of the audio segment                                                                                                   |
 | is_2d                  | Overrides the game's 3d sound settings and forces 2d sound for this entry.                                                                                                        |
 | pitch_bendable         | Possibly related to crv_pitch, allowing it to be toggled in the ini. Requires testing                                                                                             |

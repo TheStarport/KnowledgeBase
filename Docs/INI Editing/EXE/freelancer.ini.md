@@ -107,7 +107,7 @@ The block below is non-functional in unmodified copies of Freelancer, and has no
 
 | Key | Value                                                          | Multiple | Remark |
 | --- | -------------------------------------------------------------- | -------- | ------ |
-| log | filepath / $window / $text, [<error kind>], [<severity level>] | yes      |        |
+| log | filepath / $window / $text, [&lt;error kind&gt;], [&lt;severity level&gt;] | yes      |        |
   
 #### Error Type
   
