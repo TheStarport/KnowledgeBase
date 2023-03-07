@@ -2,4 +2,4 @@
 
 # Audio Folder
 * [sounds.ini](./sounds.ini.md)
-* [voices_**.ini](./voices_**.ini.md)
+* [voices_**.ini](./voices.ini.md)
