@@ -52,7 +52,7 @@ After header read sections until namesOffset.
 | value | byte[4] | Property value. |
 
 * Binary format limits number of values per property to 256 so it is best not to exceed that in text format.
-* Interpret value four bytes based on preceeding type:
+* Interpret value four bytes based on preceding type:
 
 | Type    | Value | Description                                                                      |
 | ------- | ----- | -------------------------------------------------------------------------------- |

@@ -8,22 +8,24 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 ## Header
 
-| Name      | Type   | Description                  |
-| --------- | ------ | ---------------------------- |
-| signature | uint32 | Must be 0x73726576 ("vers"). |
-| version   | float  | Must be 2.0.                 |
+| Name      | Type      | Description                  |
+| --------- | --------- | ---------------------------- |
+| signature | uint32    | Must be 0x73726576 ("vers"). |
+| version   | float     | Must be 2.0.                 |
+| *parts*   | *varying* |                              |
 
 * There is no counter for parts, so read in loop until file ends.
 
 ## Part
 
-| Name         | Type   | Description                                                                                                  |
-| ------------ | ------ | ------------------------------------------------------------------------------------------------------------ |
-| partId       | uint32 | FLCRC32 hash of object name in "Cmpnd/Part_*/Object name" for multi-part model or 0x0 for single-part model. |
-| sectionCount | uint32 | Number of sections in the part.                                                                              |
+| Name         | Type      | Description                     |
+| ------------ | --------- | ------------------------------- |
+| partId       | uint32    | FLCRC32 hash of object name.    |
+| sectionCount | uint32    | Number of sections in the part. |
+| *section*    | *varying* |                                 |
 
-* Hitbox for .3db will contain only one part with partId of 0x0.
-* The exact order of section does not seem to matter but all Freelancer files follow the same order: non-fixed, extent, mesh, hardpoints. Therefore section counter always is between 2 and 4.
+* PartId is FLCRC32 hash of "Cmpnd/Part_*/Object name" for multi-part model (.cmp) or 0x0 for single-part model (.3db).
+* The exact order of section does not seem to matter but all Freelancer files follow the same order: non-fixed, extent, mesh, hardpoints.
 
 ### Not-Fixed Section
 
@@ -60,19 +62,22 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 ### Surfaces Section
 
-Contains header, convex hulls, points array and BSP tree, in exact this order.
+Contains header, convex hulls, points array and BSP tree.
 
-| Name      | Type     | Description                                      |
-| --------- | -------- | ------------------------------------------------ |
-| name      | uint32   | Must be 0x66727573 ("surf").                     |
-| size      | uint32   | Surface section byte length from this offset.    |
-| center    | float[3] | Bounding sphere center offset.                   |
-| force     | float[3] | Bounce vector? Must have non-zero length.        |
-| radius    | float    | Bounding sphere radius.                          |
-| scale     | uint8    | Bounding sphere multiplier for hull points only. |
-| treeEnd   | uint24   | Offset to end of BSP tree.                       |
-| treeStart | uint32   | Offset to start of BSP tree.                     |
-| unknown2  | float[3] | Unknown vector.                                  |
+| Name      | Type      | Description                                      |
+| --------- | --------- | ------------------------------------------------ |
+| name      | uint32    | Must be 0x66727573 ("surf").                     |
+| size      | uint32    | Surface section byte length from this offset.    |
+| center    | float[3]  | Bounding sphere center offset.                   |
+| force     | float[3]  | Bounce vector? Must have non-zero length.        |
+| radius    | float     | Bounding sphere radius.                          |
+| scale     | uint8     | Bounding sphere multiplier for hull points only. |
+| treeEnd   | uint24    | Offset to end of BSP tree.                       |
+| treeStart | uint32    | Offset to start of BSP tree.                     |
+| unknown2  | float[3]  | Unknown vector.                                  |
+| *hulls*   | *varying* | Convex hulls.                                    |
+| *points*  | *varying* | Vertices buffer.                                 |
+| *nodes*   | *varying* | BSP nodes.                                       |
 
 * Surface section size doesn’t include name byte length.
 * Bounding sphere encompasses all hull points.
@@ -82,14 +87,15 @@ Contains header, convex hulls, points array and BSP tree, in exact this order.
 
 Immediately after section header all convex hulls are listed.
 
-| Name           | Type   | Description                                                             |
-| -------------- | ------ | ----------------------------------------------------------------------- |
-| offsetToPoints | uint32 | Offset to points block relative to itself.                              |
-| partId         | uint32 | Object name hash or offset to node in BSP tree depending on type below. |
-| type           | uint8  | Hull type.                                                              |
-| refCount       | uint24 | Number of refs in DWORDs.                                               |
-| faceCount      | uint16 | Face count.                                                             |
-| padding        | uint16 | Padding.                                                                |
+| Name           | Type      | Description                                                             |
+| -------------- | --------- | ----------------------------------------------------------------------- |
+| offsetToPoints | uint32    | Offset to points block relative to itself.                              |
+| partId         | uint32    | Object name hash or offset to node in BSP tree depending on type below. |
+| type           | uint8     | Hull type.                                                              |
+| refCount       | uint24    | Number of refs in DWORDs (stride of 4 bytes).                           |
+| faceCount      | uint16    | Face count.                                                             |
+| unknown        | uint16    | Padding?                                                                |
+| *faces*        | *varying* |                                                                         |
 
 * Read hulls until offset reaches offsetToPoints.    
 * Type 4 is regular hull (but is hardpoint if partID is listed in hpid section).
@@ -100,12 +106,13 @@ Immediately after section header all convex hulls are listed.
 
 A hull face is a triangle with three edges.
 
-| Name              | Type   | Description          |
-| ----------------- | ------ | -------------------- |
-| faceIndex         | uint12 | This face index.     |
-| oppositeFaceIndex | uint12 | Opposite face index. |
-| unknown           | bit[7] |                      |
-| flag              | bit    | Face flag.           |
+| Name              | Type     | Description          |
+| ----------------- | -------- | -------------------- |
+| faceIndex         | uint12   | This face index.     |
+| oppositeFaceIndex | uint12   | Opposite face index. |
+| unknown           | bit[7]   |                      |
+| flag              | bit      | Face flag.           |
+| *edges*           | int32[3] |                      |
 
 * Read as many faces as listed in hull header.
 
@@ -133,7 +140,7 @@ Following hulls an array of points are listed:
 * Points are read until nodes start offset.
 * Having PartID at every point seem to be redundant given each hull has PartID anyway but that's how it is.
 
-Lastly surface section contains BSP tree.
+Lastly surface section contains BSP tree where each node is:
 
 | Name        | Type     | Description                     |
 | ----------- | -------- | ------------------------------- |
@@ -144,7 +151,7 @@ Lastly surface section contains BSP tree.
 | scale       | uint8[3] | Bounding box size axes scales.  |
 | padding     | uint8    | Unused padding value.           |
 
-* Tree nodes are read until nodes end offset.
+* Tree nodes are read until nodes end offset in header.
 * Child offset is relative to itself and is 0 for end points.
 * Hull offset is relative to itself, negative number, and 0 for branch nodes.
 * Read axis multiplier components as unsigned byte, divide 0xFA and scale bounding box base size by them.
