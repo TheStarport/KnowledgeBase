@@ -1,8 +1,15 @@
+---
+title: INI Editing
+description: A collection of all knowledge amassed on the INI structure
+id: ini-editing
+slug: ini-editing
+---
+
 # Root Folder
 
-* [DATA](./DATA/index.md)
-* [DLLS](./DLLS/index.md)
-* [EXE](./EXE/index.md)
+* [DATA](DATA)
+* [DLLS](DLLS)
+* [EXE](EXE)
 
 ## Guidelines For Editors
 When creating or modifying the database, please follow these guidelines:
@@ -15,4 +22,4 @@ When creating or modifying the database, please follow these guidelines:
 
 When creating pages for specific files, please follow this structure:
 
-[examplefile.ext](./examplefile.ext)
+[examplefile.ext](examplefile)

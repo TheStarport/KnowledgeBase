@@ -1,4 +1,8 @@
-[Return to parent folder (DATA)](../DATA/index.md)
+---
+title: Mouse.ini
+---
+
+[Return to parent folder (DATA)](../DATA)
 
 # Overview
 

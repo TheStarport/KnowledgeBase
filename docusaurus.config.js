@@ -11,15 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://wiki.the-starport.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'TheStarport', // Usually your GitHub org/user name.
-  projectName: 'KnowledgeBase', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -39,13 +34,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/TheStarport/KnowledgeBase/Docs',
+          editUrl: 'https://github.com/TheStarport/KnowledgeBase/Docs',
         },
         theme: {
-          customCss: require.resolve('./Source/CSS/custom.css'),
+          customCss: require.resolve('./src/CSS/custom.css'),
         },
       }),
     ],
@@ -67,13 +59,7 @@ const config = {
             type: 'doc',
             docId: 'index',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            label: 'Home',
           },
         ],
       },
@@ -84,8 +70,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/index',
+                label: 'INI Editing',
+                to: '/docs/INI Editing',
+              },
+              {
+                label: 'File Structures',
+                to: '/docs/File Structures',
               },
             ],
           },
@@ -93,16 +83,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://the-starport.net/discord',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Youtube',
+                href: 'https://www.youtube.com/channel/UC1ibqmg3PsAEU3Vu4jL-urw',
               },
             ],
           },
@@ -110,17 +96,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'News',
+                href: 'https://the-starport.net/news',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/TheStarport',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date("2008").getFullYear()}-${new Date().getFullYear()} The Starport.<br/>Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

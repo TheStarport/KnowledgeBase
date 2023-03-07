@@ -1,5 +1,11 @@
-[Return to parent folder(DATA)](../index.md)
+---
+title: Audio Folder
+description: List of files within the audio folder
+id: audio
+---
+
+[Return to parent folder(DATA)](../DATA)
 
 # Audio Folder
-* [sounds.ini](./sounds.ini.md)
-* [voices_**.ini](./voices.ini.md)
+* [sounds.ini](Audio/sounds.ini)
+* [voices_**.ini](Audio/voices.ini)

@@ -1,8 +1,12 @@
-[Return to parent folder (EXE)](../EXE/index.md)
+---
+title: Freelancer.ini
+---
+
+[Return to parent folder (EXE)](../EXE)
 
 # Overview
 
-This game configuratuion file primarily determines which DLLs and called by FLserver.exe and Freelancer.exe and their load  order. There are a few options in the blocks towards the top of the file that can be used to force some ingame or server settings as well.
+This game configuration file primarily determines which DLLs and called by FLserver.exe and Freelancer.exe and their load  order. There are a few options in the blocks towards the top of the file that can be used to force some ingame or server settings as well.
 
 ## Syntax
 Each of the following sections can only be written once, preferably in the order shown.
@@ -13,7 +17,7 @@ Each of the following sections can only be written once, preferably in the order
 | data path     | directory          | no       | Path to the game data, relative to freelancer.exe                          |
 | local_server  | dll                | no       |                                                                            |
 | initial_world | Files:InitialWorld | no       | Relative to _data path_                                                    |
-| AppGUID       | GUID               | no       | Unique identifier for the Frelancer application. No reason to change this. |
+| AppGUID       | GUID               | no       | Unique identifier for the Freelancer application. No reason to change this. |
 
 ### [Display]
 | Key        | Value            | Multiple | Remark |
