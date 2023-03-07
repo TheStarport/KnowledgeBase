@@ -1,3 +1,9 @@
+---
+title: Example File
+description: An example of what documentation of an file should look like
+id: examplefile
+---
+
 [Return to parent folder](..)
 
 # examplefile.ext

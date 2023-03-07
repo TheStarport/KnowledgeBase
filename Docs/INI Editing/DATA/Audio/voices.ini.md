@@ -1,8 +1,12 @@
-[Return to parent folder (Audio)](../Audio/index.md)
+---
+title: Voices.ini
+---
+
+[Return to parent folder (Audio)](../Audio)
 
 # Overview
 
-The following vanilla files in the [Audio](../Audio/index.md) folder use the same syntax as presented here:
+The following vanilla files in the audio folder use the same syntax as presented here:
 
 * voices_base_female.ini
 * voices_base_male.ini

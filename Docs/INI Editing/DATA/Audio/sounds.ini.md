@@ -1,7 +1,7 @@
-[Return to parent folder (Audio)](../Audio/index.md)
+[Return to parent folder (Audio)](../Audio)
 
 # Overview
-The following vanilla files in the [Audio](../Audio/) folder use the same syntax as presented here:
+The following vanilla files in the Audio folder use the same syntax as presented here:
 
 * ambience_sounds.ini
 * engine_sounds.ini
