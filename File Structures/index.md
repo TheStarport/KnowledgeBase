@@ -1,4 +1,3 @@
-[Return to parent folder (Root)](../index.md)
 
 File types:
 

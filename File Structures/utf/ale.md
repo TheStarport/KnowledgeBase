@@ -1,9 +1,20 @@
 # Alchemy
 
+Alchemy is a particle effects system in Freelancer rendering. Almost all visual effects are made in this system, like weapon projectiles, explosions, engine exhausts and many more.
+
+Alchemy data is presented by two entries in UTF:
+* `ALEffectLib` for effect library.
+* `AlchemyNodeLibrary` for node library.
+
+Both entries appear in .ale files inside folder entries of same names.
+
 Strings in ALE structures (astring) are NUL-terminated and prefixed by character count as uint16. Number of characters is always even regardless of actual string length: there will always be one or two NUL bytes at the end of string.
 
+* [Alchemy Nodes](./ale-nodes.md)
+
 # Alchemy Effect Library
-**ALEffectLib\ALEffectLib**
+
+Effect library contains effect entries which are referenced in effect .ini files via `effect_crc` property of [VisEffect] section.
 
 | Name        | Type   | Description           |
 | ----------- | ------ | --------------------- |
@@ -11,6 +22,10 @@ Strings in ALE structures (astring) are NUL-terminated and prefixed by character
 | effectCount | uint32 | Effects count.        |
 
 ## Effect
+
+A single effect is comprised of hierarchy of node instances which reference node archetypes in Alchemy node library. These nodes typically fall into three categories: emitters, appearances and fields.
+
+Emitters generate particles (points in space with direction and velocity), appearances visualize particles to be rendered with certain shapes, colors and textures, and fields can affect particles physically like applying gravity force to accelerate particles.
 
 | Name            | Type     | Description                             |
 | --------------- | -------- | --------------------------------------- |
@@ -21,6 +36,8 @@ Strings in ALE structures (astring) are NUL-terminated and prefixed by character
 | pairCount       | uint32   | Node pair count.                        |
 | *nodePairs*     |          | Node pairs.                             |
 
+* Unused floats appear only when version is 1.1f.
+
 Each node instance is:
 
 | Name     | Type   | Description                                      |
@@ -30,6 +47,10 @@ Each node instance is:
 | parentId | int32  | Node instance parent id (32768 for none).        |
 | refId    | int32  | Node instance id.                                |
 
+* CRC pointing to a node in node library CRC of "Node_Name" parameter.
+* Node instance indices start with 1.
+* Order of node instances in effect is used for draw order.
+
 Each node pair is:
 
 | Name     | Type  | Description                                     |
@@ -37,13 +58,9 @@ Each node pair is:
 | sourceId | int32 | Pair source node instance (emitter/appearance). |
 | targetId | int32 | Pair target node instance (appearance/field).   |
 
-* Unused floats appear only when version is 1.1f.
-* CRC pointing to a node in node library CRC of "Node_Name" parameter.
-* Node instance ids start with 1.
-* Order of node instances in effect is used for draw order (important for non-additive blending appearances).
-
 # Alchemy Node Library
-**AlchemyNodeLibrary\AlchemyNodeLibrary**
+
+Node library is a collection of node archetypes. Nodes have type property describing its behavior and list of properties, some of which are fixed values and some are animated. 
 
 | Name      | Type    | Description           |
 | --------- | ------- | --------------------- |
@@ -66,6 +83,20 @@ Each property:
 | name | uint32 | FLCRC32 of property name (case-sensitive). |
 
 * Read node properties until property type is 0.
+
+Type is:
+
+| Value | Name      | Animated |
+| ----- | --------- | -------- |
+| 0x001 | Boolean   | No       |
+| 0x002 | Integer   | No       |
+| 0x003 | Float     | No       |
+| 0x103 | String    | No       |
+| 0x104 | Blending  | No       |
+| 0x105 | Transform | Yes      |
+| 0x200 | Float     | Yes      |
+| 0x201 | Color     | Yes      |
+| 0x202 | Curve     | Yes      |
 
 ### Boolean (0x1 or 0x8001)
 
@@ -95,6 +126,22 @@ Each property:
 | ------ | ------ | ----------------------------------- |
 | source | uint32 | Blending source mode.               |
 | target | uint32 | Blending target mode (destination). |
+
+Possible values for source and target are:
+
+| Value | Name                  | Factor                                                                     |
+| ----- | --------------------- | -------------------------------------------------------------------------- |
+| 1     | D3DBLEND_ZERO         | 0, 0, 0, 0                                                                 |
+| 2     | D3DBLEND_ONE          | 1, 1, 1, 1                                                                 |
+| 3     | D3DBLEND_SRCCOLOR     | R<sub>s</sub>, G<sub>s</sub>, B<sub>s</sub>, A<sub>s</sub>                 |
+| 4     | D3DBLEND_INVSRCCOLOR  | 1 - R<sub>s</sub>, 1 - G<sub>s</sub>, 1 - B<sub>s</sub>, 1 - A<sub>s</sub> |
+| 5     | D3DBLEND_SRCALPHA     | A<sub>s</sub>, A<sub>s</sub>, A<sub>s</sub>, A<sub>s</sub>                 |
+| 6     | D3DBLEND_INVSRCALPHA  | 1 - A<sub>s</sub>, 1 - A<sub>s</sub>, 1 - A<sub>s</sub>, 1 - A<sub>s</sub> |
+| 7     | D3DBLEND_DESTALPHA    | A<sub>d</sub>, A<sub>d</sub>, A<sub>d</sub>, A<sub>d</sub>                 |
+| 8     | D3DBLEND_INVDESTALPHA | 1 - A<sub>d</sub>, 1 - A<sub>d</sub>, 1 - A<sub>d</sub>, 1 - A<sub>d</sub> |
+| 9     | D3DBLEND_DESTCOLOR    | R<sub>d</sub>, G<sub>d</sub>, B<sub>d</sub>, A<sub>d</sub>                 |
+| 10    | D3DBLEND_INVDESTCOLOR | 1 - R<sub>d</sub>, 1 - G<sub>d</sub>, 1 - B<sub>d</sub>, 1 - A<sub>d</sub> |
+| 11    | D3DBLEND_SRCALPHASAT  | f, f, f, 1 (f = min(A<sub>s</sub>, 1 - A<sub>d</sub>))                     |
 
 ### Transform (0x105)
 
@@ -191,186 +238,62 @@ Each value keyframe:
 
 * Typically animated curve key is time (seconds).
 
-# Common node types and properties
+### Easing types
 
-## FxNode
-_Base class_
+| Value | Description |
+| ----- | ----------- |
+| 1     | Linear.     |
+| 2     | Ease in.    |
+| 3     | Ease out.   |
+| 4     | Ease both.  |
+| 5     | Step.       |
 
-Does nothing, but can be used as a dummy to group multiple node instances for nested transformation.
+### Wrap flags
 
-| Name           | Type      | Animated | Description                                              |
-| -------------- | --------- | -------- | -------------------------------------------------------- |
-| Node_Name      | String    | No       | Node instances reference by CRC32 of this property value. |
-| Node_LifeSpan  | Float     | No       | Global node lifespan. By default it is infinite.         |
-| Node_Transform | Transform | Yes      | Spatial transformation.                                  |
-| Node_ClassName | String    | No       | Unused.                                                  |
+Determine what happens for out of bounds values.
 
-## FxEmitter
-_Extends FxNode_
+| Value  | Description    |
+| ------ | -------------- |
+| 0x0001 | Repeat before. |
+| 0x0002 | Mirror before. |
+| 0x0004 | Clamp before.  |
+| 0x0010 | Repeat after.  |
+| 0x0020 | Mirror after.  |
+| 0x0040 | Clamp after.   |
 
-| Name                     | Type    | Animated | Description                                                         |
-| ------------------------ | ------- | -------- | ------------------------------------------------------------------- |
-| Emitter_LODCurve         | Float   | Yes      | Optimization.                                                       |
-| Emitter_InitialParticles | Integer | No       | Number of particles spawned initially.                              |
-| Emitter_Frequency        | Curve   | Yes      | Particle sawn rate/frequency (units per second).                    |
-| Emitter_MaxParticles     | Curve   | Yes      | Maximum particles allowed.                                          |
-| Emitter_EmitCount        | Curve   | Yes      | Unknown.                                                            |
-| Emitter_InitialLifeSpan  | Curve   | Yes      | Particle lifespan assigned when generated.                          |
-| Emitter_Pressure         | Curve   | Yes      | Initial velocity. Must be above 0 for some particles to be visible. |
-| Emitter_VelocityApproach | Curve   | Yes      | Inherits velocity of parent object.                                 |
+---
 
-❗ Not to be used directly. Other emitters inherit from it and share these properties.
+### Evaluating animated curve value
 
-## FxCubeEmitter
-_Extends FxEmitter_
+```ts
+/**
+ * Evaluate curve value between keyframes.
+ * @param w Transition state between keyframes
+ * @param a Start keyframe value
+ * @param b End keyframe value
+ * @param d Delta between start and end keyframe keys
+ * @returns 
+ */
+mixCurve(w: number, a: Vector3, b: Vector3, d: number) {
+    const { x: ax, z: av } = a;
+    const { x: bx, y: bv } = b;
 
-Simple box emitter.
+    d *= .5;
 
-| Name                  | Type  | Animated | Description           |
-| --------------------- | ----- | -------- | --------------------- |
-| CubeEmitter_Width     | Curve | Yes      | Cube width.           |
-| CubeEmitter_Height    | Curve | Yes      | Cube height.          |
-| CubeEmitter_Depth     | Curve | Yes      | Cube depth.           |
-| CubeEmitter_MinSpread | Curve | Yes      | Minimum spread angle. |
-| CubeEmitter_MaxSpread | Curve | Yes      | Maximum spread angle. |
+    const a0 = ax + av * d;
+    const b0 = bx - bv * d;
 
-## FxSphereEmitter
-_Extends FxEmitter_
+    const a1 = lerp(w, ax, a0);
+    const b1 = lerp(w, a0, bx);
 
-Basic sphere. Non-uniform distribution: particles are spawned more frequently towards polars.
+    const a2 = lerp(w, ax, b0);
+    const b2 = lerp(w, b0, bx);
 
-| Name                    | Type  | Animated | Description            |
-| ----------------------- | ----- | -------- | ---------------------- |
-| SphereEmitter_MinRadius | Curve | Yes      | Inner radius (hollow). |
-| SphereEmitter_MaxRadius | Curve | Yes      | Outer radius.          |
+    const a3 = lerp(w, a1, a2);
+    const b3 = lerp(w, b1, b2);
 
-## FxConeEmitter
-_Extends FxEmitter_
+    return lerp(w, a3, b3);
+}
+```
 
-Extended version of FxSphereEmitter for cone-like volume.
-
-Also can be used to create rings by making min and max spread equal or in equal distance from 180 degrees. Difference between outer and inner radii is width.
-
-| Name                  | Type  | Animated | Description            |
-| --------------------- | ----- | -------- | ---------------------- |
-| ConeEmitter_MinRadius | Curve | Yes      | Inner radius (hollow). |
-| ConeEmitter_MaxRadius | Curve | Yes      | Outer radius.          |
-| ConeEmitter_MinSpread | Curve | Yes      | Minimum spread angle.  |
-| ConeEmitter_MaxSpread | Curve | Yes      | Maximum spread angle.  |
-
-## FxAppearance
-_Extends FxNode_
-
-| Name                | Type  | Animated | Description |
-| ------------------- | ----- | -------- | ----------- |
-| Appearance_LODCurve | Float | Yes      |             |
-
-Not to be used directly.
-
-## FxBasicAppearance
-_Extends FxAppearance_
-
-| Name                       | Type     | Animated | Description                                             |
-| -------------------------- | -------- | -------- | ------------------------------------------------------- |
-| BasicApp_TriTexture        | Boolean  | No       | Use triangle mesh.                                      |
-| BasicApp_QuadTexture       | Boolean  | No       | Use quad mesh.                                          |
-| BasicApp_MotionBlur        | Boolean  | No       | Applies motion blur for non-textured appearances.       |
-| BasicApp_Color             | Color    | Yes      | Color tint animation.                                   |
-| BasicApp_Alpha             | Float    | Yes      | Color alpha animation.                                  |
-| BasicApp_Size              | Float    | Yes      | Mesh size.                                              |
-| BasicApp_HtoVAspect        | Float    | Yes      | Horizontal to vertical aspect ratio.                    |
-| BasicApp_Rotate            | Float    | Yes      | Rotation animation. Ignored when MotionBlur is enabled. |
-| BasicApp_TexName           | String   | No       | Texture name.                                           |
-| BasicApp_BlendInfo         | Blending | No       | Color blending mode.                                    |
-| BasicApp_UseCommonTexFrame | Boolean  | No       | Use common texture animation.                           |
-| BasicApp_TexFrame          | Float    | Yes      | Individual particle texture animation.                  |
-| BasicApp_CommonTexFrame    | Curve    | Yes      | Common node texture animation.                          |
-| BasicApp_FlipTexU          | Boolean  | No       | Flip texture horizontally.                              |
-| BasicApp_FlipTexV          | Boolean  | No       | Flip texture vertically.                                |
-
-## FLDustAppearance
-_Extends FxBasicAppearance_
-
-❌ Parameters not used:
-* BasicApp_TriTexture
-* BasicApp_QuadTexture
-* BasicApp_MotionBlur
-* BasicApp_HtoVAspect
-* BasicApp_Rotate
-
-## FxOrientedAppearance
-_Extends FxBasicAppearance_
-
-| Name               | Type  | Animated | Description |
-| ------------------ | ----- | -------- | ----------- |
-| OrientedApp_Width  | Float | Yes      |             |
-| OrientedApp_Height | Float | Yes      |             |
-
-❗ Requires increasing its buffer pool size in Freelancer.ini to enable.
-
-## FxRectAppearance
-_Extends FxBasicAppearance_
-
-| Name                     | Type    | Animated | Description |
-| ------------------------ | ------- | -------- | ----------- |
-| RectApp_CenterOnPos      | Boolean | No       |             |
-| RectApp_ViewingAngleFade | Boolean | No       |             |
-| RectApp_Scale            | Float   | Yes      |             |
-| RectApp_Length           | Float   | Yes      |             |
-| RectApp_Width            | Float   | Yes      |             |
-
-❌ Parameters not used:
-* BasicApp_TriTexture
-* BasicApp_QuadTexture
-* BasicApp_Size
-* BasicApp_HtoVAspect
-* BasicApp_Rotate
-
-## FxPerpAppearance
-_Extends FxRectAppearance_
-
-| Name          | Type  | Animated | Description |
-| ------------- | ----- | -------- | ----------- |
-| BasicApp_Size | Float | Yes      |             |
-
-❌ Parameters not used:
-* RectApp_CenterOnPos
-* RectApp_Scale
-* RectApp_Length
-* RectApp_Width
-
-## FLBeamAppearance
-_Extends FxRectAppearance_
-
-| Name                       | Type    | Animated | Description |
-| -------------------------- | ------- | -------- | ----------- |
-| BasicApp_Size              | Float   | Yes      |             |
-| BeamApp_DisablePlaceHolder | Boolean | No       |             |
-| BeamApp_DupeFirstParticle  | Boolean | No       |             |
-| BeamApp_LineAppearance     | Boolean | No       |             |
-
-❌ Parameters not used:
-* RectApp_CenterOnPos
-* RectApp_ViewingAngleFade
-
-## FxParticleAppearance
-_Extends FxAppearance_
-
-| Name                           | Type    | Animated | Description                                      |
-| ------------------------------ | ------- | -------- | ------------------------------------------------ |
-| ParticleApp_LifeName           | String  | No       | Refers to effect name displayed during lifespan. |
-| ParticleApp_DeathName          | String  | No       | Refers to effect name displayed at the end.      |
-| ParticleApp_UseDynamicRotation | Boolean | No       | Applies transformation from this node.           |
-| ParticleApp_SmoothRotation     | Boolean | No       |                                                  |
-
-## FxMeshAppearance
-_Extends FxAppearance_
-
-| Name                         | Type      | Animated | Description                            |
-| ---------------------------- | --------- | -------- | -------------------------------------- |
-| MeshApp_MeshId               | Integer   | No       | Unknown                                |
-| MeshApp_MeshName             | String    | No       | Unknown                                |
-| MeshApp_UseParticleTransform | Boolean   | No       | Enables individual particle transform. |
-| MeshApp_ParticleTransform    | Transform | Yes      | Individual particle transform?         |
-
-❗ Crashes the game. Unfinished implementation.
+* `lerp` is a generic linear interpolation function.
