@@ -49,8 +49,7 @@ Behavior will vary depending on whether or not the encounter is called in a patr
 | trade (path zones)       | Typically trade paths are between dockable objects. A ship defined with this behavior will spawn anywhere along the path, and will try to move one way in either direction at cruise speed. They will typically try to dock at their destination if you follow them all the way there.                                                                                                                                                                                                                                                                                                                                                        |
 | patrol_path (path zones) | This behavior should **not** be used with an area zone. A ship defined with this behavior will spawn anywhere along the path and follow it one way. When in range and their relief_time has expired, the patrol will finish their current leg(s) and then attempt to dock with a nearby object. If a patrol route forms a closed loop, the ships will continue flying it until they hit their releif time limit.                                                                                                                                                                                                                               |
 
-:::Warning
-## Patrol Paths
+:::caution Patrol Paths
 
 If you use either trade or patrol_path in an encounter, the patrol routes need to start and end near a dockable object that the encounter members are able to interact with, as defined in mbases.ini. Failure to ensure your patrol paths are in the correct places, will result in crashes.
 
