@@ -4,7 +4,7 @@ description: List of files within the Encounters folder
 id: encounters
 ---
 
-[Return to parent folder (AUDIO)](../../Audio/index.md)
+[Return to parent folder (MISSIONS)](../../Missions/index.md)
 
 This folder contains encounter inis that are typically referenced at the top of system files.
 
