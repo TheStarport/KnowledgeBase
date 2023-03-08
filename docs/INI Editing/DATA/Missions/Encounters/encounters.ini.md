@@ -52,6 +52,7 @@ Behavior will vary depending on whether or not the encounter is called in a patr
 :::Patrol Paths
 
 If you use either trade or patrol_path in an encounter, the patrol routes need to start and end near a dockable object that the encounter members are able to interact with, as defined in mbases.ini. Failure to ensure your patrol paths are in the correct places, will result in crashes.
+
 :::
 
 ### [Creation]
