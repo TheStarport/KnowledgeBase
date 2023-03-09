@@ -48,13 +48,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'The Starport',
         logo: {
           alt: 'The Starport Logo',
-          src: 'img/logo.svg',
+          src: 'FLServer.png',
         },
         items: [
           {
@@ -113,6 +111,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['ini', 'mermaid', 'cpp', 'csharp', 'pascal', 'maxscript', 'markdown']
       },
     }),
     markdown: {
