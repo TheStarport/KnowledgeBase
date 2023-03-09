@@ -14,6 +14,7 @@ There is no particular order for the parameters inside the blocks.
 ### [FactionProps]
 
 ```ini
+[FactionProps]
 affiliation = STRING
 legality = STRING
 nickname_plurality = STRING
