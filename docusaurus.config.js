@@ -34,10 +34,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/TheStarport/KnowledgeBase/Docs',
+          editUrl: 'https://github.com/TheStarport/KnowledgeBase/tree/master',
+          routeBasePath: '/',
         },
+        blog: false,
         theme: {
-          customCss: require.resolve('./src/CSS/custom.css'),
+          customCss: require.resolve('./CSS/custom.css'),
         },
       }),
     ],
