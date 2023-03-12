@@ -6,11 +6,11 @@ title: empathy.ini
 
 ## Overview
 
-This file determines formations used by encounters in [encounter INI files](./Encounters/encounters.ini.md).
+This file determines how a player's actions will impact their reputation with a defined faction.
 
 ## Syntax
 
-Multiple `[Formation]` blocks can be defined.
+Multiple `[RepChangeEffects]` blocks can be defined.
 
 ### [RepChangeEffects]
 
@@ -21,8 +21,8 @@ event = STRING, FLOAT
 empathy_rate = STRING, FLOAT ;repeatable
 ```
 
-| Parameter | Information                                                                                                                                                                                                       |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| nickname  | How the formation is referred to elsewhere.                                                                                                                                                                       |
-| pos       | X, Y and Z coordinates relative to the center of the formation. The number of keys here will limit the number of NPCs that can spawn per formation                                                                |
-| pl_pos    | X, Y and Z coordinates relative to the center of the formation. This might refer to the squad leader, determining where they spawn specifically where they are present. More testing is required to confirm this. |
+| Parameter    | Information                                                                                                                                                                                                                       |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| group        | The name of the faction as defined in [faction_prop.ini](./faction_prop.ini.md)                                                                                                                                                   |
+| event        | How significant a player's actions are for a given event. STRING options are `object_destruction`, `random_mission_success`, `random_mission_failure` and `random_mission_abortion`.                                              |
+| empathy_rate | Determines how actions for other factions affect a player's reptuation with this one. STRING is a faction name as defined in [faction_prop.ini](./faction_prop.ini.md), and the FLOAT is a multiplier for second-hand rep change. |
