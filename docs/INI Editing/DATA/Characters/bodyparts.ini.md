@@ -34,9 +34,9 @@ anim = PATH ;repeatable
 [DetailSwitchTable]
 switch = INT, FLOAT ;repeatable
 ```
-| Parameter | Information                                       |
-| --------- | ------------------------------------------------- |
-| switch    | Default: 100, 999999 <br><br> No further details. |
+| Parameter | Information                                    |
+| --------- | ---------------------------------------------- |
+| switch    | Default: 100, 999999 <br/> No further details. |
 
 ### PetalAnimations
 ```ini
