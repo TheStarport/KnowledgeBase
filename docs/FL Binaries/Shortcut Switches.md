@@ -2,6 +2,8 @@
 title: Shortcut Switches
 ---
 
+[Return to parent folder (FL Binaries)](./index.md)
+
 Options ignore case and start with either '+' or '-'; if relevant, it's noted in brackets.
 
 ## freelancer.exe

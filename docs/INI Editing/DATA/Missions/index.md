@@ -4,7 +4,7 @@ description: List of files within the missions folder
 id: missions
 ---
 
-[Return to parent folder(DATA)](../DATA)
+[Return to parent folder (DATA)](../DATA)
 
 ## Missions Folder
 
