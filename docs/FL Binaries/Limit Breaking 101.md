@@ -4,6 +4,8 @@ description: List of known offsets in Freelancer's binary files and their uses.
 id: limit-breaking-101
 ---
 
+[Return to parent folder (FL Binaries)](./index.md)
+
 # Limit Breaking 101
 
 * This list was originally compiled by Dev in the Lancers Reactor topic Limit Breaking 101. Credit for finding the original offsets and otherwise starting this list go to Dev.

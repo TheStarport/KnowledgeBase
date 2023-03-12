@@ -4,6 +4,8 @@ description: List of known crash offsets.
 id: crash-offsets
 ---
 
+[Return to parent folder (FL Binaries)](./index.md)
+
 # Crash Offsets
 
 This page attempts to collate the offsets found in [this thread](https://the-starport.net/freelancer/forum/viewtopic.php?topic_id=2987) into a single, searchable database.
