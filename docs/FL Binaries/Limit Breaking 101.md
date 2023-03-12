@@ -1,3 +1,8 @@
+---
+title: Limit Breaking 101
+description: List of known offsets in Freelancer's binary files and their uses.
+id: limit-breaking-101
+---
 
 # Limit Breaking 101
 
