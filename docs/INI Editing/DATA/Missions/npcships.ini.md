@@ -4,12 +4,13 @@ title: npcships.ini
 
 [Return to parent folder (MISSIONS)](../../Missions/index.md)
 
-# Overview
+## Overview
+
 This file defines npcships that are referenced by [faction_prop.ini](./faction_prop.ini.md), defines their shiparch, loadout, pilot, state_graph and npc_class
 
 ## Syntax
-There is no particular order for the sections or the parameters inside them. However each parameter should only be used once per section, since only the last value will be used by Freelancer.
 
+There is no particular order for the sections or the parameters inside them. However each parameter should only be used once per section, since only the last value will be used by Freelancer.
 
 ### [NPCShipArch]
 
