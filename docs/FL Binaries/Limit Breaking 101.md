@@ -1,5 +1,5 @@
 
-# Information
+# Limit Breaking 101
 
 * This list was originally compiled by Dev in the Lancers Reactor topic Limit Breaking 101. Credit for finding the original offsets and otherwise starting this list go to Dev.
 * All offsets are for files from the official 1.1 patch.
@@ -146,6 +146,8 @@ A value like "0F85 -> 90E9" means replace the original bytes on the left with th
 | 2000f                                                                        | common.dll | 13E678 | fox   | how far behind a jumpgate a player will be spawned - the player will move from this point to the arrival point near the gate during the respective [JumpGateEffect]'s jump_in_time |
 | -350f                                                                       | server.dll | 0231BF | adoxa | jump gate/hole z-axis entry point adjustment                                                                                                                                       |
 | 500d                                                                         | server.dll | 0876C0 | adoxa | jump gate/hole x/y-axis entry point adjustment                                                                                                                                     |
+|74->EB|server.dll|173DA|Laz|Enable undocking hail in multiplayer|
+
 
 ## Cruise and Tradelanes
 
@@ -477,6 +479,7 @@ A value like "0F85 -> 90E9" means replace the original bytes on the left with th
 | 0.6666667f                                                       | freelancer.exe | 1D3D30                                                                       | WhiskasTM | bunch scale of all system diamonds on Universe Map and in the same way speed of tradelane animation on system map (method 1)                                                          |
 | 200000f                                                          | freelancer.exe | 1D3D2C                                                                       | WhiskasTM | bunch scale of all system diamonds on Universe Map (method 2)                                                                                                                         |
 | 112000f                                                          | freelancer.exe | 0915B8                                                                       | WhiskasTM | bunch scale of all system diamonds on Universe Map (method 3)                                                                                                                         |
+|1.0f|freelancer.exe|915C8  |Gold_Sear|bunch scale of all system diamonds on Universe Map (method 4)|
 | 100000f                                                          | freelancer.exe | 1D3D28                                                                       | WhiskasTM | bunch coordinates of all system diamonds on Universe Map (?-axis)                                                                                                                     |
 | 5000f                                                            | freelancer.exe | 1D3D24                                                                       | WhiskasTM | bunch coordinates of all system diamonds on Universe Map (y-axis)                                                                                                                     |
 | 65 -> 63                                                         | freelancer.exe | 0911D6                                                                       | WhiskasTM | on "NavMap not available" initially do hide some controls PART 1                                                                                                                      |
@@ -495,6 +498,26 @@ A value like "0F85 -> 90E9" means replace the original bytes on the left with th
 | -112000f                                                        | freelancer.exe | 096816                                                                       | WhiskasTM | -x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the left edge)                                                                |
 | 112000f                                                          | freelancer.exe | 09683B                                                                       | WhiskasTM | +y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the upper edge)                                                                 |
 | -112000f                                                        | freelancer.exe | 096860                                                                       | WhiskasTM | -y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the lower edge)                                                               |
+|112000f|freelancer.exe|917CC  |Gold_Sear|Size of system map; beware, effects size of player ship icon as well|
+|33333f |freelancer.exe|1D2EEC  |Gold_Sear|size of sectors in F9 info screen; needs to keep ratio with variable above|
+|-99999f |freelancer.exe|1D2EF0  |Gold_Sear|starting point of sector calculation in F9 info screen, needs to be -3*variable above|
+|-0.257f|freelancer.exe|1D3F30  |Gold_Sear|NavMap number lower limit when zoomed|
+|0.274f|freelancer.exe|1D3F34  |Gold_Sear|NavMap number upper limit when zoomed|
+|0.31f|freelancer.exe|1D3F38  |Gold_Sear|NavMap letter left limit when zoomed|
+|-0.23f|freelancer.exe|1D3F3C|Gold_Sear |NavMap letter right limit when zoomed|
+|8.6f|freelancer.exe|9FCF6,9FC9B|Gold_Sear|NavMap letter/number zoom factor|
+|DC 0D 28 3F 5D <br />--><br />  D8 35 F6 FC 49|freelancer.exe|9F2B4  |Gold_Sear|align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor|
+|1360i |freelancer.exe|211C94  |Gold_Sear|MAP LEGEND identifier|
+|968i |freelancer.exe|211CA0  |Gold_Sear|BASE LIST identifier|
+|1338i |freelancer.exe|211C84  |Gold_Sear|PHYSICAL MAP identifier|
+|1339i |freelancer.exe|211C88  |Gold_Sear|POLITICAL MAP identifier|
+|1340i |freelancer.exe|211C8C  |Gold_Sear|PATROL PATH identifier|
+|1361i |freelancer.exe|211C98  |Gold_Sear|MINEABLE ZONES MAP identifier|
+|-0.198f |freelancer.exe|1D3EF0  |Gold_Sear|upper limit for labels on NavMap|
+|0.192f |freelancer.exe|1D3EF4  |Gold_Sear|lower limit for labels on NavMap|
+|E0 75 5C --> 9C 63 49|freelancer.exe||Gold_Sear|NavMap zoom move limit PART 1|
+|E0 75 5C --> 9C 63 49|freelancer.exe||Gold_Sear|NavMap zoom move limit PART 2|
+|90 90 90 90 -> 0.5f|freelancer.exe||Gold_Sear|NavMap zoom move limit PART 3|
 
 ## HUD: Other
 
@@ -623,3 +646,5 @@ A value like "0F85 -> 90E9" means replace the original bytes on the left with th
 | FLSpew.txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | freelancer.exe  | 1E6D24                     | Laz                | The path of the FLSpew.txt file                                                                                                                                               |
 | CA02->0000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | freelancer.exe  | 02477A                     | adoxa<br />Laz       | Enable Borderless Window (disable caption flags) (PART 1)                                                                                                                     |
 | CA02->0000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | freelancer.exe  | 02490D                     | adoxa<br />Laz       | Enable Borderless Window (disable caption flags) (PART 2)                                                                                                                     |
+|905332->C0DE26|common.dll|139964 |HeIIoween|using thruster hp_type for [Light]|
+|905332->C0DE26|common.dll|139A40  |HeIIoween|using thruster hp_type for [AttachedFX]|
