@@ -1,10 +1,15 @@
-# Material library
+---
+title:  Material Library
+---
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Materials are either stored in separate file (.mat) or embedded into model files (.3db, .cmp, .dfm, etc).
 
 Certain assets cannot have reference to external material file and will require materials to be embedded directly in model file, such as starspheres, cutscene props and deformable models.
 
-## Material types
+### Material types
 
 | Type                          | Alpha | Description                                                                                                     |
 | ----------------------------- | ----- | --------------------------------------------------------------------------------------------------------------- |
@@ -43,7 +48,7 @@ Certain assets cannot have reference to external material file and will require 
 
 When model uses both transparent and non-transparent (opaque) materials it should be multi-part compound and any mesh groups using transparent material(s) should be kept in parts separate from mesh groups using opaque materials, i.e. transparent cockpit glass should be in part separate from hull it is attached to. Mesh groups with opaque materials are drawn front to back, afterwards mesh groups with transparent materials are drawn back to front with depth buffer write disabled.
 
-### Material properties
+#### Material properties
 
 | Name      | Type     | Description                               |
 | --------- | -------- | ----------------------------------------- |
@@ -88,7 +93,7 @@ When model uses both transparent and non-transparent (opaque) materials it shoul
 * Dm0_name, Dm0_flags and TileRate0 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
 * Dm1_name, Dm1_flags and TileRate1 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
 
-# Material Animation
+## Material Animation
 
 Material animation is stored in model file and permits simple UV offset and scaling looped keyframe animation.
 
@@ -117,5 +122,5 @@ Each keyframe in MAKeys:
 | vOffset | float | V start offset. |
 | uScale  | float | U start scale.  |
 | vScale  | float | V start scale.  |
-	
+
 * MAKeys keyframes count will be one less MACount. First keyframe is implicit state of original UV values.

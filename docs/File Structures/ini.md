@@ -1,8 +1,15 @@
-# INI
+---
+title: INI
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Freelancer INI files come in two forms: plain-text and binary (BINI).
 
 When reading INI, text or binary, few key aspects are:
+
 * Sections and properties within them are treated as sequence of instructions rather than serialized property lists.
 * Properties can have duplicate names in a section and multiple sections can have duplicate names.
 * Maintaining order of sections and properties is essential.

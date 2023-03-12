@@ -4,14 +4,16 @@ title: Freelancer.ini
 
 [Return to parent folder (EXE)](../EXE)
 
-# Overview
+## Overview
 
 This game configuration file primarily determines which DLLs and called by FLserver.exe and Freelancer.exe and their load  order. There are a few options in the blocks towards the top of the file that can be used to force some ingame or server settings as well.
 
 ## Syntax
+
 Each of the following sections can only be written once, preferably in the order shown.
 
 ### [Freelancer]
+
 | Key           | Value              | Multiple | Remark                                                                     |
 | ------------- | ------------------ | -------- | -------------------------------------------------------------------------- |
 | data path     | directory          | no       | Path to the game data, relative to freelancer.exe                          |
@@ -20,6 +22,7 @@ Each of the following sections can only be written once, preferably in the order
 | AppGUID       | GUID               | no       | Unique identifier for the Freelancer application. No reason to change this. |
 
 ### [Display]
+
 | Key        | Value            | Multiple | Remark |
 | ---------- | ---------------- | -------- | ------ |
 | fullscreen | 0 / 1            | no       |        |
@@ -28,11 +31,13 @@ Each of the following sections can only be written once, preferably in the order
 | depth_bpp  | integer          | no       |        |
 
 ### [Startup]
+
 | Key        | Value      | Multiple | Remark |
 | ---------- | ---------- | -------- | ------ |
 | movie_file | video file | yes      |        |
 
 ### [ListServer]
+
 This block determines the global listing server that Freelancer.exe and FLServer will attempt to register with on load.
 | Key      | Value   | Multiple | Remark |
 | -------- | ------- | -------- | ------ |
@@ -40,6 +45,7 @@ This block determines the global listing server that Freelancer.exe and FLServer
 | port     | integer | no       |        |
 
 ### [Server]
+
 This block allows you to pre-fill name and description values for FLServer.exe
 | Key           | Value   | Multiple | Remark                                                                             |
 | ------------- | ------- | -------- | ---------------------------------------------------------------------------------- |
@@ -48,6 +54,7 @@ This block allows you to pre-fill name and description values for FLServer.exe
 | death_penalty | integer | no       | Percentage of your cargo (commoditied and unmounted equipment) lost at death in MP |
 
 ### [Initial MP DLLs]
+
 Initials DLL files called by FLServer.exe when it starts.
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
@@ -55,6 +62,7 @@ Initials DLL files called by FLServer.exe when it starts.
 | DLL  | dll, [string], [LOWEST / BELOW_NORMAL / NORMAL / ABOVE_NORMAL / HIGHEST] | yes      |
 
 ### [Initial SP DLLs]
+
 Initial DLL files called when you start a new game or load a game.
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
@@ -62,12 +70,14 @@ Initial DLL files called when you start a new game or load a game.
 | DLL  | dll, [string], [LOWEST / BELOW_NORMAL / NORMAL / ABOVE_NORMAL / HIGHEST] | yes      |
 
 ### [Resources]
+
 String resource files called by Freelancer.exe
 | Key | Value | Multiple | Remark |
 | --- | ----- | -------- | ------ |
 | DLL | dll   | yes      |
 
 ### [Data]
+
 Load order for this block is important. For multiplayer, server and client load order must match.
 
 | Key           | Value     | Multiple | Remark                                                     |
@@ -107,6 +117,7 @@ Load order for this block is important. For multiplayer, server and client load 
 | rtcslider     | path      | yes      |
 
 ### [Error]
+
 The block below is non-functional in unmodified copies of Freelancer, and has no effect on FLSpew log output. This function does work correctly in the beta version of the game.
 
 | Key | Value                                                          | Multiple | Remark |
@@ -137,6 +148,7 @@ The block below is non-functional in unmodified copies of Freelancer, and has no
 | 'w'   | minor general problems                                  |
   
 ### Severity Level
+
 | Key  | Meaning                                                      |
 | ---- | ------------------------------------------------------------ |
 | 0    | Unrecoverable errors                                         |

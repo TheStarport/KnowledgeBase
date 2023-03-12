@@ -4,7 +4,7 @@ title: InitialWorld.ini
 
 [Return to parent folder (DATA)](../DATA)
 
-# Overview
+## Overview
 
 The initialworld.ini file has two main purposes:
 
@@ -14,19 +14,24 @@ The initialworld.ini file has two main purposes:
 ## Syntax
 
 ### [locked_gates]
+
 This section can only be used once, preferrably at the top of the file.
+
 ```ini
 [locked_gates] 
 locked_gate = INT ; optional, repeatable 
 npc_locked_gate = INT ; optional, repeatable
 ```
-| Parameter       | Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| Parameter       | Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | locked_gate     | Range: +-infty<br/><br/>Locked gates are any dockable objects (jump gate, jump hole, bases) which cannot be used by **both** the *NPC* and *the player*. Docking with them is possible but results in a "Docking denied" message. The value is a hashcode of the gate's nickname.<br/><br/>NOTICE: For multiplayer servers, any locked gate is saved in a player's file **upon creation**! This means if the locked gates are modified, a Player Wipe or the use of a tool which would update locked gate entries on all player files is required. |
-| npc_locked_gate | Range: +-infty<br/><br/>Similar to locked gates, NPC locked gates only affect NPCs. They can also be modified without the need for any update on the player files in multiplayer.                                                                                                                                                                                                                                                                                                                                   |
+| npc_locked_gate | Range: +-infty<br/><br/>Similar to locked gates, NPC locked gates only affect NPCs. They can also be modified without the need for any update on the player files in multiplayer.                                                                                                                                                                                                                                                                                                                                                                  |
 
 ### [Group]
+
 This section can be used multiple times.
+
 ```ini
 [Group]
 nickname = STRING
@@ -35,6 +40,7 @@ ids_info = INT
 ids_short_name = INT
 rep = FLOAT, STRING ; repeatable
 ```
+
 | Parameter      | Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | nickname       | See Nickname Resource for more information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |

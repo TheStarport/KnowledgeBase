@@ -4,36 +4,45 @@ title: dacom.ini
 
 [Return to parent folder (EXE)](../EXE)
 
-# Overview
+## Overview
+
 This file handles configuration of the application's start-time settings and library loading.
 
 ## Syntax
+
 Each of the following sections can only be written once, preferably in the order shown.
 
 ### [DACOM]
+
 | Key            | Value   | Multiple | Remark                                                                            |
 | -------------- | ------- | -------- | --------------------------------------------------------------------------------- |
 | IgnoreDACOMEnv | boolean | no       |                                                                                   |
 | DLLPath        | path    | no       | This path determines where dacom.dll looks for the libraries called in this file. |
 
 ### [Libraries]
+
 DLL entries under this block are defined as a key with no value. DLLPath, as defined in the [DACOM] block is used to look for these files.
 
 ### [System]
+
 Calls values from the Windows API. Entries under this block are defined as a key with no value.
 
 ### [Engine]
+
 Calls values from the Windows API. Entries under this block are defined as a key with no value.
 
 ### [RenderManager]
+
 Calls values from the Windows API. Entries under this block are defined as a key with no value.
 
 ### [TriMesh]
+
 | Key       | Value   | Multiple | Remark |
 | --------- | ------- | -------- | ------ |
 | tristrips | boolean | no       |        |
 
 ### [RenderPipeline]
+
 | Key                       | Value   | Multiple | Remark                                                                                                                                    |
 | ------------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | MGSDB                     | path    | no       | The name of the FLConfigDatabase file, which is used to map graphics cards settings for Freelancer                                        |
@@ -56,11 +65,13 @@ Calls values from the Windows API. Entries under this block are defined as a key
 | TEXTURE_CUBEMAPS          | boolean | no       |                                                                                                                                           |
 
 ### [TextureLibrary]
+
 | Key                  | Value   | Multiple | Remark                                                                                                      |
 | -------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------- |
 | TEXTURE_LOD_LOAD_MIN | integer | no       | While this would work for other apps, Freelancer's perfoptions.ini will override whatever setting this has. |
 
 ### [SoundManager]
+
 | Key                      | Value   | Multiple | Remark                                           |
 | ------------------------ | ------- | -------- | ------------------------------------------------ |
 | speakerConfiguration     | integer | no       | set only if you want to override Windows setting |
@@ -73,6 +84,7 @@ Calls values from the Windows API. Entries under this block are defined as a key
 | max3DPan                 | integer | no       |                                                  |
 
 ### [Alchemy]
+
 | Key                           | Value   | Multiple | Remark                                                                  |
 | ----------------------------- | ------- | -------- | ----------------------------------------------------------------------- |
 | Alchemy.maxVertices           | integer | no       | Unused, overridden by particle pools                                    |
@@ -89,11 +101,13 @@ Calls values from the Windows API. Entries under this block are defined as a key
 | FxParticleAppearance.poolSize | integer | no       | Maximum number of ParticleAppearance particles rendered at any one time |
 
 ### [BatchedMaterials]
+
 | Key  | Value  | Multiple | Remark |
 | ---- | ------ | -------- | ------ |
 | Type | string | no       |        |
 
 ### [MaterialMap]
+
 | Key       | Value  | Multiple | Remark                                                                               |
 | --------- | ------ | -------- | ------------------------------------------------------------------------------------ |
 | DcDtEtTwo | string |          | Predefined material types                                                            |

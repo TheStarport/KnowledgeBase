@@ -1,13 +1,19 @@
-# Texture library
+---
+title:  Texture Library
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Textures are either stored in separate file (.txm) or embedded into model files (.3db, .cmp, .dfm, etc).
 
 Freelancer supports these types:
+
 * Uncompressed Targa (.tga) images in 16-bit (5551, RGB) mode, 24-bit mode (888, RGB) and 32-bit mode (8888, RGBA). ❗ RLE compressed Targa and/or palette maps are unsupported.
 * DirectDrawSurface (.dds) images in uncompressed or DXT compressed modes. Cubemaps are supported for environment mapping.
 
-
-# Texture animation
+## Texture animation
 
 Freelancer has frame-based (flipbook) animation for textures.
 

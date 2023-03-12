@@ -4,7 +4,7 @@ title: Voices.ini
 
 [Return to parent folder (Audio)](../Audio)
 
-# Overview
+## Overview
 
 The following vanilla files in the audio folder use the same syntax as presented here:
 
@@ -22,6 +22,7 @@ Voices use two different sections to associate voices together. Each Voice secti
 This means that when the game looks for message `gcs_combat_scream_01-` for voice `atc_leg_f01`, it will first find the Sound section for `gcs_combat_scream_01-` which is listed within a Voice section that extends `atc_leg_f01`. It will then display the animation as defined by the scripts in the Voice section.
 
 ### Voice
+
 ```ini
 [Voice] 
 extend = STRING 
@@ -36,6 +37,7 @@ script = STRING
 | script (2) | Nickname of the body script that should be used while playing the sounds specified for that voice and that action. |
 
 ### Sound
+
 ```ini
 [Sound] 
 msg = STRING 

@@ -8,7 +8,7 @@ id: data
 
 The DATA folder contains the bulk of Freelancer's content. Most of the non-logical content is found here, stored in a variety of file formats.
 
-# DATA Folder
+## DATA Folder
 
 * [AI](DATA/AI)
 * [Audio](DATA/Audio)

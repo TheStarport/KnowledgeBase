@@ -1,4 +1,10 @@
-# Mesh library
+---
+title: Mesh library
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Meshes are usually embedded into rigid model files (.3db and .cmp) with exception of UI where mesh data is stored in separate .vms file.
 

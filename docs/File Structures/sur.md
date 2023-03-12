@@ -1,4 +1,10 @@
-# SUR
+---
+title: SUR
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Collision hitbox data for rigid models cmp and .3db).
 
@@ -6,7 +12,7 @@ It is important to understand the data contained in .sur is meaningless without 
 
 Be ware some structures contain uncommon bit lengths for numbers.
 
-## Header
+### Header
 
 | Name      | Type      | Description                  |
 | --------- | --------- | ---------------------------- |
@@ -16,7 +22,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 * There is no counter for parts, so read in loop until file ends.
 
-## Part
+### Part
 
 | Name         | Type      | Description                     |
 | ------------ | --------- | ------------------------------- |
@@ -27,7 +33,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 * PartId is FLCRC32 hash of "Cmpnd/Part_*/Object name" for multi-part model cmp) or 0x0 for single-part model (.3db).
 * The exact order of section does not seem to matter but all Freelancer files follow the same order: non-fixed, extent, mesh, hardpoints.
 
-### Not-Fixed Section
+#### Not-Fixed Section
 
 | Name | Type   | Description                  |
 | ---- | ------ | ---------------------------- |
@@ -38,7 +44,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 * For other parts it should be present if associated compound object joint isn’t of fixed type (Rev, Pris, etc).
 * This section has no further data, just own name.
 
-### Extent Section
+#### Extent Section
 
 | Name    | Type     | Description                  |
 | ------- | -------- | ---------------------------- |
@@ -48,7 +54,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 * Bounding box for part, probably used for AABB comparison. Min/max from mesh points.
 
-### Hardpoints Section
+#### Hardpoints Section
 
 | Name        | Type      | Description                     |
 | ----------- | --------- | ------------------------------- |
@@ -60,7 +66,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 * Vanilla models used boxes for HpWeapon hardpoints, hemispheres for HpTurret hardpoints, and some sort of cylinder for equipment hardpoints such as HpCM, HpThrust.
 * Providing hull for HpMount and listing it as hardpoint will override shield bubble for ship.
 
-### Surfaces Section
+#### Surfaces Section
 
 Contains header, convex hulls, points array and BSP tree.
 
@@ -97,7 +103,7 @@ Immediately after section header all convex hulls are listed.
 | unknown        | uint16    | Padding?                                                                |
 | *faces*        | *varying* |                                                                         |
 
-* Read hulls until offset reaches offsetToPoints.    
+* Read hulls until offset reaches offsetToPoints.
 * Type 4 is regular hull (but is hardpoint if partID is listed in hpid section).
 * Type 5 is wrap. Used for grouping multiple hulls, one per mesh. Not present if mesh contains only one hull.
 * If hull is wrap its partID instead will be offset to node in BSP tree.

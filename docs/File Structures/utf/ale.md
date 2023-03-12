@@ -1,8 +1,15 @@
-# Alchemy
+---
+title: Alchemy
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Alchemy is a particle effects system in Freelancer rendering. Almost all visual effects are made in this system, like weapon projectiles, explosions, engine exhausts and many more.
 
 Alchemy data is presented by two entries in UTF:
+
 * `ALEffectLib` for effect library.
 * `AlchemyNodeLibrary` for node library.
 
@@ -12,7 +19,7 @@ Strings in ALE structures (astring) are NUL-terminated and prefixed by character
 
 * [Alchemy Nodes](./ale-nodes.md)
 
-# Alchemy Effect Library
+## Alchemy Effect Library
 
 Effect library contains effect entries which are referenced in effect .ini files via `effect_crc` property of [VisEffect] section.
 
@@ -21,7 +28,7 @@ Effect library contains effect entries which are referenced in effect .ini files
 | version     | float  | Version (1.0 or 1.1). |
 | effectCount | uint32 | Effects count.        |
 
-## Effect
+### Effect
 
 A single effect is comprised of hierarchy of node instances which reference node archetypes in Alchemy node library. These nodes typically fall into three categories: emitters, appearances and fields.
 
@@ -58,9 +65,9 @@ Each node pair is:
 | sourceId | int32 | Pair source node instance (emitter/appearance). |
 | targetId | int32 | Pair target node instance (appearance/field).   |
 
-# Alchemy Node Library
+## Alchemy Node Library
 
-Node library is a collection of node archetypes. Nodes have type property describing its behavior and list of properties, some of which are fixed values and some are animated. 
+Node library is a collection of node archetypes. Nodes have type property describing its behavior and list of properties, some of which are fixed values and some are animated.
 
 | Name      | Type    | Description           |
 | --------- | ------- | --------------------- |

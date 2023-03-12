@@ -1,4 +1,10 @@
-# Alchemy nodes
+---
+title: Alchemy Nodes
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 List of known node types:
 
@@ -29,7 +35,7 @@ List of known node types:
 
 * "FL" prefix in some names is not a typo.
 
-## Properties
+### Properties
 
 These are the list of known properties used in alchemy node archetypes.
 

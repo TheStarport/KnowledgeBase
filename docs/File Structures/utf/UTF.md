@@ -1,9 +1,16 @@
-# UTF (Universal Tree Format)
+---
+title:  UTF (Universal Tree Format)
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Container file format used to store various assets in Freelancers.
 Little-endian byte order.
 
 Freelancer uses UTF in these type of files:
+
 - .utf (audio library, etc)
 - .ale (particle effects library)
 - .vms (rigid mesh buffer library)
@@ -14,7 +21,7 @@ Freelancer uses UTF in these type of files:
 - .txm (texture library)
 - .mat (material library)
 
-## Header
+### Header
 
 File begins with header block which is always 56 bytes.
 
@@ -34,11 +41,11 @@ File begins with header block which is always 56 bytes.
 | unusedSize         | uint32 | Extra data byte size (unused).                                            |
 | filetime           | uint64 | Windows 64-bit FILETIME.                                                  |
 
-* Header is usually followed by entries but not always, some files have dictionary before entries.
-* Dictionary is a concatenated collection of ASCIIz strings (NUL-terminated ASCII strings).
-* Dictionary reserves first string as empty (i.e. first byte in dictionary block is 0x0). Entries with zero length name are ignored.
+- Header is usually followed by entries but not always, some files have dictionary before entries.
+- Dictionary is a concatenated collection of ASCIIz strings (NUL-terminated ASCII strings).
+- Dictionary reserves first string as empty (i.e. first byte in dictionary block is 0x0). Entries with zero length name are ignored.
 
-## Entry
+### Entry
 
 Each entry in tree block is 44 bytes.
 
@@ -56,8 +63,8 @@ Each entry in tree block is 44 bytes.
 | accessTime           | uint32 | File last access timestamp.                    |
 | modifyTime           | uint32 | File last modification timestamp.              |
 
-* Tree root entry name should be "/", but other names are possible.
-* For attributes see Win32 API dwFileAttributes. In short it should be either 0x80 for file or 0x10 for folder.
-* When entry is a folder the childOffset points to first child byte offset, relative to treeOffset in header, and dataSize* are all zeroes.
-* When entry is a file the childOffset points to data block, relative to dataOffset in header, and dataSize* indicate file size.
-* Timestamps are DOS file timestamp, see: https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653
+- Tree root entry name should be "/", but other names are possible.
+- For attributes see Win32 API dwFileAttributes. In short it should be either 0x80 for file or 0x10 for folder.
+- When entry is a folder the childOffset points to first child byte offset, relative to treeOffset in header, and dataSize* are all zeroes.
+- When entry is a file the childOffset points to data block, relative to dataOffset in header, and dataSize* indicate file size.
+- Timestamps are DOS file timestamp, see: [https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653](https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653)

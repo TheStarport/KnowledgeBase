@@ -6,7 +6,7 @@ id: examplefile
 
 [Return to parent folder](..)
 
-# examplefile.ext
+## Overview
 
 General description goes here. If multiple files link to the same page (through a REDIRECT link), please list all pages that refer to this page.
 
@@ -23,9 +23,10 @@ If there are specificities about how sections are ordered/linked, they should ap
 ```ini
 [Section Name]
 param = VALUE_TYPE ; comment (if necessary)
-
 ```
+
 VALUE_TYPE can be any of the following:
+
 * INT (integer, both positive or negative)
 * FLOAT (floating point/decimal value, also positive or negative)
 * STRING (text)
@@ -35,6 +36,7 @@ VALUE_TYPE can be any of the following:
 If subvalues are given, optional subvalues can be expressed in parenthesis (IE: param = A, (B)) to denote the optional character of the value. If subvalues can be repeated endlessly and share the same purpose, one value can be shown, followed by an ellipsis (...) (IE: param = A, B, C, ... with all values following C behaving in the same way as C).
 
 comment can be any of the following:
+
 * optional (the whole parameter is not always necessary)
 * repeatable (the whole parameter can be written more than once)
 
