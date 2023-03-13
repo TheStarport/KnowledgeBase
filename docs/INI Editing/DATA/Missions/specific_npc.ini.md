@@ -2,7 +2,7 @@
 title: specific_npc.ini
 ---
 
-[Return to parent folder (MISSIONS)](../../Missions/index.md)
+[Return to parent folder (MISSIONS)](../Missions/index.md)
 
 ## Overview
 
