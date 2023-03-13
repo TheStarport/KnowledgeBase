@@ -42,7 +42,7 @@ num_offers = INT, INT
 
 | Parameter  | Information                                                                                           |
 | ---------- | ----------------------------------------------------------------------------------------------------- |
-| num_offers | Integers are MIN and MAX number of missions offered by the mission board vendor here at any one time. |
+| num_offers | Integers are MIN and MAX number of missions offered by the mission board vendor here at any one time.  It should be noted that max mission count is not enforced. Eventually the amount of valid or available mission vignettes will limit it. |
 
 ### [BaseFaction]
 
