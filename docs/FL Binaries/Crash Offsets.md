@@ -25,7 +25,7 @@ In order to get the offset from a crash:
 | common.dll | af690   | adoxa            | INI_Reader constructor; problem with normal FLHook (uses 1024 bytes of data, but 5480 bytes are required; plugin version uses 8192).                                    |
 | common.dll | 5e010   | adoxa            | Part of function Fuse::UnBurn, if that helps                                                                                                                            |
 | common.dll | e3f9d   | adoxa            | Memory allocation failure.                                                                                                                                              |
-| common.dll | f24a0   | adoxa            | Deliberate segfault (presumably a "this should never happen" scenario).                                                                                                 |
+| common.dll | f24a0   | adoxa            | Deliberate segfault (presumably a "this should never happen" scenario).*                                                                                                |
 | common.dll | 103141  | Huor             | Related to PhySys::PhyCollisionStateManager::enable_collisions.                                                                                                         |
 | common.dll | 603d6   | HeIIoween        | Originates from from IObjInspectImpl::is_targetable: something that shouldn't have been targeted has been targeted.                                                     |
 | common.dll | 10dea   | Alex             | Good missing equipment line.                                                                                                                                            |
@@ -40,6 +40,8 @@ In order to get the offset from a crash:
 | common.dll | 9143    | BC46             | Specified loadout for [MsnSolar] is not defined in loadouts.ini.                                                                                                        |
 | common.dll | 62ffbeb | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                                                               |
 | common.dll | 4fe6c   | drakohen         | CShip::Launch causes a CTD when the client and server don't have matching base nicknames in the [Object] entry in a system INI. The client is the one that has the CTD. |
+
+*This occured with a bad `rotation_inertia` value (0, 0, 0) in shiparch.ini (-R, 2023-03-13)
 
 ### content.dll
 
@@ -60,7 +62,7 @@ In order to get the offset from a crash:
 | content.dll | f7c2f  | Ruppetthemuppet  | Bad rmlootprops.ini entries.                                                                                                         |
 | content.dll | c458f  | FriendlyFire     | Patrol encounter contains a faction that is not defined in the related base's BaseFaction entries.                                   |
 | content.dll | 12e10  | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                            |
-
+| content.dll | 956e4  | Ruppetthemuppet  | npc_ship in faction_prop.ini listed that does not exist.                                                                             |
 ### server.dll
 
 | File       | Offset | Found by        | Description                                                                                                         |
@@ -72,6 +74,7 @@ In order to get the offset from a crash:
 | server.dll | 76fdf  | HeIIoween       | Related to loading a player. Possibly a corrupt character file.                                                     |
 | server.dll | 17f38  | Ruppetthemuppet | Related to a bad ship loadout. Occurs after Loadout::Get (presumably returning NULL), called when a ship is created |
 | server.dll | 702064 | Laz             | Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry           |
+| server.dll | 2247f  | Ruppetthemuppet | NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes.                              |
 
 ### Miscellaneous
 
