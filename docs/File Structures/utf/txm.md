@@ -13,9 +13,50 @@ Freelancer supports these types:
 * Uncompressed Targa (.tga) images in 16-bit (5551, RGB) mode, 24-bit mode (888, RGB) and 32-bit mode (8888, RGBA). ❗ RLE compressed Targa and/or palette maps are unsupported.
 * DirectDrawSurface (.dds) images in uncompressed or DXT compressed modes. Cubemaps are supported for environment mapping.
 
-## Texture animation
+```mermaid
+stateDiagram-v2
+    direction LR
+    state type <<choice>>
+
+    mips: MIP0 … MIP9
+    Library: Texture library
+
+    [*] --> Library
+    Library --> texture_name
+    texture_name --> type
+    type --> mips : Targa bitmaps
+    type --> MIPS : DDS bitmap
+    type --> CUBE : DDS cubemap
+```
+
+Targa images are individually stored as MIPn entries starting with 0 being full size and each subsequent entry half the size of previous mipmap.
+DirectDrawSurface image will embed mipmaps (if it has any) and will go into MIPS entry.
+
+# Texture animation
 
 Freelancer has frame-based (flipbook) animation for textures.
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    mips: MIPn
+    Library: Texture library
+    TexCount: Texture count
+    FrameCount: Frame count
+    FrameRects: Frame rects
+
+    [*] --> Library
+    Library --> animated_texture
+    animated_texture --> TexCount
+    animated_texture --> FrameCount
+    animated_texture --> FPS
+    animated_texture --> FrameRects
+
+    Library --> animated_texture_0
+    animated_texture_0 --> mips
+```
+
 
 | Name          | Type      | Description                             |
 | ------------- | --------- | --------------------------------------- |

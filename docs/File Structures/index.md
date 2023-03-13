@@ -4,8 +4,6 @@ description: A collection of all knowledge amassed on the various data structure
 sidebar_position: 2
 ---
 
-[Return to parent folder (Root)](..)
-
 File types:
 
 * [INI](ini)
@@ -15,11 +13,12 @@ File types:
 
 UTF assets:
 
-* [Alchemy (ale)](utf/ale)
-* [Sphere model (sph)](utf/sph)
+* [Alchemy (.ale)](utf/ale)
+* [Sphere model (.sph)](utf/sph)
 * [Rigid single-part model (.3db)](utf/3db)
-* [Rigid compound model (cmp)](utf/cmp)
-* [Deformable model dfm)](utf/dfm)
+* [Rigid compound model (.cmp)](utf/cmp)
+* [Deformable model (.dfm)](utf/dfm)
+* [Anmation (.anm)](utf/anm)
 * [Mesh library (VMesh) (.3db, .cmp, .vms)](utf/vmesh)
 * [Material library (mat)](utf/mat)
 * [Texture library (txm)](utf/txm)

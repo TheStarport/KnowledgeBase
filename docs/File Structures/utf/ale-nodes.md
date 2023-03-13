@@ -6,36 +6,7 @@ title: Alchemy Nodes
 
 ## Overview
 
-List of known node types:
-
-| Name                 | Description                                                        |
-| -------------------- | ------------------------------------------------------------------ |
-| FxNode               | Can be used to group multiple nodes for transformations.           |
-| ~~FxEmitter~~        | Unused.                                                            |
-| FxCubeEmitter        | Cube volume emitter.                                               |
-| FxSphereEmitter      | Sphere volume emitter.                                             |
-| FxConeEmitter        | Cone volume emitter.                                               |
-| ~~FxAppearance~~     | Unused.                                                            |
-| FxBasicAppearance    | Simple camera-facing billboard sprite.                             |
-| FLDustAppearance     | Billboard sprite which changes transparency with camera motion.    |
-| FxOrientedAppearance | Flat sprite with orientation unaffected by particle direction.     |
-| FxRectAppearance     | -                                                                  |
-| FxPerpAppearance     | Billboard sprite facing perpendicular to its particle direction.   |
-| FLBeamAppearance     | Crossing rect appearances forming line segments from particles.    |
-| FxParticleAppearance | Appearance which uses other effects in same .ale to visualize.     |
-| FxMeshAppearance     | Does not work.                                                     |
-| ~~FxField~~          | Unused.                                                            |
-| FxRadialField        | Attractor/reflector field.                                         |
-| FxCollideField       | Flat surface reflection field.                                     |
-| FxAirField           | Overwrites particle velocity.                                      |
-| FxGravityField       | Accelerates particles.                                             |
-| FxTurbulenceField    | Randomly shake particles.                                          |
-| FLDustField          | Keeps particles visualized within its sphere volume only.          |
-| FLBeamField          | Unknown. Can be used to anchor first particle of FLBeamAppearance. |
-
-* "FL" prefix in some names is not a typo.
-
-### Properties
+## Properties
 
 These are the list of known properties used in alchemy node archetypes.
 
@@ -94,7 +65,7 @@ These are the list of known properties used in alchemy node archetypes.
 | ParticleApp_DeathName          | String         | Refers to effect name displayed at the end.                         |
 | ParticleApp_UseDynamicRotation | Boolean        | Applies transformation from this node.                              |
 | ParticleApp_SmoothRotation     | Boolean        |                                                                     |
-| MeshApp_MeshId                 | Integer        | Unknown                                                             |
+| MeshApp_MeshId                 | Integer        | Unknown. Mesh FLCRC? Mesh group start index?                        |
 | MeshApp_MeshName               | String         | Unknown                                                             |
 | MeshApp_UseParticleTransform   | Boolean        | Enables individual particle transform?                              |
 | MeshApp_ParticleTransform      | Transform      | Individual particle transform?                                      |
@@ -116,12 +87,24 @@ These are the list of known properties used in alchemy node archetypes.
 | 0x0ABE0402                     | Boolean        | Unknown.                                                            |
 | 0xE63AA248                     | Animated curve | Unknown.                                                            |
 
-❔ 0xE63AA248 type appears in some FLDustField nodes.
-❔ 0x0BA0B3BB, 0x03503B61 and 0x0ABE0402 types appear in tail.app (FLBeamAppearance) of gf_tradelaneship01.ale.
+* ❔ 0xE63AA248 type appears in some FLDustField nodes.
+* ❔ 0x0BA0B3BB, 0x03503B61 and 0x0ABE0402 types appear in tail.app (FLBeamAppearance) of gf_tradelaneship01.ale.
 
-## Templates
+## Nodes
+
+* "FL" prefix in some names is not a typo.
+
+### FxNode
+
+Can be used to group multiple nodes for transformations.
+
+* Node_Name
+* Node_LifeSpan
+* Node_Transform
 
 ### FxCubeEmitter
+
+Cube volume emitter.
 
 * Node_Name
 * Node_LifeSpan
@@ -142,6 +125,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxSphereEmitter
 
+Sphere volume emitter.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -157,6 +142,8 @@ These are the list of known properties used in alchemy node archetypes.
 * SphereEmitter_MaxRadius
 
 ### FxConeEmitter
+
+Cone volume emitter.
 
 * Node_Name
 * Node_LifeSpan
@@ -175,6 +162,8 @@ These are the list of known properties used in alchemy node archetypes.
 * ConeEmitter_MaxSpread
 
 ### FxBasicAppearance
+
+Simple camera-facing billboard sprite.
 
 * Node_Name
 * Node_LifeSpan
@@ -220,6 +209,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxOrientedAppearance
 
+Flat sprite with orientation unaffected by particle direction.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -239,6 +230,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxPerpAppearance
 
+Billboard sprite facing perpendicular to its particle direction.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -256,6 +249,8 @@ These are the list of known properties used in alchemy node archetypes.
 * BasicApp_FlipTexV
 
 ### FLBeamAppearance
+
+Crossing rect appearances forming line segments from particles.
 
 * Node_Name
 * Node_LifeSpan
@@ -278,6 +273,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FLDustAppearance
 
+Billboard sprite which changes transparency with camera motion: when idle sprites are transparent and gain opacity as camera either moves or rotates.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -294,6 +291,11 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxParticleAppearance
 
+Appearance which uses other effects in same .ale to visualize.
+When alive particles will play effect referenced in `ParticleApp_LifeName` and play `ParticleApp_DeathName` once expired.
+`ParticleApp_UseDynamicRotation` will apply rotation from particle orientation.
+`ParticleApp_SmoothRotation` toggles spherical linear interpolation for rotation motion.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -303,6 +305,8 @@ These are the list of known properties used in alchemy node archetypes.
 * ParticleApp_SmoothRotation
 
 ### FxMeshAppearance
+
+❗ Does not work.
 
 * Node_Name
 * Node_LifeSpan
@@ -314,6 +318,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxRadialField
 
+Attractor/reflector field.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -324,12 +330,16 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxGravityField
 
+Accelerates particles. Use `Node_Transform` rotation to change direction.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
 * GravityField_Gravity
 
 ### FxCollideField
+
+Creates flat surface reflection field.
 
 * Node_Name
 * Node_LifeSpan
@@ -340,6 +350,8 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FxTurbulenceField
 
+Randomly shake particles.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
@@ -347,6 +359,8 @@ These are the list of known properties used in alchemy node archetypes.
 * TurbulenceField_Approach
 
 ### FxAirField
+
+Overwrites particle velocity.
 
 * Node_Name
 * Node_LifeSpan
@@ -356,7 +370,15 @@ These are the list of known properties used in alchemy node archetypes.
 
 ### FLDustField
 
+Keeps particles visualized within its sphere volume only.
+
 * Node_Name
 * Node_LifeSpan
 * Node_Transform
 * SphereEmitter_MaxRadius
+
+### FLBeamField
+
+* Node_Name
+* Node_LifeSpan
+* Node_Transform

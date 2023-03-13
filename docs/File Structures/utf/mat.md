@@ -7,6 +7,17 @@ title:  Material Library
 
 Materials are either stored in separate file (.mat) or embedded into model files (.3db, .cmp, .dfm, etc).
 
+```mermaid
+flowchart LR
+    \ --> A[Texture library]
+    A --> B[texture]
+    \ --> M[Material library]
+    M --> M1[material]
+    M1 --> DT(Dt_name)
+    M1 --> T(Type)
+    DT -.-> B
+```
+
 Certain assets cannot have reference to external material file and will require materials to be embedded directly in model file, such as starspheres, cutscene props and deformable models.
 
 ### Material types
@@ -93,7 +104,21 @@ When model uses both transparent and non-transparent (opaque) materials it shoul
 * Dm0_name, Dm0_flags and TileRate0 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
 * Dm1_name, Dm1_flags and TileRate1 are used in DetailMap2Dm1Msk2PassMaterial, IllumDetailMapMaterial, Masked2DetailMapMaterial.
 
-## Material Animation
+## Material animation
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    Library: Material library
+
+    [*] --> Library
+    Library --> MaterialAnim
+    MaterialAnim --> material_name
+    material_name --> MACount
+    material_name --> MADeltas
+    material_name --> MAKeys
+    material_name --> MAFlags
+```
 
 Material animation is stored in model file and permits simple UV offset and scaling looped keyframe animation.
 

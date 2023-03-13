@@ -8,6 +8,15 @@ title: Mesh library
 
 Meshes are usually embedded into rigid model files (.3db and .cmp) with exception of UI where mesh data is stored in separate .vms file.
 
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> VMeshLibrary
+    VMeshLibrary --> mesh.vms
+    mesh.vms --> VMeshData
+```
+
 ## VMeshData
 
 VMeshData is pretty much a big vertex/index buffer that contains all vertices and triangles of one or multiple parts. However when containing meshes of multiple parts VMeshData isn’t directly aware of how many has, it’s a dumb storage, but an indirect indication that another part begins within its data set is when VMeshGroup.vertexStart is 0 and when vertex index in triangle also starts from 0. Normally parts never share vertices, but mesh groups within a part may.
@@ -20,9 +29,9 @@ VMeshData is pretty much a big vertex/index buffer that contains all vertices an
 | indexCount    | uint16    | Element buffer count.                  |
 | vertexFormat  | uint16    | Direct3D FVF (Flexible Vertex Format). |
 | vertexCount   | uint16    | Vertex buffer count.                   |
-| groups        | *varying* | Mesh groups.                           |
-| indices       | *varying* | Element indices.                       |
-| vertices      | *varying* | Vertex attribute data.                 |
+| *groups*      | *varying* | Mesh groups.                           |
+| *indices*     | *varying* | Element indices.                       |
+| *vertices*    | *varying* | Vertex attribute data.                 |
 
 * Element indices are uint16.
 * Vertex attribute length depends on FVF mode.
@@ -65,6 +74,23 @@ A mesh group is a collection of vertices and vertex indices forming triangles th
 
 Pointer to chunk of data in VMeshData.
 
+```mermaid
+stateDiagram-v2
+    direction LR
+    state type <<choice>>
+
+    Levels: Level0 … Level9
+
+    [*] --> type
+    type --> VMeshPart : Single level mesh
+    VMeshPart --> VMeshRef
+    type --> MultiLevel
+    MultiLevel --> Levels
+    MultiLevel --> Switch2
+    Levels --> VMeshPart
+    
+```
+
 | Name        | Type     | Description                                       |
 | ----------- | -------- | ------------------------------------------------- |
 | size        | uint32   | VMeshRef byte size, always 60.                    |
@@ -83,6 +109,14 @@ Pointer to chunk of data in VMeshData.
 
 Uses mesh vertices to construct lines for HUD wireframe view.
 
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> VMeshWire
+    VMeshWire --> VWireData
+```
+
 | Name        | Type      | Description                                                  |
 | ----------- | --------- | ------------------------------------------------------------ |
 | size        | uint32    | VWireData header size, always 16.                            |
@@ -91,7 +125,7 @@ Uses mesh vertices to construct lines for HUD wireframe view.
 | vertexCount | uint16    | Unique vertex count.                                         |
 | indexCount  | uint16    | Element buffer index count.                                  |
 | vertexRange | uint16    | Range between maximum vertex index and minimum vertex index. |
-| indices     | *varying* | A pair of element indices per line drawn.                    |
+| *indices*   | *varying* | A pair of element indices per line drawn.                    |
 
 * Like element indices in mesh these are uint16.
 * There's a limit to how many indices a drawn wireframe model (including any attachments) can have.

@@ -26,30 +26,33 @@ Little-endian byte order.
 
 ### Header
 
-| Name        | Type   | Description                  |
-| ----------- | ------ | ---------------------------- |
-| singnature  | uint32 | Must be 0x494E4942 ("BINI"). |
-| version     | uint32 | Format version (0x1).        |
-| namesOffset | uint32 | Offset to dictionary block.  |
+| Name        | Type      | Description                  |
+| ----------- | --------- | ---------------------------- |
+| singnature  | uint32    | Must be 0x494E4942 ("BINI"). |
+| version     | uint32    | Format version (0x1).        |
+| namesOffset | uint32    | Offset to dictionary block.  |
+| *sections*  | *varying* |                              |
+| *names*     | *varying* |                              |
 
 * Dictionary is a concatenated collection of ASCIIz strings (NUL-terminated ASCII strings).
 * Best keep section and property names before string values in dictionary.
+* After header read sections until namesOffset.
 
 ### Section
 
-After header read sections until namesOffset.
-
-| Name          | Type   | Description                        |
-| ------------- | ------ | ---------------------------------- |
-| nameOffset    | uint16 | Section name offset in dictionary. |
-| propertyCount | uint16 | Number of properties as follow.    |
+| Name          | Type      | Description                        |
+| ------------- | --------- | ---------------------------------- |
+| nameOffset    | uint16    | Section name offset in dictionary. |
+| propertyCount | uint16    | Number of properties as follow.    |
+| *properties*  | *varying* |                                    |
 
 ### Property
 
-| Name       | Type   | Description                         |
-| ---------- | ------ | ----------------------------------- |
-| nameOffset | uint16 | Property name offset in dictionary. |
-| valueCount | uint8  | Number of property values.          |
+| Name       | Type      | Description                         |
+| ---------- | --------- | ----------------------------------- |
+| nameOffset | uint16    | Property name offset in dictionary. |
+| valueCount | uint8     | Number of property values.          |
+| *values*   | *varying* |                                     |
 
 ### Value
 

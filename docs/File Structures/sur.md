@@ -6,9 +6,9 @@ title: SUR
 
 ## Overview
 
-Collision hitbox data for rigid models cmp and .3db).
+Collision hitbox data for rigid models (.cmp and .3db).
 
-It is important to understand the data contained in .sur is meaningless without compound model hierarchy from .cmp as individual part transforms from Cmpnd are needed to correctly arrange hitbox hulls.
+It is important to understand the data contained in .sur is meaningless without compound model hierarchy from .cmp as individual part transforms from `Cmpnd` are needed to correctly arrange hitbox hulls.
 
 Be ware some structures contain uncommon bit lengths for numbers.
 
@@ -30,7 +30,7 @@ Be ware some structures contain uncommon bit lengths for numbers.
 | sectionCount | uint32    | Number of sections in the part. |
 | *section*    | *varying* |                                 |
 
-* PartId is FLCRC32 hash of "Cmpnd/Part_*/Object name" for multi-part model cmp) or 0x0 for single-part model (.3db).
+* PartId is FLCRC32 hash of `Object name` from parts in `Cmpnd` for multi-part model (.cmp) or 0x0 for single-part model (.3db).
 * The exact order of section does not seem to matter but all Freelancer files follow the same order: non-fixed, extent, mesh, hardpoints.
 
 #### Not-Fixed Section
@@ -56,14 +56,14 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 #### Hardpoints Section
 
-| Name        | Type      | Description                     |
-| ----------- | --------- | ------------------------------- |
-| name        | uint32    | Must be 0x64697068 ("hpid").    |
-| count       | uint32    | Number of hardpointId.          |
-| hardpointId | uint32[*] | FLCRC32 hash of hardpoint name. |
+| Name           | Type     | Description                     |
+| -------------- | -------- | ------------------------------- |
+| name           | uint32   | Must be 0x64697068 ("hpid").    |
+| count          | uint32   | Number of hardpointId.          |
+| *hardpointIds* | uint32[] | FLCRC32 hash of hardpoint name. |
 
 * The list indicates which hardpoints will have their own hitbox overridden by provided hull matching the same ID. Otherwise attached objects will retain their own hitboxes.
-* Vanilla models used boxes for HpWeapon hardpoints, hemispheres for HpTurret hardpoints, and some sort of cylinder for equipment hardpoints such as HpCM, HpThrust.
+* Vanilla models used boxes for HpWeapon hardpoints, hemispheres for HpTurret hardpoints, and some sort of cylinder for equipment hardpoints such as HpCM, HpThruster.
 * Providing hull for HpMount and listing it as hardpoint will override shield bubble for ship.
 
 #### Surfaces Section

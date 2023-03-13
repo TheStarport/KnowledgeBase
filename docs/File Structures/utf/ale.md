@@ -8,6 +8,19 @@ title: Alchemy
 
 Alchemy is a particle effects system in Freelancer rendering. Almost all visual effects are made in this system, like weapon projectiles, explosions, engine exhausts and many more.
 
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    ALEffectLibData: ALEffectLib
+    AlchemyNodeLibraryData: AlchemyNodeLibrary
+
+    [*] --> ALEffectLib
+    ALEffectLib --> ALEffectLibData
+    [*] --> AlchemyNodeLibrary
+    AlchemyNodeLibrary --> AlchemyNodeLibraryData
+```
+
 Alchemy data is presented by two entries in UTF:
 
 * `ALEffectLib` for effect library.
@@ -23,10 +36,11 @@ Strings in ALE structures (astring) are NUL-terminated and prefixed by character
 
 Effect library contains effect entries which are referenced in effect .ini files via `effect_crc` property of [VisEffect] section.
 
-| Name        | Type   | Description           |
-| ----------- | ------ | --------------------- |
-| version     | float  | Version (1.0 or 1.1). |
-| effectCount | uint32 | Effects count.        |
+| Name        | Type      | Description           |
+| ----------- | --------- | --------------------- |
+| version     | float     | Version (1.0 or 1.1). |
+| effectCount | uint32    | Effects count.        |
+| *effects*   | *varying* |                       |
 
 ### Effect
 
@@ -34,14 +48,14 @@ A single effect is comprised of hierarchy of node instances which reference node
 
 Emitters generate particles (points in space with direction and velocity), appearances visualize particles to be rendered with certain shapes, colors and textures, and fields can affect particles physically like applying gravity force to accelerate particles.
 
-| Name            | Type     | Description                             |
-| --------------- | -------- | --------------------------------------- |
-| name            | astring  | Effect name (ex.: "gf_jumpgate_rings"). |
-| unused          | float[4] | Unused floats.                          |
-| instanceCount   | uint32   | Node instances count.                   |
-| *nodeInstances* |          | Node instances.                         |
-| pairCount       | uint32   | Node pair count.                        |
-| *nodePairs*     |          | Node pairs.                             |
+| Name            | Type      | Description                             |
+| --------------- | --------- | --------------------------------------- |
+| name            | astring   | Effect name (ex.: "gf_jumpgate_rings"). |
+| unused          | float[4]  | Unused floats.                          |
+| instanceCount   | uint32    | Node instances count.                   |
+| *nodeInstances* | *varying* | Node instances.                         |
+| pairCount       | uint32    | Node pair count.                        |
+| *nodePairs*     | *varying* | Node pairs.                             |
 
 * Unused floats appear only when version is 1.1f.
 
@@ -69,27 +83,28 @@ Each node pair is:
 
 Node library is a collection of node archetypes. Nodes have type property describing its behavior and list of properties, some of which are fixed values and some are animated.
 
-| Name      | Type    | Description           |
-| --------- | ------- | --------------------- |
-| version   | float32 | Version (1.0 or 1.1). |
-| nodeCount | uint32  | Node count.           |
-| *nodes*   |         | Node archetype.       |
+| Name      | Type      | Description           |
+| --------- | --------- | --------------------- |
+| version   | float32   | Version (1.0 or 1.1). |
+| nodeCount | uint32    | Node count.           |
+| *nodes*   | *varying* | Node archetype.       |
 
 Individual node archetype contains:
 
-| Name         | Type    | Description                           |
-| ------------ | ------- | ------------------------------------- |
-| name         | astring | Node type (ex.: "FxBasicAppearance"). |
-| *properties* |         | Node properties.                      |
+| Name         | Type      | Description                           |
+| ------------ | --------- | ------------------------------------- |
+| name         | astring   | Node type (ex.: "FxBasicAppearance"). |
+| *properties* | *varying* | Node properties.                      |
+
+* Read node properties until property type is 0.
 
 Each property:
 
-| Name | Type   | Description                                |
-| ---- | ------ | ------------------------------------------ |
-| type | uint16 | Property value type.                       |
-| name | uint32 | FLCRC32 of property name (case-sensitive). |
-
-* Read node properties until property type is 0.
+| Name   | Type      | Description                                |
+| ------ | --------- | ------------------------------------------ |
+| type   | uint16    | Property value type.                       |
+| name   | uint32    | FLCRC32 of property name (case-sensitive). |
+| *data* | *varying* | Property data based on type.               |
 
 Type is:
 
@@ -164,20 +179,20 @@ Possible values for source and target are:
 
 ### Animated float (0x200)
 
-| Name          | Type  | Description                          |
-| ------------- | ----- | ------------------------------------ |
-| easing        | uint8 | Blending value easing type.          |
-| keyframeCount | uint8 | Blending keyframe count (1 or more). |
-| *keyframes*   |       | Blending keyframes.                  |
+| Name          | Type      | Description                          |
+| ------------- | --------- | ------------------------------------ |
+| easing        | uint8     | Blending value easing type.          |
+| keyframeCount | uint8     | Blending keyframe count (1 or more). |
+| *keyframes*   | *varying* | Blending keyframes.                  |
 
 Each blending parameter keyframe:
 
-| Name          | Type  | Description                       |
-| ------------- | ----- | --------------------------------- |
-| key           | float | Parameter key.                    |
-| easing        | uint8 | Value easing type.                |
-| keyframeCount | uint8 | Value keyframe count (1 or more). |
-| *keyframes*   |       | Value keyframes.                  |
+| Name          | Type      | Description                       |
+| ------------- | --------- | --------------------------------- |
+| key           | float     | Parameter key.                    |
+| easing        | uint8     | Value easing type.                |
+| keyframeCount | uint8     | Value keyframe count (1 or more). |
+| *keyframes*   | *varying* | Value keyframes.                  |
 
 Each value keyframe:
 
@@ -190,20 +205,20 @@ Each value keyframe:
 
 ### Animated color (0x201)
 
-| Name          | Type  | Description                          |
-| ------------- | ----- | ------------------------------------ |
-| easing        | uint8 | Blending value easing type.          |
-| keyframeCount | uint8 | Blending keyframe count (1 or more). |
-| *keyframes*   |       | Blending keyframes.                  |
+| Name          | Type      | Description                          |
+| ------------- | --------- | ------------------------------------ |
+| easing        | uint8     | Blending value easing type.          |
+| keyframeCount | uint8     | Blending keyframe count (1 or more). |
+| *keyframes*   | *varying* | Blending keyframes.                  |
 
 Each blending parameter keyframe:
 
-| Name          | Type  | Description                       |
-| ------------- | ----- | --------------------------------- |
-| key           | float | Parameter key.                    |
-| easing        | uint8 | Value easing type.                |
-| keyframeCount | uint8 | Value keyframe count (1 or more). |
-| *keyframes*   |       | Value keyframes.                  |
+| Name          | Type      | Description                       |
+| ------------- | --------- | --------------------------------- |
+| key           | float     | Parameter key.                    |
+| easing        | uint8     | Value easing type.                |
+| keyframeCount | uint8     | Value keyframe count (1 or more). |
+| *keyframes*   | *varying* | Value keyframes.                  |
 
 Each value keyframe:
 
@@ -216,21 +231,21 @@ Each value keyframe:
 
 ### Animated curve (0x202)
 
-| Name          | Type  | Description                          |
-| ------------- | ----- | ------------------------------------ |
-| easing        | uint8 | Blending value easing type.          |
-| keyframeCount | uint8 | Blending keyframe count (1 or more). |
-| *keyframes*   |       |                                      |
+| Name          | Type      | Description                          |
+| ------------- | --------- | ------------------------------------ |
+| easing        | uint8     | Blending value easing type.          |
+| keyframeCount | uint8     | Blending keyframe count (1 or more). |
+| *keyframes*   | *varying* |                                      |
 
 Each blending parameter keyframe:
 
-| Name          | Type   | Description                            |
-| ------------- | ------ | -------------------------------------- |
-| key           | float  | Parameter key.                         |
-| defaultValue  | float  | Default value.                         |
-| wrapFlags     | uint16 | Wrapping flags for out of bounds keys. |
-| keyframeCount | uint16 | Keyframe count (0 or more).            |
-| *keyframes*   |        | Value keyframes.                       |
+| Name          | Type      | Description                            |
+| ------------- | --------- | -------------------------------------- |
+| key           | float     | Parameter key.                         |
+| defaultValue  | float     | Default value.                         |
+| wrapFlags     | uint16    | Wrapping flags for out of bounds keys. |
+| keyframeCount | uint16    | Keyframe count (0 or more).            |
+| *keyframes*   | *varying* | Value keyframes.                       |
 
 Each value keyframe:
 
