@@ -12,7 +12,8 @@ Freelancer stores character files in standard ini file format. They may be encry
 
 The first four bytes of an encrypted file are FLS1. The encryption algorithm is show here:
 
-```private static byte[] gene = { (byte)'G', (byte)'e', (byte)'n', (byte)'e' }; byte[] decrypt(byte[] buf) {
+```
+private static byte[] gene = { (byte)'G', (byte)'e', (byte)'n', (byte)'e' }; byte[] decrypt(byte[] buf) {
 
  if (buf.Length >= 4 && buf[0] == 'F' && buf[1] == 'L' && buf[2] == 'S' && buf[3] == '1')
  {
