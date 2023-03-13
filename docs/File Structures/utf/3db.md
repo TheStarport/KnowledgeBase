@@ -1,4 +1,10 @@
-# .3db (Rigid model)
+---
+title: 3DB
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 .3db UTF file.
 
@@ -16,8 +22,6 @@ stateDiagram-v2
 
     meshType --> VMeshPart
     meshType --> MultiLevel
-
-
 
     VMeshPart --> VMeshRef
     MultiLevel --> Levels
@@ -42,8 +46,6 @@ To display model mesh root entry should contain either `VMeshPart` or `MultiLeve
 Each level entry should contain `VMeshPart` (which in turn should contain `VMeshRef`) pointing to chunk in `VMeshData` to draw as LOD mesh.
 
 `MultiLevel` may contain `Switch2` entry as array of float numbers starting with 0 and each subsequent number a maximum range for a level.
-
-
 
 ## HUD wireframe
 

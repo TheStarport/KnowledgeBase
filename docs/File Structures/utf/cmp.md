@@ -1,4 +1,10 @@
-# .cmp (Compound model)
+---
+title: CMP
+---
+
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
 
 Compound comprised for multiple parts. Ships with destructible parts, stations with docking ports having moving doors and so forth.
 

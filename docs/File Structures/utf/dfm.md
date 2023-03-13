@@ -1,10 +1,16 @@
-# .dfm (Deformable model)
+---
+title: DFM
+---
 
+[Return to parent folder (File Structures)](../index.md)
+
+## Overview
+
+Deformable (character) models.
 
 | Name      | Type    | Description                                                                                             |
 | --------- | ------- | ------------------------------------------------------------------------------------------------------- |
 | Fractions | float[] | LOD fractions from range defined in INIs, amount of floats indices how many Mesh* entries are expected. |
-
 
 ## Face groups
 
