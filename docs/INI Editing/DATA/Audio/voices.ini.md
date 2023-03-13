@@ -25,14 +25,14 @@ This means that when the game looks for message `gcs_combat_scream_01-` for voic
 
 ```ini
 [Voice] 
-extend = STRING 
+nickname = STRING 
 script = STRING 
 script = STRING
 ```
 
 | Parameter  | Information                                                                                                        |
 | ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| extend     | Nickname of the voice that is being defined.                                                                       |
+| nickname     | Nickname of the voice that is being defined.                                                                       |
 | script (1) | Nickname of the head script that should be used while playing the sounds specified for that voice and that action. |
 | script (2) | Nickname of the body script that should be used while playing the sounds specified for that voice and that action. |
 
