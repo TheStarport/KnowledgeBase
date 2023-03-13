@@ -4,7 +4,7 @@ description: List of files within the cockpits folder
 id: cockpits
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Cockpits Folder
 

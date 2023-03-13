@@ -4,7 +4,7 @@ description: List of files within the randommissions folder
 id: randommissions
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## RandomMissions Folder
 

@@ -4,7 +4,7 @@ description: List of files within the ships folder
 id: ships
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Ships Folder
 

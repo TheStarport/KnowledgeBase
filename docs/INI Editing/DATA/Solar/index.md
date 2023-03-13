@@ -4,7 +4,7 @@ description: List of files within the solar folder
 id: solar
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Solar Folder
 

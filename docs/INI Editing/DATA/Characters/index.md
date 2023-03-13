@@ -4,7 +4,7 @@ description: List of files within the characters folder
 id: characters
 ---
 
-[Return to parent folder (DATA)](../../DATA/index.md)
+[Return to parent folder (DATA)](../index.md)
 
 ## Missions Folder
 

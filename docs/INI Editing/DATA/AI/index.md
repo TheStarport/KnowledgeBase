@@ -4,7 +4,7 @@ description: List of files within the AI folder
 id: ai
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Audio Folder
 

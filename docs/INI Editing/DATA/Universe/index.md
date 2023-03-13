@@ -4,7 +4,7 @@ description: List of files within the universe folder
 id: universe
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Universe Folder
 

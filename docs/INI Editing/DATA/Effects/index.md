@@ -4,7 +4,7 @@ description: List of files within the effects folder
 id: effects
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Effects Folder
 

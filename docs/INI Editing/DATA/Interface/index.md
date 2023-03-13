@@ -4,7 +4,7 @@ description: List of files within the interface folder
 id: interface
 ---
 
-[Return to parent folder (DATA)](../DATA)
+[Return to parent folder (DATA)](../index.md)
 
 ## Interface Folder
 
