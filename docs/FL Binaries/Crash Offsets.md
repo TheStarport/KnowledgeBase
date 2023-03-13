@@ -20,24 +20,26 @@ In order to get the offset from a crash:
 
 ### common.dll
 
-| File       | Offset | Found by         | Description                                                                                                                          |
-| ---------- | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| common.dll | af690  | adoxa            | INI_Reader constructor; problem with normal FLHook (uses 1024 bytes of data, but 5480 bytes are required; plugin version uses 8192). |
-| common.dll | 5e010  | adoxa            | Part of function Fuse::UnBurn, if that helps                                                                                         |
-| common.dll | e3f9d  | adoxa            | Memory allocation failure.                                                                                                           |
-| common.dll | f24a0  | adoxa            | Deliberate segfault (presumably a "this should never happen" scenario).                                                              |
-| common.dll | 103141 | Huor             | Related to PhySys::PhyCollisionStateManager::enable_collisions.                                                                      |
-| common.dll | 603d6  | HeIIoween        | Originates from from IObjInspectImpl::is_targetable: something that shouldn't have been targeted has been targeted.                  |
-| common.dll | 10dea  | Alex             | Good missing equipment line.                                                                                                         |
-| common.dll | 91f38  | HeIIoween        | ship_archetype = `<blank>` in players file                                                                                           |
-| common.dll | 5be63  | Lord of the Hell | Missing exclusion zone, but is called in asteroid/nebula file - look to FlSpew.txt for zone nickname                                 |
-| common.dll | 25cc9  | Lord of the Hell | Bad surface file                                                                                                                     |
-| common.dll | 62555  | Gold_Sear        | Occurs when docking with a tradelane that has neither a prev_ring nor a next_ring entry                                              |
-| common.dll | f20e3  | Cpt_Rei_Fukai    | Bad thruster model                                                                                                                   |
-| common.dll | c22fe  | Cpt_Rei_Fukai    | Occurs when you try to load a save game that contains a reputation to a faction that doesn't exist in initialworld.ini               |
-| common.dll | aa91a. | Cpt_Rei_Fukai    | Occurs when you try to buy a ship which contains an invalid item in its package. E.g the nickname of the engine does not exist.      |
-| common.dll | 4aa02. | Cellulanus       | Occurs when an NPC that was using a weapon that's model wasn't actually set to be a gun model is destroyed.                          |
-| common.dll | 9143   | BC46             | Specified loadout for [MsnSolar] is not defined in loadouts.ini.                                                                     |
+| File       | Offset  | Found by         | Description                                                                                                                                                             |
+| ---------- | ------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| common.dll | af690   | adoxa            | INI_Reader constructor; problem with normal FLHook (uses 1024 bytes of data, but 5480 bytes are required; plugin version uses 8192).                                    |
+| common.dll | 5e010   | adoxa            | Part of function Fuse::UnBurn, if that helps                                                                                                                            |
+| common.dll | e3f9d   | adoxa            | Memory allocation failure.                                                                                                                                              |
+| common.dll | f24a0   | adoxa            | Deliberate segfault (presumably a "this should never happen" scenario).                                                                                                 |
+| common.dll | 103141  | Huor             | Related to PhySys::PhyCollisionStateManager::enable_collisions.                                                                                                         |
+| common.dll | 603d6   | HeIIoween        | Originates from from IObjInspectImpl::is_targetable: something that shouldn't have been targeted has been targeted.                                                     |
+| common.dll | 10dea   | Alex             | Good missing equipment line.                                                                                                                                            |
+| common.dll | 91f38   | HeIIoween        | ship_archetype = `<blank>` in players file                                                                                                                              |
+| common.dll | 5be63   | Lord of the Hell | Missing exclusion zone, but is called in asteroid/nebula file - look to FlSpew.txt for zone nickname                                                                    |
+| common.dll | 25cc9   | Lord of the Hell | Bad surface file                                                                                                                                                        |
+| common.dll | 62555   | Gold_Sear        | Occurs when docking with a tradelane that has neither a prev_ring nor a next_ring entry                                                                                 |
+| common.dll | f20e3   | Cpt_Rei_Fukai    | Bad thruster model                                                                                                                                                      |
+| common.dll | c22fe   | Cpt_Rei_Fukai    | Occurs when you try to load a save game that contains a reputation to a faction that doesn't exist in initialworld.ini                                                  |
+| common.dll | aa91a   | Cpt_Rei_Fukai    | Occurs when you try to buy a ship which contains an invalid item in its package. E.g the nickname of the engine does not exist.                                         |
+| common.dll | 4aa02   | Cellulanus       | Occurs when an NPC that was using a weapon that's model wasn't actually set to be a gun model is destroyed.                                                             |
+| common.dll | 9143    | BC46             | Specified loadout for [MsnSolar] is not defined in loadouts.ini.                                                                                                        |
+| common.dll | 62ffbeb | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                                                               |
+| common.dll | 4fe6c   | drakohen         | CShip::Launch causes a CTD when the client and server don't have matching base nicknames in the [Object] entry in a system INI. The client is the one that has the CTD. |
 
 ### content.dll
 
@@ -57,6 +59,7 @@ In order to get the offset from a crash:
 | content.dll | 55727  | Cpt_Rei_Fukai    | Occurs when an encounter is spawned that contains more permutation lines than formations                                             |
 | content.dll | f7c2f  | Ruppetthemuppet  | Bad rmlootprops.ini entries.                                                                                                         |
 | content.dll | c458f  | FriendlyFire     | Patrol encounter contains a faction that is not defined in the related base's BaseFaction entries.                                   |
+| content.dll | 12e10  | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                            |
 
 ### server.dll
 
@@ -68,6 +71,7 @@ In order to get the offset from a crash:
 | server.dll | 2c290  | adoxa           | seems to be another part of docking, and others                                                                     |
 | server.dll | 76fdf  | HeIIoween       | Related to loading a player. Possibly a corrupt character file.                                                     |
 | server.dll | 17f38  | Ruppetthemuppet | Related to a bad ship loadout. Occurs after Loadout::Get (presumably returning NULL), called when a ship is created |
+| server.dll | 702064 | Laz             | Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry           |
 
 ### Miscellaneous
 
