@@ -32,7 +32,7 @@ comm.anim = STRING, STRING
 | nickname  | Must always match the value of *Pilot* in the [Faction](#faction) section.                                                                                                                                                                                  |
 | body      | Reference to a **Costume** (see [costumes.ini](./costumes.ini.md) for available costumes). A male costume is suggested because of differences between the male and female skeletons.                                                                        |
 | comm      |
-| voice     | Reference to a **Voice** (see [voices_recognizable.ini](../Audio/voices_recognizable.ini.md) for available voices). It is highly recommended to keep *trent_voice*, since the player's character has additional voice messages not defined in other voices. |
+| voice     | Reference to a **Voice** (see [voices_recognizable.ini](../Audio/voices.ini.md) for available voices). It is highly recommended to keep *trent_voice*, since the player's character has additional voice messages not defined in other voices. |
 | body.anim | Reference to a set of animations for the body. *Sc_MLBODY_STND_000LV_A_31* is the default and recommended value.                                                                                                                                            |
 | thumb     |
 | comm.anim |
@@ -56,7 +56,7 @@ money = INT
 | strid_desc | Empty DLL reference (default is 11551)?                                                                                                                                                                  |
 | ship       | Reference to a **Ship** (see [shiparch.ini](../Ships/shiparch.ini.md) for flyable ships).                                                                                                                |
 | loadout    | Reference to a **Loadout** (see [loadouts.ini](./../Ships/loadouts.ini.md) in the Ships folder for ship loadouts) Remember the loadout must match the available hardpoints for the *Ship* defined above. |
-| money      | Starting money. Cannot be higher than the maximum money limit (see [server.dll](../../EXE/index.md) for the multiplayer limit).                                                                          |
+| money      | Starting money. Cannot be higher than the maximum money limit (see server.dll for the multiplayer limit).                                                                          |
 
 ### Faction
 
