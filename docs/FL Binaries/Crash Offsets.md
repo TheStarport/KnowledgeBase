@@ -40,6 +40,7 @@ In order to get the offset from a crash:
 | common.dll | 9143    | BC46             | Specified loadout for [MsnSolar] is not defined in loadouts.ini.                                                                                                        |
 | common.dll | 62ffbeb | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                                                               |
 | common.dll | 4fe6c   | drakohen         | CShip::Launch causes a CTD when the client and server don't have matching base nicknames in the [Object] entry in a system INI. The client is the one that has the CTD. |
+| common.dll | 45c30   | Ruppetthemuppet  | `[Asteroids]` block has been declared in a system ini file without a valid zone                                                                                         |
 
 *This occured with a bad `rotation_inertia` value (0, 0, 0) in shiparch.ini (-R, 2023-03-13)
 
