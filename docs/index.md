@@ -9,41 +9,44 @@ slug: /
 
 The location of these INI types is defined in freelancer.ini. They can, for the most part, be placed anywhere within the game directory if the file points to them.
 
-| Name          | Description                                                                                |
-| ------------- | ------------------------------------------------------------------------------------------ |
-| asteroids     | This ini type defines many of the properties of individual asteroid fields found in space. |
-| bases         |                                                                                            |
-| bodyparts     |                                                                                            |
-| concave       |                                                                                            |
-| constants     |                                                                                            |
-| costumes      |                                                                                            |
-| debris        |                                                                                            |
-| effect_shapes |                                                                                            |
-| effects       |                                                                                            |
-| equipment     |                                                                                            |
-| explosions    |                                                                                            |
-| fonts         |                                                                                            |
-| fonts_dir     |                                                                                            |
-| fuses         |                                                                                            |
-| gate_tunnels  |                                                                                            |
-| goods         |                                                                                            |
-| groups        |                                                                                            |
-| HUD           |                                                                                            |
-| igraph        |                                                                                            |
-| intro         |                                                                                            |
-| jump_effect   |                                                                                            |
-| loadouts      |                                                                                            |
-| markets       |                                                                                            |
-| NewCharDB     |                                                                                            |
-| PetalDB       |                                                                                            |
-| rtcslider     |                                                                                            |
-| ships         |                                                                                            |
-| solar         |                                                                                            |
-| sounds        |                                                                                            |
-| stars         |                                                                                            |
-| universe      |                                                                                            |
-| voices        |                                                                                            |
-| WeaponModDB   |                                                                                            |
+| Name          | Description                                                                  |
+| ------------- | ---------------------------------------------------------------------------- |
+| asteroids     | Defines many of the properties of individual asteroid fields found in space. |
+| bases         |                                                                              |
+| bodyparts     |                                                                              |
+| cockpits      |                                                                              |
+| concave       |                                                                              |
+| constants     |                                                                              |
+| costumes      |                                                                              |
+| debris        |                                                                              |
+| effect_shapes |                                                                              |
+| effects       |                                                                              |
+| equipment     |                                                                              |
+| explosions    |                                                                              |
+| fonts         |                                                                              |
+| fonts_dir     |                                                                              |
+| fuses         |                                                                              |
+| gate_tunnels  |                                                                              |
+| goods         |                                                                              |
+| groups        |                                                                              |
+| HUD           |                                                                              |
+| igraph        |                                                                              |
+| intro         |                                                                              |
+| jump_effect   |                                                                              |
+| loadouts      |                                                                              |
+| markets       |                                                                              |
+| NewCharDB     |                                                                              |
+| PetalDB       |                                                                              |
+| rooms         |
+| rtcslider     |                                                                              |
+| ships         |                                                                              |
+| solar         |                                                                              |
+| sounds        |                                                                              |
+| stars         |                                                                              |
+| system        |                                                                              |
+| universe      |                                                                              |
+| voices        |                                                                              |
+| WeaponModDB   |                                                                              |
 
 
 ## Hardcoded INIs
@@ -74,12 +77,6 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 | Name                        | Description | Path |
 | --------------------------- | ----------- | ---- |
 | commodities_per_faction.ini |             |      |
-
-### Cockpits
-
-| Name         | Description | Path |
-| ------------ | ----------- | ---- |
-| cockpits.ini |             |      |
 
 ### FX
 
@@ -140,3 +137,11 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 | Name         | Description | Path |
 | ------------ | ----------- | ---- |
 | stararch.ini |             |      |
+
+### Universe
+
+| Name                     | Description | Path |
+| ------------------------ | ----------- | ---- |
+| NoNavMap.ini             |             |      |
+| paths.ini                |             |      |
+| missioncreatedsolars.ini |             |      |
