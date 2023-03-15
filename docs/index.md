@@ -5,6 +5,137 @@ sidebar_position: 1
 slug: /
 ---
 
-# TODO
+## Typed INIs
 
-* Test Content
+The location of these INI types is defined in freelancer.ini. They can, for the most part, be placed anywhere within the game directory if the file points to them.
+
+| Name          | Description                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| asteroids     | This ini type defines many of the properties of individual asteroid fields found in space. |
+| bases         |                                                                                            |
+| bodyparts     |                                                                                            |
+| concave       |                                                                                            |
+| constants     |                                                                                            |
+| costumes      |                                                                                            |
+| debris        |                                                                                            |
+| effect_shapes |                                                                                            |
+| effects       |                                                                                            |
+| equipment     |                                                                                            |
+| explosions    |                                                                                            |
+| fonts         |                                                                                            |
+| fonts_dir     |                                                                                            |
+| fuses         |                                                                                            |
+| gate_tunnels  |                                                                                            |
+| goods         |                                                                                            |
+| groups        |                                                                                            |
+| HUD           |                                                                                            |
+| igraph        |                                                                                            |
+| intro         |                                                                                            |
+| jump_effect   |                                                                                            |
+| loadouts      |                                                                                            |
+| markets       |                                                                                            |
+| NewCharDB     |                                                                                            |
+| PetalDB       |                                                                                            |
+| rtcslider     |                                                                                            |
+| ships         |                                                                                            |
+| solar         |                                                                                            |
+| sounds        |                                                                                            |
+| stars         |                                                                                            |
+| universe      |                                                                                            |
+| voices        |                                                                                            |
+| WeaponModDB   |                                                                                            |
+
+
+## Hardcoded INIs
+
+The location of these INI file types is hardcoded or otherwise unchangable via normal means. They can be broken down into a few distinct categories:
+
+### AI
+
+|state_graph.db|||
+
+### EXE
+| Name           | Description                                                                                                                                                                | Path                 |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Freelancer.ini | Primarily determines which DLLs and called by FLserver.exe and Freelancer.exe and their load order. Also points to and determines load order of typed INI files.           | `EXE\freelancer.ini` |
+| dacom.ini      | This file handles configuration of the application's start-time settings and library loading.                                                                              | `EXE\dacom.ini`      |
+| dacomsrv.ini   | This file handles configuration of the application's start-time settings and library loading for FLServer.exe specifically. Structure is otherwise identical to dacom.ini. | `EXE\dacomsrv.ini`   |
+
+### DATA
+
+| Name        | Description | Path |
+| ----------- | ----------- | ---- |
+| cameras.ini |             |      |
+| mouse.ini   |             |      |
+
+### Equipment
+
+| Name                        | Description | Path |
+| --------------------------- | ----------- | ---- |
+| commodities_per_faction.ini |             |      |
+
+### Cockpits
+
+| Name         | Description | Path |
+| ------------ | ----------- | ---- |
+| cockpits.ini |             |      |
+
+### FX
+
+| Name          | Description | Path |
+| ------------- | ----------- | ---- |
+| lightanim.ini |             |      |
+
+### Interface
+
+| Name               | Description | Path |
+| ------------------ | ----------- | ---- |
+| buttonmontage.ini  |             |      |
+| navbar.ini         |             |      |
+| buttontextures.ini |             |      |
+| infocardmap.ini    |             |      |
+| keylist.ini        |             |      |
+| keymap.ini         |             |      |
+| knowledgemap.ini   |             |      |
+| optlist.ini        |             |      |
+| rollover.ini       |             |      |
+
+### Missions
+
+| Name                  | Description | Path |
+| --------------------- | ----------- | ---- |
+| encounters.ini        |             |      |
+| empathy.ini           |             |      |
+| faction_prop.ini      |             |      |
+| factionsets.ini       |             |      |
+| formations.ini        |             |      |
+| lootprops.ini         |             |      |
+| mbases.ini            |             |      |
+| mshipprops.ini        |             |      |
+| news.ini              |             |      |
+| npcships.ini          |             |      |
+| pilots_population.ini |             |      |
+| pilots_story.ini      |             |      |
+| ptough.ini            |             |      |
+| rankdiff.ini          |             |      |
+| shipclasses.ini       |             |      |
+| specific_npc.ini      |             |      |
+| voice_properties.ini  |             |      |
+
+### RandomMissions
+
+| Name                     | Description | Path |
+| ------------------------ | ----------- | ---- |
+| diff2money.ini           |             |      |
+| killablesolars.ini       |             |      |
+| npcranktodiff.ini        |             |      |
+| rmlootinfo.ini           |             |      |
+| solarformations.ini      |             |      |
+| vignettecriticalloot.ini |             |      |
+| vignetteparams.ini       |             |      |
+
+### Solar
+
+| Name         | Description | Path |
+| ------------ | ----------- | ---- |
+| stararch.ini |             |      |
