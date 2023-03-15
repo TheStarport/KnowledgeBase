@@ -50,10 +50,6 @@ The location of these INI types is defined in freelancer.ini. They can, for the 
 
 The location of these INI file types is hardcoded or otherwise unchangable via normal means. They can be broken down into a few distinct categories:
 
-### AI
-
-|state_graph.db|||
-
 ### EXE
 | Name           | Description                                                                                                                                                                | Path                 |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -67,6 +63,11 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 | ----------- | ----------- | ---- |
 | cameras.ini |             |      |
 | mouse.ini   |             |      |
+
+### AI
+| Name           | Description | Path |
+| -------------- | ----------- | ---- |
+| state_graph.db |             |      |
 
 ### Equipment
 
