@@ -2,8 +2,6 @@
 title: 3DB
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 .3db UTF file.

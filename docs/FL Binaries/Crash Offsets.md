@@ -1,10 +1,6 @@
 ---
 title: Crash Offsets
-description: List of known crash offsets.
-id: crash-offsets
 ---
-
-[Return to parent folder (FL Binaries)](./index.md)
 
 ## Overview
 

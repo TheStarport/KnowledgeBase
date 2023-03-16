@@ -2,8 +2,6 @@
 title: SUR
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Collision hitbox data for rigid models (.cmp and .3db).

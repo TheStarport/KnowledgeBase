@@ -2,8 +2,6 @@
 title: DFM
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Deformable (character) models.

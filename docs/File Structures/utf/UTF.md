@@ -2,8 +2,6 @@
 title:  UTF (Universal Tree Format)
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Container file format used to store various assets in Freelancers.

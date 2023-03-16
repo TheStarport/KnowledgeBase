@@ -2,8 +2,6 @@
 title: Alchemy Nodes
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 ## Properties
