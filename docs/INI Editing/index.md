@@ -1,9 +1,10 @@
 ---
 title: INI Editing
-description: List of files within the data folder
-id: data
+description: Index for the INI editing section of this wiki.
+id: ini-editing
 ---
 
+INIs in Freelancer can be broadly divided into two types, typed and hardcoded. Some typed inis have restrictions on how they can be named or where they can be placed. Please check individual ini page entries before moving these from their default locations. Where these can be found or defined is listed below:
 
 ## Typed INIs
 
@@ -30,15 +31,15 @@ The location of these INI types is defined in freelancer.ini. They can, for the 
 | [gate_tunnels](typed-inis/gate_tunnels.md)         | Defines elements of jump gate and jump hole tunnel effects.                                                                     | freelancer.ini  |
 | [goods](typed-inis/goods.md)                       | Defines the sale price and some properties of equipment and ships.                                                              | freelancer.ini  |
 | [groups](typed-inis/groups.md)                     | Defines the initial state of the game world, with regards to player faction relationships and locked jump gates and jump holes. | freelancer.ini  |
-| [HUD](typed-inis/HUD.md)                           | Defines HUD elements.                                                                                                           | freelancer.ini  |
+| [HUD](typed-inis/hud.md)                           | Defines HUD elements.                                                                                                           | freelancer.ini  |
 | [igraph](typed-inis/igraph.md)                     | Defines elements of light sources.                                                                                              | freelancer.ini  |
 | [intro](typed-inis/intro.md)                       | Defines elements of the game launcher that are largely unused.                                                                  | freelancer.ini  |
 | [jump_effect](typed-inis/jump_effect.md)           | Defines elements of jump gate and jump hole tunnel effects.                                                                     | freelancer.ini  |
 | [loadouts](typed-inis/loadouts.md)                 | Defines the equipment that is attached to ships and solars.                                                                     | freelancer.ini  |
 | [markets](typed-inis/markets.md)                   | Defines the sale location and properties of equipment and ships.                                                                | freelancer.ini  |
 | [nebula_fields](typed-inis/nebula_fields.md)       | Defines the properties of individual nebula fields.                                                                             | system          |
-| [newchardb](typed-inis/NewCharDB.md)               | Defines player equipment and situation.                                                                                         | freelancer.ini  |
-| [petaldb](typed-inis/PetalDB.md)                   | Defines several types of prop model used on bases and in cutscenes.                                                             | freelancer.ini  |
+| [newchardb](typed-inis/newchardb.md)               | Defines player equipment and situation.                                                                                         | freelancer.ini  |
+| [petaldb](typed-inis/petaldb.md)                   | Defines several types of prop model used on bases and in cutscenes.                                                             | freelancer.ini  |
 | [rings](typed-inis/rings.md)                       | Defines planetary rings.                                                                                                        | system          |
 | [rooms](typed-inis/rooms.md)                       | Defines the content and UI of rooms on bases.                                                                                   | bases           |
 | [rtcslider](typed-inis/rtcslider.md)               | Defines the properties of some elements used in cutscenes.                                                                      | freelancer.ini  |
@@ -48,11 +49,11 @@ The location of these INI types is defined in freelancer.ini. They can, for the 
 | [system](typed-inis/system.md)                     | Defines the contents of individual systems.                                                                                     | universe        |
 | [universe](typed-inis/universe.md)                 | Indexes bases and systems and defines some of their properties.                                                                 | freelancer.ini  |
 | [voices](typed-inis/voices.md)                     | Defines voices.                                                                                                                 | freelancer.ini  |
-| [weaponmoddb](typed-inis/WeaponModDB.md)           | Defines weapon and shield types and determines their effectiveness against one another.                                         | freelancer.ini  |
+| [weaponmoddb](typed-inis/weaponmoddb.md)           | Defines weapon and shield types and determines their effectiveness against one another.                                         | freelancer.ini  |
 
 ## Hardcoded INIs
 
-The location of these INI file types is hardcoded or otherwise unchangable via normal means. They can be broken down into a few distinct categories:
+The location of these INI file types is hardcoded or otherwise unchangable via normal means. If an entry in the list below is suffixed with `.ini` the file must match this naming pattern. They can be broken down into a few distinct categories:
 
 ### EXE
 | Name                                                   | Description                                                                                                                                                                | Path   |
@@ -139,7 +140,7 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 
 ### Universe
 
-| Name                                                                                 | Description                                           | Path             |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------- |
-| [paths](hardcoded-inis/data/universe/paths.md)                                       | Defines shortest paths used by the autopilot.         | `DATA\UNIVERSE\` |
-| [missioncreatedsolars.ini](hardcoded-inis/data/universe/missioncreatedsolars.ini.md) | Defines solars created during single-player missions. | `DATA\UNIVERSE\` |
+| Name                                                                                 | Description                                                                         | Path             |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------- |
+| [paths](hardcoded-inis/data/universe/paths.md)                                       | Defines shortest paths used by the autopilot. These files are generated at runtime if they don't exist. | `DATA\UNIVERSE\` |
+| [missioncreatedsolars.ini](hardcoded-inis/data/universe/missioncreatedsolars.ini.md) | Defines solars created during single-player missions.                               | `DATA\UNIVERSE\` |
