@@ -3,7 +3,7 @@ title: bodyparts
 ---
 
 ## Overview
-The bodyparts.ini file indexes all character bodies: bodies, heads, hands and accessories. All parts are listed independently.
+The bodyparts ini type indexes all character bodies: bodies, heads, hands and accessories. All parts are listed independently.
 
 ### Vanilla Examples
 
