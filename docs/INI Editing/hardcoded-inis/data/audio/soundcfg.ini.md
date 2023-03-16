@@ -2,8 +2,6 @@
 title: soundcfg.ini
 ---
 
-[Return to parent folder (Audio)](../Audio)
-
 ## Overview
 
 This file appears to govern how audio behaves in Freelancer globally. The `[reverb]` block can be used to govern how specific sounds behave. It's not clear if this file is called by Freelancer or not, more research is required.

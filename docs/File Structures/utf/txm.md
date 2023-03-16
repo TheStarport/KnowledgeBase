@@ -2,8 +2,6 @@
 title:  Texture Library
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Textures are either stored in separate file (.txm) or embedded into model files (.3db, .cmp, .dfm, etc).

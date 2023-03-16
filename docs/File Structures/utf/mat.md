@@ -1,7 +1,6 @@
 ---
 title:  Material Library
 ---
-[Return to parent folder (File Structures)](../index.md)
 
 ## Overview
 

@@ -2,8 +2,6 @@
 title: Alchemy
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Alchemy is a particle effects system in Freelancer rendering. Almost all visual effects are made in this system, like weapon projectiles, explosions, engine exhausts and many more.
