@@ -2,11 +2,9 @@
 title: formations.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
-This file determines formations used by encounters in [encounter INI files](./Encounters/encounters.ini.md).
+This file determines formations used by encounters in [encounter INI files](../../../typed-inis/encounters.md).
 
 ## Syntax
 

@@ -2,8 +2,6 @@
 title: mbases.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This rather monolithic file defines the internals of bases, the NPCs present there, and random mission offers. Some attributes of the base relate to how NPCs behave around it in space. Most notably, you need to ensure your base affiliations and patrol paths line up properly.
@@ -133,18 +131,18 @@ knowdb = STRING ;repeatable
 | Parameter       | Information                                                                                                                                                                                                                                                    |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | nickname        | Internal nickname of the NPC. This is used by the `[BaseFaction]` block                                                                                                                                                                                        |
-| body            | Body for the NPC to use as defined in [bodyparts.ini](../Characters/bodyparts.ini.md).                                                                                                                                                                         |
-| head            | Head for the NPC to use as defined in [bodyparts.ini](../Characters/bodyparts.ini.md).                                                                                                                                                                         |
-| lefthand        | Left hand for the NPC to use as defined in [bodyparts.ini](../Characters/bodyparts.ini.md).                                                                                                                                                                    |
-| righthand       | Right hand for the NPC to use as defined in [bodyparts.ini](../Characters/bodyparts.ini.md).                                                                                                                                                                   |
+| body            | Body for the NPC to use as defined in [bodyparts](../../../typed-inis/bodyparts.md).                                                                                                                                                                         |
+| head            | Head for the NPC to use as defined in [bodyparts](../../../typed-inis/bodyparts.md).                                                                                                                                                                         |
+| lefthand        | Left hand for the NPC to use as defined in [bodyparts](../../../typed-inis/bodyparts.md).                                                                                                                                                                    |
+| righthand       | Right hand for the NPC to use as defined in [bodyparts](../../../typed-inis/bodyparts.md).                                                                                                                                                                   |
 | individual_name | String name for the NPC to use on mouseover.                                                                                                                                                                                                                   |
 | affiliation     | Faction affiliation as defined in [faction_prop.ini](./faction_prop.ini.md)                                                                                                                                                                                    |
-| voice           | Voice for the NPC to use as defined in a `[Voice]` block of [voices.ini](../Audio/voices.ini.md)                                                                                                                                                               |
+| voice           | Voice for the NPC to use as defined in a `[Voice]` block of [voices](../../../typed-inis/voices.md)                                                                                                                                                             |
 | room            | Room this NPC will appear in as defined in an `[MRoom]` block further down in mBases.ini.                                                                                                                                                                      |
 | bribe           | Allows the NPC to offer a bribe for the faction listed in STRING. The two INT values appear to be a price range? (Requires confirmation)                                                                                                                       |
-| rumor           | References two ranks from [rankdiff.ini](../RandomMissions/../Missions/rankdiff.ini.md), then presumably a weight, and finally the STRING to display in the rumor. The rankdiff values referenced appear to be the rank 'range' where these rumors can appear. |
+| rumor           | References two ranks from [rankdiff.ini](rankdiff.ini.md), then presumably a weight, and finally the STRING to display in the rumor. The rankdiff values referenced appear to be the rank 'range' where these rumors can appear. |
 | rumor_type2     | Same syntax as `rumor`. Uncertain what the purpose of this is.                                                                                                                                                                                                 |
-| know            | Used in conjunction with [knowledgemap.ini](../Universe/../Interface/knowledgemap.ini.md). Seems to be a series of strings and finally a weight. Not 100% sure on how this one functions.                                                                      |
+| know            | Used in conjunction with [knowledgemap.ini](../interface/knowledgemap.ini.md). Seems to be a series of strings and finally a weight. Not 100% sure on how this one functions.                                                                      |
 | knowdb          | References an object in space for `know` to reveal.                                                                                                                                                                                                            |
 
 ### [MRoom]

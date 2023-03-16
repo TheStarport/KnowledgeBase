@@ -2,8 +2,6 @@
 title: rankdiff.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file seems to dictate SP story rank pacing. Uncertain of it's exact function. Some function is exposed in Match Job by adoxa, this page probably needs someone with a better understanding of the file to fill it out.

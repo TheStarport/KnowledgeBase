@@ -2,8 +2,6 @@
 title: ptough.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file determines player toughness scale and level based on monetary value. Testing or more information is required to determine what this file reads/is read by

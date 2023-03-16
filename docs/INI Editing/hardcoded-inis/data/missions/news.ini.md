@@ -2,8 +2,6 @@
 title: news.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file governs the news items present in the game, where they appear, and at which point in the storyline they show up.

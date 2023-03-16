@@ -1,8 +1,6 @@
 ---
-title: Cameras.ini
+title: cameras.ini
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 

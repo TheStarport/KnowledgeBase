@@ -2,8 +2,6 @@
 title: empathy.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file determines how a player's actions will impact their reputation with a defined faction.

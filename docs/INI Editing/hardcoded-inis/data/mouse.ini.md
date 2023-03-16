@@ -1,8 +1,6 @@
 ---
-title: Mouse.ini
+title: mouse.ini
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 

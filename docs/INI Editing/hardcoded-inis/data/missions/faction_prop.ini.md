@@ -2,8 +2,6 @@
 title: faction_prop.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file describes the attributes of the factions that you encounter in Freelancer, defining their pilot names, ships, costumes and some AI behaviors.

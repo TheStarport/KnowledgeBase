@@ -2,8 +2,6 @@
 title: pilots_population.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
 This file determines NPC pilot behavior in combat. Documentation on this file is a work in progress.

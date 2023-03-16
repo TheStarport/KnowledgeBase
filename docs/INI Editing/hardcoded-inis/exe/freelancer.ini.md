@@ -1,8 +1,6 @@
 ---
-title: Freelancer.ini
+title: freelancer.ini
 ---
-
-[Return to parent folder (EXE)](../EXE)
 
 ## Overview
 
@@ -39,6 +37,7 @@ Each of the following sections can only be written once, preferably in the order
 ### [ListServer]
 
 This block determines the global listing server that Freelancer.exe and FLServer will attempt to register with on load.
+
 | Key      | Value   | Multiple | Remark |
 | -------- | ------- | -------- | ------ |
 | hostname | ip/name | no       |        |
@@ -47,6 +46,7 @@ This block determines the global listing server that Freelancer.exe and FLServer
 ### [Server]
 
 This block allows you to pre-fill name and description values for FLServer.exe
+
 | Key           | Value   | Multiple | Remark                                                                             |
 | ------------- | ------- | -------- | ---------------------------------------------------------------------------------- |
 | name          | string  | no       |                                                                                    |
@@ -56,6 +56,7 @@ This block allows you to pre-fill name and description values for FLServer.exe
 ### [Initial MP DLLs]
 
 Initials DLL files called by FLServer.exe when it starts.
+
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
 | path | directory                                                                | no       | relative to freelancer.exe |
@@ -64,6 +65,7 @@ Initials DLL files called by FLServer.exe when it starts.
 ### [Initial SP DLLs]
 
 Initial DLL files called when you start a new game or load a game.
+
 | Key  | Value                                                                    | Multiple | Remark                     |
 | ---- | ------------------------------------------------------------------------ | -------- | -------------------------- |
 | path | directory                                                                | no       | relative to freelancer.exe |
@@ -72,6 +74,7 @@ Initial DLL files called when you start a new game or load a game.
 ### [Resources]
 
 String resource files called by Freelancer.exe
+
 | Key | Value | Multiple | Remark |
 | --- | ----- | -------- | ------ |
 | DLL | dll   | yes      |

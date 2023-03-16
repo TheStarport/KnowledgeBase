@@ -2,11 +2,9 @@
 title: shipclasses.ini
 ---
 
-[Return to parent folder (MISSIONS)](../Missions/index.md)
-
 ## Overview
 
-This file defines shipclasses and levels that are called by [encounters](./Encounters/encounters.ini.md) and missions (In the form of levels). Classes appear to be almost entirely arbitrary, and can be thought of as a series of tags that help determine what is allowed to spawn in an encounter.
+This file defines shipclasses and levels that are called by [encounters](../../../typed-inis/encounters.md) and missions (In the form of levels). Classes appear to be almost entirely arbitrary, and can be thought of as a series of tags that help determine what is allowed to spawn in an encounter.
 
 ## Syntax
 
