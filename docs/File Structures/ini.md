@@ -2,8 +2,6 @@
 title: INI
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## Overview
 
 Freelancer INI files come in two forms: plain-text and binary (BINI).

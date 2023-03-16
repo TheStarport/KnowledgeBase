@@ -2,8 +2,6 @@
 title: fl
 ---
 
-[Return to parent folder (File Structures)](../index.md)
-
 ## .fl - FL Character File Format
 
 Freelancer stores character files in standard ini file format. They may be encryped or in plain text. Freelancer will read both formats.
