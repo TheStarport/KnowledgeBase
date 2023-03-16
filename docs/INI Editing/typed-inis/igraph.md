@@ -1,12 +1,14 @@
 ---
-title: IGraph.ini
+title: igraph
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 
-The purpose of IGraphs is not fully known. Their main usage is found in [LightSource sections], where the *atten_curve* is defined as *DYNAMIC_DIRECTION*, one of the vanilla IGraphs.
+The purpose of igraphs is not fully known. Their main usage is found in [LightSource sections], where the *atten_curve* is defined as *DYNAMIC_DIRECTION*, one of the vanilla IGraphs.
+
+### Vanilla Examples
+
+* `DATA\igraph.ini`
 
 ## Syntax
 

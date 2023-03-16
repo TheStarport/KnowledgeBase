@@ -1,12 +1,14 @@
 ---
-title: Concave.ini
+title: concave
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 
-The concave.ini file lists concave objects.
+The concave ini type lists concave objects.
+
+### Vanilla Examples
+
+* `DATA\concave.ini`
 
 ## Syntax
 

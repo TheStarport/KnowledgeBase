@@ -1,12 +1,14 @@
 ---
-title: Constants.ini
+title: constants
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 
-The constants.ini file keeps a lot of standard constants that are used throughout the game. Credits go to *indivisible* for finding the additional constants.
+The constants ini type keeps a lot of standard constants that are used throughout the game. Credits go to *indivisible* for finding the additional constants.
+
+### Vanilla Examples
+
+* `DATA\constants.ini`
 
 ## Syntax
 

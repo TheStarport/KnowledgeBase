@@ -1,19 +1,19 @@
 ---
-title: Voices.ini
+title: voices
 ---
-
-[Return to parent folder (Audio)](../Audio)
 
 ## Overview
 
-The following vanilla files in the audio folder use the same syntax as presented here:
+This ini type defines voice sounds. Please note that while having the same section nickname, voices and sounds do not share the same INI syntax.
 
-* voices_base_female.ini
-* voices_base_male.ini
-* voices_mission**.ini
-* voices_recognizable.ini
-* voices_space_female.ini
-* voices_space_male.ini
+### Vanilla Examples
+
+* `DATA\AUIO\voices_base_female.ini`
+* `DATA\AUIO\voices_base_male.ini`
+* `DATA\AUIO\voices_mission**.ini`
+* `DATA\AUIO\voices_recognizable.ini`
+* `DATA\AUIO\voices_space_female.ini`
+* `DATA\AUIO\voices_space_male.ini`
 
 ## Syntax
 
@@ -32,7 +32,7 @@ script = STRING
 
 | Parameter  | Information                                                                                                        |
 | ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| nickname     | Nickname of the voice that is being defined.                                                                       |
+| nickname   | Nickname of the voice that is being defined.                                                                       |
 | script (1) | Nickname of the head script that should be used while playing the sounds specified for that voice and that action. |
 | script (2) | Nickname of the body script that should be used while playing the sounds specified for that voice and that action. |
 

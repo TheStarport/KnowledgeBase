@@ -1,16 +1,20 @@
 ---
-title: cockpits.ini
+title: cockpits
 ---
-
-[Return to parent folder (Cockpits)](./index.md)
 
 ## Overview
 
-These files describe cockpits and turret cameras used by [shiparch.ini](../Ships/loadouts.ini.md).
+These files describe cockpits and turret cameras used by [ships](ships.md).
+
+### Vanilla Examples
+
+* `DATA\COCKPITS\CORSAIR\corsair_elite.ini`
+* `DATA\COCKPITS\CORSAIR\civilian_vheavy.ini`
+* `DATA\COCKPITS\CORSAIR\r_elite.ini`
 
 ## Syntax
 
-One of each block may be define, extras are ignored
+One of each block may be defined, extras are ignored
 
 ### [Cockpit]
 

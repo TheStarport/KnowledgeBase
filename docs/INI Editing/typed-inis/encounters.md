@@ -1,12 +1,19 @@
 ---
-title: Encounters.ini
+title: encounters
 ---
-
-[Return to parent folder (ENCOUNTERS)](../Encounters/index.md)
 
 ## Overview
 
 These files are used to define encounter behavior and are called by system ini files when an encounter is defined (i.e. `area_scout.ini`). Be warned that encounters are particularly prone to crashes without spew when there are errors, and are determined across multiple ini files.
+
+### Vanilla Examples
+
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisoner.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonerarea_scout.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonerminingp_scavenger.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonerpatrolp_bh_patrol.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonertradelane_trade_transport.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonertradep_trade_freighter_smuggler.ini`
 
 ## Syntax
 

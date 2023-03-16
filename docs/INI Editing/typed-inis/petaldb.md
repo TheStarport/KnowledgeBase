@@ -1,12 +1,14 @@
 ---
-title: PetalDB.ini
+title: pedaldb
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 
-The PetalDB.ini file is used to define the models in the game.
+The PetalDB ini type is used to define the models in the game.
+
+### Vanilla Examples
+
+* `DATA\petaldb.ini`
 
 ## Syntax
 

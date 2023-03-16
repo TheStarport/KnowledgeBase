@@ -1,22 +1,20 @@
 ---
-title: Sounds.ini
+title: sounds
 ---
-
-[Return to parent folder (Audio)](../Audio)
 
 ## Overview
 
-The following vanilla files in the Audio folder use the same syntax as presented here:
+This ini type defines sounds. Please note that while having the same section nickname, voices and sounds do not share the same INI syntax.
 
-* ambience_sounds.ini
-* engine_sounds.ini
-* gf_sounds.ini
-* interface_sounds.ini
-* music.ini
-* sounds.ini
-* story_sounds.ini
+### Vanilla Examples
 
-Please note that while having the same section nickname, voices and sounds do not share the same INI syntax.
+* `DATA\AUIO\ambience_sounds.ini`
+* `DATA\AUIO\engine_sounds.ini`
+* `DATA\AUIO\gf_sounds.ini`
+* `DATA\AUIO\interface_sounds.ini`
+* `DATA\AUIO\music.ini`
+* `DATA\AUIO\sounds.ini`
+* `DATA\AUIO\story_sounds.ini`
 
 ## Syntax
 

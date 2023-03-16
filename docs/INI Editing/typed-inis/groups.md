@@ -1,15 +1,17 @@
 ---
-title: InitialWorld.ini
+title: groups
 ---
-
-[Return to parent folder (DATA)](../DATA)
 
 ## Overview
 
-The initialworld.ini file has two main purposes:
+The groups ini type has two main purposes:
 
 * Set locked gates in both Singleplayer and Multiplayer
 * Set faction affiliations between them and define a few of their basic properties.
+
+### Vanilla Examples
+
+* `DATA\initialworld.ini`
 
 ## Syntax
 

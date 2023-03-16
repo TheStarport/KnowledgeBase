@@ -1,11 +1,13 @@
 ---
-title: bodyparts.ini
+title: bodyparts
 ---
-
-[Return to parent folder (Characters)](../Characters/index.md)
 
 ## Overview
 The bodyparts.ini file indexes all character bodies: bodies, heads, hands and accessories. All parts are listed independently.
+
+### Vanilla Examples
+
+* `\DATA\CHARACTERSbodyparts.ini`
 
 ## Syntax
 The bodyparts.ini file is arranged in a specific order: multiple Body sections, Head sections or Hand sections are defined after a DetailSwitchTable section, a PetalAnimations section and a Skeleton section. This means each body/head/hand defined by their respective section will also inherit the properties defined by the preceding DetailSwitchTable, PetalAnimations and Skeleton sections.
