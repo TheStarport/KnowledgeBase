@@ -2,6 +2,7 @@
 title: Example File
 description: An example of what documentation of an ini file should look like
 id: examplefile
+sidebar_position: 3
 ---
 
 ## Overview
