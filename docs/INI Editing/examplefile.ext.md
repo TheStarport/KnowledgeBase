@@ -1,10 +1,8 @@
 ---
 title: Example File
-description: An example of what documentation of an file should look like
+description: An example of what documentation of an ini file should look like
 id: examplefile
 ---
-
-[Return to parent folder](..)
 
 ## Overview
 
@@ -12,9 +10,17 @@ General description goes here. If multiple files link to the same page (through 
 
 ## Syntax
 
-Syntax information goes here.
+Notable information about the ini syntax goes here.
 
-**For INI files:**
+### Vanilla Examples
+
+If relevant examples of the filetype in vanilla freelancer should be listed here with their full path:
+
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisoner.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonerarea_scout.ini`
+* `DATA\MISSIONS\ENCOUNTERS\area_armored_prisonerminingp_scavenger.ini`
+
+**For INI types:**
 
 If there are specificities about how sections are ordered/linked, they should appear here. Each section in the INI should be listed afterwards in this manner:
 
@@ -46,5 +52,3 @@ Please avoid writing information in the comment where possible and use the below
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | param         | If a parameter is a number: Range: X to Y (use +-infty for no limit, say -infty to 0).<br/><br/>If a parameter has subvalues (separated by commas): Subvalues: A, B, C. (optional) can be added to any value to denote it is not necessary (IE Subvalues: A (optional), B.)<br/><br/>Description of the parameter. |
 | param         | Second param                                                                                                                                                                                                                                                                                                   |
-| frequent item | See [[MDB:param frequent item]] for more information.                                                                                                                                                                                                                                                          |
-| nickname      | See [[MDB:param nickname]] for more information.                                                                                                                                                                                                                                                               |
