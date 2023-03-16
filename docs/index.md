@@ -5,146 +5,18 @@ sidebar_position: 1
 slug: /
 ---
 
-## Typed INIs
+## File Structures
 
-The location of these INI types is defined in freelancer.ini. They can, for the most part, be placed anywhere within the game directory if the file points to them.
+[Information on file structures found in Freelancer](File%20Structures/index.md). For specific INI block structures, please see [INI Editing](INI%20Editing/index.md).
 
-| Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| asteroids       | Defines the properties of individual asteroid models. |
-| asteroid_fields |                                                       |
-| bases           |                                                       |
-| bodyparts       |                                                       |
-| cockpits        |                                                       |
-| concave         |                                                       |
-| constants       |                                                       |
-| costumes        |                                                       |
-| debris          |                                                       |
-| effect_shapes   |                                                       |
-| effects         |                                                       |
-| equipment       |                                                       |
-| explosions      |                                                       |
-| fonts           |                                                       |
-| fonts_dir       |                                                       |
-| fuses           |                                                       |
-| gate_tunnels    |                                                       |
-| goods           |                                                       |
-| groups          |                                                       |
-| HUD             |                                                       |
-| igraph          |                                                       |
-| intro           |                                                       |
-| jump_effect     |                                                       |
-| loadouts        |                                                       |
-| markets         |                                                       |
-| nebula_fields   |                                                       |
-| NewCharDB       |                                                       |
-| PetalDB         |                                                       |
-| rings           |                                                       |
-| rooms           |                                                       |
-| rtcslider       |                                                       |
-| ships           |                                                       |
-| solar           |                                                       |
-| sounds          |                                                       |
-| stars           |                                                       |
-| system          |                                                       |
-| universe        |                                                       |
-| voices          |                                                       |
-| WeaponModDB     |                                                       |
+## FL Binaries
 
+Information related to Freelancer's binaries including information on debugging crash offsets, modifying the behavior of the executable files, and shortcut switches that can be used with Freelancer and FLServer:
 
-## Hardcoded INIs
+* [Crash Offsets Index](FL%20Binaries/Crash%20Offsets.md)
+* [Limit Breaking 101](FL%20Binaries/Limit%20Breaking%20101.md)
+* [Shortcut Switches](FL%20Binaries/Shortcut%20Switches.md)
 
-The location of these INI file types is hardcoded or otherwise unchangable via normal means. They can be broken down into a few distinct categories:
+## INI Editing
 
-### EXE
-| Name           | Description                                                                                                                                                                | Path                 |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| Freelancer.ini | Primarily determines which DLLs and called by FLserver.exe and Freelancer.exe and their load order. Also points to and determines load order of typed INI files.           | `EXE\freelancer.ini` |
-| dacom.ini      | This file handles configuration of the application's start-time settings and library loading.                                                                              | `EXE\dacom.ini`      |
-| dacomsrv.ini   | This file handles configuration of the application's start-time settings and library loading for FLServer.exe specifically. Structure is otherwise identical to dacom.ini. | `EXE\dacomsrv.ini`   |
-
-### DATA
-
-| Name        | Description | Path |
-| ----------- | ----------- | ---- |
-| cameras.ini |             |      |
-| mouse.ini   |             |      |
-
-### AI
-| Name           | Description | Path |
-| -------------- | ----------- | ---- |
-| state_graph.db |             |      |
-
-### Equipment
-
-| Name                        | Description | Path |
-| --------------------------- | ----------- | ---- |
-| commodities_per_faction.ini |             |      |
-
-### FX
-
-| Name          | Description | Path |
-| ------------- | ----------- | ---- |
-| lightanim.ini |             |      |
-
-### Interface
-
-| Name               | Description | Path |
-| ------------------ | ----------- | ---- |
-| buttonmontage.ini  |             |      |
-| navbar.ini         |             |      |
-| buttontextures.ini |             |      |
-| infocardmap.ini    |             |      |
-| keylist.ini        |             |      |
-| keymap.ini         |             |      |
-| knowledgemap.ini   |             |      |
-| optlist.ini        |             |      |
-| rollover.ini       |             |      |
-
-### Missions
-
-| Name                 | Description | Path |
-| -------------------- | ----------- | ---- |
-| encounters.ini       |             |      |
-| empathy.ini          |             |      |
-| faction_prop.ini     |             |      |
-| factionsets.ini      |             |      |
-| formations.ini       |             |      |
-| lootprops.ini        |             |      |
-| missions             |             |      |
-| mbases.ini           |             |      |
-| mshipprops.ini       |             |      |
-| news.ini             |             |      |
-| npcships.ini         |             |      |
-| pilots               |             |      |
-| ptough.ini           |             |      |
-| rankdiff.ini         |             |      |
-| shipclasses.ini      |             |      |
-| specific_npc.ini     |             |      |
-| voice_properties.ini |             |      |
-
-### RandomMissions
-
-| Name                     | Description | Path |
-| ------------------------ | ----------- | ---- |
-| diff2money.ini           |             |      |
-| killablesolars.ini       |             |      |
-| npcranktodiff.ini        |             |      |
-| rmlootinfo.ini           |             |      |
-| solarformations.ini      |             |      |
-| vignettecriticalloot.ini |             |      |
-| vignetteparams.ini       |             |      |
-
-### Solar
-
-| Name         | Description | Path |
-| ------------ | ----------- | ---- |
-| stararch.ini |             |      |
-
-### Universe
-
-| Name                     | Description | Path |
-| ------------------------ | ----------- | ---- |
-| NoNavMap.ini             |             |      |
-| paths                    |             |      |
-| missioncreatedsolars.ini |             |      |
+[Information on all the different ini types found in Freelancer](INI%20Editing/index.md), what their keys mean, and how to edit them.
