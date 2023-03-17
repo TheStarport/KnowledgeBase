@@ -50,6 +50,12 @@ empty_cube_frequency = FLOAT
 
 ### Exclusion Zones
 
+:::caution
+
+Please note that defining an exclusion here without a corresponding zone in a system file will cause crashes. 
+
+:::
+
 ```ini
 [Exclusion Zones]
 exclusion = STRING
