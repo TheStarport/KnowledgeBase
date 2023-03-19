@@ -2,6 +2,14 @@
 title: igraph
 ---
 
+:::caution
+
+This page is a work in progress!
+
+There may be missing, incomplete or incorrect information on this page as it's still being built! Take information here with a pinch of salt, and feel free to contribute and correct things!
+
+:::
+
 ## Overview
 
 The purpose of igraphs is not fully known. Their main usage is found in [LightSource sections], where the *atten_curve* is defined as *DYNAMIC_DIRECTION*, one of the vanilla IGraphs.

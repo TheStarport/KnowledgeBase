@@ -2,9 +2,17 @@
 title: pilots_population.ini
 ---
 
+:::caution
+
+This page is a work in progress!
+
+There may be missing, incomplete or incorrect information on this page as it's still being built! Take information here with a pinch of salt, and feel free to contribute and correct things!
+
+:::
+
 ## Overview
 
-This file determines NPC pilot behavior in combat. Documentation on this file is a work in progress.
+This file determines NPC pilot behavior in combat.
 
 ## Syntax
 Each block can be defined multiple times

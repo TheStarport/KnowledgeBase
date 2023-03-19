@@ -2,6 +2,14 @@
 title: asteroids
 ---
 
+:::caution
+
+This page is a work in progress!
+
+There may be missing, incomplete or incorrect information on this page as it's still being built! Take information here with a pinch of salt, and feel free to contribute and correct things!
+
+:::
+
 ## Overview
 
 These files govern the properties of individual asteroids used by [asteroid field](asteroid_fields.md) ini types.
@@ -39,6 +47,7 @@ detect_radius = INT
 explosion_offset = INT
 recharge_time = INT
 ```
+
 | Parameter        | Information |
 | ---------------- | ----------- |
 | nickname         |             |
