@@ -2,9 +2,17 @@
 title: effects
 ---
 
+:::caution
+
+This page is a work in progress!
+
+There may be missing, incomplete or incorrect information on this page as it's still being built! Take information here with a pinch of salt, and feel free to contribute and correct things!
+
+:::
+
 ## Overview
 
-These files govern effects and the sounds attached to them, their types, as well as the texture and ale components of effects. `[BeamSpear` and `[BeamBolt]` blocks can also be used to directly create simple beam effects. This page is a work in progress.
+These files govern effects and the sounds attached to them, their types, as well as the texture and ale components of effects. `[BeamSpear` and `[BeamBolt]` blocks can also be used to directly create simple beam effects.
 
 ### Vanilla Examples
 
