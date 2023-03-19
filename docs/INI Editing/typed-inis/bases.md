@@ -1,5 +1,5 @@
 ---
-title: BASES
+title: bases
 ---
 
 ## Overview
