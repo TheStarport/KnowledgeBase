@@ -72,6 +72,8 @@ In order to get the offset from a crash:
 | server.dll | 17f38  | Ruppetthemuppet | Related to a bad ship loadout. Occurs after Loadout::Get (presumably returning NULL), called when a ship is created |
 | server.dll | 702064 | Laz             | Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry           |
 | server.dll | 2247f  | Ruppetthemuppet | NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes.                              |
+| server.dll | 0f988  | Ruppetthemuppet | Missing destination jumpgate                                                                                        |
+
 
 ### Miscellaneous
 
