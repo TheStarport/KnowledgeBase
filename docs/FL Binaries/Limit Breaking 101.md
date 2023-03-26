@@ -569,7 +569,7 @@ A value like "0F85 -> 90E9" means replace the original bytes on the left with th
 | 80 3E -> 00 00                                                                                                             | freelancer.exe | 174707 | adoxa         | Remove the "NEW GAME" and "LOAD GAME" buttons on the main menu. (part 3)                                                                                    |
 | 1271i                                                                                                                      | freelancer.exe | 174890 | BC46            | String ID for the "VER. 1.0" text in the bottom-right of the main menu. Change this number to another string ID to make the element display different text.                                                       |
 | 393286i                                                                                                                    | freelancer.exe | 0AB1C5 | BC46            | String ID for the final section of the in-game credits. Change this number to another string ID to make the element display different text.          |
-| 1271i                                                                                                                      | freelancer.exe | 0B1375 | adoxa            |  Increases the maximum value for the "TOTAL SOUND ELEMENTS" slider in the audio options menu.                                                       |
+| 32i                                                                                                                        | freelancer.exe | 0B1375 | adoxa           |  Maximum value for the "TOTAL SOUND ELEMENTS" slider in the audio options menu.                                                       |
 
 
 ## Effects
