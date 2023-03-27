@@ -57,4 +57,4 @@ formation = STRING, STRING
 | scan_for_cargo     | Lists the commodites the faction looks for. The integer seems to be a weight.                                                                                                 |
 | scan_announce      | Will the npcs warn you before they scan your cargo.                                                                                                                           |
 | scan_chance        | Percent changes for NPCs to cargo scan you.                                                                                                                                   |
-| formation          | Sets the formation from [formations.ini](./formations.ini.md) for each ship type.                                                                                             |
+| formation          | Sets the formation from [formations.ini](./formations.ini.md) for each ship type. The first value is called by encounter file types.                                          |
