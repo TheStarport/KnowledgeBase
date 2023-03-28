@@ -210,38 +210,38 @@ pilot = STRING
 parent = STRING
 ```
 
-| Parameter            | Information |
-| -------------------- | ----------- |
-| nickname             |             |
-| ids_name             |             |
-| ids_info             |             |
-| pos                  |             |
-| rotate               |             |
-| ambient_color        |             |
-| archetype            |             |
-| star                 |             |
-| spin                 |             |
-| msg_id_prefix        |             |
-| jump_effect          |             |
-| atmosphere_range     |             |
-| prev_ring            |             |
-| next_ring            |             |
-| ring                 |             |
-| base                 |             |
-| dock_with            |             |
-| Ambient              |             |
-| visit                |             |
-| reputation           |             |
-| tradelane_space_name |             |
-| behavior             |             |
-| voice                |             |
-| space_costume        |             |
-| faction              |             |
-| difficulty_level     |             |
-| goto                 |             |
-| loadout              |             |
-| pilot                |             |
-| parent               |             |
+| Parameter            | Information                                                 |
+| -------------------- | ----------------------------------------------------------- |
+| nickname             |                                                             |
+| ids_name             |                                                             |
+| ids_info             |                                                             |
+| pos                  |                                                             |
+| rotate               |                                                             |
+| ambient_color        |                                                             |
+| archetype            |                                                             |
+| star                 |                                                             |
+| spin                 | Valid in zones, but unfortunately ignored by Freelancer.exe |
+| msg_id_prefix        |                                                             |
+| jump_effect          |                                                             |
+| atmosphere_range     |                                                             |
+| prev_ring            |                                                             |
+| next_ring            |                                                             |
+| ring                 |                                                             |
+| base                 |                                                             |
+| dock_with            |                                                             |
+| Ambient              |                                                             |
+| visit                |                                                             |
+| reputation           |                                                             |
+| tradelane_space_name |                                                             |
+| behavior             |                                                             |
+| voice                |                                                             |
+| space_costume        |                                                             |
+| faction              |                                                             |
+| difficulty_level     |                                                             |
+| goto                 |                                                             |
+| loadout              |                                                             |
+| pilot                |                                                             |
+| parent               |                                                             |
 
 
 
