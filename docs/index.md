@@ -13,9 +13,9 @@ slug: /
 
 Information related to Freelancer's binaries including information on debugging crash offsets, modifying the behavior of the executable files, and shortcut switches that can be used with Freelancer and FLServer:
 
-* [Crash Offsets Index](FL%20Binaries/Crash%20Offsets.md)
-* [Limit Breaking 101](FL%20Binaries/Limit%20Breaking%20101.md)
-* [Shortcut Switches](FL%20Binaries/Shortcut%20Switches.md)
+* [Crash Offsets Index](FL%20Binaries/crash-offsets.md)
+* [Limit Breaking 101](FL%20Binaries/limit-breaking-101.md)
+* [Shortcut Switches](FL%20Binaries/shortcut-switches.md)
 
 ## INI Editing
 
