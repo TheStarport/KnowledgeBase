@@ -1,5 +1,5 @@
 ---
-title: pedaldb
+title: petaldb
 ---
 
 ## Overview
