@@ -62,6 +62,8 @@ In order to get the offset from a crash:
 | content.dll | 956e4  | Ruppetthemuppet  | npc_ship in faction_prop.ini listed that does not exist.                                                                                                                                                                                                                                                             |
 | content.dll | 6c216  | Ruppetthemuppet  | Seems to be a missing or null patrol path waypoint. This was originally triggered by giving an NPC on patrol in a ship that couldn't vanish by docking the `arrival = all, -tradelane, -object_jump_gate` tag. In cases where the patrol spawned at the end of the path in a docked state, it would cause this crash |
 | content.dll | 53b9f  | Ruppetthemuppet  | Bad encounter file (Missing `[EncounterFormation]` or `[Creation]` blocks.)                                                                                                                                                                                                                                          |
+| content.dll | d9151  | Ruppetthemuppet  | Bad path in a system encounter declaration (Missing encounter ini file)                                                                                                                                                                                                                                              |
+
 
 ### server.dll
 
