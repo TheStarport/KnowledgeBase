@@ -125,7 +125,7 @@ const config = {
         // Public API key: it is safe to commit it
         apiKey: '7273ca101cdbada512274a0f6bbd3af0',
 
-        indexName: 'the-starport-index',
+        indexName: 'the-starport',
         contextualSearch: false,
 
         // Optional: Algolia search parameters
