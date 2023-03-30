@@ -108,18 +108,47 @@ const config = {
         ],
         copyright: `Copyright © ${new Date("2008").getFullYear()}-${new Date().getFullYear()} The Starport.<br/>Built with Docusaurus.`,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['ini', 'mermaid', 'cpp', 'csharp', 'pascal', 'maxscript', 'markdown']
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'UJL7MO0C52',
+
+        // Public API key: it is safe to commit it
+        apiKey: '7273ca101cdbada512274a0f6bbd3af0',
+
+        indexName: 'the-starport-index',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search'
+      },
     }),
-    markdown: {
-      mermaid: true
-    },
-    themes: [
-      "@docusaurus/theme-mermaid"
-    ]
+  markdown: {
+    mermaid: true
+  },
+  themes: [
+    "@docusaurus/theme-mermaid"
+  ]
 };
 
 module.exports = config;
