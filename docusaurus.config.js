@@ -51,8 +51,8 @@ const config = {
       navbar: {
         title: 'The Starport',
         logo: {
-          alt: 'The Starport Logo',
-          src: 'FLServer.png',
+          alt: 'Logo',
+          src: 'wiki-images/FLServer.png',
         },
         items: [
           {
@@ -108,18 +108,39 @@ const config = {
         ],
         copyright: `Copyright © ${new Date("2008").getFullYear()}-${new Date().getFullYear()} The Starport.<br/>Built with Docusaurus.`,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['ini', 'mermaid', 'cpp', 'csharp', 'pascal', 'maxscript', 'markdown']
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'UJL7MO0C52',
+
+        // Public API key: it is safe to commit it
+        apiKey: '7273ca101cdbada512274a0f6bbd3af0',
+
+        indexName: 'the-starport',
+        contextualSearch: false,
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search'
+      },
     }),
-    markdown: {
-      mermaid: true
-    },
-    themes: [
-      "@docusaurus/theme-mermaid"
-    ]
+  markdown: {
+    mermaid: true
+  },
+  themes: [
+    "@docusaurus/theme-mermaid"
+  ]
 };
 
 module.exports = config;
