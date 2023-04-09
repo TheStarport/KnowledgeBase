@@ -25,7 +25,7 @@ All ini files in this folder follow the same syntax. Multiple [EncounterFormatio
 [EncounterFormation]
 ship_by_class = INT, INT, STRING
 pilot_job = STRING
-make_class = STRING
+make_class = STRING ;optional
 formation_by_class = STRING
 behavior = STRING
 arrival = all, -tradelane, -object_jump_gate
