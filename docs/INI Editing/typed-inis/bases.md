@@ -37,7 +37,7 @@ price_variance = FLOAT ;optional
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | nickname          |                                                                                                                                                                                                                                           |
 | start_room        |                                                                                                                                                                                                                                           |
-| ship_repair_ cost | Defaults to 0.33 if not specified. Affects the repair value of the ship and its groups, but not equipment. The formula is: repair_cost = (1 - damage) * hit_pts * ship_repair_cost. Damage is the fractional health value (75/100 = 0.75) |
+| ship_repair_cost | Defaults to 0.33 if not specified. Affects the repair value of the ship and its groups, but not equipment. The formula is: repair_cost = (1 - damage) * hit_pts * ship_repair_cost. Damage is the fractional health value (75/100 = 0.75) |
 | price_variance    | Picks a random number between (1 - price_variance) and (1 + price_variance) to adjust the cost of each good (equipment and commodities).                                                                                                  |
 
 ### Room
