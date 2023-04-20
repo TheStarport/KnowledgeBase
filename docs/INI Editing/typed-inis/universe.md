@@ -71,15 +71,15 @@ ship_lrg_03 = STRING ;optional
 | terrain_lrg        | Determines the model used by the `$terrain_lrg` variable in `ambi_terrain_static` thorn scripts used for this base.                                                       |
 | terrain_dyna_01    | Determines the model used by the `$terrain_dyna_01` variable in `ambi_terrain_dynamic` thorn scripts used for this base.                                                  |
 | terrain_dyna_02    | Determines the model used by the `$terrain_dyna_02` variable in `ambi_terrain_dynamic` thorn scripts used for this base.                                                  |
-| ship_sml_01        |                                                                                                                                                                           |
-| ship_sml_02        |                                                                                                                                                                           |
-| ship_sml_03        |                                                                                                                                                                           |
-| ship_mdm_01        |                                                                                                                                                                           |
-| ship_mdm_02        |                                                                                                                                                                           |
-| ship_mdm_03        |                                                                                                                                                                           |
-| ship_lrg_01        |                                                                                                                                                                           |
-| ship_lrg_02        |                                                                                                                                                                           |
-| ship_lrg_03        |                                                                                                                                                                           |
+| ship_sml_01        | Determines the `$ship_sml_01` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_sml_02        | Determines the `$ship_sml_02` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_sml_03        | Determines the `$ship_sml_03` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_mdm_01        | Determines the `$ship_mdm_01` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_mdm_02        | Determines the `$ship_mdm_02` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_mdm_03        | Determines the `$ship_mdm_03` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_lrg_01        | Determines the `$ship_lrg_01` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_lrg_02        | Determines the `$ship_lrg_02` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
+| ship_lrg_03        | Determines the `$ship_lrg_03` ship model used in the base's traffic thorn script. This is not used in vanilla but functions as expected.                                  |
 
 ### System
 
