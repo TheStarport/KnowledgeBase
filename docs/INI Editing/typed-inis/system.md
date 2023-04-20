@@ -61,9 +61,9 @@ filename = PATH
 file = PATH
 ```
 
-| Parameter | Information |
-| --------- | ----------- |
-| file      |             |
+| Parameter | Information                                                           |
+| --------- | --------------------------------------------------------------------- |
+| file      | References the [shapes](./effect_shapes.md) file used in this system. |
 
 ### Music
 
@@ -126,9 +126,9 @@ zone = STRING
 color = INT, INT, INT
 ```
 
-| Parameter | Information |
-| --------- | ----------- |
-| color     |             |
+| Parameter | Information                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| color     | Determines the background color of the system when no starspheres are defined. |
 
 ### Background
 
@@ -139,11 +139,11 @@ complex_stars = PATH
 nebulae = PATH
 ```
 
-| Parameter     | Information |
-| ------------- | ----------- |
-| basic_stars   |             |
-| complex_stars |             |
-| nebulae       |             |
+| Parameter     | Information                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------ |
+| basic_stars   | Determines the basic starsphere cmp used for the system.                                                     |
+| complex_stars | Determines the complex starsphere cmp used for the system. This is rendered on top of the `basic_stars` cmp. |
+| nebulae       | Determines the nebulae starsphere used for the system. This is rendered behind the `basic stars` cmp.        |
 
 ### LightSource
 
@@ -161,53 +161,53 @@ attenuation = FLOAT, FLOAT, FLOAT
 color_curve = STRING, FLOAT
 ```
 
-| Parameter   | Information                                                                                                            |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| nickname    |                                                                                                                        |
-| pos         |                                                                                                                        |
-| rotate      |                                                                                                                        |
-| color       |                                                                                                                        |
-| range       |                                                                                                                        |
-| type        | Determines the type of light source to use Can be POINT or DIRECTIONAL.                                                |
-| direction   |                                                                                                                        |
-| atten_curve | References the attenuation curve that is used to change the light intensity based on the distance to the light source. |
-| attenuation |                                                                                                                        |
-| color_curve |                                                                                                                        |
+| Parameter   | Information                                                                                                                         |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| nickname    | The light's unique nickname in the system ini file.                                                                                 |
+| pos         | The X, Y and Z coordinates of the light in space.                                                                                   |
+| rotate      | The X, Y and Z rotation of the object. Only really relevant with directional light sources here.                                    |
+| color       | The RGB color of the light.                                                                                                         |
+| range       | The range of the light.                                                                                                             |
+| type        | Determines the type of light source to use Can be POINT or DIRECTIONAL.                                                             |
+| direction   | For `DIRECTIONAL` light sources, this value determines the direction.                                                               |
+| atten_curve | References the attenuation curve that is used to change the light intensity based on the distance to the light source.              |
+| attenuation | How quickly the light fades as you move away from it's source.                                                                      |
+| color_curve | Appears to determine some property of the light's animation. The string value references a curve from an [igraph](./igraph.md) file |
 
 ### Object
 
 ```ini
 [Object]
 nickname = STRING
-ids_name = INT
-ids_info = INT
+ids_name = INT ;optional
+ids_info = INT ;optional
 pos = FLOAT, FLOAT, FLOAT
-rotate = FLOAT, FLOAT, FLOAT
-ambient_color = INT, INT, INT
+rotate = FLOAT, FLOAT, FLOAT ;optional
+ambient_color = INT, INT, INT ;optional
 archetype = STRING
-star = STRING
-spin = FLOAT, FLOAT, FLOAT
-msg_id_prefix = STRING
-jump_effect = STRING
-atmosphere_range = INT
-prev_ring = STRING
-next_ring = STRING
-ring = STRING, PATH
-base = STRING
-dock_with = STRING
-Ambient = INT, INT, INT
-visit = FLOAT
-reputation = STRING
-tradelane_space_name = STRING
-behavior = STRING
-voice = STRING
-space_costume = STRING, STRING
-faction = STRING
-difficulty_level = INT 
-goto = STRING, STRING, STRING
-loadout = STRING
-pilot = STRING
-parent = STRING
+star = STRING ;optional
+spin = FLOAT, FLOAT, FLOAT ;optional
+msg_id_prefix = STRING ;optional
+jump_effect = STRING ;optional
+atmosphere_range = INT ;optional
+prev_ring = STRING ;optional
+next_ring = STRING ;optional
+ring = STRING, PATH ;optional
+base = STRING ;optional
+dock_with = STRING ;optional
+Ambient = INT, INT, INT ;optional
+visit = FLOAT ;optional
+reputation = STRING ;optional
+tradelane_space_name = STRING ;optional
+behavior = STRING ;optional
+voice = STRING ;optional
+space_costume = STRING, STRING ;optional
+faction = STRING ;optional
+difficulty_level = INT ;optional 
+goto = STRING, STRING, STRING ;optional
+loadout = STRING ;optional
+pilot = STRING ;optional
+parent = STRING ;optional
 ```
 
 | Parameter            | Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -217,7 +217,7 @@ parent = STRING
 | ids_info             | The string for this object's map/selection infocard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | pos                  | The object's X, Y and Z coordinates in space respectively.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | rotate               | The object's X, Y and Z rotation in space respectively. Range -360 to 360.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ambient_color        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ambient_color        | Possibly unused? Might determine how systemwide lighting affects the object. Requires testing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | archetype            | The object's archetype as defined in a [solar](./solar.md) file type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | star                 | If the object is a star, the object's archetype as defined in [stararch.ini](../hardcoded-inis/data/solar/stararch.ini.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | spin                 | Valid in zones, but unfortunately ignored by Freelancer.exe                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -230,7 +230,7 @@ parent = STRING
 | ring                 | References the zone to be used for the planetary ring, and the [rings file](./rings.md) to use.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | base                 | Selects the base from a [universe](./universe.md) to arrive at after docking with the object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | dock_with            | Seems to function identically to the `base` key above. This is usually used in vanilla for docking rings and mooring fixtures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Ambient              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Ambient              | Possibly unused? Might determine how systemwide lighting affects the object. Requires testing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | visit                | Controls the navmap display of the object: <br />**0:** The default value. Not visited. <br />**1:** Visited, will show on the navamp list even if the system has not been visited. <br />**2:** Unused. <br />**4:** Mineable Zone. <br />**8:** 'Actively' visited. This seems to be used for looted wrecks. <br />**16:** Wreck. <br />**32:** Zone. <br />**64:** Faction. <br />**128:** Hidden, never appears on the navmap.<br /><br />For combinations you need to add the values together. E. g. if you want to show new players the location of a profitable mining zone by default set the zones visit parameter to 5 (1 for visited + 4 minable zone) |
 | reputation           | Determines the faction the obhect belongs to. Takes a nickname from [faction_prop.ini](../hardcoded-inis/data/missions/faction_prop.ini.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | tradelane_space_name | References the text string that shows the origin and destination of the tradelane.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -251,83 +251,81 @@ parent = STRING
 ```ini
 [Zone]
 nickname = STRING
-ids_name = INT
-ids_info = INT
+ids_name = INT ;optional
+ids_info = INT ;optional
 pos = FLOAT, FLOAT, FLOAT
-rotate = FLOAT, FLOAT, FLOAT
+rotate = FLOAT, FLOAT, FLOAT ;optional
 shape = STRING
-size = INT
-spin = FLOAT, FLOAT, FLOAT
-property_flags = INT
-property_fog_color = INT, INT, INT 
-damage = INT
-visit = FLOAT
-spacedust = STRING
-spacedust_maxparticle = INT 
-interference = FLOAT
-drag_modifier = FLOAT
-edge_fraction = FLOAT
-attack_ids = STRING, ...
-mission_type = STRING, STRING
-comment = STRING
-lane_id = STRING
-tradelane_attack = FLOAT
-tradelane_down = INT
-sort = FLOAT
-vignette_type = STRING
-toughness = INT
-density = INT
-repop_time = FLOAT
-max_battle_size = INT
-pop_type = STRING
-relief_time = FLOAT
-population_additive = BOOL
-path_label = STRING, INT
-usage = STRING
-mission_eligible = BOOL
+size = INT, INT, INT
+property_flags = INT ;optional
+property_fog_color = INT, INT, INT ;optional 
+damage = INT ;optional
+visit = FLOAT ;optional
+spacedust = STRING ;optional
+spacedust_maxparticle = INT ;optional 
+interference = FLOAT ;optional
+drag_modifier = FLOAT ;optional
+edge_fraction = FLOAT ;optional
+attack_ids = STRING, ... ;optional
+mission_type = STRING, STRING ;optional
+comment = STRING ;optional
+lane_id = STRING ;optional
+tradelane_attack = FLOAT ;optional
+tradelane_down = INT ;optional
+sort = FLOAT ;optional
+vignette_type = STRING ;optional
+toughness = INT ;optional
+density = INT ;optional
+repop_time = FLOAT ;optional
+max_battle_size = INT ;optional
+pop_type = STRING ;optional
+relief_time = FLOAT ;optional
+population_additive = BOOL ;optional
+path_label = STRING, INT ;optional
+usage = STRING ;optional
+mission_eligible = BOOL ;optional
 density_restriction = INT, STRING ;repeatable
 faction = STRING, FLOAT ;repeatable
 encounter = STRING, INT, FLOAT ;repeatable
-Music = STRING
+Music = STRING ;optional
 ```
 
-| Parameter             | Information                                                                                                                                                                                                                                                                                                                                                          |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| nickname              |                                                                                                                                                                                                                                                                                                                                                                      |
-| ids_name              |                                                                                                                                                                                                                                                                                                                                                                      |
-| ids_info              |                                                                                                                                                                                                                                                                                                                                                                      |
-| pos                   |                                                                                                                                                                                                                                                                                                                                                                      |
-| rotate                |                                                                                                                                                                                                                                                                                                                                                                      |
-| shape                 |                                                                                                                                                                                                                                                                                                                                                                      |
-| size                  |                                                                                                                                                                                                                                                                                                                                                                      |
-| spin                  |                                                                                                                                                                                                                                                                                                                                                                      |
-| property_flags        |                                                                                                                                                                                                                                                                                                                                                                      |
-| property_fog_color    |                                                                                                                                                                                                                                                                                                                                                                      |
-| damage                |                                                                                                                                                                                                                                                                                                                                                                      |
-| visit                 |                                                                                                                                                                                                                                                                                                                                                                      |
-| spacedust             |                                                                                                                                                                                                                                                                                                                                                                      |
-| spacedust_maxparticle |                                                                                                                                                                                                                                                                                                                                                                      |
-| interference          |                                                                                                                                                                                                                                                                                                                                                                      |
-| drag_modifier         | Divides your speed in the zone by the listed amount. A value of 2 here would halve your speed. By default this key is tied to interference, but can be fixed with an offset from [Limit Breaking 101](../../FL%20Binaries/limit-breaking-101.md).                                                                                                                    |
-| edge_fraction         | Used by nebula zones. Determines how quickly nebula fog fades out in a zone.                                                                                                                                                                                                                                                                                         |
-| attack_ids            | Used in population zones to determine which tradelanes to attack. Uses `lane_id` values seperated by commas.                                                                                                                                                                                                                                                         |
-| mission_type          | Used by mission vignette zones. Valid options are lawful and unlawful.                                                                                                                                                                                                                                                                                               |
-| lane_id               | Used by tradelane zones and referenced by `attack_id`.                                                                                                                                                                                                                                                                                                               |
-| tradelane_attack      | Used by patrol paths. May determine the percentage of time a patrol engages a tradelane.                                                                                                                                                                                                                                                                             |
-| tradelane_down        | Used for tradelane zones. Determines the percentage of time the tradelane will be offline. This requires appropriate `lane_id` and population zones with `attack_ids` defined.                                                                                                                                                                                       |
-| sort                  | Used to determine the priority order of overlapping zones. A higher `sort` value means the zone will take priority. This does not override the loading order of zones.                                                                                                                                                                                               |
-| vignette_type         | Used for mission vignette zones. Options are `field`, `exclusion` and `open`                                                                                                                                                                                                                                                                                         |
-| toughness             | This probably relates to the NPC toughness key, but may be unused in zones.                                                                                                                                                                                                                                                                                          |
-| density               | This determines the number of encounter instances generated by this zone that can be present at the same time.                                                                                                                                                                                                                                                       |
-| repop_time            | If the density is lower than the upper bound the repop timer will be active and encounters will spawn. It will reset and stop once the density count is over the limit set. Essentially when the population count is incremented. Testing indicates this value is not absolute, there is pseudo-randomness involved and it may be a minimum rather than a set value. |
-| max_battle_size       | May determine the maximum number of ships allowed in an instance at any given time. However, this is set to quite low values in vanilla Freelancer and it's possible it refers to encounter permutations instead. There are even a few cases where this value is set to 0 and NPCs still appear to spawn.                                                            |
-| pop_type              | This key appears to be a leftover from development, and is unused. Observed values are `lootable_field`, `nonlootable_ast_field`, `major_tradelane`, `jumpgate`, `base_cluster_law`, `single_base_law`, `extend_law`, `wormhole`, `trade_path`, `attack_patrol`, `lane_patrol` and `Background`. This key is sometimes called a faction value as well.               |
-| relief_time           | Guaranteed time to next spawn. This assumes that the current population is below the `density` and `max_battle_size` values. Testing indicates this value is not absolute, there is pseudo-randomness involved and it may be a minimum rather than a set value.                                                                                                      |
-| population_additive   | Will encounters from overlapping zones be allowed to spawn in this zone?                                                                                                                                                                                                                                                                                             |
-| path_label            | Determines the patrol path this zone belongs to, and which leg of the path the current zone is.                                                                                                                                                                                                                                                                      |
-| usage                 | Used for patrol paths. Accepted values are `trade` and `patrol`                                                                                                                                                                                                                                                                                                      |
-| mission_eligible      | Determines whether or not missions are allowed to take place in this zone.                                                                                                                                                                                                                                                                                           |
-| density_restriction   | Limits the number of encounter instances of a given type to the number provided. This parameter respects the `make_class` field in the encounter block and is largely used incorrectly in vanilla.                                                                                                                                                                   |
-| faction               | This key determines which faction will undertake the encounter. The first string references a faction as defined in [faction_prop](../hardcoded-inis/data/missions/faction_prop.ini.md). The second FLOAT value represents the precentage chance the encounter will choose this faction. This value's sum total in zones should never exceed 1.                      |
-| encounter             | References an encounter as defined in the `[Encounter]` block at the top of the system file. The first INT value determines the difficulty of the involved pilots. The second FLOAT value represents the precentage chance this encounter will occur. This value's sum total in zones should never exceed 1.                                                         |
-| Music                 | Determines the ambient music tracked used in the zone. This is overridden by system danger and combat audio.                                                                                                                                                                                                                                                         |
+| Parameter             | Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| nickname              | The nickname of the zone. This is typically reference by encounter declarations, [asteroid](./asteroid_fields.md) and [nebula](./nebula_fields.md) field files.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ids_name              | The string name of the field displayed ingame.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ids_info              | The string description of the field displated ingame.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| pos                   | The X, Y and Z position of the field. Fields are positioned from their absolute centre. This should be taken into account when positioning rectangular and ellipsoid fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| rotate                | The X, Y and Z rotation of the field.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| shape                 | The basic shape of the field. Options appear to be `SPHERE`, `BOX`, `ELLIPSOID`, `CYLINDER` and `RING`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| size                  | The size of the field. For SPHERE shaped fields, only one INT value is required. For others, three are required to define the zone's X, Y and Z boundaries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| property_flags        | Sets the navmap display of the zone. Options are as follows and can be combined by adding them together: <br />**1:** Object density low<br />**2:** Object density medium<br />**4:** Object density high<br />**8:** Danger density low<br />**16:** Danger density medium<br />**32:** Danger density high<br />**64:** Rock<br />**128:** Debris<br />**256:** Ice<br />**512:** Lava<br />**1024:** Nomad<br />**2048:** Crystal<br />**4096:** Mines<br />**8192:** Badlands<br />**16384:** Gas pockets<br />**32768:** Nebula/Cloud (Enables `property_fog_color`)<br />**65536:** Exclusion<br />**131072:** Exclusion.                |
+| property_fog_color    | Sets the RGB value of the zone nebula and cloud on the navamp.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| damage                | Sets the amount of damage per second done to ships and equipment within the zone. Over a certain threshold, this will trigger a radiation warning.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| visit                 | Sets the bitmask of the visit parameter. Options are as follows and can be combined by adding them together: <br />0: Default value, not visited<br />: **1:** Visited. Will show in the navamp, regardless of whether or not a player has visited the system.<br />**2:** Unknown, doesn't appear to be used<br />**4:** Mineable zone<br />**8:** Actively visisted<br />**16:** Wreck<br />**32:** Zone<br />**64:** Faction<br />**128:** Hidden, never appears on the navamp.<br /><br /> Visit values are determined per save! If you're adjusting these and want to see changes, you will need to create a new save/character each time. |
+| spacedust             | The nickname of the entry from an [effects](./effects.md) file used for spacedust in this zone. Overrides the system-wide value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| spacedust_maxparticle | Sets the maximum amount of particles allocated for `spacedust` in this zone.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| interference          | A sensor range modifier with a range of 0 to 1. For example if you set this to 0.5 if will halve your ship's current sensor range. Triggers the sensor efficiency warning.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| drag_modifier         | Divides your speed in the zone by the listed amount. A value of 2 here would halve your speed. By default this key is tied to interference, but can be fixed with an offset from [Limit Breaking 101](../../FL%20Binaries/limit-breaking-101.md).                                                                                                                                                                                                                                                                                                                                                                                               |
+| edge_fraction         | Used by nebula zones. Determines how quickly nebula fog fades out in a zone.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| attack_ids            | Used in population zones to determine which tradelanes to attack. Uses `lane_id` values seperated by commas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| mission_type          | Used by mission vignette zones. Valid options are lawful and unlawful.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| lane_id               | Used by tradelane zones and referenced by `attack_id`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| tradelane_attack      | Used by patrol paths. May determine the percentage of time a patrol engages a tradelane.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| tradelane_down        | Used for tradelane zones. Determines the percentage of time the tradelane will be offline. This requires appropriate `lane_id` and population zones with `attack_ids` defined.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| sort                  | Used to determine the priority order of overlapping zones. A higher `sort` value means the zone will take priority. This does not override the loading order of zones.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| vignette_type         | Used for mission vignette zones. Options are `field`, `exclusion` and `open`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| toughness             | This probably relates to the NPC toughness key, but may be unused in zones.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| density               | This determines the number of encounter instances generated by this zone that can be present at the same time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| repop_time            | If the density is lower than the upper bound the repop timer will be active and encounters will spawn. It will reset and stop once the density count is over the limit set. Essentially when the population count is incremented. Testing indicates this value is not absolute, there is pseudo-randomness involved and it may be a minimum rather than a set value.                                                                                                                                                                                                                                                                            |
+| max_battle_size       | May determine the maximum number of ships allowed in an instance at any given time. However, this is set to quite low values in vanilla Freelancer and it's possible it refers to encounter permutations instead. There are even a few cases where this value is set to 0 and NPCs still appear to spawn.                                                                                                                                                                                                                                                                                                                                       |
+| pop_type              | This key appears to be a leftover from development, and is unused. Observed values are `lootable_field`, `nonlootable_ast_field`, `major_tradelane`, `jumpgate`, `base_cluster_law`, `single_base_law`, `extend_law`, `wormhole`, `trade_path`, `attack_patrol`, `lane_patrol` and `Background`. This key is sometimes called a faction value as well.                                                                                                                                                                                                                                                                                          |
+| relief_time           | Guaranteed time to next spawn. Effectively reinforcements when there are already NPCs on the field. This assumes that the current population is below the `density` and `max_battle_size` values. Testing indicates this value is not absolute, there is pseudo-randomness involved and it may be a minimum rather than a set value. It appears to be divided by `density`, taking overlapping zone values into account.                                                                                                                                                                                                                        |
+| population_additive   | Will encounters from overlapping zones be allowed to spawn in this zone?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| path_label            | Determines the patrol path this zone belongs to, and which leg of the path the current zone is.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| usage                 | Used for patrol paths. Accepted values are `trade` and `patrol`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| mission_eligible      | Determines whether or not missions are allowed to take place in this zone.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| density_restriction   | Limits the number of encounter instances of a given type to the number provided. This parameter respects the `make_class` field in the encounter block and is largely used incorrectly in vanilla.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| faction               | This key determines which faction will undertake the encounter. The first string references a faction as defined in [faction_prop](../hardcoded-inis/data/missions/faction_prop.ini.md). The second FLOAT value represents the precentage chance the encounter will choose this faction. This value's sum total in zones should never exceed 1.                                                                                                                                                                                                                                                                                                 |
+| encounter             | References an encounter as defined in the `[Encounter]` block at the top of the system file. The first INT value determines the difficulty of the involved pilots. The second FLOAT value represents the precentage chance this encounter will occur. This value's sum total in zones should never exceed 1.                                                                                                                                                                                                                                                                                                                                    |
+| Music                 | Determines the ambient music tracked used in the zone. This is overridden by system danger and combat audio.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
