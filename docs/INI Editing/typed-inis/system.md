@@ -31,7 +31,6 @@ space_color = INT, INT, INT
 local_faction = STRING
 rpop_solar_detection = BOOL
 space_farclip = FLOAT
-
 ```
 
 | Parameter            | Information                                                                                                                         |
@@ -40,6 +39,29 @@ space_farclip = FLOAT
 | local_faction        | Calls a faction as defined in faction_prop. Appears to be present in every system file but unused.                                  |
 | rpop_solar_detection | Unclear what this does.                                                                                                             |
 | space_farclip        | Minimum value of 1000. Relates to LOD pop-in distance.                                                                              |
+
+### Archetype
+
+These entries seem to be used to keep certain objects preloaded and in the memory. Vanilla Freelancer uses those entries exclusively for story-related objects in the system files.
+
+```ini
+[Archetype]
+ship = STRING ;optional
+solar = STRING ;optional
+simple = STRING ;optional
+equipment = STRING ;optional
+snd = STRING ;optional
+voice = STRING, STRING ;optional
+```
+
+| Paramete  | Information                                                        |
+| --------- | ------------------------------------------------------------------ |
+| ship      | Name of a `[Ship]` to preload. Can be defined multiple times.      |
+| solar     | Name of a `[Solar]` to preload. Can be defined multiple times.     |
+| simple    | Name of a `[Simple]` to preload. Can be defined multiple times.    |
+| equipment | Name of a `[Equipment]` to preload. Can be defined multiple times. Is this read by the game (does not seemt to appear in Freelancer.exe among the others)? |
+| snd       | Name of a `[Sound]` to preload. Can be defined multiple times.     |
+| voice     | First STRING being a `[Voice]` and the second STRING a related `[Sound]` to preload. Can be defined multiple times. Is this read by the game (does not seemt to appear in Freelancer.exe among the others)? |
 
 ### EncounterParameters
 
