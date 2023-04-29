@@ -87,7 +87,7 @@ ship_lrg_03 = STRING ;optional
 [system]
 nickname = STRING
 file = PATH
-pos = INT, INT
+pos = FLOAT, FLOAT
 msg_id_prefix = STRING
 visit = INT ;optional
 strid_name = INT ;optional
