@@ -19,4 +19,4 @@ ptough_graph_pt = INT, INT
 
 | Parameter | Information                                                                                                |
 | --------- | ---------------------------------------------------------------------------------------------------------- |
-| ptough_graph_pt  | The first INT appears to be a net worth value of some sort, and the second the player's level. It's unknown how/if these values link to the `toughness` stat found in equipment ini blocks.                                       |
+| ptough_graph_pt | The first INT is the net worth value of the player, and the second the player's level which is being reached then. It's unknown how/if these values link to the `toughness` stat found in equipment ini blocks. |
