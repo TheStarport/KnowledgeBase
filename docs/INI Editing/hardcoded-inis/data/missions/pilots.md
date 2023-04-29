@@ -256,6 +256,8 @@ use_hull_repair_at_damage_percent = INT
 
 ### [GunBlock]
 
+This defines the NPCs behavior firing with normal guns. Solars use only `auto_turret`-prefixed values and require `auto_turret = true` guns.
+
 ```ini
 [GunBlock]
 nickname = STRING
@@ -266,15 +268,15 @@ gun_fire_burst_interval_variance_percent = FLOAT
 gun_fire_no_burst_interval_time = INT
 gun_fire_accuracy_cone_angle = INT
 gun_fire_accuracy_power = INT
+gun_fire_accuracy_power_npc = INT
 gun_range_threshold = FLOAT
 gun_target_point_switch_time = INT
+gun_range_threshold_variance_percent = FLOAT
 fire_style = STRING
 auto_turret_interval_time = FLOAT
 auto_turret_burst_interval_time = INT
 auto_turret_no_burst_interval_time = INT
 auto_turret_burst_interval_variance_percent = FLOAT
-gun_range_threshold_variance_percent = FLOAT
-gun_fire_accuracy_power_npc = INT
 ```
 
 | Parameter                                   | Information                              |
@@ -287,15 +289,15 @@ gun_fire_accuracy_power_npc = INT
 | gun_fire_no_burst_interval_time             |                                          |
 | gun_fire_accuracy_cone_angle                |                                          |
 | gun_fire_accuracy_power                     |                                          |
+| gun_fire_accuracy_power_npc                 |                                          |
 | gun_range_threshold                         |                                          |
 | gun_target_point_switch_time                |                                          |
+| gun_range_threshold_variance_percent        |                                          |
 | fire_style                                  |                                          |
 | auto_turret_interval_time                   |                                          |
 | auto_turret_burst_interval_time             |                                          |
 | auto_turret_no_burst_interval_time          |                                          |
 | auto_turret_burst_interval_variance_percent |                                          |
-| gun_range_threshold_variance_percent        |                                          |
-| gun_fire_accuracy_power_npc                 |                                          |
 
 ### [MissileBlock]
 
