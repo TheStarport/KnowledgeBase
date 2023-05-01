@@ -47,6 +47,7 @@ If you're using the event viewer for this a lot, you can use the following xml f
 | common.dll | 62ffbeb | Ruppetthemuppet  | Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini                                                                               |
 | common.dll | 4fe6c   | drakohen         | CShip::Launch causes a CTD when the client and server don't have matching base nicknames in the [Object] entry in a system INI. The client is the one that has the CTD. |
 | common.dll | 45c30   | Ruppetthemuppet  | `[Asteroids]` block has been declared in a system ini file without a valid zone                                                                                         |
+| common.dll | 96879   | Beaglerush       | Bad projectile archetype in `[Gun]` block.                                                                                                                              |
 
 *This occured with a bad `rotation_inertia` value (0, 0, 0) in shiparch.ini (-R, 2023-03-13)
 
