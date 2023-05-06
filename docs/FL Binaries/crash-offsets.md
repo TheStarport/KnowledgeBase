@@ -106,3 +106,4 @@ If you're using the event viewer for this a lot, you can use the following xml f
 | ntdll.dll      | 101b3  | Tiger_MU         | Related to NPCs and/or their chatter.                                                                                                 |
 | ntdll.dll      | 109d8  | Jeider           | Reason: using inherit in ShieldGenerator                                                                                              |
 | rendcomp.dll   | 11163  | Lord of the Hell | bad hash at `<VMeshLibrary>`                                                                                                          |
+| Freelancer.exe | 3bb07  | Ruppetthemuppet  | Invalid base room                                                                                                                     |
