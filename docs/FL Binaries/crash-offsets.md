@@ -92,18 +92,19 @@ If you're using the event viewer for this a lot, you can use the following xml f
 
 ### Miscellaneous
 
-| File           | Offset | Found by         | Description                                                                                                                           |
-| -------------- | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| alchemy.dll    | 0701B  | Gold_Sear        | Rare crash, occurs inconsistently when creating an instant jump fx                                                                    |
-| alchemy.dll    | 1f3a6  | Cpt_Rei_Fukai    | Occurs when the `<pairs>` of an effect use numbers that do not exist in the `<fx>` part of the effect.                                |
-| dalib.dll      | 04353  | robocop          | Memory allocation failure (in CDPMsgList::Add). It's only asking for 12 bytes, so there must be some serious memory leakage going on. |
-| Freelancer.exe | 06100  | adoxa            | Bad wireframe                                                                                                                         |
-| Freelancer.exe | 114764 | Gold_Sear        | Occurs when a next_ring does not reference to a tradelane ring                                                                        |
-| Freelancer.exe | 58000  | Cpt_Rei_Fukai    | Occurs when a player has got an item equipped that no longer exists, e. g. the weapon was deleted.                                    |
-| Freelancer.exe | 54f08  | HeIIoween        | Possible corrupted mbases.ini.                                                                                                        |
-| ntdll.dll      | 3ff05  | HeIIoween        | Incompatible d3d8.dll wrapper/converter.                                                                                              |
-| ntdll.dll      | 11689  | HeIIoween        | not supported/equipable archetype in players char file.                                                                               |
-| ntdll.dll      | 101b3  | Tiger_MU         | Related to NPCs and/or their chatter.                                                                                                 |
-| ntdll.dll      | 109d8  | Jeider           | Reason: using inherit in ShieldGenerator                                                                                              |
-| rendcomp.dll   | 11163  | Lord of the Hell | bad hash at `<VMeshLibrary>`                                                                                                          |
-| Freelancer.exe | 3bb07  | Ruppetthemuppet  | Invalid base room                                                                                                                     |
+| File           | Offset   | Found by         | Description                                                                                                                           |
+| -------------- | -------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| alchemy.dll    | 0701B    | Gold_Sear        | Rare crash, occurs inconsistently when creating an instant jump fx                                                                    |
+| alchemy.dll    | 1f3a6    | Cpt_Rei_Fukai    | Occurs when the `<pairs>` of an effect use numbers that do not exist in the `<fx>` part of the effect.                                |
+| alchemt.dll    | 000187bc | Ruppetthemuppet  | Duplicate node name (occured when an emitter and node had the same name)                                                              |
+| dalib.dll      | 04353    | robocop          | Memory allocation failure (in CDPMsgList::Add). It's only asking for 12 bytes, so there must be some serious memory leakage going on. |
+| Freelancer.exe | 06100    | adoxa            | Bad wireframe                                                                                                                         |
+| Freelancer.exe | 114764   | Gold_Sear        | Occurs when a next_ring does not reference to a tradelane ring                                                                        |
+| Freelancer.exe | 58000    | Cpt_Rei_Fukai    | Occurs when a player has got an item equipped that no longer exists, e. g. the weapon was deleted.                                    |
+| Freelancer.exe | 54f08    | HeIIoween        | Possible corrupted mbases.ini.                                                                                                        |
+| ntdll.dll      | 3ff05    | HeIIoween        | Incompatible d3d8.dll wrapper/converter.                                                                                              |
+| ntdll.dll      | 11689    | HeIIoween        | not supported/equipable archetype in players char file.                                                                               |
+| ntdll.dll      | 101b3    | Tiger_MU         | Related to NPCs and/or their chatter.                                                                                                 |
+| ntdll.dll      | 109d8    | Jeider           | Reason: using inherit in ShieldGenerator                                                                                              |
+| rendcomp.dll   | 11163    | Lord of the Hell | bad hash at `<VMeshLibrary>`                                                                                                          |
+| Freelancer.exe | 3bb07    | Ruppetthemuppet  | Invalid base room                                                                                                                     |
