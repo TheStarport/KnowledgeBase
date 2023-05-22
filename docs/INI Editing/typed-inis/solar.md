@@ -98,7 +98,7 @@ dmg_obj = STRING
 mass = INT
 fuse = STRING, INT, INT
 group_dmg_hp = STRING
-group_dmg_object = STRING
+group_dmg_obj = STRING
 debris_type = STRING
 separation_explosion = STRING
 type = STRING
@@ -118,7 +118,7 @@ explosion_resistance = FLOAT
 | mass                 |             |
 | fuse                 |             |
 | group_dmg_hp         |             |
-| group_dmg_object     |             |
+| group_dmg_obj        |             |
 | debris_type          |             |
 | separation_explosion |             |
 | type                 |             |
