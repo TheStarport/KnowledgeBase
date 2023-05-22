@@ -153,6 +153,9 @@ parent_impulse = INT
 child_impulse = INT
 dmg_hp = STRING
 dmg_obj = STRING
+fuse = STRING, INT, INT
+group_dmg_hp = STRING
+group_dmg_obj = STRING
 mass = INT
 debris_type = STRING
 separation_explosion = STRING
@@ -171,6 +174,9 @@ explosion_resistance = FLOAT
 | dmg_hp               |             |
 | dmg_obj              |             |
 | mass                 |             |
+| fuse                 |             |
+| group_dmg_hp         |             |
+| group_dmg_obj        |             |
 | debris_type          |             |
 | separation_explosion |             |
 | type                 |             |
