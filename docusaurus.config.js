@@ -50,10 +50,6 @@ const config = {
     ({
       navbar: {
         title: 'The Starport',
-        logo: {
-          alt: 'Logo',
-          src: 'wiki-images/FLServer.png',
-        },
         items: [
           {
             type: 'doc',
