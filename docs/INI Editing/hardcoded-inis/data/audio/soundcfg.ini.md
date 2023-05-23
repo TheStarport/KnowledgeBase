@@ -67,7 +67,7 @@ nickname = STRING
 settings = INT, INT, INT
 ```
 
-| Parameter | Information                                                                 |
-| --------- | --------------------------------------------------------------------------- |
-| nickname  | This appears to refer to an entry in [sounds.ini](./sounds.ini.md)          |
-| settings  | Defines level of reverb, not sure what these integers do? Testing required. |
+| Parameter | Information                                                                      |
+| --------- | -------------------------------------------------------------------------------- |
+| nickname  | This appears to refer to an entry in [sounds.ini](../../../typed-inis/sounds.md) |
+| settings  | Defines level of reverb, not sure what these integers do? Testing required.      |

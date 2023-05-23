@@ -28,7 +28,7 @@ The location of these INI types is defined in freelancer.ini. They can, for the 
 | [explosions](typed-inis/explosions.md)             | Defines explosions.                                                                                                             | freelancer.ini  |
 | [fonts](typed-inis/fonts.md)                       | Defines the fonts used by the game.                                                                                             | freelancer.ini  |
 | [fuses](typed-inis/fuses.md)                       | Defines controlled/multipart explosions, referred to by Freelancer as fuses.                                                    | freelancer.ini  |
-| [gate_tunnels](typed-inis/gate_tunnels.md)         | Defines elements of jump gate and jump hole tunnel effects.                                                                     | freelancer.ini  |
+| [gate_tunnels](./typed-inis/gate_tunnel.md)        | Defines elements of jump gate and jump hole tunnel effects.                                                                     | freelancer.ini  |
 | [goods](typed-inis/goods.md)                       | Defines the sale price and some properties of equipment and ships.                                                              | freelancer.ini  |
 | [groups](typed-inis/groups.md)                     | Defines the initial state of the game world, with regards to player faction relationships and locked jump gates and jump holes. | freelancer.ini  |
 | [HUD](typed-inis/hud.md)                           | Defines HUD elements.                                                                                                           | freelancer.ini  |
@@ -140,7 +140,7 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 
 ### Universe
 
-| Name                                                                                 | Description                                                                         | Path             |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------- |
+| Name                                                                                 | Description                                                                                             | Path             |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ---------------- |
 | [paths](hardcoded-inis/data/universe/paths.md)                                       | Defines shortest paths used by the autopilot. These files are generated at runtime if they don't exist. | `DATA\UNIVERSE\` |
-| [missioncreatedsolars.ini](hardcoded-inis/data/universe/missioncreatedsolars.ini.md) | Defines solars created during single-player missions.                               | `DATA\UNIVERSE\` |
+| [missioncreatedsolars.ini](hardcoded-inis/data/universe/missioncreatedsolars.ini.md) | Defines solars created during single-player missions.                                                   | `DATA\UNIVERSE\` |
