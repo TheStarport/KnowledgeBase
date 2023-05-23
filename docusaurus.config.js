@@ -63,54 +63,9 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'INI Editing',
-                to: '/docs/INI Editing',
-              },
-              {
-                label: 'File Structures',
-                to: '/docs/File Structures',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://the-starport.net/discord',
-              },
-              {
-                label: 'Youtube',
-                href: 'https://www.youtube.com/channel/UC1ibqmg3PsAEU3Vu4jL-urw',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'News',
-                href: 'https://the-starport.net/news',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/TheStarport',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date("2008").getFullYear()}-${new Date().getFullYear()} The Starport.<br/>Built with Docusaurus.`,
-      },
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: true,
         respectPrefersColorScheme: false,
       },
       prism: {
