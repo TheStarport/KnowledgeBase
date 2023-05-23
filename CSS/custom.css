@@ -62,7 +62,6 @@ html {
 
 .main-wrapper {
   background-color: rgba(0, 0, 0, 0.6);
-
 }
 
 h1 {
@@ -221,4 +220,17 @@ button {
 
 .table-of-contents.a:hover {
   color: #acf9fb;
+}
+
+.pagination-nav__link {
+  border-color: rgb(2, 157, 187);
+  border-style: solid;
+  border-radius: 0;
+  border-width: 1px;
+}
+.pagination-nav__link:hover {
+  border-color: var(--ifm-pagination-nav-color-hover);
+  text-decoration: none;
+  color: var(--ifm-navbar-link-hover-color);
+  box-shadow: 0 0 4px rgba(75, 242, 246, 0.65);
 }
