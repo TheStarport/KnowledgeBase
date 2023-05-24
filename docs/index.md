@@ -15,19 +15,19 @@ Information relating to file structures, ini types and the inner workings of Fre
 
 ### File Structures
 
-[Information on file structures found in Freelancer](File%20Structures/index.md). For specific INI block structures, please see [INI Editing](INI%20Editing/index.md).
+[Information on file structures found in Freelancer](file-structures/index.md). For specific INI block structures, please see [INI Editing](ini-editing/index.md).
 
 ### FL Binaries
 
 Information related to Freelancer's binaries including information on debugging crash offsets, modifying the behavior of the executable files, and shortcut switches that can be used with Freelancer and FLServer:
 
-* [Crash Offsets Index](FL%20Binaries/crash-offsets.md)
-* [Limit Breaking 101](./FL%20Binaries/limit-breaking/index.md)
-* [Shortcut Switches](FL%20Binaries/shortcut-switches.md)
+* [Crash Offsets Index](./fl-binaries/crash-offsets.md)
+* [Limit Breaking 101](./fl-binaries/limit-breaking/index.md)
+* [Shortcut Switches](./fl-binaries/shortcut-switches.md)
 
 ### INI Editing
 
-[Information on all the different ini types found in Freelancer](INI%20Editing/index.md), what their keys mean, and how to edit them and example vanilla files to template from.
+[Information on all the different ini types found in Freelancer](ini-editing/index.md), what their keys mean, and how to edit them and example vanilla files to template from.
 
 ## Modding Guides and Tutorials
 
