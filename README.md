@@ -1,25 +1,2 @@
-# KnowledgeBase
-A collection of all knowledge amassed for the Space Game
-TODO: write a readme
-
-### Installation
-
-```
-$ npm i
-```
-
-### Local Development
-
-```
-$ npm run start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## The Starport Knowledge Base & Wiki
+A collection of all knowledge amassed for the arcade space shooter, Freelancer (2003). This is the static content for the Starport Wiki. It is used by (the main repo)[https://github.com/TheStarport/StarportDocusaurus].

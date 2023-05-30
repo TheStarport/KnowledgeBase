@@ -199,4 +199,4 @@ flash_size = INT
 
 A breakdown of different elements that make up BeamSpear and BeamBolt entries can be found below. Credit goes to Cpt_Rei_Fukai.
 
-![](../../../wiki-images/beam-diagram.png)
+![Diagram of different elements that make up a beam](/img/beam-diagram.png)
