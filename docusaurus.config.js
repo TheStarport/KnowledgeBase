@@ -51,12 +51,36 @@ const config = {
       navbar: {
         title: 'The Starport',
         items: [
+          // {
+          //   to: 'https://blog.the-starport.net',
+          //   target: '_self', 
+          //   label: 'Blog', 
+          //   position: 'left'
+          // },
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: 'Home',
+            to: 'https://wiki.the-starport.net',
+            target: '_self', 
+            label: 'Wiki', 
+            position: 'left'
           },
+          {
+            to: 'https://the-starport.net/freelancer/forum/',
+            target: '_self', 
+            label: 'Forum', 
+            position: 'left'
+          },
+          {
+            to: 'https://discord.gg/tnrm4CB', 
+            label: 'Discord', 
+            position: 'left',
+            
+          },
+          {
+            to: 'https://github.com/TheStarport', 
+            label: 'The Forge', 
+            position: 'left',
+            
+          }
         ],
       },
       colorMode: {
