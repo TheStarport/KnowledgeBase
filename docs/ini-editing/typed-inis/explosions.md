@@ -33,6 +33,17 @@ trail = STRING
 explosion = STRING
 ```
 
+| Parameter        | Information |
+| ---------------- | ----------- |
+| nickname         |             |
+| death_method     |             |
+| lifetime         |             |
+| linear_drag      |             |
+| angular_drag     |             |
+| rotation_inertia |             |
+| trail            |             |
+| explosion        |             |
+
 ### [Explosion]
 
 ```ini
@@ -50,11 +61,32 @@ effect = STRING, FLOAT
 innards_debris_object = STRING
 ```
 
+| Parameter                 | Information |
+| ------------------------- | ----------- |
+| nickname                  |             |
+| lifetime                  |             |
+| process                   |             |
+| num_child_pieces          |             |
+| debris_type               |             |
+| innards_debris_start_time |             |
+| innards_debris_num        |             |
+| innards_debris_radius     |             |
+| debris_impulse            |             |
+| effect                    |             |
+| innards_debris_object     |             |
+
 ### [Simple]
 
 ```ini
 nickname = STRING
 DA_archetype = PATH
 material_library = PATH
-Mass = INT
+mass = INT
 ```
+
+| Parameter        | Information |
+| ---------------- | ----------- |
+| nickname         |             |
+| DA_archetype     |             |
+| material_library |             |
+| mass             |             |
