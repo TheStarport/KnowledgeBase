@@ -150,3 +150,35 @@ damage = INT
 | radius     |             |
 | force      |             |
 | damage     |             |
+
+### damage_group
+
+```ini
+[damage_group]
+group_name = STRING
+at_t = FLOAT
+damage_type = STRING
+hitpoints = INT
+```
+
+| Parameter   | Information |
+| ----------- | ----------- |
+| group_name  |             |
+| at_t        |             |
+| damage_type |             |
+| hitpoints   |             |
+
+### damage_root
+
+```ini
+[damage_root]
+at_t = FLOAT
+damage_type = STRING
+hitpoints = INT
+```
+
+| Parameter   | Information |
+| ----------- | ----------- |
+| at_t        |             |
+| damage_type |             |
+| hitpoints   |             |
