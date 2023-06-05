@@ -302,22 +302,28 @@ dry_fire_sound = STRING
 auto_turret = BOOL
 turn_rate = FLOAT
 dispersion_angle = FLOAT
+use_animation = STRING
+gun_elevation = FLOAT
+gun_azimuth = FLOAT
 ```
 
-| Parameter            | Information |
-| -------------------- | ----------- |
-| HP_child             |             |
-| explosion_resistance |             |
-| hp_gun_type          |             |
-| damage_per_fire      |             |
-| power_usage          |             |
-| refire_delay         |             |
-| muzzle_velocity      |             |
-| projectile_archetype |             |
-| dry_fire_sound       |             |
-| auto_turret          |             |
-| turn_rate            |             |
-| dispersion_angle     |             |
+| Parameter            | Information                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------- |
+| HP_child             |                                                                                               |
+| explosion_resistance |                                                                                               |
+| hp_gun_type          |                                                                                               |
+| damage_per_fire      |                                                                                               |
+| power_usage          |                                                                                               |
+| refire_delay         |                                                                                               |
+| muzzle_velocity      |                                                                                               |
+| projectile_archetype |                                                                                               |
+| dry_fire_sound       |                                                                                               |
+| auto_turret          |                                                                                               |
+| turn_rate            |                                                                                               |
+| dispersion_angle     |                                                                                               |
+| use_animation        |                                                                                               |
+| gun_elevation        | Unused value. Freelancer tests these for validity if they are present, but does not use them. |
+| gun_azimuth          | Unused value. Freelancer tests these for validity if they are present, but does not use them. |
 
 ### [InternalFX]
 
@@ -386,6 +392,65 @@ explosion_arch = STRING
 | Parameter      | Information |
 | -------------- | ----------- |
 | explosion_arch |             |
+
+
+### [Mine]
+
+```ini
+explosion_arch = STRING
+units_per_container = INT
+requires_ammo = BOOL
+one_shot_sound = STRING
+detonation_dist = INT
+lifetime = FLOAT
+force_gun_ori = BOOL
+owner_safe_time = INT
+linear_drag = FLOAT
+seek_dist = INT
+top_speed = INT
+acceleration = INT
+const_effect = STRING
+```
+
+| Parameter           | Information |
+| ------------------- | ----------- |
+| explosion_arch      |             |
+| units_per_container |             |
+| requires_ammo       |             |
+| one_shot_sound      |             |
+| detonation_dist     |             |
+| lifetime            |             |
+| force_gun_ori       |             |
+| owner_safe_time     |             |
+| linear_drag         |             |
+| seek_dist           |             |
+| top_speed           |             |
+| acceleration        |             |
+| const_effect        |             |
+
+### [MineDropper]
+
+```ini
+[MineDropper]
+explosion_resistance = INT
+damage_per_fire = INT
+power_usage = INT
+refire_delay = INT
+muzzle_velocity = INT
+projectile_archetype = STRING
+dry_fire_sound = STRING
+```
+
+| Parameter            | Information |
+| -------------------- | ----------- |
+| explosion_resistance |             |
+| damage_per_fire      |             |
+| power_usage          |             |
+| refire_delay         |             |
+| muzzle_velocity      |             |
+| projectile_archetype |             |
+| dry_fire_sound       |             |
+
 
 ### [Motor]
 
@@ -475,14 +540,16 @@ units_per_container = INT
 
 ```ini
 [Scanner]
-range = 10000
-cargo_scan_range = 2000
+range = INT
+cargo_scan_range = INT
+power_usage = INT
 ```
 
-| Parameter        | Information |
-| ---------------- | ----------- |
-| range            |             |
-| cargo_scan_range |             |
+| Parameter        | Information                                                                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| range            | The range of the scanner. Players and NPCs (if scanners are enabled for them), will not be able to see certain objects on their contacts list beyond this range. |
+| cargo_scan_range | The range of the active cargo scan                                                                                                                               |
+| power_usage      | Power used when an active scan takes place. Power is deducted once, not over time.                                                                               |
 
 ### [ShieldBattery]
 
