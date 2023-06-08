@@ -25,5 +25,5 @@ A value like "0F 85 -> 90 E9" means replace the original bytes on the left with 
 | 94 -> 95      | freelancer.exe | 0DBE10 | adoxa | Disable auto-level toggling.          |
 | 01 -> 00      | common.dll     | 07249A | adoxa | Level camera off by default (Part 1). |
 | 01 -> 00      | freelancer.exe | 1186E9 | adoxa | Level camera off by default (Part 2). |
-| 94 -> 95      | freelancer.exe | 11A1D3 | adoxa | Sisable level camera toggling.        |
+| 94 -> 95      | freelancer.exe | 11A1D3 | adoxa | Disable level camera toggling.        |
 | 1.75f         | freelancer.exe | 1C94FC | Syd   | Multiplier of mouse speed.            |
