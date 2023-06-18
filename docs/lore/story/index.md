@@ -1,5 +1,5 @@
 ---
-title: Story News, Rumours and Personal Log
+title: Story
 ---
 
 ## Information

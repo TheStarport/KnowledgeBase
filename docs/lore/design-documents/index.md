@@ -12,3 +12,4 @@ Those documents more or less reflect the game’s final state or at least help u
 | [Liberty Overview](./liberty-overview.md)                           |
 | [Nomad Faction Overview](./nomad-faction-overview.md)               |
 | [Opening Narration](./opening-narration.md)                         |
+| [Character Vignettes](./characters/index.md)                        |
