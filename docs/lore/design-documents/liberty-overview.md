@@ -7,6 +7,7 @@ This document’s contents do not necessarily reflect the Freelancer world as it
 
 **FREELANCER:**
 **LIBERTY OVERVIEW**
+
 written by
 Chris Todd
 
