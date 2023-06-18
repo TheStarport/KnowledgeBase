@@ -9,3 +9,4 @@ The pages of this section are a collection of all available lore from within Fre
 | Sections                                               |
 | ------------------------------------------------------ |
 | [Story Lore Overview](./story/index.md)                |
+| [Design Documents](./design-documents/index.md)        |
