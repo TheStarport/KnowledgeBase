@@ -32,3 +32,8 @@ Information related to Freelancer's binaries including information on debugging 
 ## Modding Guides and Tutorials
 
 There are currently no tutorial style articles on this wiki, but they will be listed under this heading when we either write or port some!
+
+## Lore Overview
+Freelancer is rich in lore and the following pages contain rumours, news and other text from the game to give a quick overview.
+
+[Lore Index](./lore/index.md)
