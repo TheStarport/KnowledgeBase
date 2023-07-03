@@ -1,3 +1,8 @@
+---
+title: Running multiple freelancer clients on a single machine
+---
+
+Sometimes, when testing multiplayer-specific changes, it's nessecary to run multiple Freelancer clients on the same machine so you can have two controlled clients connected to a local server for testing or research purposes. By default, Freelancer is not able to run more than a single client at a time, even when executables are renamed or called from different folders.
 
 ## Running multiple clients
 
