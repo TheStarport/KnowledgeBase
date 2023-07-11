@@ -3,7 +3,7 @@ title: Guides
 id: guides
 ---
 
-## FL Binaries
+This page contains a list of written guides and processes for running, modding and troubleshooting Freelancer and FLServer.
 
 * [Running multiple freelancer clients on a single machine](./multiple-clients-on-same-machine.md)
 
