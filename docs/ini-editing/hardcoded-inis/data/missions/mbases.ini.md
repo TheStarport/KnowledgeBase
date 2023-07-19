@@ -123,6 +123,7 @@ voice = STRING
 room = STRING
 bribe = STRING, INT, INT ;repeatable
 rumor = STRING, STRING, INT, INT ;repeatable
+rumorknowdb = STRING ;repeatable
 rumor_type2 = STRING, STRING, INT, INT ;repeatable
 know = INT, INT, INT, INT ;repeatable
 knowdb = STRING ;repeatable
@@ -140,10 +141,11 @@ knowdb = STRING ;repeatable
 | voice           | Voice for the NPC to use as defined in a `[Voice]` block of [voices](../../../typed-inis/voices.md)                                                                                                                                                             |
 | room            | Room this NPC will appear in as defined in an `[MRoom]` block further down in mBases.ini.                                                                                                                                                                      |
 | bribe           | Allows the NPC to offer a bribe for the faction listed in STRING. The two INT values appear to be a price range? (Requires confirmation)                                                                                                                       |
-| rumor           | References two ranks from [rankdiff.ini](rankdiff.ini.md), then presumably a weight, and finally the STRING to display in the rumor. The rankdiff values referenced appear to be the rank 'range' where these rumors can appear. |
+| rumor           | References two ranks from [rankdiff.ini](rankdiff.ini.md), then an integer between 1 and 3, and finally an IDS reference for the STRING to display in the rumor. The rankdiff values referenced appear to be the rank 'range' where these rumors can appear. The first integer controls the required reputation with the faction to be offered the rumor: 1 means 0.0, 2 means 0.2 and 3 means 0.6 minimum reputation. It is not known whether other integers are accepted or whether these values control anything else. |
+| rumorknowdb     | References an object in space for the preceding `rumor` entry to reveal.                                                                                                                                                                                       | 
 | rumor_type2     | Same syntax as `rumor`. Uncertain what the purpose of this is.                                                                                                                                                                                                 |
-| know            | Used in conjunction with [knowledgemap.ini](../interface/knowledgemap.ini.md). Seems to be a series of strings and finally a weight. Not 100% sure on how this one functions.                                                                      |
-| knowdb          | References an object in space for `know` to reveal.                                                                                                                                                                                                            |
+| know            | Used in conjunction with [knowledgemap.ini](../interface/knowledgemap.ini.md). The first two entires are IDS reference for the STRINGs used in the card, then the price of the information in Credits and finally an integer between 1 and 3. The last integer controls the required reputation with the faction to be offered the information: 1 means 0.0, 2 means 0.2 and 3 means 0.6 minimum reputation. It is not known whether other integers are accepted or whether these values control anything else. Not 100% sure on how the IDS reference in this one function. |
+| knowdb          | References an object in space for the preceding `know` entry to reveal.                                                                                                                                                                                        |
 
 ### [MRoom]
 
