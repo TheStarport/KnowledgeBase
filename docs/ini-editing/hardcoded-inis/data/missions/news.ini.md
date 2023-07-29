@@ -30,7 +30,7 @@ base = STRING ;repeatable
 | autoselect | If this key is present, the news item will be automatically selected when the news panel is opened.                                                                  |
 | icon       | The small icon used in the news selection list. The names of these are hardcoded, and the textures can be found in 3db files in `DATA\INTERFACE\NEURONET\NEWSVENDOR` |
 | logo       | The large icon used when you select the news item. By default these are loaded from `DATA\INTERFACE\NEURONET\NEWSVENDOR\newsvendor.txm`                              |
-| category   | The string value for the tagline. This appears to be identical to headline. Requires testing.                                                                        |
-| headline   | The string value for the tagline. This appears to be identical to category. Requires testing.                                                                        |
+| category   | This value seems to be unused and can be left out of `[NewsItem]` blocks entirely with no problems.                                                                  |
+| headline   | The string value for the tagline.                                                                                                                                    |
 | text       | The string value for the news story content.                                                                                                                         |
 | base       | The base this news story appears at. Multiple base keys can be defined.                                                                                              |
