@@ -62,7 +62,7 @@ Each entry in tree block is 44 bytes.
 | modifyTime           | uint32 | File last modification timestamp.              |
 
 - Tree root entry name should be "/", but other names are possible.
-- For attributes see Win32 API dwFileAttributes. In short it should be either 0x80 for file or 0x10 for folder.
+- For attributes see Win32 API dwFileAttributes. In short it should be either 0x80 for file or 0x10 for folder. It is not necessary, however, that all three bytes after the first here are zero, and, in fact, in some vanilla files, they are not.
 - When entry is a folder the childOffset points to first child byte offset, relative to treeOffset in header, and dataSize* are all zeroes.
 - When entry is a file the childOffset points to data block, relative to dataOffset in header, and dataSize* indicate file size.
 - Timestamps are DOS file timestamp, see: [https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653](https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653)
