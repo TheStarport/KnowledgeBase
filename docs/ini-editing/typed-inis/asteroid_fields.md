@@ -61,7 +61,7 @@ max_alpha = FLOAT
 | ambient_color        |  |
 | ambient_increase     | RBG light value added to the existing ambient light when a player is in the field. |
 | tint_field           |  | 
-| empty_cube_frequency | A chance percentage between 0 and 1 by which cubes are spawned without asteroids inside. |
+| empty_cube_frequency | A chance percentage between 0 and 1 by which cubes are spawned without asteroids inside. 1 meaning 100% of the cubes are empty. |
 | max_alpha            | A value between 0 and 1. Seemingly used only for gas "asteroids". |
 
 ### Exclusion Zones
@@ -79,13 +79,17 @@ Exclusion zones cause cubes of this asteroid file to not be created. Note: The e
 exclusion = STRING
 exclude_billboards = INT
 exclude_dynamic_asteroids = INT
+empty_cube_frequency = FLOAT
+billboard_count = INT
 ```
 
 | Parameter          | Information                                                                                                                        |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| exclusion          | References the nickname of a zone defined in a system file. This zone will have no randomly generated asteroids spawned within it. Multiple `exclusion` parameters are allowed.|
-| exclude_billboards | `1` for `true`. Relates directly to the previous `exclusion` defined. Determines whether or not the exclusion zone uses 'billboards', 2d asteroids that fade as the player approaches them.|
-| exclude_dynamic_asteroids | `1` for `true`. Relates directly to the previous `exclusion` defined.  Disables spawning dynamic asteroids within this exclusion.|
+| exclusion          | References the nickname of a zone defined in a system file. This zone will have no randomly generated asteroids spawned within it. Multiple `exclusion` parameters are allowed. |
+| exclude_billboards | `1` for `true`. Relates directly to the previous `exclusion` defined. Determines whether or not the exclusion zone uses 'billboards', 2d asteroids that fade as the player approaches them. |
+| exclude_dynamic_asteroids | `1` for `true`. Relates directly to the previous `exclusion` defined.  Disables spawning dynamic asteroids within this exclusion. |
+| empty_cube_frequency | Overwrites the fields’ empty_cube_frequency. For normal exclusion zones this value is `1`. |
+| billboard_count | Overwrites the fields’ `[AsteroidBillboards]` `count`. |
 
 ### Properties
 
@@ -112,10 +116,10 @@ asteroid = STRING, FLOAT, FLOAT, FLOAT, INT, INT, INT, mine
 
 | Parameter       | Information |
 | --------------- | ----------- |
-| xaxis_rotation  |             |
-| yaxis_rotation  |             |
-| zaxis_rotation  |             |
-| asteroid        | The STRING refers to an `[Asteroid]` or `[AsteroidMine]` entry. The following 3 FLOATS are the relative positioning within the cube - usually between 0 and 1, but also negative numbers and probably any numbers work. The last 3 INTs are the rotation of the asteroids in degrees. The ending `mine` is only required for `[AsteroidMine]`, possibly marking them as explosive.|
+| xaxis_rotation  | Overrides default rotations of a cube along the x-axis (default `0, 90, 180, 270`). Accepts 1 to 4 values. This rotates the entire cube and its contents pseudo-randomly around these values. Combines with every other value of the other axis. |
+| yaxis_rotation  | Overrides default rotations of a cube along the y-axis (default `0, 90, 180, 270`). Accepts 1 to 4 values. This rotates the entire cube and its contents pseudo-randomly around these values. Combines with every other value of the other axis. |
+| zaxis_rotation  | Overrides default rotations of a cube along the z-axis (default `0, 90, 180, 270`). Accepts 1 to 4 values. This rotates the entire cube and its contents pseudo-randomly around these values. Combines with every other value of the other axis. |
+| asteroid        | The STRING refers to an `[Asteroid]` or `[AsteroidMine]` entry. The following 3 FLOATS are the relative positioning within the cube. The range for a single cube is -1 to 1. Anything outside those values causes intersection with neighboring cubes. The last 3 INTs are the rotation of the asteroids in degrees. The ending `mine` is only required for `[AsteroidMine]`, possibly marking them as explosive.|
 
 ### Band
 
@@ -127,7 +131,7 @@ render_parts = INT
 shape = STRING
 height = INT
 offset_dist = INT
-fade = INT, FLOAT, INT, INT
+fade = FLOAT, FLOAT, FLOAT, FLOAT
 texture_aspect = INT
 color_shift = INT, INT, INT
 ambient_intensity = INT
@@ -136,15 +140,15 @@ vert_increase = INT
 
 | Parameter         | Information |
 | ----------------- | ----------- |
-| render_parts      |             |
-| shape             |             |
-| height            |             |
-| offset_dist       |             |
-| fade              |             |
-| texture_aspect    |             |
+| render_parts      | Seems unused. |
+| shape             | The texture used to render on the band. |
+| height            | The height of the band. The texture scales up with it — effectively reducing the count of faces of the band the higher it is depending on the `texture_aspect` and `vert_increase`. |
+| offset_dist       | An offset from the edge of the zone by which the band is moved inside the zone – or if negative value being moved outside. |
+| fade              | Values relative to `height` defining the range between the band is visible. 1 equals `height`. The first two values define the range between which the band is faded out when coming close to it (fade-out end, fade out start). The last two values define the range between which the band fades out on distance (fade-out start, fade-out end). |
+| texture_aspect    | Default `1`. Also determines the width of a single face of the band related to `height`. Higher values stretch the band-faces with the texture along the horizontal axis — effectively stretching the texture will reduce the count of faces the band is rendered with. |
 | color_shift       |             |
 | ambient_intensity |             |
-| vert_increase     |             |
+| vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
 
 ### ExclusionBand
 
@@ -168,15 +172,15 @@ cull_mode = INT
 | Parameter         | Information |
 | ----------------- | ----------- |
 | zone              |             |
-| render_parts      |             |
-| shape             |             |
-| height            |             |
-| offset_dist       |             |
-| fade              |             |
-| texture_aspect    |             |
+| render_parts      | Seems unused. |
+| shape             | The texture used to render on the band. |
+| height            | The height of the band. The texture scales up with it — effectively reducing the count of faces of the band the higher it is depending on the `texture_aspect` and `vert_increase`. |
+| offset_dist       | An offset from the edge of the zone by which the band is moved inside the zone – or if negative value being moved outside. |
+| fade              | Values relative to `height` defining the range between the band is visible. 1 equals `height`. The first two values define the range between which the band is faded out when coming close to it (fade-out end, fade out start). The last two values define the range between which the band fades out on distance (fade-out start, fade-out end). |
+| texture_aspect    | Default `1`. Also determines the width of a single face of the band related to `height`. Higher values stretch the band-faces with the texture along the horizontal axis — effectively stretching the texture will reduce the count of faces the band is rendered with. |
 | color_shift       |             |
 | ambient_intensity |             |
-| vert_increase     |             |
+| vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
 | cull_mode         |             |
 
 ### AsteroidBillboards
@@ -202,7 +206,7 @@ size = INT, INT
 | shape             |             |
 | color_shift       |             |
 | ambient_intensity |             |
-| size              |             |
+| size              | A range between two values which define the size billboards are rendered with. |
 
 ### DynamicAsteroids
 
