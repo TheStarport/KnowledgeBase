@@ -72,7 +72,7 @@ Please note that defining an exclusion here without a corresponding zone in a sy
 
 :::
 
-Exclusion zones cause cubes of this asteroid file to not be created. Note: The exclusion zone must have a minium size related to the defined cube size, or it may have no effect.
+Exclusion zones can be used to modify spawning of cubes, dynamic asteroids, and billboards within. Note that cubes are spawned along a globally defined grid, and exclusion zones must be big enough to touch a cube enough to affect it. Only entire cubes of an asteroid field can be modified – no individual asteroids.
 
 ```ini
 [Exclusion Zones]
@@ -105,6 +105,8 @@ flag = STRING
 ### Cube
 
 The cube defines asteroids which are being spawned as static objects within this field in repeating patterns. This block can be omitted.
+
+The grid along which cubes are spawned is related to the global coordinate system. Cubes have an offset of half their cube size from the center point (meaning the inner corners of the central cubes touch each other at exactly 0 0 0).
 
 ```ini
 [Cube]
@@ -171,7 +173,7 @@ cull_mode = INT
 
 | Parameter         | Information |
 | ----------------- | ----------- |
-| zone              |             |
+| zone              | The zone name this band is rendered around. |
 | render_parts      | Seems unused. |
 | shape             | The texture used to render on the band. |
 | height            | The height of the band. The texture scales up with it — effectively reducing the count of faces of the band the higher it is depending on the `texture_aspect` and `vert_increase`. |
