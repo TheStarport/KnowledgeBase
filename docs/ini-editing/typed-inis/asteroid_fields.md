@@ -152,7 +152,7 @@ cull_mode = INT
 | color_shift       |             |
 | ambient_intensity |             |
 | vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
-| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the exclusion zone band is rendered.<br />**2:** Only the inside of the exclusion zone band is rendered. |
+| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the band is rendered.<br />**2:** Only the inside of the band is rendered. |
 
 ### ExclusionBand
 
@@ -185,7 +185,7 @@ cull_mode = INT
 | color_shift       |             |
 | ambient_intensity |             |
 | vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
-| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the exclusion zone band is rendered.<br />**2:** Only the inside of the exclusion zone band is rendered. |
+| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the band is rendered.<br />**2:** Only the inside of the band is rendered. |
 
 ### AsteroidBillboards
 
