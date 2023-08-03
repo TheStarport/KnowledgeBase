@@ -53,10 +53,10 @@ recharge_time = INT
 | nickname         |             |
 | DA_archetype     |             |
 | material_library |             |
-| explosion_arch   |             |
-| detect_radius    |             |
-| explosion_offset |             |
-| recharge_time    |             |
+| explosion_arch   | An `[Explosion]` entry defining the explosion effect and damage of the mine. Note: The damage will always be centered to the mine’s center, not where the effect will be played. |
+| detect_radius    | The radius from the mine’s center within players or NPCs will trigger the explosion. |
+| explosion_offset | The radius from the mine’s center in direction to the trigger where the `explosion_arch` (not damage!) will be rendered at. |
+| recharge_time    | Delay in seconds after which another explosion can occur. |
 
 ```ini
 [DynamicAsteroid]
