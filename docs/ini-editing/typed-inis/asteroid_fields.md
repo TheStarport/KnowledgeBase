@@ -138,6 +138,7 @@ texture_aspect = INT
 color_shift = INT, INT, INT
 ambient_intensity = INT
 vert_increase = INT
+cull_mode = INT
 ```
 
 | Parameter         | Information |
@@ -151,10 +152,11 @@ vert_increase = INT
 | color_shift       |             |
 | ambient_intensity |             |
 | vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
+| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the exclusion zone band is rendered.<br />**2:** Only the inside of the exclusion zone band is rendered. |
 
 ### ExclusionBand
 
-The exclusion band works as normal bands, but specific for exclusion zones. These bands are visible always, not only from within the exclusion zone. Can be omitted.
+The exclusion band works as normal bands, but specific for exclusion zones. These bands are visible always, not only from within the exclusion zone. Can be omitted. Note: Freelancer has a bug and lighting of exclusion zone bands is inverted; light coming from inside the exclusion zone is visible on the outside-facing band surfaces and vice versa.
 
 ```ini
 [Band]
@@ -183,7 +185,7 @@ cull_mode = INT
 | color_shift       |             |
 | ambient_intensity |             |
 | vert_increase     | Splits a single textured face of the band into multiple pieces. This effectively increases the smoothness of the band especially for higher `texture_aspect` or `height`. |
-| cull_mode         |             |
+| cull_mode         | Defines which sides of the band are rendered. <br /><br />**0:** Inside and outside of the band are rendered.<br />**1:** Only the outside of the exclusion zone band is rendered.<br />**2:** Only the inside of the exclusion zone band is rendered. |
 
 ### AsteroidBillboards
 
