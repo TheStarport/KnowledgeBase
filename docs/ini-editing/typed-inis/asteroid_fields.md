@@ -108,6 +108,8 @@ The cube defines asteroids which are being spawned as static objects within this
 
 The grid along which cubes are spawned is related to the global coordinate system. Cubes have an offset of half their cube size from the center point (meaning the inner corners of the central cubes touch each other at exactly 0 0 0).
 
+The game asks for `[Cube]` to always exist and with at least one `asteroid` defined even if the zone is just meant to spawn `[DynamicAsteroids]`. Otherwise it will report `WARNING: no material found for asteroids in field` to the client log – although it does load textures just correctly.
+
 ```ini
 [Cube]
 xaxis_rotation = INT, INT, INT, INT
@@ -156,7 +158,7 @@ cull_mode = INT
 
 ### ExclusionBand
 
-The exclusion band works as normal bands, but specific for exclusion zones. These bands are visible always, not only from within the exclusion zone. Can be omitted. Note: Freelancer has a bug and lighting of exclusion zone bands is inverted; light coming from inside the exclusion zone is visible on the outside-facing band surfaces and vice versa.
+The exclusion band works as normal bands, but specific for exclusion zones. These bands are visible always, not only from within the exclusion zone. Can be omitted. Note: The game has problems applying lighting on the correct side of the band if the light source comes from within the exclusion zone – in that case the outside has the light and the inside remains dark.
 
 ```ini
 [Band]
