@@ -3,6 +3,8 @@ title: Thorn Events
 id: thorn-events
 ---
 
+Every scene minimally contains three objects: scene descriptor itself, monitor object and camera object.
+
 All events follow exact same structure:
 `{ Time, Action, Targets, Properties }`
 
@@ -46,7 +48,7 @@ However objects don’t have to follow others, example of indirect use would be 
 | `target_type` | string   | Name of attachment target, name of hardpoint or bone, empty if type is `ROOT`.                                                                                                                                                               |
 | `flags`       | string   | `POSITION`: Object will follow position of parent.<br/>`ORIENTATION`: Object will inherit orientation of parent.<br/>`LOOT_AT`:Object will orient itself towards parent.<br/>`ENTITY_RELATIVE`<br/>`ORIENTATION_RELATIVE`<br/>`PARENT_CHILD` |
 
-Flags property is a bitmask, and values can be combined by using + symbol.
+Flags property is a bitmask, and values can be combined by using `+` symbol.
 
 ### CONNECT_HARDPOINT
 
