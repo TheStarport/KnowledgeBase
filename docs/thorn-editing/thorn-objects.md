@@ -21,7 +21,7 @@ These are properties common to most object types:
 
 Flags can be summed with with `+` symbol.
 
-## spatialprops
+#### spatialprops
 
 | Property   | Type          | Description                                                                            |
 | ---------- | ------------- | -------------------------------------------------------------------------------------- |
