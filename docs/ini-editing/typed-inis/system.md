@@ -12,7 +12,6 @@ There may be missing, incomplete or incorrect information on this page as it's s
 
 ## Overview
 
-
 ### Vanilla Examples
 
 * `DATA\UNIVERSE\SYSTEMS\BR01\br01.ini`
@@ -21,7 +20,7 @@ There may be missing, incomplete or incorrect information on this page as it's s
 
 ## Syntax
 
-Blocks other than '[Light]', '[Object]' and '[Zone]' should always be called at the top of the file in the below order.
+Blocks other than `[Light]`, `[Object]` and `[Zone]` should always be called at the top of the file in the below order.
 
 ### SystemInfo
 
