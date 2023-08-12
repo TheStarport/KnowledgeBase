@@ -3,9 +3,9 @@ title: Thorn Objects
 id: thorn-objects
 ---
 
-Every scene minimally contains three objects: scene descriptor itself, monitor object and camera object.
+Every scene contains at least three objects: a scene descriptor, monitor object and camera object.
 
-Every object has a name that must be unique within the script. More than one using same name will cause glitches and bugs.
+Every object has a name that must be unique within the script. More than one object using same name will cause glitches and bugs.
 
 These are properties common to most object types:
 
@@ -16,7 +16,7 @@ These are properties common to most object types:
 | `template_name` | string  | Object template name from catalog specific to certain types.                                                                                                                                                                                                                                                                                                                                                                             |
 | `lt_grp`        | integer | Receiving light group.                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `srt_grp`       | integer | Render order sorting group. First to last is back to front.                                                                                                                                                                                                                                                                                                                                                                              |
-| `usr_flg`       | integer | Special flags.<br/>For compound type if set to 1 the object will be rendered as a static background layer. Used for starscapes, stars and such.<br/>When used in conjunction with starsphere_generic_exclusion or similar, allows lighting/fog to set the nebula colors. (set to 2)                                                                                                                                                      |
+| `usr_flg`       | integer | Special flags.<br/>For compound type: If set to 1 the object will be rendered as a static background layer. Used for starscapes, stars and such.<br/>When used in conjunction with starsphere_generic_exclusion or similar, allows lighting/fog to set the nebula colors. (set to 2)                                                                                                                                                      |
 | `flags`         | string  | `LIT_DYNAMIC`: Mesh receives dynamic light.<br/>`LIT_AMBIENT`: Mesh receives ambient light.<br/>`HIDDEN`: Object is invisible.                                                                                                                                                                                                                                                                                                           |
 
 Flags can be summed with with `+` symbol.
@@ -26,15 +26,15 @@ Flags can be summed with with `+` symbol.
 | Property   | Type          | Description                                                                            |
 | ---------- | ------------- | -------------------------------------------------------------------------------------- |
 | `pos`      | float[3]      | Object position (unless attached to another object it is typically relative to scene). |
-| `orient`   | {float[3]}[3] | Rotation matrix. Use when setting up object in scene.                                  |
-| `q_orient` | float[4]      | Quaternion orientation. Use for animation.                                             |
-| `axisrot`  | {float, AXIS} | Single axis object rotation. Use for animation.                                        |
+| `orient`   | {float[3]}[3] | [Rotation matrix](https://www.andre-gaschler.com/rotationconverter/). Use when setting up object in scene and denotes the orientation of the object.                                 |
+| `q_orient` | float[4]      | Quaternion orientation. Used for animation.                                             |
+| `axisrot`  | {float, AXIS} | Single axis object rotation. Used for animation.                                        |
 
-When defining object in scene you should use orient property to set orientation. However in `START_SPATIAL_PROP_ANIM` event you should use q_orient quaternion property for animation. Alternatively if you need to rotate object across single axis you can simply use `axisrot`.
+When defining objects in a scene you should use the `orient` property to set orientation. However in the `START_SPATIAL_PROP_ANIM` event you should use `q_orient` quaternion property for animation. Alternatively if you need to rotate an object along a single axis you can simply use `axisrot`.
 
 ### SCENE
 
-Scene control object. Every cutscene must have only one scene object. Scene object is referenced by certain events.
+Scene control object. Every cutscene must have only one scene object. This object is referenced by certain events and can be used to set things like fog and ambient lighting.
 
 | Property  | Type | Description                   |
 | --------- | ---- | ----------------------------- |
@@ -61,7 +61,7 @@ Scene control object. Every cutscene must have only one scene object. Scene obje
 
 ### MONITOR
 
-Cutscene render target. Every cutscene must have only one monitor object. Monitor spatial properties are irrelevant, it is a meta object (doesn’t exist in the scene) and is referred only when switching between cameras.
+Cutscene render target. Every cutscene must have only one monitor object. Monitor spatial properties are irrelevant, as it is a meta object that doesn’t exist in the scene and is referred only when switching between cameras.
 
 ```lua
     {
@@ -108,7 +108,7 @@ Viewport camera object. A cutscene may have multiple cameras and use SET_CAMERA 
 
 ### LIGHT
 
-Light source object illuminate scene mesh objects. Be aware that due to the old DirectX version Freelancer uses, a mesh object can receive light from a maximum of six light sources. However you can group light sources using lgt_grp property and objects can specify which group they will receive light from. For example environment scenery can be lit by one group of light sources while characters in it are lit by another group. Light sources in cutscenes can behave slightly differently to `[Lightsource]` objects in systems.
+Light source object that illuminates scene mesh objects. Be aware that due to the old DirectX version Freelancer uses, a mesh object can receive light from a maximum of six light sources. However you can group light sources using lgt_grp property and objects can specify which group they will receive light from. For example environment scenery can be lit by one group of light sources while characters in it are lit by another group. Light sources in cutscenes can behave slightly differently to `[Lightsource]` objects in systems.
 
 | Property    | Type     | Description                                                                                              |
 | ----------- | -------- | -------------------------------------------------------------------------------------------------------- |
