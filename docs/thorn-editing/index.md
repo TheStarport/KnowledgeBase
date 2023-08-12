@@ -22,9 +22,31 @@ It’s important to note that typically cutscenes operate outside the ‘system 
 
 You’ll need just few tools to work with .thn files. If you wish to see code or modify the original .thn files you’ll need a decompiler such as [Adoxa's Dethorn](http://adoxa.altervista.org/freelancer/tools.html#dethorn) that will produce readable text files, or you can use [this pre-decompiled set of scripts](https://github.com/TheStarport/freelancer-dethorned). Keep in mind you do not need to compile them back into packed binary files, just like with the game's .ini files Freelancer can read both compiled and plain-text.
 
-A decent text editor with LUA syntax highlighting is highly recommended. Although vanilla scripts contain no programmable logic and are merely used as a serialized object/array data format much like JSON relates to JavaScript, it is possible to use a limited set following the syntax for [LUA version 3.2.](https://www.lua.org/manual/3.2/manual.html).
+A decent text editor with LUA syntax highlighting is highly recommended. Although vanilla scripts contain no programmable logic and are merely used as a serialized object/array data format much like JSON relates to JavaScript, it is possible to use a limited set following the syntax for [LUA version 3.2](https://www.lua.org/manual/3.2/manual.html).
 
 ## Reference Sheets
 
 - [Thorn Objects](./thorn-objects.md)
 - [Thorn Events](./thorn-events.md)
+
+
+## Parameter curves
+Most parameters found in the event and Object and Timeline tables can be animated using curves by adding `param_curve` and `pcurve_period` to event properties.
+
+| Type             | Description                      |
+| ---------------- | -------------------------------- |
+| FreeFormPCurve   | Free-form tangent interpolation. |
+| BumpInPCurve     | Bump in.                         |
+| BumpOutPCurve    | Bump out.                        |
+| RampDownPCurve   | Ramp down.                       |
+| RampUpPCurve     | Ramp up.                         |
+| StepPCurve       | No interpolation.                |
+| SmoothPCurve     | Smooth interpolation.            |
+| ThornLPCurve     | Unclear                              |
+| LinearPCurve     | Linear interpolation.            |
+| CatmullRomPCurve | Catmull-Rom interpolation.       |
+
+Additionally you can use `pcurve_period` to make animations loop several times throughout the duration of an event. However unlike duration property `pcurve_period` is measured in milliseconds. When set to a negative value the period will match the event duration.
+
+## Mission Scripts
+Cutscenes can be called from mission scripts using `Act_CallThorn` function. These are typically used for camera movement.
