@@ -42,9 +42,35 @@ Scene control object. Every cutscene must have only one scene object. Scene obje
 | `front`   | AXIS | Default Z_AXIS.               |
 | `ambient` | AXIS | Ambient (unlit/shadow) color. |
 
+```lua
+	{
+		entity_name = "Scene_Untitled_2",
+		type = SCENE,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		up = Y_AXIS,
+		front = Z_AXIS,
+		ambient = { 128, 128, 128 }
+	},
+```
+
 ### MONITOR
 
 Cutscene render target. Every cutscene must have only one monitor object. Monitor spatial properties are irrelevant, it is a meta object (doesn’t exist in the scene) and is referred only when switching between cameras.
+
+```lua
+    {
+		entity_name = "Shot01_Monitor_1",
+		type = MONITOR,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0
+	},
+```
 
 ### CAMERA
 
@@ -56,6 +82,29 @@ Viewport camera object. A cutscene may have multiple cameras and use SET_CAMERA 
 | `hvaspect`  | float | Horizontal to vertical aspect ratio. Default is 1.333333 representing 4:3 display aspect ratio the game was designed for. 1.777777 for 16:9 widescreen.                        |
 | `nearplane` | float | Frustum near plane cutoff distance. Default to 1 unless you have a scene with very small objects and very close up camera.                                                     |
 | `farplane`  | float | Frustum far plane cutoff distance. Object farther away from this distance will be cut off. Be reasonable in setting this value to avoid z-buffer flickering on older hardware. |
+
+```lua
+    {
+		entity_name  =  "Zs/NPC/mFloor2/02/ACU/Camera",
+		type  =  CAMERA,
+		template_name  =  "",
+		lt_grp  =  0, srt_grp  =  0, usr_flg  =  0,
+		spatialprops  = 
+		{
+			pos  =  { 0.752384, 2.833098, 6.642779 },
+			orient  =  { { -0.967908, 0.000000, -0.251306 },
+					   { -0.010469, 0.999132, 0.040322 },
+					   { 0.251088, 0.041659, -0.967068 } }
+		},
+		cameraprops  = 
+		{
+			fovh  =  25,
+			hvaspect  =  1.85,
+			nearplane  =  0.3,
+			farplane  =  4000
+		}
+	},
+```
 
 ### LIGHT
 
@@ -74,6 +123,36 @@ Light source object illuminate scene mesh objects. Be aware that due to the old 
 | `type`      | string   | `L_POINT`: Point light source.<br/>`L_DIRECT`: Directional light source<br/>`L_SPOT`: Spot light source. |
 | `theta`     | float    | Polar coordinates for directional light source.                                                          |
 | `atten`     | float[3] | Attenuation                                                                                              |
+
+```lua
+    {
+		entity_name = "Ambi_Lightning_ALL_LtG11",
+		type = LIGHT,
+		template_name = "",
+		lt_grp = 11, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -3.188878, 0, 0.014479 },
+			orient = { {  0.034878,  0.000000, -0.999392 },
+					   {  0.000000,  1.000000,  0.000000 },
+					   {  0.999392,  0.000000,  0.034878 } }
+		},
+		lightprops =
+		{
+			on = Y,
+			color = { 255, 255, 255 },
+			diffuse = { 0, 0, 0 },
+			specular = { 0, 0, 0 },
+			ambient = { 0, 0, 0 },
+			direction = { 0, 0, 1 },
+			range = 100000,
+			cutoff = 98.99998,
+			type = L_DIRECT,
+			theta = 90,
+			atten = { 1, 0, 0 }
+		}
+	},
+```
 
 ### COMPOUND
 
@@ -100,6 +179,25 @@ Categories used by compound objects:
 | `Asteroid`       | `DATA\SOLAR\asteroidarch.ini`   |
 | `Equipment`      | `DATA\EQUIPMENT\prop_equip.ini` |
 | `Equipment Cart` | `DATA\petaldb.ini`              |
+
+```lua
+    {
+		entity_name = "li_elite_3",
+		type = COMPOUND,
+		template_name = "li_elite",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		userprops =
+		{
+			category = "Spaceship",
+		}
+	},
+```
 
 ### DEFORMABLE
 
@@ -130,6 +228,29 @@ Head, body and hand animations are sometimes separate and can run independently 
 
 It’s worth to note that for some reason character placement requires specifying vertical position independently from common spatial properties (see `floor_height`). Animating height placement is also done via separate event: `START_FLR_HEIGHT_ANIM`.
 
+```lua
+	{
+		entity_name = "Char_Trent",
+		type = DEFORMABLE,
+		template_name = "trent",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
+		{
+			pos = { -18.33887, 0, -51.12214 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		compoundprops =
+		{
+			floor_height = 0
+		},
+		userprops =
+		{
+			actor = "player",
+			category = "Character",
+		}
+	},
+```
 
 ### PSYS
 
@@ -142,6 +263,25 @@ Particle system effect (Alchemy effect).
 | `sparam` | float | Numerical value passed to effect. Used for engines intensity and such. Default 0. |
 
 Template_name will refer to `[Effect]` nickname attribute in any of the *_ale.ini files found within `DATA\FX` subfolders (ex: engines_ale.ini in `DATA\FX\ENGINES`). Not all effects are listed in `DATA\FX\effects.ini`.
+
+```lua
+	{
+		entity_name = "Ambi_Roids_gf_blsmallasteroid_03",
+		type = PSYS,
+		template_name = "gf_blsmallasteroid",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = LIT_DYNAMIC + LIT_AMBIENT,
+		spatialprops =
+		{
+			pos = { -500, 500, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		psysprops =
+		{
+			sparam = 0
+		}
+	},
+```
 
 ### SOUND
 
@@ -169,6 +309,36 @@ Sound effect. You’ll need to use `START_SOUND` event to play it.
 | -------- | ------ | ----------------------------------------- |
 | category | string | Sound source catalog. Default is “Audio”. |
 
+```lua
+    {
+		entity_name = "Ship_b_e_engine_br_small_1",
+		type = SOUND,
+		template_name = "engine_br_small",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		flags = SPATIAL,
+		spatialprops =
+		{
+			pos = { 0, 0, 0 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		audioprops =
+		{
+			attenuation = 0,
+			pan = 0,
+			dmin = 50,
+			dmax = 1000,
+			ain = 360,
+			aout = 360,
+			atout = 0,
+			rmix = 0,
+		},
+		userprops =
+		{
+			category = "Audio",
+		}
+	},
+```
+
 ### MARKER
 
 Dummy placeholder object without visual representation. It can be used as a rotational pivot for other objects or a moving point which a camera looks at while following a path track.
@@ -186,6 +356,22 @@ Some placeholder marker names:
 | X/Shipcentre/01             | Player 01 ship.                                     |
 | Zg/PC/Player/01/A/Stand     | Player 01 costume character in standing  animation. |
 | Zs/NPC/Bartender/01/P/Stand | Bar bartender 01 character in standing animation.   |
+
+```lua
+    {
+		entity_name = "Mk_Pr_Smooth_straight_to_LEFT",
+		type = MARKER,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { 0, 21.13857, 0 },
+			orient = { {  0.864434,  0.384713, -0.323651 },
+					   { -0.387993,  0.919888,  0.057158 },
+					   {  0.319712,  0.076165,  0.944449 } }
+		}
+	},
+```
 
 ### MOTION_PATH
 
@@ -206,3 +392,22 @@ First attribute in path_data is a flag specifying whether this is an open path (
 Each path point consists of a coordinates set and rotation quaternion.
 
 Creating path point data by hand (especially quaternions) is a rather daunting task so I’d recommend to use your favorite 3D modeling software to create smooth paths and export them into plain text that you can use in THN files.
+
+```lua
+    {
+		entity_name = "Path_1",
+		type = MOTION_PATH,
+		template_name = "",
+		lt_grp = 0, srt_grp = 0, usr_flg = 0,
+		spatialprops =
+		{
+			pos = { -10, 7.5, 30 },
+			orient = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } }
+		},
+		pathprops =
+		{
+			path_type = "CV_CROrientationSplinePath",
+			path_data = "OPEN,{0.000000,0.000000,0.000000}, {1.000000,0.000000,0.000000,0.000000}, {0.000000,0.100000,0.000000}, {1.000000,0.000000,0.000000,0.000000}, "
+		}
+	}
+```

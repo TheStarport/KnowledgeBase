@@ -24,5 +24,7 @@ You’ll need just few tools to work with .thn files. If you wish to see code or
 
 A decent text editor with LUA syntax highlighting is highly recommended. Although vanilla scripts contain no programmable logic and are merely used as a serialized object/array data format much like JSON relates to JavaScript, it is possible to use a limited set following the syntax for [LUA version 3.2.](https://www.lua.org/manual/3.2/manual.html).
 
+## Reference Sheets
+
 - [Thorn Objects](./thorn-objects.md)
 - [Thorn Events](./thorn-events.md)
