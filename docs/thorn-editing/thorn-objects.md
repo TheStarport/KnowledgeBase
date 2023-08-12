@@ -351,11 +351,11 @@ In certain scripts it serves as a placeholder object, for example a player ship 
 
 Some placeholder marker names:
 
-| Name                        | Attachment                                          |
-| --------------------------- | --------------------------------------------------- |
-| X/Shipcentre/01             | Player 01 ship.                                     |
-| Zg/PC/Player/01/A/Stand     | Player 01 costume character in standing  animation. |
-| Zs/NPC/Bartender/01/P/Stand | Bar bartender 01 character in standing animation.   |
+| Name                          | Attachment                                          |
+| ----------------------------- | --------------------------------------------------- |
+| `X/Shipcentre/01`             | Player 01 ship.                                     |
+| `Zg/PC/Player/01/A/Stand `    | Player 01 costume character in standing  animation. |
+| `Zs/NPC/Bartender/01/P/Stand` | Bar bartender 01 character in standing animation.   |
 
 ```lua
     {
@@ -379,10 +379,10 @@ Curves are used to move an object along its path. Paths can be open or closed lo
 
 #### pathprops
 
-| Property  | Type                                | Description                                      |
-| --------- | ----------------------------------- | ------------------------------------------------ |
-| path_type | string                              | Path type. Default “CV_CROrientationSplinePath”. |
-| path_data | flag, {x, y, z}, {x, y, z, w} [...] | Path data: flag, points, quaternions.            |
+| Property    | Type                                | Description                                      |
+| ----------- | ----------------------------------- | ------------------------------------------------ |
+| `path_type` | string                              | Path type. Default “CV_CROrientationSplinePath”. |
+| `path_data` | flag, {x, y, z}, {x, y, z, w} [...] | Path data: flag, points, quaternions.            |
 
 
 Only one path type is available: `CV_CROrientationSplinePath`.
