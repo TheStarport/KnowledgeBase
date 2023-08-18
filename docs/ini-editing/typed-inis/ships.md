@@ -149,20 +149,21 @@ hp_type = STRING, STRING
 [CollisionGroup]
 obj = STRING
 separable
-parent_impulse = INT
-child_impulse = INT
-dmg_hp = STRING
-dmg_obj = STRING
-fuse = STRING, INT, INT
-group_dmg_hp = STRING
-group_dmg_obj = STRING
+parent_impulse = INT ;optional
+child_impulse = INT ;optional
+dmg_hp = STRING ;optional
+dmg_obj = STRING ;optional
+fuse = STRING, INT, INT ;optional
+group_dmg_hp = STRING ;optional
+group_dmg_obj = STRING ;optional
 mass = INT
 debris_type = STRING
 separation_explosion = STRING
 type = STRING
 hit_pts = INT
 root_health_proxy = BOOL
-explosion_resistance = FLOAT
+explosion_resistance = FLOAT ;optional
+linked_equip = STRING, FLOAT ;optional
 ```
 
 | Parameter            | Information |
@@ -180,6 +181,7 @@ explosion_resistance = FLOAT
 | debris_type          |             |
 | separation_explosion |             |
 | type                 |             |
-| hit_pts              |             |
-| root_health_proxy    |             |
-| explosion_resistance |             |
+| hit_pts              | The amount of hitpoints this collision group has. |
+| root_health_proxy    | Decides whether any damage applied to this collision group is also applied to the root object, too. `true` applies the damage to the root object, `false` does not forward the damage and keeps it just to this group. |
+| explosion_resistance | Defines a factor by which damage caused by explosions is multiplied. Defaults to 1. 0 means no explosion damage is applied ever.  |
+| linked_equip         | When this collision group is being destroyed, it causes damage to a type of equipment on the ship. The first entry accept a defined set of equipment types, which are: scanner, engine, weapon, shield, thruster, power, light, tractor, attached_fx, internal_fx, tradelane, repairdroid, cloaking_device, armor |
