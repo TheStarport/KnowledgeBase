@@ -73,7 +73,7 @@ Contains header, convex hulls, points array and BSP tree.
 | name      | uint32    | Must be 0x66727573 ("surf").                     |
 | size      | uint32    | Surface section byte length from this offset.    |
 | center    | float[3]  | Bounding sphere center offset.                   |
-| force     | float[3]  | Bounce vector? Must have non-zero length.        |
+| drag      | float[3]  | A linear drag vector. Must be bigger than 0.     |
 | radius    | float     | Bounding sphere radius.                          |
 | scale     | uint8     | Bounding sphere multiplier for hull points only. |
 | treeEnd   | uint24    | Offset to end of BSP tree.                       |
