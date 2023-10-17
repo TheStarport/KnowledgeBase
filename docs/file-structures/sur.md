@@ -68,20 +68,20 @@ Be ware some structures contain uncommon bit lengths for numbers.
 
 Contains header, convex hulls, points array and BSP tree.
 
-| Name      | Type      | Description                                      |
-| --------- | --------- | ------------------------------------------------ |
-| name      | uint32    | Must be 0x66727573 ("surf").                     |
-| size      | uint32    | Surface section byte length from this offset.    |
-| center    | float[3]  | Bounding sphere center offset.                   |
-| drag      | float[3]  | A linear drag vector. Must be bigger than 0.     |
-| radius    | float     | Bounding sphere radius.                          |
-| scale     | uint8     | Bounding sphere multiplier for hull points only. |
-| treeEnd   | uint24    | Offset to end of BSP tree.                       |
-| treeStart | uint32    | Offset to start of BSP tree.                     |
-| unknown2  | float[3]  | Unknown vector.                                  |
-| *hulls*   | *varying* | Convex hulls.                                    |
-| *points*  | *varying* | Vertices buffer.                                 |
-| *nodes*   | *varying* | BSP nodes.                                       |
+| Name      | Type      | Description                                                                                                                                     |
+| --------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| name      | uint32    | Must be 0x66727573 ("surf").                                                                                                                    |
+| size      | uint32    | Surface section byte length from this offset.                                                                                                   |
+| center    | float[3]  | Bounding sphere center offset.                                                                                                                  |
+| drag      | float[3]  | A linear drag vector. Must be bigger than 0. This does work together with the `mass` given to the part in `ini` files, e.g. `[CollisionGroup]`. |
+| radius    | float     | Bounding sphere radius.                                                                                                                         |
+| scale     | uint8     | Bounding sphere multiplier for hull points only.                                                                                                |
+| treeEnd   | uint24    | Offset to end of BSP tree.                                                                                                                      |
+| treeStart | uint32    | Offset to start of BSP tree.                                                                                                                    |
+| unknown2  | float[3]  | Unknown vector.                                                                                                                                 |
+| *hulls*   | *varying* | Convex hulls.                                                                                                                                   |
+| *points*  | *varying* | Vertices buffer.                                                                                                                                |
+| *nodes*   | *varying* | BSP nodes.                                                                                                                                      |
 
 * Surface section size doesn’t include name byte length.
 * Bounding sphere encompasses all hull points.
