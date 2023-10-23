@@ -111,3 +111,4 @@ If you're using the event viewer for this a lot, you can use the following xml f
 | ntdll.dll      | 109d8    | Jeider           | Reason: using inherit in ShieldGenerator                                                                                              |
 | rendcomp.dll   | 11163    | Lord of the Hell | bad hash at `<VMeshLibrary>`                                                                                                          |
 | Freelancer.exe | 3bb07    | Ruppetthemuppet  | Invalid base room                                                                                                                     |
+| Freelancer.exe | 46909    | Ruppetthemuppet  | Invalid equipment entry in a loadout                                                                                                  |
