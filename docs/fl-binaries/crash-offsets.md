@@ -91,6 +91,7 @@ If you're using the event viewer for this a lot, you can use the following xml f
 | server.dll | 702064 | Laz             | Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry           |
 | server.dll | 2247f  | Ruppetthemuppet | NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes.                              |
 | server.dll | 0f988  | Ruppetthemuppet | Missing destination jumpgate                                                                                        |
+| server.dll | 1b221  | HeIIoween       | More than 10 holes/gates per System                                                                                 |
 
 
 ### Miscellaneous
