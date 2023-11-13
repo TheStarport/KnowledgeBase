@@ -4,105 +4,112 @@
         "offset": "0x000af690",
         "author": "adoxa",
         "description": "INI_Reader constructor; problem with normal FLHook (uses 1024 bytes of data, but 5480 bytes are required; plugin version uses 8192).",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "common.dll",
         "offset": "0x0005e010",
         "author": "adoxa",
-        "description": "Part of function Fuse::UnBurn, if that helps",
-        "dateAdded": 1699822800
+        "description": "Part of function Fuse::UnBurn, if that helps. Likely related to a bad fuse entry.",
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000e3f9d",
         "author": "adoxa",
         "description": "Memory allocation failure.",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000f24a0",
         "author": "adoxa",
         "description": "Deliberate segfault (presumably a \"this should never happen\" scenario).*",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00103141",
         "author": "Huor",
         "description": "Related to PhySys::PhyCollisionStateManager::enable_collisions.",
-        "dateAdded": 1699822800
+        "dateAdded": 1276122120
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000603d6",
         "author": "HeIIoween",
         "description": "Originates from from IObjInspectImpl::is_targetable: something that shouldn't have been targeted has been targeted.",
-        "dateAdded": 1699822800
+        "dateAdded": 1277149560
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x0004f486",
+        "author": "Huor",
+        "description": "Seems to be related to cmp reading. Something has gone wrong with a cmp file or with something that uses it.",
+        "dateAdded": 1280072400
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00010dea",
         "author": "Alex",
         "description": "Good missing equipment line.",
-        "dateAdded": 1699822800
+        "dateAdded": 1279574940
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00091f38",
         "author": "HeIIoween",
         "description": "ship_archetype = <blank> in players file",
-        "dateAdded": 1699822800
+        "dateAdded": 1282686360
     },
     {
         "moduleName": "common.dll",
         "offset": "0x0005be63",
         "author": "Lord of the Hell",
         "description": "Missing exclusion zone, but is called in asteroid/nebula file - look to FlSpew.txt for zone nickname",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00025cc9",
         "author": "Lord of the Hell",
         "description": "Bad surface file",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00062555",
         "author": "Gold_Sear",
         "description": "Occurs when docking with a tradelane that has neither a prev_ring nor a next_ring entry",
-        "dateAdded": 1699822800
+        "dateAdded": 1485715080
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000f20e3",
         "author": "Cpt_Rei_Fukai",
         "description": "Bad thruster model",
-        "dateAdded": 1699822800
+        "dateAdded": 1497131100
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000c22fe",
         "author": "Cpt_Rei_Fukai",
         "description": "Occurs when you try to load a save game that contains a reputation to a faction that doesn't exist in initialworld.ini",
-        "dateAdded": 1699822800
+        "dateAdded": 1532371740
     },
     {
         "moduleName": "common.dll",
         "offset": "0x000aa91a",
         "author": "Cpt_Rei_Fukai",
         "description": "Occurs when you try to buy a ship which contains an invalid item in its package. E.g the nickname of the engine does not exist.",
-        "dateAdded": 1699822800
+        "dateAdded": 1541966580
     },
     {
         "moduleName": "common.dll",
         "offset": "0x0004aa02",
         "author": "Cellulanus",
         "description": "Occurs when an NPC that was using a weapon that's model wasn't actually set to be a gun model is destroyed.",
-        "dateAdded": 1699822800
+        "dateAdded": 1589021640
     },
     {
         "moduleName": "common.dll",
@@ -116,42 +123,63 @@
         "offset": "0x062ffbeb",
         "author": "IrateRedKite",
         "description": "Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini",
-        "dateAdded": 1699822800
+        "dateAdded": 1627306740
     },
     {
         "moduleName": "common.dll",
         "offset": "0x0004fe6c",
         "author": "drakohen",
         "description": "CShip::Launch causes a CTD when the client and server don't have matching base nicknames in the [Object] entry in a system INI. The client is the one that has the CTD.",
-        "dateAdded": 1699822800
+        "dateAdded": 1642186260
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00045c30",
         "author": "IrateRedKite",
         "description": "[Asteroids] block has been declared in a system ini file without a valid zone",
-        "dateAdded": 1699822800
+        "dateAdded": 1678789080
     },
     {
         "moduleName": "common.dll",
         "offset": "0x00096879",
         "author": "Beaglerush",
         "description": "Bad projectile archetype in [Gun] block.",
-        "dateAdded": 1699822800
+        "dateAdded": 1681183080
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x000f1e32",
+        "author": "Gold_Sear",
+        "description": "Possible max speed threshold crossed.",
+        "dateAdded": 1486167670
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x0635C376",
+        "author": "FriendlyFire",
+        "description": "Related to ray collision, involves PhySys::FindRayCollisions. More information can be found at https://the-starport.net/freelancer/forum/viewtopic.php?post_id=61603.",
+        "dateAdded": 1466107080
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x0635d32b",
+        "author": "FriendlyFire",
+        "description": "Occurs sometimes when switching systems. Relates to a broken quaternion conversion somewhere. More information can be found at https://the-starport.net/freelancer/forum/viewtopic.php?topic_id=5970.",
+        "dateAdded": 1473274200
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000490a5",
         "author": "FriendlyFire, Helloween",
         "description": "Related to multiple players/ships suiciding at the same moment into a planet/death zone. Also relates to formation errors, you may wish to check faction_prop.ini formation values",
-        "dateAdded": 1699822800
+        "dateAdded": 1273551540
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000af690",
         "author": "adoxa",
         "description": "INI_Reader constructor; problem with normal FLHook (uses 1024 bytes of data, but 5480 bytes are required; plugin version uses 8192).",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "content.dll",
@@ -165,98 +193,98 @@
         "offset": "0x00047bc4",
         "author": "Tiger_MU",
         "description": "Related to NPCs and/or their chatter. Possibly bad encounter, missing formation from factionprop.ini",
-        "dateAdded": 1699822800
+        "dateAdded": 1287573420
     },
     {
         "moduleName": "content.dll",
         "offset": "0x0005ccd4",
         "author": "HeIIoween",
         "description": "Missing/mistyped formation.",
-        "dateAdded": 1699822800
+        "dateAdded": 1307067600
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000db0f1",
         "author": "Lord of the Hell, Cpt_Rei_Fukai",
         "description": "Patrol encounter attempted to spawn inside a population zone that wasn't a patrol path.",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "content.dll",
         "offset": "0x0009100f",
         "author": "Lord of the Hell",
         "description": "Possible bad tradelane",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "content.dll",
         "offset": "0x0009566d",
         "author": "Lord of the Hell",
         "description": "Possible bad tradelane",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000c465f",
         "author": "Nova",
         "description": "Mixed non-patched and 1.1 patched files.",
-        "dateAdded": 1699822800
+        "dateAdded": 1274587860
     },
     {
         "moduleName": "content.dll",
         "offset": "0x00055727",
         "author": "Cpt_Rei_Fukai",
         "description": "Occurs when an encounter is spawned that contains more permutation lines than formations",
-        "dateAdded": 1699822800
+        "dateAdded": 1541966580
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000f7c2f",
         "author": "IrateRedKite",
         "description": "Bad rmlootprops.ini entries.",
-        "dateAdded": 1699822800
+        "dateAdded": 1582621380
     },
     {
         "moduleName": "content.dll",
-        "offset": "0x000c458f",
-        "author": "FriendlyFire",
+        "offset": "0x0e99458f",
+        "author": "IrateRedKite",
         "description": "Patrol encounter contains a faction that is not defined in the related base's BaseFaction entries.",
-        "dateAdded": 1699822800
+        "dateAdded": 1586710140
     },
     {
         "moduleName": "content.dll",
         "offset": "0x00012e10",
         "author": "IrateRedKite",
         "description": "Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini",
-        "dateAdded": 1699822800
+        "dateAdded": 1627304580
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000956e4",
         "author": "IrateRedKite",
         "description": "npc_ship in faction_prop.ini listed that does not exist.",
-        "dateAdded": 1699822800
+        "dateAdded": 1678707840
     },
     {
         "moduleName": "content.dll",
         "offset": "0x00095598",
         "author": "Laz / BC46",
         "description": "Faction prop is missing but initial world is correct",
-        "dateAdded": 1699822800
+        "dateAdded": 1696592040
     },
     {
         "moduleName": "content.dll",
         "offset": "0x0006c216",
         "author": "IrateRedKite",
         "description": "Seems to be a missing or null patrol path waypoint. This was originally triggered by giving an NPC on patrol in a ship that couldn't vanish by docking the arrival = all, -tradelane, -object_jump_gate tag. In cases where the patrol spawned at the end of the path in a docked state, it would cause this crash",
-        "dateAdded": 1699822800
+        "dateAdded": 1679910540
     },
     {
         "moduleName": "content.dll",
         "offset": "0x00053b9f",
         "author": "IrateRedKite",
         "description": "Bad encounter file (Missing [EncounterFormation] or [Creation] blocks.)",
-        "dateAdded": 1699822800
+        "dateAdded": 1679915160
     },
     {
         "moduleName": "content.dll",
@@ -277,91 +305,105 @@
         "offset": "0x00063a98",
         "author": "BC46",
         "description": "Related to character animations. This occured when voice keys were commented out in gcsexcl.ini without also commenting out their accompanying scripts.",
-        "dateAdded": 1699822800
+        "dateAdded": 1690650840
     },
     {
         "moduleName": "content.dll",
         "offset": "0x000639c6",
         "author": "BC46",
         "description": "Related to character animations. This occured when voice keys were commented out in gcsexcl.ini without also commenting out their accompanying scripts.",
-        "dateAdded": 1699822800
+        "dateAdded": 1690650840
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x000c458f",
+        "author": "Cpt_Rei_Fukai, FriendlyFire",
+        "description": "Possibly related to missing faction entries in an mbases.ini entry. Not definite but surely encounter-related. More information can be found at https://the-starport.net/freelancer/forum/viewtopic.php?topic_id=6063",
+        "dateAdded": 1275260400
+    },
+    {
+        "moduleName": "server.dll",
+        "offset": "0x03954990",
+        "author": "Laz",
+        "description": "Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry. Deliberately triggered by warping to st03b_01_base for testing.",
+        "dateAdded": 1586521320
     },
     {
         "moduleName": "server.dll",
         "offset": "0x000078d3",
         "author": "adoxa",
-        "description": "Called as part of pub::SpaceObj::Dock",
-        "dateAdded": 1699822800
+        "description": "Called as part of pub::SpaceObj::Dock. Running FLHook on a server should fix this.",
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "server.dll",
         "offset": "0x00014990",
         "author": "adoxa",
-        "description": "Part of docking, and others (it's a function to swap the sign of a vector)",
-        "dateAdded": 1699822800
+        "description": "Part of docking, and others (it's a function to swap the sign of a vector). This crash occurs when undocking from a base with no valid undock point.",
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "server.dll",
         "offset": "0x0002c267",
         "author": "adoxa",
         "description": "Seems to be another part of docking, and others",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "server.dll",
         "offset": "0x0002c290",
         "author": "adoxa",
         "description": "Seems to be another part of docking, and others",
-        "dateAdded": 1699822800
+        "dateAdded": 1273569420
     },
     {
         "moduleName": "server.dll",
         "offset": "0x00076fdf",
         "author": "HeIIoween",
         "description": "Related to loading a player. Possibly a corrupt character file.",
-        "dateAdded": 1699822800
+        "dateAdded": 1279775400
     },
     {
         "moduleName": "server.dll",
         "offset": "0x00017f38",
         "author": "IrateRedKite",
         "description": "Related to a bad ship loadout. Occurs after Loadout::Get (presumably returning NULL), called when a ship is created",
-        "dateAdded": 1699822800
+        "dateAdded": 1580734560
     },
     {
         "moduleName": "server.dll",
         "offset": "0x00702064",
         "author": "Laz",
         "description": "Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry",
-        "dateAdded": 1699822800
+        "dateAdded": 1586521320
     },
     {
         "moduleName": "server.dll",
         "offset": "0x0002247f",
-        "author": "IrateRedKite",
+        "author": "HeIIoween",
         "description": "NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes.",
-        "dateAdded": 1699822800
+        "dateAdded": 1273902180
     },
     {
         "moduleName": "server.dll",
         "offset": "0x0000f988",
         "author": "IrateRedKite",
         "description": "Missing destination jumpgate",
-        "dateAdded": 1699822800
+        "dateAdded": 1679396280
     },
     {
         "moduleName": "alchemy.dll",
         "offset": "0x0000701B",
         "author": "Gold_Sear",
         "description": "Rare crash, occurs inconsistently when creating an instant jump fx",
-        "dateAdded": 1699822800
+        "dateAdded": 1498391940
     },
     {
         "moduleName": "alchemy.dll",
         "offset": "0x0001f3a6",
         "author": "Cpt_Rei_Fukai",
         "description": "Occurs when the <pairs> of an effect use numbers that do not exist in the <fx> part of the effect.",
-        "dateAdded": 1699822800
+        "dateAdded": 1541966580
     },
     {
         "moduleName": "alchemy.dll",
@@ -375,28 +417,28 @@
         "offset": "0x00004353",
         "author": "robocop",
         "description": "Memory allocation failure (in CDPMsgList::Add). It's only asking for 12 bytes, so there must be some serious memory leakage going on.",
-        "dateAdded": 1699822800
+        "dateAdded": 1282704540
     },
     {
         "moduleName": "Freelancer.exe",
         "offset": "0x00006100",
         "author": "adoxa",
         "description": "Bad wireframe",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "Freelancer.exe",
         "offset": "0x00114764",
         "author": "Gold_Sear",
         "description": "Occurs when a next_ring does not reference to a tradelane ring",
-        "dateAdded": 1699822800
+        "dateAdded": 1485715080
     },
     {
         "moduleName": "Freelancer.exe",
         "offset": "0x00058000",
         "author": "Cpt_Rei_Fukai",
-        "description": "Occurs when a player has got an item equipped that no longer exists, e. g. the weapon was deleted.",
-        "dateAdded": 1699822800
+        "description": "Occurs when a player has got an item equipped that no longer exists, i.e. the weapon was deleted.",
+        "dateAdded": 1531423500000
     },
     {
         "moduleName": "Freelancer.exe",
@@ -417,28 +459,56 @@
         "offset": "0x00011689",
         "author": "HeIIoween",
         "description": "Not supported/equipable archetype in players char file.",
-        "dateAdded": 1699822800
+        "dateAdded": 1279882200
     },
     {
         "moduleName": "ntdll.dll",
         "offset": "0x000101b3",
         "author": "Tiger_MU",
         "description": "Related to NPCs and/or their chatter.",
-        "dateAdded": 1699822800
+        "dateAdded": 1287573420
     },
     {
         "moduleName": "ntdll.dll",
         "offset": "0x000109d8",
         "author": "Jeider",
         "description": "Reason: using inherit in ShieldGenerator",
-        "dateAdded": 1699822800
+        "dateAdded": 1499465640
     },
+    {
+        "moduleName": "ntdll.dll",
+        "offset": "0x000118ca",
+        "author": "Livsi",
+        "description": "Possible heap corruption",
+        "dateAdded": 1487102400
+    },
+    {
+        "moduleName": "ntdll.dll",
+        "offset": "0x000109fb",
+        "author": "Livsi",
+        "description": "Possible heap corruption",
+        "dateAdded": 1487102400
+    },
+    {
+        "moduleName": "ntdll.dll",
+        "offset": "0x00011669",
+        "author": "Livsi",
+        "description": "Possible heap corruption",
+        "dateAdded": 1487102400
+    },
+    {
+        "moduleName": "ntdll.dll",
+        "offset": "0x000109f9",
+        "author": "Livsi",
+        "description": "Possible heap corruption",
+        "dateAdded": 1487102400
+    },  
     {
         "moduleName": "rendcomp.dll",
         "offset": "0x00011163",
         "author": "Lord of the Hell",
         "description": "bad hash at <VMeshLibrary>",
-        "dateAdded": 1699822800
+        "dateAdded": 1326638460
     },
     {
         "moduleName": "Freelancer.exe",
@@ -452,6 +522,27 @@
         "offset": "0x00046909",
         "author": "IrateRedKite",
         "description": "Invalid equipment entry in a loadout",
-        "dateAdded": 1699822800
+        "dateAdded": 1698082620
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x000e53ed",
+        "author": "Gold_Sear",
+        "description": "Occurred following a formation join and cargo scan. Cause isn't clear.",
+        "dateAdded": 1492878540
+    },
+    {
+        "moduleName": "engbase.dll",
+        "offset": "0x000124bd",
+        "author": "Nightstalker",
+        "description": "Something major failing if this is occuring. Called from GetRoot and IsDescendant.",
+        "dateAdded": 1279499760
+    },
+    {
+        "moduleName": "flmaterials.dll",
+        "offset": "0x00005b33",
+        "author": "HeIIoween",
+        "description": "Texture related problems. This was originally caused by the Bw08_suprise_ge_train_1 in Tau 23 in HD Edition prior to a fix.",
+        "dateAdded": 1333771560
     }
 ]
