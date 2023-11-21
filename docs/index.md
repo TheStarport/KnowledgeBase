@@ -21,7 +21,7 @@ Information relating to file structures, ini types and the inner workings of Fre
 
 Information related to Freelancer's binaries including information on debugging crash offsets, modifying the behavior of the executable files, and shortcut switches that can be used with Freelancer and FLServer:
 
-* [Crash Offsets Index](./fl-binaries/crash-offsets.md)
+* [Crash Offsets Index](./fl-binaries/crash-offsets.mdx)
 * [Limit Breaking 101](./fl-binaries/limit-breaking/index.md)
 * [Shortcut Switches](./fl-binaries/shortcut-switches.md)
 
