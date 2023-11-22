@@ -241,7 +241,7 @@ Act_DebugMsg = STRING ;optional
 | Cnd_InSpace              |                                                                                                                                                                                |
 | Cnd_DistShip             | Enum options are `INSIDE` or `OUTSIDE` and `TICK_AWAY`, `TICK_ALWAYS` AND `TICK_TOWARDS`                                                                                       |
 | Cnd_DistVec              |                                                                                                                                                                                |
-| Cnd_DistVecLbL           | Enum options are `INSIDE` or `OUTSIDE                                                                                                                                          |
+| Cnd_DistVecLbL           | Enum options are `INSIDE` or `OUTSIDE`                                                                                                                                         |
 | Cnd_DistCircle           |                                                                                                                                                                                |
 | Cnd_HealthDec            |                                                                                                                                                                                |
 | Cnd_EncLaunched          |                                                                                                                                                                                |
