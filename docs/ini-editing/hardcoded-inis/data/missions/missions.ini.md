@@ -493,7 +493,7 @@ cargo = STRING, INT
 
 ### [MsnLoot]
 
-```INI
+```ini
 [MsnLoot]
 nickname = STRING
 archetype = STRING
