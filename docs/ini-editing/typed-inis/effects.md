@@ -46,17 +46,17 @@ run_time = INT
 pbubble = INT, INT
 ```
 
-| Parameter        | Information |
-| ---------------- | ----------- |
-| nickname         |             |
-| priority         |             |
-| generic_priority |             |
-| lod_type         |             |
-| radius           |             |
-| visibility       |             |
-| update           |             |
-| run_time         |             |
-| pbubble          |             |
+| Parameter        | Information                                        |
+| ---------------- | -------------------------------------------------- |
+| nickname         | How the effect is referenced by `[Effect]` blocks. |
+| priority         |                                                    |
+| generic_priority |                                                    |
+| lod_type         |                                                    |
+| radius           |                                                    |
+| visibility       | Options are `EXIST_OFFSCREEN` or `CULL_OFFSCREEN`  |
+| update           | Options are `UPDATE_OFFSCREEN` or `CULL_UPDATE`    |
+| run_time         | Maximum run time for effects of this type.         |
+| pbubble          |                                                    |
 
 ### VisEffect
 

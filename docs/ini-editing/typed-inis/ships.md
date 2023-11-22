@@ -12,6 +12,7 @@ There may be missing, incomplete or incorrect information on this page as it's s
 
 ## Overview
 
+Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable locations in `freelancer.ini`, ships used by NPCs _must_ be in the default `shiparch.ini` file or crashes may occur.
 
 ### Vanilla Examples
 

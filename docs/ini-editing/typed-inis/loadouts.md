@@ -32,9 +32,9 @@ equip = STRING, STRING ;OPTIONAL, MULTIPLE
 cargo = STRING, INT ;OPTIONAL, MULTIPLE
 ```
 
-| Parameter | Information |
-| --------- | ----------- |
-| nickname  |             |
-| archetype |             |
-| equip     |             |
-| cargo     |             |
+| Parameter | Information                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------- |
+| nickname  | The nickname of the loadout, as referenced in [`npcships.ini`](../hardcoded-inis/data/missions/npcships.ini.md).            |
+| archetype | The archetype of the object the loadout belongs to. This is typically a solar or a ship.                                    |
+| equip     | The name of the equipment to mount from [equipment](./equipment.md), followed by the hardpoint on the model to mount it to. |
+| cargo     | The name of the cargo for the ship or object to carry, followed by the amount.                                              |
