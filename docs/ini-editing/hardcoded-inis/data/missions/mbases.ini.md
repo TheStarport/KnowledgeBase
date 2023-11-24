@@ -25,7 +25,7 @@ msg_id_prefix = STRING
 | Parameter     | Information                                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | nickname      | Nickname of the base when it's referred to elsewhere in mBases and in other files, specifically system inis.                                        |
-| local_factiom | References a faction as defined in [faction_prop.ini](./faction_prop.ini.md). This should match the base affiliation as set in the system ini file. |
+| local_faction | References a faction as defined in [faction_prop.ini](./faction_prop.ini.md). This should match the base affiliation as set in the system ini file. |
 | diff          | Possibly the difficulty level of missions offered by the base? Needs more research. It's possible this value is unused.                             |
 | msg_id_prefix | The GCS message ID for voice profiles, basically how the base is referred to by NPCs when they hail you/the base/other NPCs                         |
 
@@ -57,7 +57,7 @@ npc = STRING
 | Parameter    | Information                                                                                                                                                                                                                                               |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | faction      | References a faction as defined in faction_prop.ini                                                                                                                                                                                                       |
-| weight       | The weight value for missions offered by this faction(?). A value of 40 would mean 40% of missions on the board would be offered by this faction. These should ideally total to 100 when added up between difference `[BaseFaction]` blocks.              |
+| weight       | The weight value for missions offered by this faction on the job board as well as the distribution of non-fixture NPCs spawned on the station. These values should ideally total to 100 across all `[BaseFaction]` blocks.              |
 | mission_type | Values here are Mission type, minimum difficult, maximum difficulty and weight respectively. The only mission type availlable seems to be `DestroyMission`. Please see below for a better explanation of how the min and max difficulty values work here. |
 | npc          | Allows an npc as defined in the `[GF_NPC]` block to spawn in the bar here. NPC affiliation should match the faction.                                                                                                                                      |
 
