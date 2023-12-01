@@ -551,5 +551,12 @@
         "author": "HeIIoween",
         "description": "More than 10 holes/gates per system",
         "dateAdded": 1699704982
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0008381a",
+        "author": "IrateRedKite",
+        "description": "Bad goods.ini entry. In the instance where this was occurring, the 'price' field contained invalid data.",
+        "dateAdded": 1701467816
     }
 ]
