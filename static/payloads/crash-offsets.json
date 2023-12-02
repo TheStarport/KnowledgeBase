@@ -565,5 +565,13 @@
         "author": "IrateRedKite",
         "description": "Missing solar archetypes on system load.",
         "dateAdded": 1701521687
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x00025640",
+        "author": "IrateRedKite",
+        "description": "Seems to be a missing or bad nebula file.",
+        "dateAdded": 1701532680
     }
+
 ]
