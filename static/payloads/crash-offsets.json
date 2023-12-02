@@ -542,7 +542,7 @@
         "moduleName": "flmaterials.dll",
         "offset": "0x00005b33",
         "author": "HeIIoween",
-        "description": "Texture related problems. This was originally caused by the Bw08_suprise_ge_train_1 in Tau 23 in HD Edition prior to a fix.",
+        "description": "Texture related problems. This was originally caused by a bad texture on Bw08_suprise_ge_train_1 in Tau 23 in an old HD Texture pack",
         "dateAdded": 1333771560
     },
     {
