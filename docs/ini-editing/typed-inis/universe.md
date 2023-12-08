@@ -18,6 +18,7 @@ There may be missing, incomplete or incorrect information on this page as it's s
 * `DATA\UNIVERSE\universe.ini`
 
 ## Syntax
+Entries should be written in the order they are presented here. `[Base]` entries should be loaded before their corresponding `[System]` ones, as Freelancer will look for the bases in a system when it's loaded on launch and will throw a `get_base() failed` error if it's not already been defined.
 
 ### Time
 
