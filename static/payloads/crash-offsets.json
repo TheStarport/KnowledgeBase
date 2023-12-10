@@ -577,8 +577,8 @@
         "moduleName": "common.dll",
         "offset": "0x00097e93",
         "author": "IrateRedKite",
-        "description": "Bad equipment ini files. Occurred when Invalid bool values were provided and [Motor] blocks with no content were written.",
-        "dateAdded": 1701532680
+        "description": "Bad equipment ini files. Occurred when Invalid bool values were listed in `force_gun_ori` and `requires_ammo",
+        "dateAdded": 1702247677
     }
 
 ]
