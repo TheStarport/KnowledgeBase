@@ -572,6 +572,13 @@
         "author": "IrateRedKite",
         "description": "Seems to be a missing or bad nebula file.",
         "dateAdded": 1701532680
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x00097e93",
+        "author": "IrateRedKite",
+        "description": "Bad equipment ini files. Occurred when Invalid bool values were provided and [Motor] blocks with no content were written.",
+        "dateAdded": 1701532680
     }
 
 ]
