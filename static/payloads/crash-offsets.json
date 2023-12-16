@@ -262,7 +262,7 @@
         "moduleName": "content.dll",
         "offset": "0x000956e4",
         "author": "IrateRedKite",
-        "description": "npc_ship in faction_prop.ini listed that does not exist.",
+        "description": "npc_ship in faction_prop.ini listed that does not exist. This offset has also been seen as 0x0013f932 in kernelbase.dll when launching flserver.exe with flhook.dll preloading files.",
         "dateAdded": 1678707840
     },
     {
@@ -580,5 +580,4 @@
         "description": "Bad equipment ini files. Occurred when Invalid bool values were listed in `force_gun_ori` and `requires_ammo",
         "dateAdded": 1702247677
     }
-
 ]
