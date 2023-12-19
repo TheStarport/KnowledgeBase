@@ -579,5 +579,12 @@
         "author": "IrateRedKite",
         "description": "Bad equipment ini files. Occurred when Invalid bool values were listed in `force_gun_ori` and `requires_ammo. The actual crash here seems to be triggered by an equipment entry with bad or invalid conent though, in the case where this was discovered it was en empty [Motor] block.",
         "dateAdded": 1702247677
+    },
+    {
+        "moduleName": "ntdll.dll",
+        "offset": "0x0004591f",
+        "author": "IrateRedKite",
+        "description": "Access violation. I have been unable to reliably reproduce this crash, but it seems to relate to NPCs in some way. If this can be reproduced reliably, please update this and run Freelancer with a debugger attached.",
+        "dateAdded": 1702975213
     }
 ]
