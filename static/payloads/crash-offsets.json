@@ -150,7 +150,7 @@
         "moduleName": "common.dll",
         "offset": "0x000f1e32",
         "author": "Gold_Sear",
-        "description": "Possible max speed threshold crossed.",
+        "description": "Possible max speed threshold crossed. May also relate to missing equipment hardpoints for mounting.",
         "dateAdded": 1486167670
     },
     {
