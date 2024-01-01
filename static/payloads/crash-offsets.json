@@ -586,5 +586,12 @@
         "author": "IrateRedKite",
         "description": "Access violation. I have been unable to reliably reproduce this crash, but it seems to relate to NPCs in some way. If this can be reproduced reliably, please update this and run Freelancer with a debugger attached.",
         "dateAdded": 1702975213
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x00010dce",
+        "author": "IrateRedKite",
+        "description": "Missing archetype. In the instance where this occurred, commodities that were for sale on bases were not being loaded.",
+        "dateAdded": 1704141042
     }
 ]
