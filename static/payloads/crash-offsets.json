@@ -593,5 +593,12 @@
         "author": "IrateRedKite",
         "description": "Missing archetype. In the instance where this occurred, commodities that were for sale on bases were not being loaded.",
         "dateAdded": 1704141042
+    },
+    {
+        "moduleName": "thorn.dll",
+        "offset": "0x00005dd2",
+        "author": "IrateRedKite",
+        "description": "Attempted to call an animation for an entity in a thorn scene that doesn't exist. Occurred when attempting to call `START_MOTION` for `sc_no loop` on a set 3db in a base ambient script.",
+        "dateAdded": 1704302438
     }
 ]
