@@ -600,5 +600,12 @@
         "author": "IrateRedKite",
         "description": "Attempted to call an animation for an entity in a Thorn scene that doesn't exist. Occurred when attempting to call `START_MOTION` for `sc_no loop` on a set 3db in a base ambient script.",
         "dateAdded": 1704302438
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0001efa9",
+        "author": "Laz",
+        "description": "Freelancer tries to acess a directinput8 instance for the mouse and fails. It's possible that this crash is caused by a hardware issue!",
+        "dateAdded": 1704502678
     }
 ]
