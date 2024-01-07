@@ -255,7 +255,7 @@
         "moduleName": "content.dll",
         "offset": "0x00012e10",
         "author": "IrateRedKite",
-        "description": "Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini",
+        "description": "Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini. This also occurred when attempting to load an NPC in a [BaseFaction] block that hadn't been defined as a [GF_NPC], so this crash likely just relates to a failure to load an NPC in general..",
         "dateAdded": 1627304580
     },
     {
