@@ -68,7 +68,7 @@ You will need to right click and "Run as Admin" for the patch if installing to P
 - https://discord.com/FQGppSY - Freelancer VK - A Russian-speaking Freelancer server community
 - https://discord.gg/QyPrPes68A - FrontierSpace Discord
 - https://discord.gg/pCtABvPFR6 - Homelancer - A Homeworld total conversion mod for Freelancer.
-- https://discord.gg/ZDTZYuYX9R - Freeport 7 - A developer-focused community but open to all Freelancers.
+- https://discord.gg/ZDTZYuYX9R - Freeport 7 - Freelancer Chat, Fan-Fiction, Tutorials, Mods, and more
 
 ## Freelancer Communities
 
