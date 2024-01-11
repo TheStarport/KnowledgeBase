@@ -621,5 +621,13 @@
         "author": "IrateRedKite",
         "description": "Freelancer was unable to find a system file entry defined in universe.ini.",
         "dateAdded": 1704966459
+    },
+    {
+        "moduleName": "Content.dll",
+        "offset": "0x0001833f",
+        "author": "IrateRedKite",
+        "description": "A mission trigger without a condition was invoked. If the trigger doesn't require a proper condition, it needs a `Cnd_True = no_params` line.",
+        "dateAdded": 1704981669
     }
+
 ]
