@@ -611,8 +611,15 @@
     {
         "moduleName": "content.dll",
         "offset": "0x000bd173",
-        "author": "Milo, Laz & Raikkonen",
-        "description": "Converts an archID into a goodId and then uses the goodId for a lookup, which fails and is not checked, causing a crash. This occurred when ammo entries for loot were not defined in lootprops.ini. If a munition entry has 'requires_ammo = true', the ammo AND the gun both require a lootprops.ini entry. ",
+        "author": "IrateRedKite, Laz & Raikkonen",
+        "description": "Converts an archID into a goodId and then uses the goodId for a lookup, which fails and is not checked, causing a crash. This occurred when ammo entries for loot were not defined in lootprops.ini. If a munition entry has 'requires_ammo = true', the ammo AND the gun both require a lootprops.ini entry.",
         "dateAdded": 1704731478
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x000d1744",
+        "author": "IrateRedKite",
+        "description": "Freelancer was unable to find a system file entry defined in universe.ini.",
+        "dateAdded": 1704966459
     }
 ]
