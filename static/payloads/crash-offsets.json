@@ -628,6 +628,13 @@
         "author": "IrateRedKite",
         "description": "A mission trigger without a condition was invoked. If the trigger doesn't require a proper condition, it needs a `Cnd_True = no_params` line.",
         "dateAdded": 1704981669
+    },
+    {
+        "moduleName": "Shading.dll",
+        "offset": "0x0000f658",
+        "author": "Jos_Naabal",
+        "description": "Excessive particle limits set for alchemy effects in Freelancer.ini",
+        "dateAdded": 1705080503
     }
 
 ]
