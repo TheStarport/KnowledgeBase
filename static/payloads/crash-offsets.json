@@ -635,6 +635,13 @@
         "author": "Jos_Naabal",
         "description": "Excessive particle limits set for alchemy effects in Freelancer.ini",
         "dateAdded": 1705080503
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x00052753",
+        "author": "IrateRedKite",
+        "description": "[Gun] archetype references a munition that does not exist.",
+        "dateAdded": 1705143506
     }
 
 ]
