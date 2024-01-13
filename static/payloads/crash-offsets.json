@@ -642,6 +642,13 @@
         "author": "IrateRedKite",
         "description": "[Gun] archetype references a munition that does not exist.",
         "dateAdded": 1705143506
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x0005da50",
+        "author": "IrateRedKite",
+        "description": "Missing explosion archetype called. This occurred when ship collision groups with fuses attached were not included and then the main fuse was called.",
+        "dateAdded": 1705143775
     }
 
 ]
