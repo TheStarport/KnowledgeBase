@@ -619,7 +619,7 @@
         "moduleName": "Freelancer.exe",
         "offset": "0x000d1744",
         "author": "IrateRedKite",
-        "description": "Freelancer was unable to find a system file entry defined in universe.ini.",
+        "description": "Freelancer was unable to find a system file entry defined in universe.ini. This can also occur if a system is loaded with no solar objects present.",
         "dateAdded": 1704966459
     },
     {
@@ -649,6 +649,13 @@
         "author": "IrateRedKite",
         "description": "Missing explosion archetype called. This occurred when ship collision groups with fuses attached were not included and then the main fuse was called.",
         "dateAdded": 1705143775
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x00080a9b",
+        "author": "IrateRedKite",
+        "description": "Attempted to purchase a ship in multiplayer when the player had no ship. This was a forced crash that occurred when the %PACKAGE% value was removed from mpnewcharacter.fl",
+        "dateAdded": 1705421758
     }
 
 ]
