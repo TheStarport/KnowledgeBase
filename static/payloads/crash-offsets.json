@@ -443,8 +443,8 @@
     {
         "moduleName": "Freelancer.exe",
         "offset": "0x00054f08",
-        "author": "HeIIoween",
-        "description": "Possible corrupted mbases.ini.",
+        "author": "HeIIoween, Louva-Deus",
+        "description": "Possible corrupted mbases.ini. This is also caused by missing `gcs_fmsit_*.thn` scripts from the `DATA/SCRIPTS/GCS` folder.",
         "dateAdded": 1699822800
     },
     {
@@ -657,5 +657,4 @@
         "description": "Attempted to purchase a ship in multiplayer when the player had no ship. This was a forced crash that occurred when the %PACKAGE% value was removed from mpnewcharacter.fl",
         "dateAdded": 1705421758
     }
-
 ]
