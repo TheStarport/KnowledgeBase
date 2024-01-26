@@ -656,5 +656,12 @@
         "author": "IrateRedKite",
         "description": "Attempted to purchase a ship in multiplayer when the player had no ship. This was a forced crash that occurred when the %PACKAGE% value was removed from mpnewcharacter.fl",
         "dateAdded": 1705421758
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x00108853",
+        "author": "Jammi",
+        "description": "Referenced a nebula field file that didn't exist.",
+        "dateAdded": 1706311549
     }
 ]
