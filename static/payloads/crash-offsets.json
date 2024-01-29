@@ -663,5 +663,19 @@
         "author": "Jammi",
         "description": "Referenced a nebula field file that didn't exist.",
         "dateAdded": 1706311549
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x000ed422",
+        "author": "IrateRedKite",
+        "description": "Player in multiplayer died, respawned and didn't have a 'last base' to go to. This occurred when the start location was set to space, and the player died repeatedly before docking. Crash occurs on the client, not the server.",
+        "dateAdded": 1706526368
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x001b26b7",
+        "author": "IrateRedKite",
+        "description": "Relates to a render problem with alt-tabbing and window focus.  Function at this address suggests that the crash is a fauilure to populate the IRenderPipeline or DALib::Pipeline structs correctly.",
+        "dateAdded": 1706526789
     }
 ]
