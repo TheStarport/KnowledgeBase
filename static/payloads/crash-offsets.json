@@ -677,5 +677,12 @@
         "author": "IrateRedKite",
         "description": "Relates to a render problem with alt-tabbing and window focus.  Function at this address suggests that the crash is a fauilure to populate the IRenderPipeline or DALib::Pipeline structs correctly.",
         "dateAdded": 1706526789
+    },
+    {
+        "moduleName": "engbase.dll",
+        "offset": "0x00011731",
+        "author": "Caenen",
+        "description": "Possibly relates to a bad fuse. The exact cause of this is unclear.",
+        "dateAdded": 1706832084
     }
 ]
