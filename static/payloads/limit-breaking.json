@@ -1,0 +1,984 @@
+[
+    {
+        "moduleName": [
+            "soundmanager.dll",
+            "soundstreamer.dll"
+        ],
+        "original": [
+            "00",
+            "00"
+        ],
+        "replacement": [
+            "80",
+            "80"
+        ],
+        "offset": [
+            "0x00A021",
+            "0x0018A9"
+        ],
+        "author": "Adoxa",
+        "description": "Continue playing Freelancer's audio when Alt-Tabbed. Offsets must be changed in both respective modules.",
+        "dateAdded": 0,
+        "categories": [
+            "audio"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "E8 04 95 FD FF"
+        ],
+        "replacement": [
+            "90 90 90 90 90"
+        ],
+        "offset": [
+            "0x18B147"
+        ],
+        "author": "BC46",
+        "description": "Disables the UI character typing text sounds completely.",
+        "dateAdded": 0,
+        "categories": [
+            "audio"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "FC"
+        ],
+        "replacement": [
+            "FF"
+        ],
+        "offset": [
+            "0x05AC3D"
+        ],
+        "author": "Adoxa",
+        "description": "Disables the typing effect for the arrival text.",
+        "dateAdded": 0,
+        "categories": [
+            "audio"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01"
+        ],
+        "replacement": [
+            "00",
+            "00",
+            "00",
+            "00",
+            "00",
+            "00",
+            "00",
+            "00"
+        ],
+        "offset": [
+            "0x0E111B",
+            "0x0E11AF",
+            "0x0E1A61",
+            "0x0E21CF",
+            "0x0E32B6",
+            "0x0E32CA",
+            "0x0E47B2",
+            "0x0E47C6"
+        ],
+        "author": "Adoxa",
+        "description": "Disables the typing effect for the target ship name and sub-target name text elements. All offsets must be changed.",
+        "dateAdded": 0,
+        "categories": [
+            "audio"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "00"
+        ],
+        "replacement": [
+            "01"
+        ],
+        "offset": [
+            "0x0BD2D8"
+        ],
+        "author": "Adoxa",
+        "description": "Allow the `fc_n_grp` faction to drop `[phantom_loot]` loot.",
+        "dateAdded": 1312196400,
+        "categories": [
+            "cargo"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/667?_=1706352734818"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "20f"
+        ],
+        "offset": [
+            "0x08AEBE",
+            "0x1D2688"
+        ],
+        "author": "Adoxa",
+        "description": "Drop cargo dialog timeout. Both options must be changed.",
+        "dateAdded": 1290513600,
+        "categories": [
+            "cargo",
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "20f"
+        ],
+        "offset": [
+            "0x118130"
+        ],
+        "author": "Adoxa",
+        "description": "Time given to drop cargo by NPCs",
+        "dateAdded": 1290513600,
+        "categories": [
+            "cargo",
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "E8 1C E1 13 00 D9 44 24 20 8B D8 8D B5 08 05 00 00 E8 0B E1 13 00",
+            "20"
+        ],
+        "replacement": [
+            "83 EC 10 DD 1C E4 D9 44 E4 30 DD 5C E4 08 8D B5 08 05 00 00 EB 02",
+            "28"
+        ],
+        "offset": [
+            "0x079D9F",
+            "0x079DC3"
+        ],
+        "author": "Adoxa",
+        "description": "Show cargo space using decimals. String 1179 in resources.dll must have %d changed to %g or %.2f. Both offsets must be changed.",
+        "dateAdded": 0,
+        "categories": [
+            "cargo",
+            "UI"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1000000f"
+        ],
+        "offset": [
+            "0x1D848C"
+        ],
+        "author": "Fox",
+        "description": "Square of distance from loot that the 'tractor all' button appears on the HUD.",
+        "dateAdded": 1225368000,
+        "categories": [
+            "cargo",
+            "UI"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/10?_=1706352734810"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1.2f"
+        ],
+        "offset": [
+            "0x1C9800"
+        ],
+        "author": "Fox",
+        "description": "Multiplier for width of tractor beams.",
+        "dateAdded": 1231329600,
+        "categories": [
+            "cargo",
+            "VFX"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/18?_=1706352734806"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1500f"
+        ],
+        "offset": [
+            "0x1D8D08"
+        ],
+        "author": "Adoxa",
+        "description": "Maximum distance to initiate trade.",
+        "dateAdded": 1279364400,
+        "categories": [
+            "cargo"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/467?_=1706352734802"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "freelancer.exe"
+        ],
+        "original": [
+            "01",
+            "01"
+        ],
+        "replacement": [
+            "00",
+            "00"
+        ],
+        "offset": [
+            "0x086542",
+            "0x212700"
+        ],
+        "author": "Adoxa",
+        "description": "Auto-level off by default. All offsets much be changed.",
+        "dateAdded": 1285412400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/3111/hack-request-disable-auto-rolling-when-in-turret-view/6?_=1706352734828"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "94"
+        ],
+        "replacement": [
+            "95"
+        ],
+        "offset": [
+            "0x0DBE10"
+        ],
+        "author": "Adoxa",
+        "description": "Disable auto-level toggling.",
+        "dateAdded": 1285412400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/3111/hack-request-disable-auto-rolling-when-in-turret-view/6?_=1706352734828"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "freelancer.exe"
+        ],
+        "original": [
+            "01",
+            "01"
+        ],
+        "replacement": [
+            "00",
+            "00"
+        ],
+        "offset": [
+            "0x07249A",
+            "0x1186E9"
+        ],
+        "author": "Adoxa",
+        "description": "Level camera off by default. All offsets much be changed.",
+        "dateAdded": 1285412400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/3111/hack-request-disable-auto-rolling-when-in-turret-view/6?_=1706352734828"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "94"
+        ],
+        "replacement": [
+            "95"
+        ],
+        "offset": [
+            "0x11A1D3"
+        ],
+        "author": "Adoxa",
+        "description": "Disable level camera toggling.",
+        "dateAdded": 1285412400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/3111/hack-request-disable-auto-rolling-when-in-turret-view/6?_=1706352734828"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1.75f"
+        ],
+        "offset": [
+            "0x1C94FC"
+        ],
+        "author": "Syd",
+        "description": "Multiplier of mouse speed.",
+        "dateAdded": 1260878400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/223?_=1706352734837"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "0.25f"
+        ],
+        "offset": [
+            "0x1C94F8"
+        ],
+        "author": "Syd",
+        "description": "Grid size for mouse. This offset is used elsewhere and not reccomended for use.",
+        "dateAdded": 1260878400,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/223?_=1706352734837"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "05"
+        ],
+        "replacement": [
+            "1A"
+        ],
+        "offset": [
+            "0x0A8004"
+        ],
+        "author": "Adoxa",
+        "description": "Show current worth in multiplayer.",
+        "dateAdded": 1286804541,
+        "categories": [
+            "trade",
+            "UI"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/503?_=1706366503906"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "9999999f"
+        ],
+        "offset": [
+            "0x1CAEE8"
+        ],
+        "author": "Dev",
+        "description": "Maximum value of any single good.  ",
+        "dateAdded": 0,
+        "categories": [
+            "trade"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "9999999f"
+        ],
+        "offset": [
+            "0x1CAEE8"
+        ],
+        "author": "Dev",
+        "description": "Maximum value of any single good.  ",
+        "dateAdded": 0,
+        "categories": [
+            "trade"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll",
+            "server.dll"
+        ],
+        "original": [
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i",
+            "999999999i"
+        ],
+        "offset": [
+            "0x06F475",
+            "0x06F4A6",
+            "0x06F4AD",
+            "0x06F51E",
+            "0x06F525",
+            "0x06FB9B",
+            "0x06FBA3",
+            "0x06FBAE",
+            "0x06FC00",
+            "0x06FC08",
+            "0x06FC1C",
+            "0x07543C",
+            "0x075443",
+            "0x0754E0",
+            "0x0754E7",
+            "0x076426",
+            "0x07642D"
+        ],
+        "author": "Dev",
+        "description": "Maximum credits that a player can have in multiplayer. All offsets must be changed.",
+        "dateAdded": 0,
+        "categories": [
+            "trade"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "2130706432i"
+        ],
+        "offset": [
+            "0x037ECF"
+        ],
+        "author": "Adoxa",
+        "description": "Maximum number of items in stock. ",
+        "dateAdded": 1258468941,
+        "categories": [
+            "trade"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/210?_=1706366503918"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "C7 44 24 44 00 00 00 7F"
+        ],
+        "replacement": [
+            "89 44 24 44 90 90 90 90"
+        ],
+        "offset": [
+            "0x037ECB"
+        ],
+        "author": "Adoxa, M0tah",
+        "description": "Market files control items in stock (MarketGood = item nickname, required level, required rep, minimum, max in stock, full resale, price multiplier).",
+        "dateAdded": 1286804541,
+        "categories": [
+            "trade"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/210?_=1706366503923"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "04"
+        ],
+        "replacement": [
+            "39"
+        ],
+        "offset": [
+            "0x0A94D4"
+        ],
+        "author": "Adoxa",
+        "description": "Disable money-based rank, rank becomes fixed, may instead be manually managed via hooks.",
+        "dateAdded": 1286804541,
+        "categories": [
+            "trade"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/799?_=1706366503928"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "7F 0F"
+        ],
+        "replacement": [
+            "90 90"
+        ],
+        "offset": [
+            "0x0A9D8E"
+        ],
+        "author": "Adoxa",
+        "description": "Ignore rank level limit test, theoretically allowing any number of levels.",
+        "dateAdded": 1286804541,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "40b"
+        ],
+        "offset": [
+            "0x10A9D8E"
+        ],
+        "author": "Adoxa",
+        "description": "Rank level limit",
+        "dateAdded": 0,
+        "categories": [
+            "UI"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "E8 48 9F 01"
+        ],
+        "replacement": [
+            "E9 11 00 00"
+        ],
+        "offset": [
+            "0x037813"
+        ],
+        "author": "WhiskasTM",
+        "description": "Allow shooting in cruise.",
+        "dateAdded": 0,
+        "categories": [
+            "equipment",
+            "cruise"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "06"
+        ],
+        "replacement": [
+            "09"
+        ],
+        "offset": [
+            "0x03A2B3"
+        ],
+        "author": "WhiskasTM",
+        "description": "Allow mine dropping in cruise.",
+        "dateAdded": 0,
+        "categories": [
+            "equipment",
+            "cruise"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "07"
+        ],
+        "replacement": [
+            "09"
+        ],
+        "offset": [
+            "0x03A011"
+        ],
+        "author": "WhiskasTM",
+        "description": "Allow firing in tradelanes.",
+        "dateAdded": 0,
+        "categories": [
+            "equipment",
+            "cruise"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x053796"
+        ],
+        "author": "Adoxa",
+        "description": "Adjust cruise speed according to drag_modifier.",
+        "dateAdded": 0,
+        "categories": [
+            "equipment",
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/2989/offset-request-unlink-drag_modifier-and-interference?_=1706522670749"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "1.2f"
+        ],
+        "offset": [
+            "0x07637F"
+        ],
+        "author": "Cannon",
+        "description": "Formation catch up cruise speed multiplier. Outside of trail range common.dll 0x075B36; values above variable located at 0x1407A0 will be ignored.",
+        "dateAdded": 0,
+        "categories": [
+            "cruise"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "1.2f"
+        ],
+        "offset": [
+            "0x1407A0"
+        ],
+        "author": "Gold_Sear",
+        "description": "Formation catch up cruise speed multiplier. Within trail range common.dll 0x075B36.",
+        "dateAdded": 0,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/918?_=1706522670753"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0.8f"
+        ],
+        "offset": [
+            "0x07630C"
+        ],
+        "author": "Gold_Sear",
+        "description": "Multiplier for minimum cruise speed in formation escort",
+        "dateAdded": 0,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/918?_=1706522670753"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0.5d"
+        ],
+        "offset": [
+            "0x13DF88"
+        ],
+        "author": "Gold_Sear",
+        "description": "Multiplier for minimum cruise speed for formation leader. Warning: this seems to majorly affect asteroid spacing in asteroid fields and can break asteroid exclusion zones. Use with caution!",
+        "dateAdded": 0,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/918?_=1706522670753"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "90 90 90 90 90 90 90 90 90 90 90",
+            "90 90 90 90 90 90 90 90 90 90 90"
+        ],
+        "replacement": [
+            "6A 00 E8 68 00 00 00 83 C4 04 C3",
+            "6A 00 E8 68 00 00 00 83 C4 04 C3"
+        ],
+        "offset": [
+            "0x0C7A81",
+            "0x0C7AB0"
+        ],
+        "author": "Adoxa",
+        "description": "Instant deceleration to 0 after dropping cruise",
+        "dateAdded": 1254560320,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/2229/cruise-engine/2?_=1706522670757"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x13F3CC"
+        ],
+        "author": "Adoxa",
+        "description": "Trade lane travel speed. Warning: values over 2500 may have adverse side-effects. In the 1.0 version of common.dll, the offset to patchis instead, 0x13F39.",
+        "dateAdded": 1272445120,
+        "categories": [
+            "tradelanes"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/414?_=1706522670763"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0.125d"
+        ],
+        "offset": [
+            "0x13F440"
+        ],
+        "author": "HeIIoween",
+        "description": "Trade lane enter speed.",
+        "dateAdded": 1285232320,
+        "categories": [
+            "tradelanes"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/481?_=1706522670769"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0.4d"
+        ],
+        "offset": [
+            "0x13F458"
+        ],
+        "author": "HeIIoween",
+        "description": "Trade lane exit speed.",
+        "dateAdded": 1285232320,
+        "categories": [
+            "tradelanes"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/483?_=1706522670771"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "400d"
+        ],
+        "offset": [
+            "0x13F448"
+        ],
+        "author": "HeIIoween",
+        "description": "Trade lane exit distance.",
+        "dateAdded": 1285232320,
+        "categories": [
+            "tradelanes"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/482?_=1706522670773"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "DD 05 D0 E2 39 06 D9 FF",
+            "C7 44 24 24 00 00 00 00 C7 44 24 2C 00 00 00 00 C7 44 24 30 00 00 80 3F C7 44 24 34 00 00 00 00 C7 44 24 3C 00 00 00 00 DD 05 D0 E2 39 06 D9 FE D9 C1 D9 5C 24 20 D9 54 24 28"
+        ],
+        "replacement": [
+            "D9 E8 D9 E0 D9 EE D9 C1",
+            "D9 54 24 20 D9 5C 24 30 D9 54 24 24 D9 54 24 28 D9 54 24 2C D9 54 24 34 D9 54 24 3C D9 44 24 54 D9 E0 D9 5C 24 54 D9 44 24 60 D9 E0 D9 5C 24 60 D9 44 24 48 D9 E0 D9 5C 24 48"
+        ],
+        "offset": [
+            "0x06191E",
+            "0x061941"
+        ],
+        "author": "Gold_Sear",
+        "description": "Swap vertical component of trade lane travel in previous direction. This fixes issues with vertically oriented trade lanes.",
+        "dateAdded": 1254560320,
+        "categories": [
+            "tradelanes"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/986?_=1706522670775"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "49",
+            "90 90 90 90 90 90 90 90",
+            "90 90 90 90 90 90 90 90 90 90 90"
+        ],
+        "replacement": [
+            "79",
+            "8B 8E 94 01 00 00 EB 14",
+            "E3 B8 6A 00 E8 A3 D5 03 00 EB AF"
+        ],
+        "offset": [
+            "0x03659E",
+            "0x036618",
+            "0x036634"
+        ],
+        "author": "Adoxa",
+        "description": "Drop out of cruise once power reaches 0.",
+        "dateAdded": 1290074320,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/893?_=1706522670780"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "300f"
+        ],
+        "offset": [
+            "0x18B5CC"
+        ],
+        "author": "Gold_Sear",
+        "description": "Cruise speed, always overruled by CRUISING_SPEED in constants.ini.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "5f"
+        ],
+        "offset": [
+            "0x18B5D0"
+        ],
+        "author": "Gold_Sear",
+        "description": "Cruise acceleration time, always overruled by CRUISE_ACCEL_TIME in constants.ini.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "3f"
+        ],
+        "offset": [
+            "0x03625A"
+        ],
+        "author": "Gold_Sear",
+        "description": "Cruise drag, always overruled by CRUISE_DRAG in constants.ini.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "cruise"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0F 84 77 01"
+        ],
+        "replacement": [
+            "E9 78 01 00"
+        ],
+        "offset": [
+            "0x03625A"
+        ],
+        "author": "BC46",
+        "description": "Cruise drag, always overruled by CRUISE_DRAG in constants.ini.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "cruise"
+        ]
+    }
+]
