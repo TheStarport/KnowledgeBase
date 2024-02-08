@@ -791,7 +791,7 @@
         "offset": [
             "0x13F3CC"
         ],
-        "author": "Adoxa",
+        "author": "Lord of Lunacy",
         "description": "Trade lane travel speed. Warning: values over 2500 may have adverse side-effects. In the 1.0 version of common.dll, the offset to patchis instead, 0x13F39.",
         "dateAdded": 1272445120,
         "categories": [
