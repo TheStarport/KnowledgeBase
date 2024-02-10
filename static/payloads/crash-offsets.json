@@ -381,7 +381,7 @@
         "moduleName": "server.dll",
         "offset": "0x0002247f",
         "author": "HeIIoween",
-        "description": "NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes.",
+        "description": "NPC loadout is missing engine.  Attempts to enter cruise, then can't find and crashes. This crash can also occur for flserver.exe in server dll at 0x00022567. At both addresses it fails to call `CEEngine::cast(CEquip *)`",
         "dateAdded": 1273902180
     },
     {
