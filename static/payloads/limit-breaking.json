@@ -1377,6 +1377,113 @@
             "docking"
         ],
         "url": "https://the-starport.com/forums/topic/6218/enabling-undock-chatter-in-mp/3?_=1707142856276"
-    }
-
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "3f"
+        ],
+        "offset": [
+            "0x210530"
+        ],
+        "author": "Dev",
+        "description": "Near plane of view frustum.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "250000f"
+        ],
+        "offset": [
+            "0x210534"
+        ],
+        "author": "FriendlyFire",
+        "description": "Far plane of view frustum (nothing will be drawn beyond this).",
+        "dateAdded": 1128468660,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/345"
+    },
+    {
+        "moduleName": [
+            "rendcomp.dll"
+        ],
+        "original": [
+            "1000000f"
+        ],
+        "offset": [
+            "0x14053"
+        ],
+        "author": "adoxa",
+        "description": "Multiplier for planet draw distance (so far can be safely increased).",
+        "dateAdded": 1507615740,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/992"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "10000f"
+        ],
+        "offset": [
+            "0x213EC8"
+        ],
+        "author": "FriendlyFire",
+        "description": "Maximum draw distance for some bases (like battleships).",
+        "dateAdded": "TBD",
+        "categories": [
+            "visibility"
+        ],
+        "url": "TBD"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "20000f"
+        ],
+        "offset": [
+            "0x1C8910"
+        ],
+        "author": "Dev",
+        "description": "Same offset as below, max distance at which ships can be seen (even if LODranges specify a higher range).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "20000f"
+        ],
+        "offset": [
+            "0x1C8910"
+        ],
+        "author": "FriendlyFire",
+        "description": "Same offset as above, poly flipping distance - raising this stops graphical glitches on big CMPs, but raising it too high introduces flickering issues with SPH-based models (like planets).",
+        "dateAdded": 1267104000,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/346"
+    },
 ]
