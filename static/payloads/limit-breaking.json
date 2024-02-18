@@ -1424,7 +1424,7 @@
         "offset": [
             "0x14053"
         ],
-        "author": "Adoxa",
+        "author": "adoxa",
         "description": "Multiplier for planet draw distance (so far can be safely increased).",
         "dateAdded": 1507615740,
         "categories": [
@@ -1443,12 +1443,12 @@
             "0x213EC8"
         ],
         "author": "FriendlyFire",
-        "description": "Maximum draw distance for some bases (like battleships).",
-        "dateAdded": "TBD",
+        "description": "Maximum draw distance for some bases (like battleships), as well as lights (and probably other stuff too).",
+        "dateAdded": 1297062720,
         "categories": [
             "visibility"
         ],
-        "url": "TBD"
+        "url": "https://the-starport.com/forums/topic/3729/hack-request-upping-the-show-limit-for-equipped-lights-to-enable-flare-stars/5?_=1708284247347"
     },
     {
         "moduleName": [
@@ -1485,6 +1485,174 @@
             "visibility"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/346"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x11C3D3"
+        ],
+        "author": "adoxa",
+        "description": "Remove (exclusion) zone clipping.",
+        "dateAdded": 1294398660,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/3660/larger-nebula-exclusion-zones-rendering-distance/6?_=1708281056850"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100000000f"
+        ],
+        "offset": [
+            "0x1D15B8"
+        ],
+        "author": "Dev",
+        "description": "Square of max distance that a ship can be selected.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "6250000f"
+        ],
+        "offset": [
+            "0x86AEC"
+        ],
+        "author": "Dev",
+        "description": "Square of NPC disappear distance in MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "25000000f"
+        ],
+        "offset": [
+            "0x86AF0"
+        ],
+        "author": "Dev",
+        "description": "Square of player disappear distance in MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "100000000f"
+        ],
+        "offset": [
+            "0x86AF4"
+        ],
+        "author": "Dev",
+        "description": "Square of grouped player disappear distance in MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "visibility"
+        ],
+        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "83 FE 08 7D 16"
+        ],
+        "replacement": [
+            "D8 C0 90 90 90"
+        ],
+        "offset": [
+            "0x2389"
+        ],
+        "author": "adoxa",
+        "description": "Double existing LODranges.",
+        "dateAdded": 1286589300,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/500"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "83 FE 08 7D 16"
+        ],
+        "replacement": [
+            "D8 C0 90 D8 C0"
+        ],
+        "offset": [
+            "0x2389"
+        ],
+        "author": "adoxa",
+        "description": "Quadruple existing LODranges.",
+        "dateAdded": 1286589300,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/500"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "83 FE 08 7D 16",
+            "90 90",
+            "90 90",
+            "90 90 90"
+        ],
+        "replacement": [
+            "E8 7B FF FF FF",
+            "D8 0D",
+            "00 C3",
+            "4B 1A 47 (1.5), B4 55 5D (2.0), 28 4F 5D (3.0), 9C FC 5C (4.0), 64 84 5D (5.0), 08 4F 5D (6.0), 50 88 5D (7.0), 54 23 44 (8.0), FA 1F 57 (10.0)"
+        ],
+        "offset": [
+            "0x2389",
+            "0x2309",
+            "0x230E",
+            "0x230B"
+        ],
+        "author": "adoxa, BC46",
+        "description": "Alternative to above: scale LODranges by one of the following. In the last part, use the 3 bytes corresponding to the value in between brackets.",
+        "dateAdded": 1286589300,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/500"
     },
     {
         "original": [
