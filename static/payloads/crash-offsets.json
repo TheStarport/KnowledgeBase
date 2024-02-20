@@ -684,5 +684,12 @@
         "author": "Caenen",
         "description": "Possibly relates to a bad fuse. The exact cause of this is unclear.",
         "dateAdded": 1706832084
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0013f4d7",
+        "author": "IrateRedKite",
+        "description": "A referenced `[Effect]` nickname isn't present in an effects.ini file.",
+        "dateAdded": 1708424551
     }
 ]
