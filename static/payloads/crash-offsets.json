@@ -691,5 +691,12 @@
         "author": "IrateRedKite",
         "description": "A referenced `[Effect]` nickname isn't present in an effects.ini file.",
         "dateAdded": 1708424551
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x00044a99",
+        "author": "Darklighter",
+        "description": "Referenced a bad [Asteroid] nickname in a field.",
+        "dateAdded": 1708724323
     }
 ]
