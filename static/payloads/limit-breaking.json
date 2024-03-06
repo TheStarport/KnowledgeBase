@@ -1655,6 +1655,344 @@
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/500"
     },
     {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 05"
+        ],
+        "replacement": [
+            "EB 04"
+        ],
+        "offset": [
+            "0x244F5"
+        ],
+        "author": "adoxa",
+        "description": "Gamma ranges from 0.0 to 1.0, not 1.0 to 2.0.",
+        "dateAdded": 1281494340,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/3216/gamma-correction/2?_=1709761254144"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B8 89"
+        ],
+        "replacement": [
+            "E8 75"
+        ],
+        "offset": [
+            "0x244F7"
+        ],
+        "author": "adoxa",
+        "description": "Gamma ranges from 0.5 to 1.5, not 1.0 to 2.0.",
+        "dateAdded": 1281494340,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/3216/gamma-correction/2?_=1709761254144"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B8 89 5C"
+        ],
+        "replacement": [
+            "F8 EB 5D"
+        ],
+        "offset": [
+            "0x244F7"
+        ],
+        "author": "BC46",
+        "description": "Gamma ranges from 0.75 to 1.75, not 1.0 to 2.0.",
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80 00"
+        ],
+        "replacement": [
+            "00 20"
+        ],
+        "offset": [
+            "0x1AD6F"
+        ],
+        "author": "Schmackbolzen",
+        "description": "Fix bug with low resolution textures on some systems (sets maximum to 8192 instead of 128).",
+        "dateAdded": 1489362600,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/5804/missing-textures/6?_=1709763289541"
+    },
+    {
+        "moduleName": [
+            "rendcomp.dll"
+        ],
+        "original": [
+            "02"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0xC499"
+        ],
+        "author": "adoxa",
+        "description": "Always use high-quality space rendering; makes planets look more round from far distances.",
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "rp8.dll",
+            "rp8.dll",
+            "rp8.dll"
+        ],
+        "original": [
+            "02",
+            "02",
+            "01"
+        ],
+        "replacement": [
+            "03",
+            "03",
+            "03"
+        ],
+        "offset": [
+            "0x1A48C",
+            "0x1A4C5",
+            "0x1A4FE"
+        ],
+        "author": "BC46",
+        "description": "Change magnification filtering mode from 'linear' to 'anisotropic'; forces Anisotropic Filtering for better rendering of textures.",
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "rp8.dll",
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "02"
+        ],
+        "offset": [
+            "0x1A4FE"
+        ],
+        "author": "BC46",
+        "description": "Change magnification filtering mode from 'nearest' to 'linear'; gives better texture rendering than the default option but worse than anisotropic.",
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "rp8.dll"
+        ],
+        "original": [
+            "1b"
+        ],
+        "offset": [
+            "0x1A5B8"
+        ],
+        "author": "BC46",
+        "description": "max anisotropy",
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "255d"
+        ],
+        "offset": [
+            "0x1C89C0"
+        ],
+        "author": "Venemon",
+        "description": "Overall sun color impact in universe (larger for brighter).",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80i (2bytes)"
+        ],
+        "offset": [
+            "0x14BDF7"
+        ],
+        "author": "Venemon",
+        "description": "Number of space particles around the player outside fields (65535 max).",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B8 89",
+            "00 64 80 5B 00 64 80 5B"
+        ],
+        "replacement": [
+            "3B 90",
+            "1.0d"
+        ]
+        "offset": [
+            "0x11250F",
+            "0x1C903B"
+        ],
+        "author": "Venemon",
+        "description": "Sun flare size.",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0x10F982"
+        ],
+        "author": "Venemon",
+        "description": "Sun flare brightness.",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "8b"
+        ],
+        "offset": [
+            "0x10262"
+        ],
+        "author": "Venemon",
+        "description": "Sun green color impact in universe.",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "8b"
+        ],
+        "offset": [
+            "0x10267"
+        ],
+        "author": "Venemon",
+        "description": "Sun blue color impact in universe.",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0xFDDDE"
+        ],
+        "author": "Venemon",
+        "description": "Ship light points modifier (2 for rainbow).",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x213855"
+        ],
+        "author": "Venemon",
+        "description": "Turn off opacity transition of static objects in asteroid fields.",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x213854"
+        ],
+        "author": "Venemon",
+        "description": "Turn off opacity of ambient field in asteroid field (buggy).",
+        "dateAdded": 1702949940,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
         "original": [
             "90 53 32"
         ],
