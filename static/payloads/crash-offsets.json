@@ -504,6 +504,13 @@
         "dateAdded": 1487102400
     },  
     {
+        "moduleName": "ntdll.dll",
+        "offset": "0x000864ba",
+        "author": "Aingar",
+        "description": "Damaging/Destroying an incorrectly defined collision group",
+        "dateAdded": 1711016777
+    }, 
+    {
         "moduleName": "rendcomp.dll",
         "offset": "0x00011163",
         "author": "Lord of the Hell",
