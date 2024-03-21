@@ -570,33 +570,37 @@ units_per_container = INT
 HP_child = STRING
 explosion_resistance = FLOAT
 regeneration_rate = FLOAT
-max_capacity = INT
+max_capacity = FLOAT
 hp_type = STRING
+hp_shield_type = STRING (multiple)
 offline_rebuild_time = FLOAT
 offline_threshold = FLOAT
-constant_power_draw = STRING
-rebuild_power_draw = STRING
+constant_power_draw = FLOAT
+rebuild_power_draw = FLOAT
 shield_type = STRING
 shield_collapse_sound = STRING
+shield_collapse_particle = STRING
 shield_rebuilt_sound = STRING
-shield_hit_effects = INT, STRING
+shield_hit_effects = FLOAT, STRING
 ```
 
-| Parameter             | Information |
-| --------------------- | ----------- |
-| HP_child              |             |
-| explosion_resistance  |             |
-| regeneration_rate     |             |
-| max_capacity          |             |
-| hp_type               |             |
-| offline_rebuild_time  |             |
-| offline_threshold     |             |
-| constant_power_draw   |             |
-| rebuild_power_draw    |             |
-| shield_type           |             |
-| shield_collapse_sound |             |
-| shield_rebuilt_sound  |             |
-| shield_hit_effects    |             |
+| Parameter                | Information |
+| ------------------------ | ----------- |
+| HP_child                 |             |
+| explosion_resistance     |             |
+| regeneration_rate        |             |
+| max_capacity             |             |
+| hp_type                  |             |
+| hp_shield_type           |             |
+| offline_rebuild_time     |             |
+| offline_threshold        |             |
+| constant_power_draw      |             |
+| rebuild_power_draw       |             |
+| shield_type              |             |
+| shield_collapse_sound    |             |
+| shield_collapse_particle |             |
+| shield_rebuilt_sound     |             |
+| shield_hit_effects       |             |
 
 ### [Shield]
 
