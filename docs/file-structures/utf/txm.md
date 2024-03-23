@@ -58,8 +58,8 @@ stateDiagram-v2
 
 | Name          | Type      | Description                             |
 | ------------- | --------- | --------------------------------------- |
-| Texture count | uint32    | Textures used in animation. (1 or more) |
-| Frame count   | uint32    | Total frame count.                      |
+| Texture count | int32     | Textures used in animation. (1 or more) |
+| Frame count   | int32     | Total frame count.                      |
 | FPS           | float     | Animation frame rate.                   |
 | Frame rects   | *varying* | Animation frames.                       |
 
@@ -67,12 +67,12 @@ stateDiagram-v2
 
 Each animation frame:
 
-| Name   | Type   | Description                            |
-| ------ | ------ | -------------------------------------- |
-| index  | uint32 | Texture image index (starting with 0). |
-| startU | float  | Start point U coordinate.              |
-| startV | float  | Start point V coordinate.              |
-| endU   | float  | End point U coordinate.                |
-| endV   | float  | End point V coordinate.                |
+| Name   | Type  | Description                            |
+| ------ | ----- | -------------------------------------- |
+| index  | int32 | Texture image index (starting with 0). |
+| startU | float | Start point U coordinate.              |
+| startV | float | Start point V coordinate.              |
+| endU   | float | End point U coordinate.                |
+| endV   | float | End point V coordinate.                |
 
 * Coordinates origin at top left corner.

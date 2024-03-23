@@ -8,85 +8,86 @@ title: Alchemy Nodes
 
 These are the list of known properties used in alchemy node archetypes.
 
-| Name                           | Type           | Description                                                         |
-| ------------------------------ | -------------- | ------------------------------------------------------------------- |
-| Node_Name                      | String         | Archetype name. Mandatory property.                                 |
-| Node_LifeSpan                  | Float          | Node lifespan. Mandatory property.                                  |
-| Node_Transform                 | Transform      | Node transform. Mandatory property.                                 |
-| ~~Node_ClassName~~             | String         | Unused.                                                             |
-| Emitter_LODCurve               | Animated float | Emitter LOD bias curve.                                             |
-| Emitter_InitialParticles       | Integer        | Number of particles spawned initially.                              |
-| Emitter_Frequency              | Animated curve | Particle sawn rate/frequency (units per second).                    |
-| Emitter_MaxParticles           | Animated curve | Maximum particles allowed.                                          |
-| Emitter_EmitCount              | Animated curve | Unknown.                                                            |
-| Emitter_InitialLifeSpan        | Animated curve | Particle lifespan assigned when generated.                          |
-| Emitter_Pressure               | Animated curve | Initial velocity. Must be above 0 for some particles to be visible. |
-| Emitter_VelocityApproach       | Animated curve | Inherits velocity of parent object.                                 |
-| CubeEmitter_Width              | Animated curve | FxCubeEmitter width.                                                |
-| CubeEmitter_Height             | Animated curve | FxCubeEmitter height.                                               |
-| CubeEmitter_Depth              | Animated curve | FxCubeEmitter depth.                                                |
-| CubeEmitter_MinSpread          | Animated curve | FxCubeEmitter minimum spread angle.                                 |
-| CubeEmitter_MaxSpread          | Animated curve | FxCubeEmitter maximum spread angle.                                 |
-| SphereEmitter_MinRadius        | Animated curve | FxSphereEmitter inner radius (hollow).                              |
-| SphereEmitter_MaxRadius        | Animated curve | FxSphereEmitter outer radius.                                       |
-| ConeEmitter_MinRadius          | Animated curve | FxConeEmitter inner radius (hollow).                                |
-| ConeEmitter_MaxRadius          | Animated curve | FxConeEmitter outer radius.                                         |
-| ConeEmitter_MinSpread          | Animated curve | FxConeEmitter minimum spread angle.                                 |
-| ConeEmitter_MaxSpread          | Animated curve | FxConeEmitter maximum spread angle.                                 |
-| Appearance_LODCurve            | Animated float | Appearance LOD bias curve.                                          |
-| BasicApp_TriTexture            | Boolean        | Use triangle mesh.                                                  |
-| BasicApp_QuadTexture           | Boolean        | Use quad mesh.                                                      |
-| BasicApp_MotionBlur            | Boolean        | Applies motion blur for non-textured appearances.                   |
-| BasicApp_Color                 | Animated color | Color tint animation.                                               |
-| BasicApp_Alpha                 | Animated float | Color alpha animation.                                              |
-| BasicApp_Size                  | Animated float | Mesh size.                                                          |
-| BasicApp_HtoVAspect            | Animated float | Horizontal to vertical aspect ratio.                                |
-| BasicApp_Rotate                | Animated float | Rotation animation. Ignored when MotionBlur is enabled.             |
-| BasicApp_TexName               | String         | Texture name.                                                       |
-| BasicApp_BlendInfo             | Color blending | Color blending mode.                                                |
-| BasicApp_UseCommonTexFrame     | Boolean        | Use common texture animation.                                       |
-| BasicApp_TexFrame              | Animated float | Individual particle texture animation.                              |
-| BasicApp_CommonTexFrame        | Animated curve | Common node texture animation.                                      |
-| BasicApp_FlipTexU              | Boolean        | Flip texture horizontally.                                          |
-| BasicApp_FlipTexV              | Boolean        | Flip texture vertically.                                            |
-| OrientedApp_Width              | Animated float |                                                                     |
-| OrientedApp_Height             | Animated float |                                                                     |
-| RectApp_CenterOnPos            | Boolean        |                                                                     |
-| RectApp_ViewingAngleFade       | Boolean        | Sprite fades out at steep viewing angle.                            |
-| RectApp_Scale                  | Animated float |                                                                     |
-| RectApp_Length                 | Animated float |                                                                     |
-| RectApp_Width                  | Animated float |                                                                     |
-| BeamApp_DisablePlaceHolder     | Boolean        |                                                                     |
-| BeamApp_DupeFirstParticle      | Boolean        |                                                                     |
-| BeamApp_LineAppearance         | Boolean        |                                                                     |
-| ParticleApp_LifeName           | String         | Refers to effect name displayed during lifespan.                    |
-| ParticleApp_DeathName          | String         | Refers to effect name displayed at the end.                         |
-| ParticleApp_UseDynamicRotation | Boolean        | Applies transformation from this node.                              |
-| ParticleApp_SmoothRotation     | Boolean        |                                                                     |
-| MeshApp_MeshId                 | Integer        | Unknown. Mesh FLCRC? Mesh group start index?                        |
-| MeshApp_MeshName               | String         | Unknown                                                             |
-| MeshApp_UseParticleTransform   | Boolean        | Enables individual particle transform?                              |
-| MeshApp_ParticleTransform      | Transform      | Individual particle transform?                                      |
-| RadialField_Approach           | Animated curve |                                                                     |
-| RadialField_Attenuation        | Animated float |                                                                     |
-| RadialField_Magnitude          | Animated curve |                                                                     |
-| RadialField_Radius             | Animated curve |                                                                     |
-| CollideField_Height            | Animated curve |                                                                     |
-| CollideField_Reflectivity      | Animated curve |                                                                     |
-| CollideField_Width             | Animated curve |                                                                     |
-| AirField_Approach              | Animated curve |                                                                     |
-| AirField_Magnitude             | Animated curve |                                                                     |
-| GravityField_Gravity           | Animated curve |                                                                     |
-| TurbulenceField_Approach       | Animated curve |                                                                     |
-| TurbulenceField_Magnitude      | Animated curve |                                                                     |
-| 0x1C65B7B9                     | Boolean        | Duplicate of BeamApp_LineAppearance.                                |
-| 0x0BA0B3BB                     | Transform      | Unknown.                                                            |
-| 0x03503B61                     | Boolean        | Unknown.                                                            |
-| 0x0ABE0402                     | Boolean        | Unknown.                                                            |
-| 0xE63AA248                     | Animated curve | Unknown.                                                            |
+| Name                             | Type           | Description                                                         |
+| -------------------------------- | -------------- | ------------------------------------------------------------------- |
+| Node_Name                        | String         | Archetype name. Mandatory property.                                 |
+| Node_LifeSpan                    | Float          | Node lifespan. Mandatory property.                                  |
+| Node_Transform                   | Transform      | Node transform. Mandatory property.                                 |
+| ~~Node_ClassName~~               | String         | Unused.                                                             |
+| Emitter_LODCurve                 | Animated float | Emitter LOD bias curve.                                             |
+| Emitter_InitialParticles         | Integer        | Number of particles spawned initially.                              |
+| Emitter_Frequency                | Animated curve | Particle sawn rate/frequency (units per second).                    |
+| Emitter_MaxParticles             | Animated curve | Maximum particles allowed.                                          |
+| Emitter_EmitCount                | Animated curve | Unknown.                                                            |
+| Emitter_InitialLifeSpan          | Animated curve | Particle lifespan assigned when generated.                          |
+| Emitter_Pressure                 | Animated curve | Initial velocity. Must be above 0 for some particles to be visible. |
+| Emitter_VelocityApproach         | Animated curve | Inherits velocity of parent object.                                 |
+| CubeEmitter_Width                | Animated curve | FxCubeEmitter width.                                                |
+| CubeEmitter_Height               | Animated curve | FxCubeEmitter height.                                               |
+| CubeEmitter_Depth                | Animated curve | FxCubeEmitter depth.                                                |
+| CubeEmitter_MinSpread            | Animated curve | FxCubeEmitter minimum spread angle.                                 |
+| CubeEmitter_MaxSpread            | Animated curve | FxCubeEmitter maximum spread angle.                                 |
+| SphereEmitter_MinRadius          | Animated curve | FxSphereEmitter inner radius (hollow).                              |
+| SphereEmitter_MaxRadius          | Animated curve | FxSphereEmitter outer radius.                                       |
+| ConeEmitter_MinRadius            | Animated curve | FxConeEmitter inner radius (hollow).                                |
+| ConeEmitter_MaxRadius            | Animated curve | FxConeEmitter outer radius.                                         |
+| ConeEmitter_MinSpread            | Animated curve | FxConeEmitter minimum spread angle.                                 |
+| ConeEmitter_MaxSpread            | Animated curve | FxConeEmitter maximum spread angle.                                 |
+| Appearance_LODCurve              | Animated float | Appearance LOD bias curve.                                          |
+| BasicApp_TriTexture              | Boolean        | Use triangle mesh.                                                  |
+| BasicApp_QuadTexture             | Boolean        | Use quad mesh.                                                      |
+| BasicApp_MotionBlur              | Boolean        | Applies motion blur for non-textured appearances.                   |
+| BasicApp_Color                   | Animated color | Color tint animation.                                               |
+| BasicApp_Alpha                   | Animated float | Color alpha animation.                                              |
+| BasicApp_Size                    | Animated float | Mesh size.                                                          |
+| BasicApp_HtoVAspect              | Animated float | Horizontal to vertical aspect ratio.                                |
+| BasicApp_Rotate                  | Animated float | Rotation animation. Ignored when MotionBlur is enabled.             |
+| BasicApp_TexName                 | String         | Texture name.                                                       |
+| BasicApp_BlendInfo               | Color blending | Color blending mode.                                                |
+| BasicApp_UseCommonTexFrame       | Boolean        | Use common texture animation.                                       |
+| BasicApp_TexFrame                | Animated float | Individual particle texture animation.                              |
+| BasicApp_CommonTexFrame          | Animated curve | Common node texture animation.                                      |
+| BasicApp_FlipTexU                | Boolean        | Flip texture horizontally.                                          |
+| BasicApp_FlipTexV                | Boolean        | Flip texture vertically.                                            |
+| OrientedApp_Width                | Animated float |                                                                     |
+| OrientedApp_Height               | Animated float |                                                                     |
+| RectApp_CenterOnPos              | Boolean        |                                                                     |
+| RectApp_ViewingAngleFade         | Boolean        | Sprite fades out at steep viewing angle.                            |
+| RectApp_Scale                    | Animated float |                                                                     |
+| RectApp_Length                   | Animated float |                                                                     |
+| RectApp_Width                    | Animated float |                                                                     |
+| BeamApp_DisablePlaceHolder       | Boolean        |                                                                     |
+| BeamApp_DupeFirstParticle        | Boolean        |                                                                     |
+| BeamApp_LineAppearance           | Boolean        |                                                                     |
+| ParticleApp_LifeName             | String         | Refers to effect name displayed during lifespan.                    |
+| ParticleApp_DeathName            | String         | Refers to effect name displayed at the end.                         |
+| ParticleApp_UseDynamicRotation   | Boolean        | Applies transformation from this node.                              |
+| ParticleApp_SmoothRotation       | Boolean        |                                                                     |
+| ~~MeshApp_MeshId~~               | Integer        | Unknown. Mesh FLCRC? Mesh group start index?                        |
+| ~~MeshApp_MeshName~~             | String         | Unknown                                                             |
+| ~~MeshApp_UseParticleTransform~~ | Boolean        | Enables individual particle transform?                              |
+| ~~MeshApp_ParticleTransform~~    | Transform      | Individual particle transform?                                      |
+| RadialField_Approach             | Animated curve |                                                                     |
+| RadialField_Attenuation          | Animated float |                                                                     |
+| RadialField_Magnitude            | Animated curve |                                                                     |
+| RadialField_Radius               | Animated curve |                                                                     |
+| CollideField_Height              | Animated curve |                                                                     |
+| CollideField_Reflectivity        | Animated curve |                                                                     |
+| CollideField_Width               | Animated curve |                                                                     |
+| AirField_Approach                | Animated curve |                                                                     |
+| AirField_Magnitude               | Animated curve |                                                                     |
+| GravityField_Gravity             | Animated curve |                                                                     |
+| TurbulenceField_Approach         | Animated curve |                                                                     |
+| TurbulenceField_Magnitude        | Animated curve |                                                                     |
+| 0x1C65B7B9                       | Boolean        | Duplicate of BeamApp_LineAppearance.                                |
+| 0x0BA0B3BB                       | Transform      | Unknown.                                                            |
+| 0x03503B61                       | Boolean        | Unknown.                                                            |
+| 0x0ABE0402                       | Boolean        | Unknown.                                                            |
+| 0xE63AA248                       | Animated curve | Unknown.                                                            |
 
 * ❔ 0xE63AA248 type appears in some FLDustField nodes.
 * ❔ 0x0BA0B3BB, 0x03503B61 and 0x0ABE0402 types appear in tail.app (FLBeamAppearance) of gf_tradelaneship01.ale.
+* BasicApp_CommonTexFrame can animate textures with multiple sub-textures (i.e. texture count > 1) while BasicApp_TexFrame cannot (will default to last texture). Frame rate property is ignored and depends on playback is controlled by the curve (0.0 - first frame, 1.0 - last frame).
 
 ## Nodes
 
