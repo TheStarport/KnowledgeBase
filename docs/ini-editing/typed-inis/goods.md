@@ -24,7 +24,7 @@ There may be missing, incomplete or incorrect information on this page as it's s
 
 `[Good]` blocks are repeatable.
 
-### TrueType
+### [Good]
 
 ```ini
 [Good]
