@@ -1784,7 +1784,7 @@
     },
     {
         "moduleName": [
-            "rp8.dll",
+            "rp8.dll"
         ],
         "original": [
             "01"
@@ -1865,7 +1865,7 @@
         "replacement": [
             "3B 90",
             "1.0d"
-        ]
+        ],
         "offset": [
             "0x11250F",
             "0x1C903B"
