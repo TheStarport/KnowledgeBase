@@ -26,9 +26,9 @@ Flags can be summed with with `+` symbol.
 | Property   | Type          | Description                                                                            |
 | ---------- | ------------- | -------------------------------------------------------------------------------------- |
 | `pos`      | float[3]      | Object position (unless attached to another object it is typically relative to scene). |
-| `orient`   | {float[3]}[3] | [Rotation matrix](https://www.andre-gaschler.com/rotationconverter/). Use when setting up object in scene and denotes the orientation of the object.                                 |
+| `orient`   | \{float[3]\}[3] | [Rotation matrix](https://www.andre-gaschler.com/rotationconverter/). Use when setting up object in scene and denotes the orientation of the object.                                 |
 | `q_orient` | float[4]      | Quaternion orientation. Used for animation.                                             |
-| `axisrot`  | {float, AXIS} | Single axis object rotation. Used for animation.                                        |
+| `axisrot`  | \{float, AXIS\} | Single axis object rotation. Used for animation.                                        |
 
 When defining objects in a scene you should use the `orient` property to set orientation. However in the `START_SPATIAL_PROP_ANIM` event you should use `q_orient` quaternion property for animation. Alternatively if you need to rotate an object along a single axis you can simply use `axisrot`.
 
@@ -382,7 +382,7 @@ Curves are used to move an object along its path. Paths can be open or closed lo
 | Property    | Type                                | Description                                      |
 | ----------- | ----------------------------------- | ------------------------------------------------ |
 | `path_type` | string                              | Path type. Default “CV_CROrientationSplinePath”. |
-| `path_data` | flag, {x, y, z}, {x, y, z, w} [...] | Path data: flag, points, quaternions.            |
+| `path_data` | flag, \{x, y, z\}, \{x, y, z, w\} [...] | Path data: flag, points, quaternions.            |
 
 
 Only one path type is available: `CV_CROrientationSplinePath`.
