@@ -191,11 +191,12 @@
         ],
         "author": "Adoxa",
         "description": "Show cargo space using decimals. String 1179 in resources.dll must have %d changed to %g or %.2f. Both offsets must be changed.",
-        "dateAdded": 0,
+        "dateAdded": 1285774140,
         "categories": [
             "cargo",
             "UI"
         ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/491?_=1713991028874"
     },
     {
         "moduleName": [
@@ -247,11 +248,11 @@
         ],
         "author": "Adoxa",
         "description": "Maximum distance to initiate trade.",
-        "dateAdded": 1279364400,
+        "dateAdded": 1278224940,
         "categories": [
             "cargo"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/467?_=1706352734802"
+        "url": "https://the-starport.com/forums/topic/3072/ship-axis-trade-dist-etc-several-questions/2?_=1713992251242"
     },
     {
         "moduleName": [
@@ -415,30 +416,15 @@
         ],
         "author": "Dev",
         "description": "Maximum value of any single good.  ",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "trade"
         ]
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
-            "freelancer.exe"
-        ],
-        "original": [
-            "9999999f"
-        ],
-        "offset": [
-            "0x1CAEE8"
-        ],
-        "author": "Dev",
-        "description": "Maximum value of any single good.  ",
-        "dateAdded": 0,
-        "categories": [
-            "trade"
-        ]
-    },
-    {
-        "moduleName": [
+            "server.dll",
             "server.dll",
             "server.dll",
             "server.dll",
@@ -474,9 +460,11 @@
             "999999999i",
             "999999999i",
             "999999999i",
+            "999999999i",
             "999999999i"
         ],
         "offset": [
+            "0x06F46E",
             "0x06F475",
             "0x06F4A6",
             "0x06F4AD",
@@ -495,7 +483,7 @@
             "0x076426",
             "0x07642D"
         ],
-        "author": "Dev",
+        "author": "adoxa",
         "description": "Maximum credits that a player can have in multiplayer. All offsets must be changed.",
         "dateAdded": 0,
         "categories": [
@@ -535,11 +523,11 @@
         ],
         "author": "Adoxa, M0tah",
         "description": "Market files control items in stock (MarketGood = item nickname, required level, required rep, minimum, max in stock, full resale, price multiplier).",
-        "dateAdded": 1286804541,
+        "dateAdded": 1258468941,
         "categories": [
             "trade"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/210?_=1706366503923"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/210?_=1706366503918"
     },
     {
         "moduleName": [
@@ -556,7 +544,7 @@
         ],
         "author": "Adoxa",
         "description": "Disable money-based rank, rank becomes fixed, may instead be manually managed via hooks.",
-        "dateAdded": 1286804541,
+        "dateAdded": 1379673360,
         "categories": [
             "trade"
         ],
@@ -575,13 +563,14 @@
         "offset": [
             "0x0A9D8E"
         ],
-        "author": "Adoxa",
+        "author": "Adoxa, Gold_Sear",
         "description": "Ignore rank level limit test, theoretically allowing any number of levels.",
-        "dateAdded": 1286804541,
+        "dateAdded": 1532715780,
         "categories": [
             "trade",
             "UI"
         ]
+        "url": "https://the-starport.com/forums/topic/3225/evenly-incremented-rank/14?_=1714083355365"
     },
     {
         "moduleName": [
@@ -591,14 +580,16 @@
             "40b"
         ],
         "offset": [
-            "0x10A9D8E"
+            "0x0A9D8E"
         ],
         "author": "Adoxa",
         "description": "Rank level limit",
-        "dateAdded": 0,
+        "dateAdded": 1281775020,
         "categories": [
+            "trade",
             "UI"
         ]
+        "url": "https://the-starport.com/forums/topic/3225/evenly-incremented-rank/3?_=1714083355363"
     },
     {
         "moduleName": [
@@ -1394,7 +1385,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1466,7 +1457,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1523,7 +1514,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1541,7 +1532,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1559,7 +1550,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1577,7 +1568,7 @@
         "categories": [
             "visibility"
         ],
-        "url": "http://www.lancersreactor.com/archive/viewtopic.php?f=29&t=44438&p=33929&hilit=limit+breaking+101#p33929"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -2806,11 +2797,11 @@
         ],
         "author": "Dev",
         "description": "Reputation over which will give you affiliation with that faction (faction name appears in space before your name).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "reputation"
         ],
-        "url": "https://the-starport.com/forums/topic/182/exe-hacks/3?_=1713801803785"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "original": [
@@ -2824,10 +2815,11 @@
         ],
         "author": "fox",
         "description": "Reputation set by bribes, can not exceed 0.9.",
-        "dateAdded": 0,
+        "dateAdded": 1161194460,
         "categories": [
             "reputation"
         ]
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438_start=30.html"
     },
     {
         "original": [
@@ -2892,7 +2884,7 @@
         ],
         "author": "adoxa",
         "description": "Reputation needed for lawful factions to show rumors.",
-        "dateAdded": 1430832120,
+        "dateAdded": 1394029140,
         "categories": [
             "reputation"
         ],
@@ -2910,7 +2902,7 @@
         ],
         "author": "adoxa",
         "description": "Reputation needed for unlawful factions to show rumors.",
-        "dateAdded": 1430832120,
+        "dateAdded": 1394029140,
         "categories": [
             "reputation"
         ],
@@ -2928,11 +2920,11 @@
         ],
         "author": "adoxa",
         "description": "Adjustment for maximum reputation.",
-        "dateAdded": 1289925000,
+        "dateAdded": 1279440480,
         "categories": [
             "reputation"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/557?_=1713801803796"
+        "url": "https://the-starport.com/forums/topic/3117/hack-request-maximum-achieveable-reputation/2?_=1713971181509"
     },
     {
         "original": [
@@ -3003,7 +2995,7 @@
             "0x0CC986"
         ],
         "author": "adoxa",
-        "description": "Jump gates test reputation.",
+        "description": "Jump holes test reputation.",
         "dateAdded": 1289925000,
         "categories": [
             "reputation"
@@ -3042,9 +3034,27 @@
         ],
         "author": "Gold_Sear",
         "description": "In freetime between missions 4, 5, 6 and 7 buying a ship will set your rep with the Bounty Hunters to -0.2; this prevents that (alternative to above)",
-        "dateAdded": 1289925000,
+        "dateAdded": 1421582400,
         "categories": [
             "reputation"
         ]
+    },
+    {
+        "original": [
+            "-0.6f"
+        ],
+        "moduleName": [
+            "content.dll"
+        ],
+        "offset": [
+            "0x13F540"
+        ],
+        "author": "Venemon",
+        "description": "Hostile formation reputation.",
+        "dateAdded": 1706441100,
+        "categories": [
+            "reputation"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
     }
 ]
