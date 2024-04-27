@@ -387,6 +387,24 @@
             "freelancer.exe"
         ],
         "original": [
+            "0.00125d"
+        ],
+        "offset": [
+            "0x1C9680"
+        ],
+        "author": "Syd, adoxa",
+        "description": "Multiplier for screen width.",
+        "dateAdded": 1264282500,
+        "categories": [
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/265"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
             "05"
         ],
         "replacement": [
@@ -574,6 +592,185 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x06FA17"
+        ],
+        "author": "Venemon",
+        "description": "Hide auto-generated commodity sell/buy locations detail inside commodity tab.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x075112"
+        ],
+        "author": "Venemon",
+        "description": "Hide station commodity buy/sell info from Information box while docked.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x075121"
+        ],
+        "author": "Venemon",
+        "description": "Hide station equipment sell info from Information box while docked.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x075130"
+        ],
+        "author": "Venemon",
+        "description": "Hide station ship sell info from Information box while docked.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x075C68"
+        ],
+        "author": "Venemon",
+        "description": "Hide station market info from Information box in space.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x097B7F"
+        ],
+        "author": "Venemon",
+        "description": "Hide station commodity buy/sell info from NavMap.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI",
+            "HUD: MavMap"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x097B8E"
+        ],
+        "author": "Venemon",
+        "description": "Hide station equipment sell info from NavMap.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI",
+            "HUD: MavMap"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x097B9D"
+        ],
+        "author": "Venemon",
+        "description": "Hide station ship sell info from NavMap.",
+        "dateAdded": 1706965860,
+        "categories": [
+            "trade",
+            "UI",
+            "HUD: MavMap"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
+    },
+    {
+        "moduleName": [
             "content.dll"
         ],
         "original": [
@@ -606,11 +803,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Allow shooting in cruise.",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "equipment",
             "cruise"
         ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
         "moduleName": [
@@ -627,11 +825,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Allow mine dropping in cruise.",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "equipment",
             "cruise"
         ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
         "moduleName": [
@@ -648,11 +847,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Allow firing in tradelanes.",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "equipment",
-            "cruise"
+            "tradelanes"
         ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
         "moduleName": [
@@ -669,12 +869,11 @@
         ],
         "author": "Adoxa",
         "description": "Adjust cruise speed according to drag_modifier.",
-        "dateAdded": 0,
+        "dateAdded": 1264745160,
         "categories": [
-            "equipment",
             "cruise"
         ],
-        "url": "https://the-starport.com/forums/topic/2989/offset-request-unlink-drag_modifier-and-interference?_=1706522670749"
+        "url": "https://the-starport.com/forums/topic/2471/fl-redemption-4-20-build-5-public-demo-mod-by-cold-void/34?_=1713992992724"
     },
     {
         "moduleName": [
@@ -688,10 +887,11 @@
         ],
         "author": "Cannon",
         "description": "Formation catch up cruise speed multiplier. Outside of trail range common.dll 0x075B36; values above variable located at 0x1407A0 will be ignored.",
-        "dateAdded": 0,
+        "dateAdded": 1312161540,
         "categories": [
             "cruise"
         ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/666"
     },
     {
         "moduleName": [
@@ -705,7 +905,7 @@
         ],
         "author": "Gold_Sear",
         "description": "Formation catch up cruise speed multiplier. Within trail range common.dll 0x075B36.",
-        "dateAdded": 0,
+        "dateAdded": 1439220720,
         "categories": [
             "cruise"
         ],
@@ -722,12 +922,12 @@
             "0x07630C"
         ],
         "author": "Gold_Sear",
-        "description": "Multiplier for minimum cruise speed in formation escort",
-        "dateAdded": 0,
+        "description": "Multiplier for minimum cruise speed in formation (escort).",
+        "dateAdded": 1421598480,
         "categories": [
             "cruise"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/918?_=1706522670753"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?_=1706522670753"
     },
     {
         "moduleName": [
@@ -739,13 +939,13 @@
         "offset": [
             "0x13DF88"
         ],
-        "author": "Gold_Sear",
-        "description": "Multiplier for minimum cruise speed for formation leader. Warning: this seems to majorly affect asteroid spacing in asteroid fields and can break asteroid exclusion zones. Use with caution!",
-        "dateAdded": 0,
+        "author": "Gold_Sear, foxUnit01",
+        "description": "Multiplier for minimum cruise speed for formation leader. Warning by fox: this seems to majorly affect asteroid spacing in asteroid fields and can break asteroid exclusion zones. Use with caution!",
+        "dateAdded": 1445724000,
         "categories": [
             "cruise"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/918?_=1706522670753"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/927?_=1706522670753"
     },
     {
         "moduleName": [
@@ -754,17 +954,17 @@
         ],
         "original": [
             "90 90 90 90 90 90 90 90 90 90 90",
-            "90 90 90 90 90 90 90 90 90 90 90"
+            "C3 90 90 90 90 90 90 90"
         ],
         "replacement": [
             "6A 00 E8 68 00 00 00 83 C4 04 C3",
-            "6A 00 E8 68 00 00 00 83 C4 04 C3"
+            "80 7C E4 04 00 74 CA C3"
         ],
         "offset": [
             "0x0C7A81",
             "0x0C7AB0"
         ],
-        "author": "Adoxa",
+        "author": "adoxa",
         "description": "Instant deceleration to 0 after dropping cruise",
         "dateAdded": 1254560320,
         "categories": [
@@ -783,12 +983,12 @@
             "0x13F3CC"
         ],
         "author": "Lord of Lunacy",
-        "description": "Trade lane travel speed. Warning: values over 2500 may have adverse side-effects. In the 1.0 version of common.dll, the offset to patchis instead, 0x13F39.",
-        "dateAdded": 1272445120,
+        "description": "Trade lane travel speed. Warning: values over 2500 may have adverse side-effects.",
+        "dateAdded": 1158134040,
         "categories": [
             "tradelanes"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/414?_=1706522670763"
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438_start=30.html"
     },
     {
         "moduleName": [
@@ -863,7 +1063,7 @@
         ],
         "author": "Gold_Sear",
         "description": "Swap vertical component of trade lane travel in previous direction. This fixes issues with vertically oriented trade lanes.",
-        "dateAdded": 1254560320,
+        "dateAdded": 1502471460,
         "categories": [
             "tradelanes"
         ],
@@ -896,7 +1096,7 @@
         "categories": [
             "cruise"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/893?_=1706522670780"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/564?_=1714219514777"
     },
     {
         "moduleName": [
@@ -971,6 +1171,27 @@
         "categories": [
             "cruise"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "8A 47 54"
+        ],
+        "replacement": [
+            "B0 00 90"
+        ],
+        "offset": [
+            "0D5F53"
+        ],
+        "author": "Venemon",
+        "description": "Disable cruise charge text.",
+        "dateAdded": 1706441100,
+        "categories": [
+            "cruise"
+        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
     },
     {
         "moduleName": [
@@ -3056,5 +3277,77 @@
             "reputation"
         ]
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.3f"
+        ],
+        "offset": [
+            "1D8F08"
+        ],
+        "author": "Gold_Sear",
+        "description": "Expansion time for target brackets (seconds).",
+        "dateAdded": 1421539200,
+        "categories": [
+            "HUD: Ship Brackets"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "10f"
+        ],
+        "offset": [
+            "1D8EE8"
+        ],
+        "author": "Gold_Sear",
+        "description": "Multiplier for size of non-targeted brackets, depending on the distance.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "HUD: Ship Brackets"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "212434"
+        ],
+        "author": "Gold_Sear",
+        "description": "Scanner range (modified by interference) under which solars won't show up on your contact list.",
+        "dateAdded": 1421539200,
+        "categories": [
+            "HUD: Contacts/Weapons List/Wireframe"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1500f"
+        ],
+        "offset": [
+            "1D8D08"
+        ],
+        "author": "Gold_Sear",
+        "description": "Distance over which non-selected arrows of important contacts on the edge of the screen start fading (note: same offset as adoxa's trade initiate distance).",
+        "dateAdded": 1421539200,
+        "categories": [
+            "HUD: Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     }
 ]
