@@ -130,7 +130,7 @@
         "categories": [
             "cargo"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/667?_=1706352734818"
+        : "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/667?_=1706352734818"
     },
     {
         "moduleName": [
@@ -151,7 +151,7 @@
             "cargo",
             "NPCs"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
+        : "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
     },
     {
         "moduleName": [
@@ -170,7 +170,7 @@
             "cargo",
             "NPCs"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
+        : "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/565?_=1706352734814"
     },
     {
         "moduleName": [
@@ -196,7 +196,7 @@
             "cargo",
             "UI"
         ]
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/491?_=1713991028874"
+        : "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/491?_=1713991028874"
     },
     {
         "moduleName": [
@@ -437,7 +437,7 @@
         "dateAdded": 1155821760,
         "categories": [
             "trade"
-        ]
+        ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
@@ -587,7 +587,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/3225/evenly-incremented-rank/14?_=1714083355365"
     },
     {
@@ -609,7 +609,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -631,7 +631,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -653,7 +653,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -675,7 +675,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -697,7 +697,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -720,7 +720,7 @@
             "trade",
             "UI",
             "HUD: MavMap"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -743,7 +743,7 @@
             "trade",
             "UI",
             "HUD: MavMap"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -766,7 +766,7 @@
             "trade",
             "UI",
             "HUD: MavMap"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
     {
@@ -785,7 +785,7 @@
         "categories": [
             "trade",
             "UI"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/3225/evenly-incremented-rank/3?_=1714083355363"
     },
     {
@@ -807,7 +807,7 @@
         "categories": [
             "equipment",
             "cruise"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
@@ -829,7 +829,7 @@
         "categories": [
             "equipment",
             "cruise"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
@@ -851,7 +851,7 @@
         "categories": [
             "equipment",
             "tradelanes"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859"
     },
     {
@@ -890,7 +890,7 @@
         "dateAdded": 1312161540,
         "categories": [
             "cruise"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/666"
     },
     {
@@ -1190,7 +1190,7 @@
         "dateAdded": 1706441100,
         "categories": [
             "cruise"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
     },
     {
@@ -1355,10 +1355,11 @@
         ],
         "author": "Dev",
         "description": "Maximum dock acknowledge distance.",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "docking"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -1372,10 +1373,11 @@
         ],
         "author": "Dev",
         "description": "Maximum dock initiation  distance.",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "docking"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -3039,7 +3041,7 @@
         "dateAdded": 1161194460,
         "categories": [
             "reputation"
-        ]
+        ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438_start=30.html"
     },
     {
@@ -3275,7 +3277,7 @@
         "dateAdded": 1706441100,
         "categories": [
             "reputation"
-        ]
+        ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
     },
     {
