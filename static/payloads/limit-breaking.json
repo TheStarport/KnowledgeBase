@@ -33,7 +33,7 @@
         "replacement": [
             "90 90 90 90 90"
         ],
-        "offset": [
+        : [
             "0x18B147"
         ],
         "author": "BC46",
@@ -1389,13 +1389,14 @@
         "offset": [
             "0x13F48C"
         ],
-        "author": "Dev",
+        "author": "M0tah",
         "description": "Minimum distance away from object to automatically engage cruise when using dock or goto.",
-        "dateAdded": 0,
+        "dateAdded": 1248660480,
         "categories": [
             "docking",
             "cruise"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1948/disable-the-auto-cruise-function/6?_=1714219514788"
     },
     {
         "moduleName": [
@@ -1434,7 +1435,7 @@
         ],
         "author": "Adoxa",
         "description": "Docking speed",
-        "dateAdded": 1279234800,
+        "dateAdded": 1276703520,
         "categories": [
             "docking"
         ],
@@ -1462,14 +1463,14 @@
             "common.dll"
         ],
         "original": [
-            "15f"
+            "1.0f"
         ],
         "offset": [
             "0x050527"
         ],
         "author": "Adoxa",
         "description": "Relative speed after launching from a docking ring.",
-        "dateAdded": 1279234800,
+        "dateAdded": 1276703520,
         "categories": [
             "docking"
         ],
@@ -1487,7 +1488,7 @@
         ],
         "author": "Adoxa",
         "description": "Relative speed after launching from a station.",
-        "dateAdded": 1279234800,
+        "dateAdded": 1276703520,
         "categories": [
             "docking"
         ],
@@ -3288,7 +3289,7 @@
             "0.3f"
         ],
         "offset": [
-            "1D8F08"
+            "0x1D8F08"
         ],
         "author": "Gold_Sear",
         "description": "Expansion time for target brackets (seconds).",
@@ -3306,7 +3307,7 @@
             "10f"
         ],
         "offset": [
-            "1D8EE8"
+            "0x1D8EE8"
         ],
         "author": "Gold_Sear",
         "description": "Multiplier for size of non-targeted brackets, depending on the distance.",
@@ -3324,7 +3325,7 @@
             "2500f"
         ],
         "offset": [
-            "212434"
+            "0x212434"
         ],
         "author": "Gold_Sear",
         "description": "Scanner range (modified by interference) under which solars won't show up on your contact list.",
@@ -3342,7 +3343,7 @@
             "1500f"
         ],
         "offset": [
-            "1D8D08"
+            "0x1D8D08"
         ],
         "author": "Gold_Sear",
         "description": "Distance over which non-selected arrows of important contacts on the edge of the screen start fading (note: same offset as adoxa's trade initiate distance).",
