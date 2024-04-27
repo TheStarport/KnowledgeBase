@@ -33,7 +33,7 @@
         "replacement": [
             "90 90 90 90 90"
         ],
-        : [
+        "offset": [
             "0x18B147"
         ],
         "author": "BC46",
