@@ -34,7 +34,7 @@ SHA512: 1ad4482d3cf48d6f408f16360c5f41d20bbda3aa46d0e1be6edc7e68c4be097a0eb8063e
 
 ## Vanilla Patch (Combined 1.1, JFLP, No-CD) - Option 2
 
-1. Download the self extracting zip: https://cdn.discordapp.com/attachments/661329208609603617/752174852722393169/FLCombinedPatch.exe
+1. Download the self extracting zip: https://mega.nz/file/mQt0kbzC#4GWIedKYjbkZcj2BKYpun8SinMQpflaiVkt5knk3AO0
 2. Extract to your Freelancer installation e.g. **C:\Program Files (x86)\Microsoft Games\Freelancer** 
 
 :::caution
