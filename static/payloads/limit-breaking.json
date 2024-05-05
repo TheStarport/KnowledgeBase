@@ -1207,11 +1207,12 @@
             "0x00960C"
         ],
         "author": "M0tah",
-        "description": "Fix explosion damage not causing full or no damage damage on large ships and bases.",
-        "dateAdded": 0,
+        "description": "Fix explosion damage not causing full or no damage damage on large ships and bases (side note by adoxa: this hack will generate additional damage in SP).",
+        "dateAdded": 1269671760,
         "categories": [
-            "damage"
-        ]
+            "damage, repair"
+        ],
+        "url": "https://the-starport.com/forums/topic/2553/missile-explosions-and-hull-damage-detection/30"
     },
     {
         "moduleName": [
@@ -1228,10 +1229,11 @@
         ],
         "author": "Adoxa",
         "description": "Energy weapons don't damage power.",
-        "dateAdded": 0,
+        "dateAdded": 1276601260,
         "categories": [
-            "damage"
-        ]
+            "damage, repair"
+        ],
+        "url": "https://the-starport.com/forums/topic/3011/hack-request-preventing-energy_damage-from-damaging-the-power-resource/6?_=1714251894090"
     },
     {
         "moduleName": [
@@ -1289,9 +1291,7 @@
             "00"
         ],
         "offset": [
-            "0x04B4D2",
-            "0x04B582",
-            "0x04B63E"
+            "0x0B3C42",
         ],
         "author": "Adoxa",
         "description": "Items with 'ids_name = 0' show up in repair list.",
@@ -1313,11 +1313,11 @@
         ],
         "author": "w0dk4",
         "description": "Collision detection min check distance. Increasing this will fix issues with the sur collisions on objects that are further than 130k from center of system.",
-        "dateAdded": 0,
+        "dateAdded": 1241044800,
         "categories": [
             "collision"
         ],
-        "url": "https://the-starport.com/forums/topic/3616/making-surs-for-3dbs/16?_=1707140865579"
+        "url": "https://the-starport.com/forums/topic/876/ship-shaking/31?_=1714301224095"
     },
     {
         "moduleName": [
@@ -1339,7 +1339,8 @@
         "description": "Ignore armor when determining radiation damage.",
         "dateAdded": 1295827200,
         "categories": [
-            "equipment"
+            "equipment",
+            "damage, repair"
         ],
         "url": "https://the-starport.com/forums/topic/3092/hack-request-radiation-damage-fix/6?_=1707140865581"
     },
@@ -2305,10 +2306,11 @@
         ],
         "author": "Laz",
         "description": "Use thruster hp_type for armour.",
-        "dateAdded": 0,
+        "dateAdded": 1683114840,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1022?_=1714302560000"
     },
     {
         "original": [
@@ -2325,10 +2327,11 @@
         ],
         "author": "Adoxa",
         "description": "Consider armor types attached to hardpoint when mounted.",
-        "dateAdded": 0,
+        "dateAdded": 1683117060,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1023?_=1714302560000"
     },
     {
         "original": [
@@ -2366,10 +2369,11 @@
         ],
         "author": "M0tah",
         "description": "Remove automatically generated portion of equipment infocards.",
-        "dateAdded": 0,
+        "dateAdded": 1248407100,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1935/removing-automated-infocards/2?_=1714304707976"
     },
     {
         "original": [
@@ -2425,10 +2429,11 @@
         ],
         "author": "Dev",
         "description": "Resale % for ships (client-side).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "original": [
@@ -2442,10 +2447,11 @@
         ],
         "author": "FriendlyFire",
         "description": "Resale % for ships (server-side, must match variable above or 1.1 server dll will kick client for cheating).",
-        "dateAdded": 0,
+        "dateAdded": 1241995620,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/58?_=1714809417384"
     },
     {
         "original": [
@@ -2512,10 +2518,12 @@
             "58"
         ],
         "moduleName": [
+            "freelancer.exe",
             "freelancer.exe"
         ],
         "offset": [
-            "0x0B3A0E"
+            "0x0B3A0E",
+            "0x0B3A30"
         ],
         "author": "Adoxa",
         "description": "Repair cost based on ship cost, not armor",
@@ -2523,7 +2531,7 @@
         "categories": [
             "equipment"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/980?_=1708185141818"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/977?_=1708185141818"
     },
     {
         "original": [
@@ -2540,10 +2548,11 @@
         ],
         "author": "M0tah",
         "description": "Remove class number (just the number) on equipment entries.",
-        "dateAdded": 0,
+        "dateAdded": 1237253400,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1532/removing-the-class-x/8?_=1714839158081"
     },
     {
         "original": [
@@ -2560,10 +2569,11 @@
         ],
         "author": "M0tah",
         "description": "Allow engines to be sold.",
-        "dateAdded": 0,
+        "dateAdded": 1254101640,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2211/alcander-s-freelimits/4?_=1714839158085"
     },
     {
         "original": [
@@ -2580,10 +2590,11 @@
         ],
         "author": "Adoxa",
         "description": "Allow engines to be transferred.",
-        "dateAdded": 0,
+        "dateAdded": 1254409500,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2211/alcander-s-freelimits/8?_=1714839158085"
     },
     {
         "original": [
@@ -2600,10 +2611,11 @@
         ],
         "author": "Adoxa",
         "description": "Prevent transfer of scanner (but allows engine).",
-        "dateAdded": 0,
+        "dateAdded": 1288080300,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/519?_=1714839158087"
     },
     {
         "original": [
@@ -2620,10 +2632,11 @@
         ],
         "author": "Adoxa",
         "description": "Prevent selling of scanner (but allows engine).",
-        "dateAdded": 0,
+        "dateAdded": 1288080300,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/519?_=1714839158087"
     },
     {
         "original": [
@@ -2661,10 +2674,11 @@
         ],
         "author": "Adoxa",
         "description": "Prevent mounting/unmounting of all equipment.",
-        "dateAdded": 0,
+        "dateAdded": 1257987120,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/198?_=1714839158089"
     },
     {
         "original": [
@@ -2681,10 +2695,11 @@
         ],
         "author": "Adoxa",
         "description": "Disable \"Select Ship\" ship dealer button.",
-        "dateAdded": 0,
+        "dateAdded": 1258158240,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/204?_=1714839158091"
     },
     {
         "original": [
@@ -2942,10 +2957,11 @@
         ],
         "author": "Adoxa",
         "description": "include external equipment in cargo size.",
-        "dateAdded": 0,
+        "dateAdded": 1294720260,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3626/equipment-taking-up-cargo-space-also-some-engine-questions/8?_=1714911894825"
     },
     {
         "original": [
@@ -2962,10 +2978,11 @@
         ],
         "author": "Adoxa",
         "description": "Consider volume when buying external equipment",
-        "dateAdded": 0,
+        "dateAdded": 1294720260,
         "categories": [
             "equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3626/equipment-taking-up-cargo-space-also-some-engine-questions/8?_=1714911894825"
     },
     {
         "original": [
@@ -3003,7 +3020,7 @@
         ],
         "author": "Ven",
         "description": "Guided projectiles wont give up tracking a target",
-        "dateAdded": 1703635200,
+        "dateAdded": 1704813420,
         "categories": [
             "equipment"
         ],
