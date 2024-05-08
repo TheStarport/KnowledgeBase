@@ -1291,7 +1291,7 @@
             "00"
         ],
         "offset": [
-            "0x0B3C42",
+            "0x0B3C42"
         ],
         "author": "Adoxa",
         "description": "Items with 'ids_name = 0' show up in repair list.",
