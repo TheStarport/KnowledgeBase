@@ -3369,5 +3369,235 @@
             "HUD: Other"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "32b"
+        ],
+        "offset": [
+            "0x0691D1"
+        ],
+        "author": "M0tah",
+        "description": "Maximum number of chat lines in chat history window (signed byte, so max of 127).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "10000i"
+        ],
+        "offset": [
+            "0x0691CA"
+        ],
+        "author": "M0tah",
+        "description": "Time in milliseconds chat text is displayed before disappearing.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "20b"
+        ],
+        "offset": [
+            "0x0691CF"
+        ],
+        "author": "M0tah",
+        "description": "Maximum number of chat lines displayed at once -1.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "original": [
+            "8B 44 24"
+        ],
+        "replacement": [
+            "C2 10 00"
+        ],
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "offset": [
+            "0x1A6250"
+        ],
+        "author": "M0tah",
+        "description": "Prevent chat from being displayed (but not new/departing player messages).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.265f"
+        ],
+        "offset": [
+            "0x1CEEE4"
+        ],
+        "author": "M0tah",
+        "description": "Y position of chat input box.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.065f"
+        ],
+        "offset": [
+            "0x1CEEE0"
+        ],
+        "author": "M0tah",
+        "description": "Height of chat input box.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.46f"
+        ],
+        "offset": [
+            "0x1CEEDC"
+        ],
+        "author": "M0tah",
+        "description": "Width of chat input box.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.05f"
+        ],
+        "offset": [
+            "0x1CEEDC"
+        ],
+        "author": "BC46",
+        "description": "X-position of the chat history section in the Chat window.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.215f"
+        ],
+        "offset": [
+            "0x1CEF04"
+        ],
+        "author": "BC46",
+        "description": "Y-position of the chat history section in the Chat window.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80b"
+        ],
+        "offset": [
+            "0x06A440"
+        ],
+        "author": "M0tah",
+        "description": "Maximum number of characters in chat input box (signed byte, so max of 127).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "BF1D1D"
+        ],
+        "offset": [
+            "0x05E01B"
+        ],
+        "author": "Viper",
+        "description": "RGB color as Hex value of the messages 'New Player' etc.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "original": [
+            "0F 84"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x06AAF8"
+        ],
+        "author": "Cannon",
+        "description": "Disable new player messages.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
+    },
+    {
+        "original": [
+            "0F 84"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x06AF1E"
+        ],
+        "author": "Cannon",
+        "description": "Disable departing player messages.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Chat"
+        ]
     }
 ]
