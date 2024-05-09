@@ -3741,5 +3741,122 @@
         "categories": [
             "HUD: Limits"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.8d"
+        ],
+        "offset": [
+            "0x1D7E50"
+        ],
+        "author": "Dev",
+        "description": "Width of bars for energy, shield and hull gauges (for example, set to 1.0 to make the bars solid).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.125d"
+        ],
+        "offset": [
+            "0x1D7E58"
+        ],
+        "author": "Cheese on Toast",
+        "description": "Total width of bars for energy, shield and hull gauges (set to 1.0 to cover the entire bottom part of the screen from left to right).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.0052d"
+        ],
+        "offset": [
+            "0x1D7E68"
+        ],
+        "author": "Cheese on Toast",
+        "description": "Height of the energy bars.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.0855d"
+        ],
+        "offset": [
+            "0x1D7E60"
+        ],
+        "author": "Cheese on Toast",
+        "description": "Individual width of the energy bars (each individual block is a set size - you can only notice this change when the bars are not solid but are standard FL like).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "5EA1A7FF"
+        ],
+        "offset": [
+            "0x0D57AC"
+        ],
+        "author": "Adoxa",
+        "description": "Color of power bar (blue,green,red,alpha).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B53D3EFF"
+        ],
+        "offset": [
+            "0x0D5843"
+        ],
+        "author": "Adoxa",
+        "description": "Color of shield bar (blue,green,red,alpha).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "332A78FF"
+        ],
+        "offset": [
+            "0x0D588D"
+        ],
+        "author": "Adoxa",
+        "description": "Color of hull bar (blue,green,red,alpha).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Status Bars"
+        ]
     }
 ]
