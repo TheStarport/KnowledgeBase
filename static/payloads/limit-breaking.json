@@ -4524,5 +4524,374 @@
         "categories": [
             "HUD: Animation Speeds"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.4f"
+        ],
+        "offset": [
+            "0x1D2EDC"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap fade in/out speed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.5f"
+        ],
+        "offset": [
+            "0x0944AC"
+        ],
+        "author": "Adoxa",
+        "description": "Time taken to zoom out on NavMap (not zero).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.5f"
+        ],
+        "offset": [
+            "0x09F2A7"
+        ],
+        "author": "Adoxa",
+        "description": "Time taken to zoom in on NavMap (not zero).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.116279d"
+        ],
+        "offset": [
+            "0x1D3F28"
+        ],
+        "author": "Adoxa",
+        "description": "NavMap zoom factor (lower increases zoom).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "original": [
+            "64"
+        ],
+        "replacement": [
+            "C3"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0992B0"
+        ],
+        "author": "Adoxa",
+        "description": "Remove tradelane lines in NavMap.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.33f"
+        ],
+        "offset": [
+            "0x08ECE7"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap protect-plane against shooting (height) (set 0 to shoot through NavMap).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.35f"
+        ],
+        "offset": [
+            "0x08ECCF"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap protect-plane against shooting (width) (set 0 to shoot through NavMap).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.005f"
+        ],
+        "offset": [
+            "0x0974C9"
+        ],
+        "author": "Adoxa",
+        "description": "Width of system connection line.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "00b"
+        ],
+        "offset": [
+            "0x097501"
+        ],
+        "author": "Adoxa",
+        "description": "Red component of system connection line.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "40b"
+        ],
+        "offset": [
+            "0x097506"
+        ],
+        "author": "Adoxa",
+        "description": "Green component of system connection line.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80b"
+        ],
+        "offset": [
+            "0x09750B"
+        ],
+        "author": "Adoxa",
+        "description": "Blue component of system connection line.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "FFb"
+        ],
+        "offset": [
+            "0x097510"
+        ],
+        "author": "Adoxa",
+        "description": "Alpha component of system connection line.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2000i"
+        ],
+        "offset": [
+            "0x0915F4"
+        ],
+        "author": "Adoxa",
+        "description": "Size range of universe map stars.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "3000i"
+        ],
+        "offset": [
+            "0x091605"
+        ],
+        "author": "Adoxa",
+        "description": "Minimum size universe map stars.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "03 C2 C1 F8 0F"
+        ],
+        "replacement": [
+            "B8 0x 00 00 00"
+        ],
+        "offset": [
+            "0x0916F2"
+        ],
+        "author": "Adoxa",
+        "description": "Color of universe map stars (x = 0-6 for RGBCMYW).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "84 03",
+            "C1 F8 0F"
+        ],
+        "replacement": [
+            "00 00",
+            "83 C8 FF"
+        ],
+        "offset": [
+            "0x0916FE",
+            "0x09173A"
+        ],
+        "author": "Adoxa",
+        "description": "Prevent universe map stars from pulsing.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "D8 64 24 10"
+        ],
+        "replacement": [
+            "90 90 90 90"
+        ],
+        "offset": [
+            "0x0A1727"
+        ],
+        "author": "Adoxa",
+        "description": "Prevent universe map stars from blinking.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2700f"
+        ],
+        "offset": [
+            "0x1D2EF4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Negative z-coordinate of border between sectors 4 and 5 (divided by NavMapScale; set 0 to make the system map exactly according to system ini file).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.279f"
+        ],
+        "offset": [
+            "0x1D3164"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap letter grid alignment on screen, x-axis.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.252f"
+        ],
+        "offset": [
+            "0x1D314C"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap number grid alignment on screen, y-axis.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.07f"
+        ],
+        "offset": [
+            "0x1D3168"
+        ],
+        "author": "WhiskasTM",
+        "description": "NavMap letter/number grid spacing.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
     }
 ]
