@@ -6353,5 +6353,1055 @@
         "categories": [
             "HUD: Other"
         ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "42 2A"
+        ],
+        "replacement": [
+            "A2 6A"
+        ],
+        "offset": [
+            "0x04EE3A"
+        ],
+        "author": "Xerx, Cannon",
+        "description": "OpenSP tweak for 1.1 DLLs to always start from m13; alternatively, simply direct your newplayer.fl file to start on a blank Mission_13 instead of using this hack.",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74 0A 41 83 C2 04 3B C8 7C F4 EB 0B C7 84 8C 9C 00 00 00 00 00 00"
+        ],
+        "replacement": [
+            "75 0B C7 84 8C 9C 00 00 00 00 00 00 00 41 83 C2 04 39 C1 7C E9 EB"
+        ],
+        "offset": [
+            "0x02C057"
+        ],
+        "author": "Adoxa",
+        "description": "Update objects once (fixes bug that causes solar guns reduce refire delay when multiple players are around).",
+        "dateAdded": 0,
+        "categories": [
+            "Server Operation"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll",
+            "freelancer.exe"
+        ],
+        "original": [
+            "200f",
+            "2C B2 39",
+            "200f"
+        ],
+        "replacement": [
+            "200f",
+            "4C A7 27",
+            "200f"
+        ],
+        "offset": [
+            "0x01A74C",
+            "0x01A892",
+            "0x0210A0C"
+        ],
+        "author": "Adoxa, Schmackbolzen",
+        "description": "Maximum FPS",
+        "dateAdded": 0,
+        "categories": [
+            "Framerate"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "D9 1D 0C 0A 61 00"
+        ],
+        "replacement": [
+            "90 90 90 90 90 90"
+        ],
+        "offset": [
+            "0x158A14"
+        ],
+        "author": "FriendlyFire",
+        "description": "Prevent FL from reducing framerate to 25 in some instances (still need to manually limit framerate using external tool).",
+        "dateAdded": 0,
+        "categories": [
+            "Framerate"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x1B2819"
+        ],
+        "author": "FuryFreelancer",
+        "description": "Disable forced logging to FLSpew.txt (logging can still be defined to custom file in freelancer.ini)",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "'Restart'"
+        ],
+        "offset": [
+            "0x08AE30"
+        ],
+        "author": "fox",
+        "description": "Name of Restart.fl file.",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "E4 B4"
+        ],
+        "replacement": [
+            "14 B3"
+        ],
+        "offset": [
+            "0x06BFA6"
+        ],
+        "author": "Adoxa",
+        "description": "Disable encryption on creating MP character.",
+        "dateAdded": 0,
+        "categories": [
+            "Server Operation"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "E4 B4"
+        ],
+        "replacement": [
+            "14 B3"
+        ],
+        "offset": [
+            "0x06E10D"
+        ],
+        "author": "Adoxa",
+        "description": "Disable encryption on saving character/game",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "'FreelancerClient'"
+        ],
+        "offset": [
+            "0x1E6DCC"
+        ],
+        "author": "M0tah",
+        "description": "String used for lpName when FL calls CreateMutex (change this for multiple instances).",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "'RemoteServer.dll'"
+        ],
+        "offset": [
+            "0x1E6454"
+        ],
+        "author": "M0tah",
+        "description": "Name of RemoteServer DLL filename used by FL (a duplicate RemoteServer.dll with different name is needed to play in MP with the multi-instance hack).",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "remoteserver.dll"
+        ],
+        "original": [
+            "'Freelancer.exe'"
+        ],
+        "offset": [
+            "0x03F440"
+        ],
+        "author": "Crazy",
+        "description": "Name of freelancer.exe for RemoteServer; if you're going to rename your freelancer.exe, you'll need to change it here as well, or it will crash when you try to join a server.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "81"
+        ],
+        "replacement": [
+            "C3"
+        ],
+        "offset": [
+            "0x1A5390"
+        ],
+        "author": "Adoxa",
+        "description": "Don't run dxdiag on crash (client).",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "FLServer.exe"
+        ],
+        "original": [
+            "81"
+        ],
+        "replacement": [
+            "C3"
+        ],
+        "offset": [
+            "0x008B70"
+        ],
+        "author": "Adoxa, HeIIoween",
+        "description": "Don't run dxdiag on crash (server).",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "84"
+        ],
+        "replacement": [
+            "33"
+        ],
+        "offset": [
+            "0x1B16FC"
+        ],
+        "author": "OutCast",
+        "description": "Supress unsupported video dialog.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "83 FF 01 0F 94 C2"
+        ],
+        "replacement": [
+            "BA 01 00 00 00 90"
+        ],
+        "offset": [
+            "0x1B264C"
+        ],
+        "author": "Cannon",
+        "description": "Keep FL display running when the window doesn't have focus.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x1B2665"
+        ],
+        "author": "adoxa",
+        "description": "Keep Freelancer running in the background when Alt-Tabbed, but not the window.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "8C",
+            "A0",
+            "A0",
+            "8C"
+        ],
+        "replacement": [
+            "CC",
+            "E0",
+            "E0",
+            "CC"
+        ],
+        "offset": [
+            "0x11D072",
+            "11D2F9",
+            "11D553",
+            "11D7C2"
+        ],
+        "author": "adoxa",
+        "description": "Allow 64 simultaneous firings.",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "28",
+            "0A",
+            "1B",
+            "90 90 90 90 90 90 90 90",
+            "09"
+        ],
+        "replacement": [
+            "00",
+            "00",
+            "00",
+            "89 35 8C 33 67 00 EB 47",
+            "BA"
+        ],
+        "offset": [
+            "0x08049A",
+            "0x082E96",
+            "0x0B948E",
+            "0x13E1F8",
+            "0x13E23D"
+        ],
+        "author": "adoxa",
+        "description": "Need level to buy ships/equipment in MP",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "90 90 90 90 90 90 90",
+            "80"
+        ],
+        "replacement": [
+            "39 F1 74 03 30 C0 C3",
+            "79"
+        ],
+        "offset": [
+            "0x12D279",
+            "0x1DD5A8"
+        ],
+        "author": "BC46",
+        "description": "Prevent Countermeasures being fired by Right Click",
+        "dateAdded": 0,
+        "categories": [
+            "controls"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1D"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x11D281"
+        ],
+        "author": "adoxa",
+        "description": "Missiles continuously fire when holding button.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "0.02f"
+        ],
+        "offset": [
+            "0x11DB5C"
+        ],
+        "author": "w0dk4",
+        "description": "Screen shake when hull is hit.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "0.005f"
+        ],
+        "offset": [
+            "0x11DB89"
+        ],
+        "author": "w0dk4",
+        "description": "Screen shake when shield is hit.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "04 1F 5D",
+            "04 1F 5D",
+            "04 1F 5D",
+            "90 90 90 90"
+        ],
+        "replacement": [
+            "3C 3F 50",
+            "3C 3F 50",
+            "3C 3F 50",
+            "0.015f"
+        ],
+        "offset": [
+            "0x103E49",
+            "0x103E7B",
+            "0x103E8B",
+            "0x103F3C"
+        ],
+        "author": "adoxa",
+        "description": "Make screen shake when jumping customizable; Encode desired jump screen shake at 0x103F3C, default is 0.015f",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "07",
+            "05",
+            "05",
+            "8D 44 24 10 50 8B CE",
+            "05"
+        ],
+        "replacement": [
+            "00",
+            "00",
+            "00",
+            "39 4E 04 74 12 EB 09",
+            "00"
+        ],
+        "offset": [
+            "0x0A8793",
+            "0x0A8903",
+            "0x0A8C83",
+            "0x0A8CE1",
+            "0x0A8D59"
+        ],
+        "author": "adoxa",
+        "description": "NPCs are global, not local to base; in mbases.ini still need to define the [GF_NPC] per base",
+        "dateAdded": 0,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll",
+            "server.dll",
+            "server.dll"
+        ],
+        "original": [
+            "8B 44 24 0C 81 EC 00 01 00 00 53 8B 1D B8 47 D6 06 55 8B 2D 7C 48 D6 06 56 8B 70 04 85 F6 57 74 49 FF D3 56 33 FF 57 8B C8 FF D5 85 C0 74 0A 8B C8 FF 15 78 48 D6 06 8B F8 85 FF 74 2D 8B 8C 24 18 01 00 00 51 8D 54 24 14 68 F0 AE D6 06 52 FF 15 74 4C D6 06 8B 8C 24 20 01 00 00 8B 01 83 C4 0C 57 8D 54 24 14 52 FF 50 14 8B 84 24 1C 01 00 00 8B 38 85 FF 74 4A FF D3 57 6A 01 8B C8 33 F6 FF D5 85 C0 74 0A 8B C8 FF 15 78 48 D6 06 8B F0 85 F6 74 2D 8B 8C 24 18 01 00 00 51 8D 54 24 14 68 E8 AE D6 06 52 FF 15 74 4C D6 06",
+            "89 BD B0 02 00 00 89 BD AC 02 00 00 89 BD A8 02 00 00",
+            "3D 39 44 39 63 39 7A 39 81 39 BA 39 D1 39 D8 39 12 3A 29 3A"
+        ],
+        "replacement": [
+            "53 55 56 57 83 EC 10 89 E5 8B 74 E4 2C FF 15 B8 47 D6 06 89 C3 31 FF 8B 04 BE 85 C0 74 59 50 89 D9 83 FF 04 A1 7C 48 D6 06 7C 07 05 E0 00 00 00 EB 0A 57 83 FF 01 77 04 80 34 E4 01 FF D0 85 C0 74 35 89 C1 FF 15 78 48 D6 06 85 C0 74 29 50 FF 74 E4 2C 89 F8 83 FF 04 7E 02 B0 04 FF 34 85 BC 69 D4 06 55 FF 15 74 4C D6 06 8B 4C E4 34 8B 01 83 C4 0C 55 FF 50 14 47 8B 46 30 83 C0 04 39 C7 75 95 83 C4 10 5F 5E 5D 5B C3 00 00 E8 AE D6 06 F0 AE D6 06 DC AE D6 06 D0 AE D6 06 D0 69 D4 06 25 73 61 63 63 65 73 73 6F 72 79 00",
+            "8D 8D E0 02 00 00 89 79 7C 89 79 D0 89 79 CC 89 79 C8",
+            "3F 39 55 39 76 39 8F 39 96 39 BC 39 C0 39 C4 39 C8 39 CC 39"
+        ],
+        "offset": [
+            "0x066930",
+            "0x0672C1",
+            "0x0B2174"
+        ],
+        "author": "adoxa",
+        "description": "Save costume accessories",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "ebueula.dll"
+        ],
+        "original": [
+            "00"
+        ],
+        "replacement": [
+            "01"
+        ],
+        "offset": [
+            "0x00217D"
+        ],
+        "author": "Laz",
+        "description": "Don't show the EULA on first run",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "ebueula.dll"
+        ],
+        "original": [
+            "83 EC 08"
+        ],
+        "replacement": [
+            "89 F0 C3"
+        ],
+        "offset": [
+            "0x0019E0"
+        ],
+        "author": "BC46",
+        "description": "Never show the EULA when launching the game by bypassing the registry key check. NOTE: this patch will only work after deleting the EBUEula.dll file in the root Freelancer folder, because the game will attempt to load this dll first. Alternatively, apply the patch directly to the root EBUEula.dll file.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "68 80"
+        ],
+        "replacement": [
+            "EB 0F"
+        ],
+        "offset": [
+            "01B2D72"
+        ],
+        "author": "BC46",
+        "description": "Never load EBUEula.dll from the root Freelancer folder (Freelancer.exe).",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "flserver.exe"
+        ],
+        "original": [
+            "68 C4 57 42 00 8B"
+        ],
+        "replacement": [
+            "89 CE 31 C0 EB 03"
+        ],
+        "offset": [
+            "0x00B865"
+        ],
+        "author": "BC46",
+        "description": "Never load EBUEula.dll from the root Freelancer folder (FLServer.exe).",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "84 C0 75 12"
+        ],
+        "replacement": [
+            "90 90 90 90"
+        ],
+        "offset": [
+            "0x1B16FC"
+        ],
+        "author": "BC46",
+        "description": "Don't show the unknown graphics card warning.",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "Freelancer"
+        ],
+        "offset": [
+            "0x142684"
+        ],
+        "author": "Laz, BC46",
+        "description": "Name of the folder inside AppData where FLSpew.txt is stored, and the name of the folder inside My Games in which the save files and user preferences are stored.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "My Games"
+        ],
+        "offset": [
+            "0x142690"
+        ],
+        "author": "BC46",
+        "description": "Name of the folder inside Documents in which the folder from offset 0x142684 is stored.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "FreelancerShots"
+        ],
+        "offset": [
+            "0x14269C"
+        ],
+        "author": "BC46",
+        "description": "Name of the folder inside Pictures where Freelancer screenshots are saved to.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "FLSpew.txt"
+        ],
+        "offset": [
+            "0x1E6D24"
+        ],
+        "author": "Laz",
+        "description": "The path of the FLSpew.txt file.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "CA 02",
+            "CA 02"
+        ],
+        "replacement": [
+            "00 00",
+            "00 00"
+        ],
+        "offset": [
+            "0x02477A",
+            "0x02490D"
+        ],
+        "author": "Adoxa, Laz",
+        "description": "Enable Borderless Window (disable caption flags)",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x1B16CC"
+        ],
+        "author": "Adoxa",
+        "description": "Forces Freelancer to run in windowed mode",
+        "dateAdded": 0,
+        "categories": [
+            "Display"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "90 53 32"
+        ],
+        "replacement": [
+            "C0 DE 26"
+        ],
+        "offset": [
+            "0x139964"
+        ],
+        "author": "HeIIoween",
+        "description": "Using thruster hp_type for [Light].",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "90 53 32"
+        ],
+        "replacement": [
+            "C0 DE 26"
+        ],
+        "offset": [
+            "0x139A40"
+        ],
+        "author": "HeIIoween",
+        "description": "Using thruster hp_type for [AttachedFX].",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "84"
+        ],
+        "replacement": [
+            "04"
+        ],
+        "offset": [
+            "0x057702"
+        ],
+        "author": "adoxa",
+        "description": "Shows trade lanes as unknown initially and allows them to be discovered both on the radar and the Nav Map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "E8 EA 8B FD FF"
+        ],
+        "replacement": [
+            "90 90 90 90 90"
+        ],
+        "offset": [
+            "0x04CB81"
+        ],
+        "author": "adoxa",
+        "description": "Removes the initial angular velocity of mines when dropped.",
+        "dateAdded": 0,
+        "categories": [
+            "Equipment"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x03B348"
+        ],
+        "author": "BC46",
+        "description": "Prevents the '*** WARNING: Failed to get start location' message from being logged in FLSpew.txt.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "rp8.dll"
+        ],
+        "original": [
+            "7D"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x004467"
+        ],
+        "author": "Rimshot",
+        "description": "Prevents the 'D3DERR_INVALIDCALL' error spam from occurring in FLSpew.txt.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "0F"
+        ],
+        "replacement": [
+            "2F"
+        ],
+        "offset": [
+            "0x00014E"
+        ],
+        "author": "BC46",
+        "description": "Allows Freelancer to use 4GB of virtual memory instead of 2GB.",
+        "dateAdded": 0,
+        "categories": [
+            "Debugging"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "8A 50"
+        ],
+        "replacement": [
+            "EB 0C"
+        ],
+        "offset": [
+            "0x05685F"
+        ],
+        "author": "BC46",
+        "description": "Skip story cinematics (excluding space cutscenes) with the Esc key, like in the FL Beta.",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x069003"
+        ],
+        "author": "Laz",
+        "description": "Regenerate restart.fl on every launch (Game will not load saves with this offset enabled).",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x069021"
+        ],
+        "author": "BC46",
+        "description": "Regenerate Restart.fl on every launch while still being able to load saves.",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll",
+            "server.dll"
+        ],
+        "original": [
+            "8B CD E8 3A FD FF FF 84 C0 74 25 84 DB C6 44 24 13 03 75 1C 8D 8C 24 54 01 00 00 51 8D 54 24 54 52 FF 15",
+            "83 C4 08 85 C0 75"
+        ],
+        "replacement": [
+            "8D 8C 24 5C 01 00 00 51 8D 54 24 5C 52 EB 13 FF 11 83 C4 08 85 C0 74 11 8B CD E8 22 FD FF FF EB 0F 90 B9",
+            "EB E6 83 C4 08 EB"
+        ],
+        "offset": [
+            "0x06900F",
+            "0x069036"
+        ],
+        "author": "BC46",
+        "description": "Regenerate Restart.fl on every launch. Also ensure Restart.fl only gets loaded after being regenerated.",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "0A 48 10"
+        ],
+        "replacement": [
+            "82 C9 11"
+        ],
+        "offset": [
+            "0x06B24D"
+        ],
+        "author": "BC46",
+        "description": "When a wreck gets shot, do not test if it has already been looted during a previous session. This allows looted wrecks to be looted another time after loading a saved game. NOTE: This patch only works in Single Player!",
+        "dateAdded": 0,
+        "categories": [
+            "Save Games"
+        ]
+    },
+    {
+        "moduleName": [
+            "flserver.exe"
+        ],
+        "original": [
+            "61485i"
+        ],
+        "offset": [
+            "0x006AF4"
+        ],
+        "author": "BC46",
+        "description": "String ID for the Microsoft legal notice, which fills the <legal notice goes here> placeholder in the Server Configuration window. Change this value to another string ID in serverresources.dll to display different text.",
+        "dateAdded": 0,
+        "categories": [
+            "Server Operation"
+        ]
+    },
+    {
+        "moduleName": [
+            "dalib.dll"
+        ],
+        "original": [
+            "FF"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x004BF4"
+        ],
+        "author": "BC46",
+        "description": "Prevents Freelancer from running in the background after exiting the game in some cases. This occurred because Freelancer would wait for an indefinitely running thread to finish.",
+        "dateAdded": 0,
+        "categories": [
+            "Server Operation"
+        ]
     }
 ]
