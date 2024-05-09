@@ -5945,5 +5945,413 @@
         "categories": [
             "HUD: Navmap"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "150f"
+        ],
+        "offset": [
+            "0x1D97B4"
+        ],
+        "author": "M0tah",
+        "description": "Distance from a waypoint when it is considered reached.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "300f"
+        ],
+        "offset": [
+            "0x1D7E80"
+        ],
+        "author": "Schmackbolzen",
+        "description": "Distance from a waypoint within a tradelane when it is considered reached.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "86 01"
+        ],
+        "replacement": [
+            "00 00"
+        ],
+        "offset": [
+            "0x0F045B"
+        ],
+        "author": "Adoxa",
+        "description": "Show aiming lead on everything.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2A 01"
+        ],
+        "replacement": [
+            "00 00"
+        ],
+        "offset": [
+            "0x0EC288"
+        ],
+        "author": "Adoxa",
+        "description": "Show aiming lead on all ships.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "14000f"
+        ],
+        "offset": [
+            "0x0D1750"
+        ],
+        "author": "FriendlyFire",
+        "description": "Range at which an object is no longer 'unknown' as well as radar detection range for some solars such as Jump Holes",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.85f"
+        ],
+        "offset": [
+            "0x1C9020"
+        ],
+        "author": "Adoxa",
+        "description": "Aspect ratio of the cinematics.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "81"
+        ],
+        "replacement": [
+            "C3"
+        ],
+        "offset": [
+            "0x0DCA20"
+        ],
+        "author": "Cannon",
+        "description": "Remove mouse flight text.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74 56",
+            "74 02 B3 01 B9 D0 D2"
+        ],
+        "replacement": [
+            "90 90",
+            "75 4B E9 77 03 00 00"
+        ],
+        "offset": [
+            "0x0A6CCE",
+            "0x0A6CD9"
+        ],
+        "author": "Cannon",
+        "description": "Disable F1 menu in space while playing multiplayer.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "Vibrocentric"
+        ],
+        "offset": [
+            "0x143DC0"
+        ],
+        "author": "Laz",
+        "description": "Original font that will override Agency FB in a number of instances if detected on the system.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "90 90 90 90 90 90 90 90 90 90 90 90 90",
+            "90 90 90 90 90 90 90 90 90 90 90",
+            "75",
+            "79"
+        ],
+        "replacement": [
+            "6A 01 FF 15 80 72 5C 00 E9 C5 00 00 00",
+            "84 E4 0F 88 34 FF FF FF 31 C0 C3",
+            "6B",
+            "EB"
+        ],
+        "offset": [
+            "0x19DD72",
+            "0x19DE44",
+            "0x19D207",
+            "0x19E103"
+        ],
+        "author": "adoxa",
+        "description": "Shoot through HUD",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x166C2B"
+        ],
+        "author": "Adoxa",
+        "description": "Bypass ESRB notice.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "C7 44 24 70 00 00 00 00 C7 44 24 74 00 00 00 00 C7 44 24 78",
+            "80 3E",
+            "80 3E"
+        ],
+        "replacement": [
+            "E8 47 E5 EA FF 83 7C 24 50 01 77 11 DB 05 4C 46 57 00 EB 0D",
+            "00 00",
+            "00 00"
+        ],
+        "offset": [
+            "0x174634",
+            "0x1746CA",
+            "0x174707"
+        ],
+        "author": "adoxa",
+        "description": "Remove the NEW GAME and LOAD GAME buttons on the main menu.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "1271i",
+            "1271i"
+        ],
+        "offset": [
+            "0x16DDEC",
+            "0x174890"
+        ],
+        "author": "BC46",
+        "description": "String ID for the 'VER. 1.0' text in the bottom-right of the main menu. Change this number to another string ID to make the element display different text. Both offsets must be changed!",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "393286i"
+        ],
+        "offset": [
+            "0x0AB1C5"
+        ],
+        "author": "BC46",
+        "description": "String ID for the final section of the in-game credits. Change this number to another string ID to make the element display different text.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "32b"
+        ],
+        "offset": [
+            "0x0B1375"
+        ],
+        "author": "Adoxa",
+        "description": "Maximum value for the TOTAL SOUND ELEMENTS slider in the audio options menu.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "common.dll"
+        ],
+        "original": [
+            "04",
+            "46"
+        ],
+        "replacement": [
+            "00",
+            "5E"
+        ],
+        "offset": [
+            "0x0B1375",
+            "0x015B85"
+        ],
+        "author": "BC46",
+        "description": "Use anti-aliased fonts if the user has 'Smooth edges of screen fonts' enabled in their Windows settings.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "common.dll"
+        ],
+        "original": [
+            "04",
+            "88 46 1A 88 5E 1B"
+        ],
+        "replacement": [
+            "05",
+            "66 C7 46 1A 05 00"
+        ],
+        "offset": [
+            "0x015B85",
+            "0x0C782C"
+        ],
+        "author": "BC46",
+        "description": "Always use anti-aliased fonts",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DF 6C",
+            "D8 0D 54 25"
+        ],
+        "replacement": [
+            "EB 02",
+            "D9 05 7C 20"
+        ],
+        "offset": [
+            "0x1745D9",
+            "0x1745E6"
+        ],
+        "author": "BC46",
+        "description": "Fixes a bug that causes the clickable area height of the main menu buttons to be incorrect on higher resolutions.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "E8 A6 23 EA FF D8 86 7C 03 00 00 D8 15 DC 75 5C 00 D9 96 7C 03 00 00 DF E0 F6"
+        ],
+        "replacement": [
+            "60 8B 86 85 03 00 00 8D 9E 5E 03 00 00 50 53 E8 37 6C FD FF 83 C4 08 61 EB 63"
+        ],
+        "offset": [
+            "0x18B2D5"
+        ],
+        "author": "BC46",
+        "description": "Updates the mouse-hover blinking animation of the load-save menu buttons (after loading a game) such that the colors transition smoothly, like with all other menu-style buttons.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.089f"
+        ],
+        "offset": [
+            "0x085D5D"
+        ],
+        "author": "BC46",
+        "description": "Clickable area width of the load-save menu buttons (after loading a game). It's recommended to set this value to 0.13 so the property matches with all other menu-style buttons.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Other"
+        ]
     }
 ]
