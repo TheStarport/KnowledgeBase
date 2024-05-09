@@ -3599,5 +3599,147 @@
         "categories": [
             "HUD: Chat"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2000i"
+        ],
+        "offset": [
+            "0x0D2C02"
+        ],
+        "author": "Dev",
+        "description": "Distance over which kilometers rather than meters are displayed (in the contact list).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2000i"
+        ],
+        "offset": [
+            "0x0EEF90"
+        ],
+        "author": "Dev",
+        "description": "Distance over which kilometers rather than meters are displayed (target bracket in space).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "10000i"
+        ],
+        "offset": [
+            "0x0D2C32"
+        ],
+        "author": "Dev",
+        "description": "Distance over which fractions of kilometers are not displayed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "99999i"
+        ],
+        "offset": [
+            "0x0D2C94"
+        ],
+        "author": "Dev",
+        "description": "Distance over which 'far' is displayed rather than an actual distance.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "999i"
+        ],
+        "offset": [
+            "0x0D597A"
+        ],
+        "author": "Dev",
+        "description": "Speed over which '---' is displayed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "original": [
+            "7E"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D5984"
+        ],
+        "author": "Unknown",
+        "description": "Remove speed display limit. (Alternative to 0x0D597A)",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "300f"
+        ],
+        "offset": [
+            "0x1D7E80"
+        ],
+        "author": "M0tah",
+        "description": "Cruise speed display limit (note: same offset as Schmackbolzen's tradelane waypoint reached distance).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
+    },
+    {
+        "original": [
+            "0F 85"
+        ],
+        "replacement": [
+            " 90 E9"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D5936"
+        ],
+        "author": "Unknown",
+        "description": "Remove speed display limit. (Alternative to 0x1D7E80)",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Limits"
+        ]
     }
 ]
