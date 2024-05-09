@@ -4239,5 +4239,206 @@
         "categories": [
             "HUD: Wireframes"
         ]
-    }
+    },
+    {
+        "original": [
+            "42 60 65 3C"
+        ],
+        "replacement": [
+            "00 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DAD6D"
+        ],
+        "author": "Adoxa",
+        "description": "Disable nanobot button.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "96 43 0B 3D"
+        ],
+        "replacement": [
+            "00 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DADB4"
+        ],
+        "author": "Adoxa",
+        "description": "Remove nanobot count.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "42 60 65 3C"
+        ],
+        "replacement": [
+            "00 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DAE0B"
+        ],
+        "author": "Adoxa",
+        "description": "Disable battery button.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "96 43 0B 3D"
+        ],
+        "replacement": [
+            "00 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DAE87"
+        ],
+        "author": "Adoxa",
+        "description": "Remove battery count.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "69"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x1D8690"
+        ],
+        "author": "Adoxa",
+        "description": "Remove Shield Battery use icon.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "69"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x1D86E0"
+        ],
+        "author": "Adoxa",
+        "description": "Remove Nanobot use icon.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "999i",
+            "999i"
+        ],
+        "offset": [
+            "0x0DE317",
+            "0x0DE310"
+        ],
+        "author": "adoxa",
+        "description": "Maximum number of nanobots displayed in HUD.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "7E"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DE314"
+        ],
+        "author": "Adoxa",
+        "description": "Ignore nanobot HUD display limit (alternative to 0x0DE317 and 0x0DE310).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "999i",
+            "999i"
+        ],
+        "offset": [
+            "0x0DE369",
+            "0x0DE362"
+        ],
+        "author": "adoxa",
+        "description": "Maximum number of batteries displayed in HUD",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    {
+        "original": [
+            "7E"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0DE366"
+        ],
+        "author": "Adoxa",
+        "description": "Ignore battery HUD display limit (alternative to 0x0DE369 and 0x0DE362).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Nanobots/Shield Batteries"
+        ]
+    },
+    
 ]
