@@ -4829,7 +4829,8 @@
         "categories": [
             "HUD: Navmap"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -4845,7 +4846,8 @@
         "categories": [
             "HUD: Navmap"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -4861,7 +4863,8 @@
         "categories": [
             "HUD: Navmap"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -4877,7 +4880,8 @@
         "categories": [
             "HUD: Navmap"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -4889,6 +4893,1054 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap letter/number grid spacing.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "-0.294f",
+            "-0.294f"
+        ],
+        "offset": [
+            "0x090582C",
+            "0x09FD83"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter alignment perpendicular to grid (both offsets must be changed)",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "-0.309f",
+            "-0.309f"
+        ],
+        "offset": [
+            "0x090620C",
+            "0x009FE33"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap number alignment perpendicular to grid (both offsets must be changed).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.274f"
+        ],
+        "offset": [
+            "0x08F007"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap system/universe name x-displacement.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.252f"
+        ],
+        "offset": [
+            "0x08F00F"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap system/universe name y-displacement.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.5d"
+        ],
+        "offset": [
+            "0x1D3C48"
+        ],
+        "author": "WhiskasTM",
+        "description": "Stretch texture of Universe Map, x-axis.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.175d"
+        ],
+        "offset": [
+            "0x1D3C50"
+        ],
+        "author": "WhiskasTM",
+        "description": "Stretch texture of Universe Map, y-axis.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.6666667f"
+        ],
+        "offset": [
+            "0x1D3D30"
+        ],
+        "author": "WhiskasTM",
+        "description": "Bunch scale of all system diamonds on Universe Map and in the same way speed of tradelane animation on system map (method 1).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "200000f"
+        ],
+        "offset": [
+            "0x1D3D2C"
+        ],
+        "author": "WhiskasTM",
+        "description": "Bunch scale of all system diamonds on Universe Map (method 2).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "112000f"
+        ],
+        "offset": [
+            "0x0915B8"
+        ],
+        "author": "WhiskasTM",
+        "description": "Bunch scale of all system diamonds on Universe Map (method 3).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0x915C8"
+        ],
+        "author": "Gold_Sear",
+        "description": "Bunch scale of all system diamonds on Universe Map (method 4).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100000f"
+        ],
+        "offset": [
+            "0x1D3D28"
+        ],
+        "author": "WhiskasTM",
+        "description": "Bunch coordinates of all system diamonds on Universe Map (xy-axis).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "5000f"
+        ],
+        "offset": [
+            "0x1D3D24"
+        ],
+        "author": "WhiskasTM",
+        "description": "Bunch coordinates of all system diamonds on Universe Map (y-axis).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "65",
+            "EB 07 8B CE E8 74 03 00 00",
+            "6A 00",
+            "6A 00",
+            "6A 00",
+            "6A 00",
+            "6A 00",
+            "6A 00",
+            "6A 00",
+            "6A 00"
+        ],
+        "replacement": [
+            "63",
+            "BB 01 00 00 00 EB 02 31 DB",
+            "53 90",
+            "53 90",
+            "53 90",
+            "53 90",
+            "53 90",
+            "53 90",
+            "53 90",
+            "53 90"
+        ],
+        "offset": [
+            "0x0911D6",
+            "0x091233",
+            "0x094652",
+            "0x094666",
+            "0x09467A",
+            "0x09468E",
+            "0x0946A2",
+            "0x0946B6",
+            "0x0946CA",
+            "0x0946DE"
+        ],
+        "author": "WhiskasTM",
+        "description": "On 'NavMap not available' initially do hide some controls ",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "3C"
+        ],
+        "replacement": [
+            "A0"
+        ],
+        "offset": [
+            "0x0967CD"
+        ],
+        "author": "Adoxa",
+        "description": "Allow all positions on Universe Map (visible region roughly -2.4,-2.7 to 17.3,17) (for system diamonds only; use below hacks to also allow player ship icon to move to all positions).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x096A1B"
+        ],
+        "author": "WhiskasTM",
+        "description": "Ignore +x limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x096A36"
+        ],
+        "author": "WhiskasTM",
+        "description": "Ignore -x limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x096A4D"
+        ],
+        "author": "WhiskasTM",
+        "description": "Ignore +y limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x096A68"
+        ],
+        "author": "WhiskasTM",
+        "description": "Ignore -y limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "68 3E 5D 00"
+        ],
+        "replacement": [
+            "F1 67 49 00"
+        ],
+        "offset": [
+            "0x0967E3"
+        ],
+        "author": "WhiskasTM",
+        "description": "Use new +x limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "68 3E 5D 00"
+        ],
+        "replacement": [
+            "16 68 49 00"
+        ],
+        "offset": [
+            "0x096808"
+        ],
+        "author": "WhiskasTM",
+        "description": "Use new -x limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "68 3E 5D 00"
+        ],
+        "replacement": [
+            "3B 68 49 00"
+        ],
+        "offset": [
+            "0x09682D"
+        ],
+        "author": "WhiskasTM",
+        "description": "Use new +y limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "68 3E 5D 00"
+        ],
+        "replacement": [
+            "60 68 49 00"
+        ],
+        "offset": [
+            "0x096852"
+        ],
+        "author": "WhiskasTM",
+        "description": "Use new -y limit for player ship icon on system and universe map.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "112000f"
+        ],
+        "offset": [
+            "0x0967F1"
+        ],
+        "author": "WhiskasTM",
+        "description": "+x limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-112000f"
+        ],
+        "offset": [
+            "0x096816"
+        ],
+        "author": "WhiskasTM",
+        "description": "-x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "112000f"
+        ],
+        "offset": [
+            "0x09683B"
+        ],
+        "author": "WhiskasTM",
+        "description": "+y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-112000f"
+        ],
+        "offset": [
+            "0x096860"
+        ],
+        "author": "WhiskasTM",
+        "description": "-y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "112000f"
+        ],
+        "offset": [
+            "0x917CC"
+        ],
+        "author": "Gold_Sear",
+        "description": "Size of system map; beware, effects size of player ship icon as well.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "33333f"
+        ],
+        "offset": [
+            "0x1D2EEC"
+        ],
+        "author": "Gold_Sear",
+        "description": "Size of sectors in F9 info screen; needs to keep ratio with variable above.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-99999f"
+        ],
+        "offset": [
+            "0x1D2EF0"
+        ],
+        "author": "Gold_Sear",
+        "description": "Starting point of sector calculation in F9 info screen, needs to be -3*variable above.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.257f"
+        ],
+        "offset": [
+            "0x1D3F30"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap number lower limit when zoomed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.274f"
+        ],
+        "offset": [
+            "0x1D3F34"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap number upper limit when zoomed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.31f"
+        ],
+        "offset": [
+            "0x1D3F38"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter left limit when zoomed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.23f"
+        ],
+        "offset": [
+            "0x1D3F3C"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter right limit when zoomed.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "8.6f",
+            "8.6f"
+        ],
+        "offset": [
+            "0x9FCF6",
+            "0x9FC9B"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter/number zoom factor.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 0D 28 3F 5D"
+        ],
+        "replacement": [
+            "D8 35 F6 FC 49"
+        ],
+        "offset": [
+            "0x9F2B4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1360i"
+        ],
+        "offset": [
+            "0x211C94"
+        ],
+        "author": "Gold_Sear",
+        "description": "MAP LEGEND identifier.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1358i"
+        ],
+        "offset": [
+            "0x08F0F1"
+        ],
+        "author": "Gold_Sear",
+        "description": "MAP LEGEND tooltip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "968i"
+        ],
+        "offset": [
+            "0x211CA0"
+        ],
+        "author": "Gold_Sear",
+        "description": "BASE LIST identifier.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "964i"
+        ],
+        "offset": [
+            "0x08F158"
+        ],
+        "author": "Gold_Sear",
+        "description": "BASE LIST tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1338i"
+        ],
+        "offset": [
+            "0x211C84"
+        ],
+        "author": "Gold_Sear",
+        "description": "PHYSICAL MAP identifier",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1235i"
+        ],
+        "offset": [
+            "0x08F1C5"
+        ],
+        "author": "Gold_Sear",
+        "description": "PHYSICAL MAP tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1339i"
+        ],
+        "offset": [
+            "0x211C88"
+        ],
+        "author": "Gold_Sear",
+        "description": "POLITICAL MAP identifier.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1236i"
+        ],
+        "offset": [
+            "0x08F248"
+        ],
+        "author": "Gold_Sear",
+        "description": "POLITICAL MAP tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1340i"
+        ],
+        "offset": [
+            "0x211C8C"
+        ],
+        "author": "Gold_Sear",
+        "description": "PATROL PATH identifier.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1313i"
+        ],
+        "offset": [
+            "0x08F2AF"
+        ],
+        "author": "Gold_Sear",
+        "description": "PATROL PATH tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1313i"
+        ],
+        "offset": [
+            "0x08F2AF"
+        ],
+        "author": "Gold_Sear",
+        "description": "PATROL PATH tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1361i"
+        ],
+        "offset": [
+            "0x211C98"
+        ],
+        "author": "Gold_Sear",
+        "description": "MINEABLE ZONES MAP identifier.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1359i"
+        ],
+        "offset": [
+            "0x08F31C"
+        ],
+        "author": "Gold_Sear",
+        "description": "MINEABLE ZONES MAP tool tip.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.198f"
+        ],
+        "offset": [
+            "0x1D3EF0"
+        ],
+        "author": "Gold_Sear",
+        "description": "Upper limit for labels on NavMap.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.192f"
+        ],
+        "offset": [
+            "0x1D3EF4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Lower limit for labels on NavMap.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "E0 75 5C",
+            "E0 75 5C",
+            "90 90 90 90"
+        ],
+        "replacement": [
+            "9C 63 49",
+            "9C 63 49",
+            "0.5f"
+        ],
+        "offset": [
+            "0x095900",
+            "0x095916",
+            "0x09639C"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap zoom move limit",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "ED 02",
+            "83 C9 FF 33 C0 8B FE F2 AE F7 D1 49 8B C1 83 F8 40 8D 93 D4 00 00 00 72 05 B8 3F 00 00 00 8B C8 8B FA 8B D1"
+        ],
+        "replacement": [
+            "44 00",
+            "50 8D 8B D4 00 00 00 6A 40 51 E8 B0 FB FC FF 83 C4 0C 89 83 D0 00 00 00 C6 83 14 01 00 00 01 E9 9D 02 00 00"
+        ],
+        "offset": [
+            "0x0D6431",
+            "0x0D6461"
+        ],
+        "author": "Adoxa",
+        "description": "Always display the end points of trade lanes on the Nav Map. Effectively adds 'visit = 1' to each ring Object.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "27 FC 03 00 74 46 3D 2E FC 03 00 74 3F 3D 28 FC 03 00 74 38 3D 41 EB 00 00 74 31 85 C0 74 2D 3D 3F EB 00 00 74 26 3D EA 00 03 00 74 1F 3D 52 00 03 00 74 18 3D 9C 00 03 00 74 11 3D 9D 00 03 00 74 0A 3D BF 00 03 00 74 03"
+        ],
+        "replacement": [
+            "00 00 00 00 74 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90"
+        ],
+        "offset": [
+            "0xA2315"
+        ],
+        "author": "Aingar",
+        "description": "Stop preventing solars with specified `ids_name` values from showing on the trade routes window",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "D8 15 40 3E 5D 00",
+            "D8 25 40 3E 5D 00"
+        ],
+        "replacement": [
+            "D8 15 CC 2E 5D 00",
+            "D8 25 CC 2E 5D 00"
+        ],
+        "offset": [
+            "0x96323",
+            "0x96336"
+        ],
+        "author": "Venemon",
+        "description": "Group member's nav position refreshes every second",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Navmap"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "90 90 90 90 90",
+            "55"
+        ],
+        "replacement": [
+            "83 C5 18 EB 50",
+            "00"
+        ],
+        "offset": [
+            "0x08D89B",
+            "0x08D997"
+        ],
+        "author": "Venemon, BC46",
+        "description": "Show all group members on the nav map",
         "dateAdded": 0,
         "categories": [
             "HUD: Navmap"
