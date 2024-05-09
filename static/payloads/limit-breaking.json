@@ -3911,7 +3911,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -3927,7 +3928,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "original": [
             "7A 0A"
         ],
@@ -3946,7 +3948,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "original": [
             "0F 8E"
         ],
@@ -3965,7 +3968,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "original": [
             "0F 85"
         ],
@@ -4004,7 +4008,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "original": [
             "E8 56 A4 06"
         ],
@@ -4023,7 +4028,8 @@
         "categories": [
             "HUD: Ship Brackets"
         ]
-    },{
+    },
+    {
         "original": [
             "E8 0A A4 06"
         ],
@@ -4061,6 +4067,177 @@
         "dateAdded": 0,
         "categories": [
             "HUD: Ship Brackets"
+        ]
+    },
+    {
+        "original": [
+            "E6"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D3180"
+        ],
+        "author": "M0tah",
+        "description": "Add faction name to players in contact list.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "original": [
+            "0E "
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D07EB"
+        ],
+        "author": "Adoxa",
+        "description": "Remove hostile & group ships from 'important' filter.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "original": [
+            "13"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D100F"
+        ],
+        "author": "Adoxa",
+        "description": "Remove hostile solars from 'important' filter.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "original": [
+            "03"
+        ],
+        "replacement": [
+            "01"
+        ],
+        "moduleName": [
+            "content.dll"
+        ],
+        "offset": [
+            "0x091A24"
+        ],
+        "author": "Adoxa",
+        "description": "Freighters are named as large ships.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "original": [
+            "0F 85 2A 05 00 00"
+        ],
+        "replacement": [
+            "74 04 FE C8 75 C4"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D094B"
+        ],
+        "author": "Adoxa",
+        "description": "Include player ships in 'ship' filter.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.004d"
+        ],
+        "offset": [
+            "0x1D7BF0"
+        ],
+        "author": "M0tah",
+        "description": "Vertical offset of player name in contact list.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0x1D7964"
+        ],
+        "author": "Dev",
+        "description": "Seconds between updates of the distances in the contact list.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Contact List"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0x1D8484"
+        ],
+        "author": "Fox",
+        "description": "Seconds between updates of displays in weapons list.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Weapon List"
+        ]
+    },
+    {
+        "original": [
+            "D9 54 24 18 D8 1D 74 74 5C 00 DF E0 F6 C4 41 75 18 8B 4C 24 18"
+        ],
+        "replacement": [
+            "D9 5C E4 18 8B 4C E4 18 85 C9 7E 1D 81 F9 00 00 80 3F 74 XX 90"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0E6F67"
+        ],
+        "author": "Adoxa",
+        "description": "Remove flashing in wireframe for items with hit_pts = 0 (replace XX with: 4E for yellow, 58 for aqua, 15 for dark blue).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Wireframes"
         ]
     }
 ]
