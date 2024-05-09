@@ -4440,5 +4440,89 @@
             "HUD: Nanobots/Shield Batteries"
         ]
     },
-    
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.6f"
+        ],
+        "offset": [
+            "0x0DFC09"
+        ],
+        "author": "Dev",
+        "description": "Multiplier for subtargeting HUD animations (make smaller for faster).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Animation Speeds"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.3f"
+        ],
+        "offset": [
+            "0x1CEA10"
+        ],
+        "author": "Fox",
+        "description": "Multiplier for HUD animations from user NN bar (make smaller for faster).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Animation Speeds"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.3f"
+        ],
+        "offset": [
+            "0x1CB4D0"
+        ],
+        "author": "M0tah",
+        "description": "Multiplier for HUD animations from base NN bar (make smaller for faster).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Animation Speeds"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.3f"
+        ],
+        "offset": [
+            "0x1D8860"
+        ],
+        "author": "M0tah",
+        "description": "Multiplier for left HUD minimize animation (make smaller for faster).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Animation Speeds"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.3f"
+        ],
+        "offset": [
+            "0x1D8488"
+        ],
+        "author": "M0tah",
+        "description": "Multiplier for right HUD minimize animation (make smaller for faster).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Animation Speeds"
+        ]
+    }
 ]
