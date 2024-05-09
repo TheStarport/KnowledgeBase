@@ -3826,7 +3826,8 @@
         "categories": [
             "HUD: Status Bars"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -3842,7 +3843,8 @@
         "categories": [
             "HUD: Status Bars"
         ]
-    },{
+    },
+    {
         "moduleName": [
             "Freelancer.exe"
         ],
@@ -3857,6 +3859,208 @@
         "dateAdded": 0,
         "categories": [
             "HUD: Status Bars"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.8f"
+        ],
+        "offset": [
+            "0x1D8010"
+        ],
+        "author": "M0tah",
+        "description": "Damage indicator sensitivity.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Damage Indicators"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.7f"
+        ],
+        "offset": [
+            "0x1D800C"
+        ],
+        "author": "M0tah",
+        "description": "Damage indicator fade time.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Damage Indicators"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.25f"
+        ],
+        "offset": [
+            "0x1C9804"
+        ],
+        "author": "Dev",
+        "description": "Multiplier for distance at which brackets around non-targeted ships in space will appear (1.25 = 3km, 37.5 = ~93km, etc).",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.0004f"
+        ],
+        "offset": [
+            "0x1D954C"
+        ],
+        "author": "Adoxa",
+        "description": "Reciproke of brackets drawn distance.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "original": [
+            "7A 0A"
+        ],
+        "replacement": [
+            "90 90"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EC1B3"
+        ],
+        "author": "Adoxa",
+        "description": "Remove brackets from objects in space",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "original": [
+            "0F 8E"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EC087"
+        ],
+        "author": "Adoxa",
+        "description": "Remove non-targeted brackets from objects in space",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "original": [
+            "0F 85"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0ED5B9"
+        ],
+        "author": "M0tah",
+        "description": "Remove HUD elements on objects in space - includes text, brackets, targeting reticles, and missile warnings.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },
+    {
+        "original": [
+            "E8 A6 A4 06"
+        ],
+        "replacement": [
+            "B8 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EF455"
+        ],
+        "author": "Adoxa",
+        "description": "Remove top-right bracket of target.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "original": [
+            "E8 56 A4 06"
+        ],
+        "replacement": [
+            "B8 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EF4A5"
+        ],
+        "author": "Adoxa",
+        "description": "Remove bottom-left bracket of target.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },{
+        "original": [
+            "E8 0A A4 06"
+        ],
+        "replacement": [
+            "B8 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EF4F1"
+        ],
+        "author": "Adoxa",
+        "description": "Remove top-left bracket of target.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
+        ]
+    },
+    {
+        "original": [
+            "E8 C9 A3 06"
+        ],
+        "replacement": [
+            "B8 00 00 00"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0EF532"
+        ],
+        "author": "Adoxa",
+        "description": "Remove bottom-right bracket of target.",
+        "dateAdded": 0,
+        "categories": [
+            "HUD: Ship Brackets"
         ]
     }
 ]
