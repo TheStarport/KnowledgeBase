@@ -134,6 +134,349 @@
     },
     {
         "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "100d"
+        ],
+        "offset": [
+            "0x11BC78"
+        ],
+        "author": "foxUnit01",
+        "description": "Initial NPC min spawn distance in SP and MP (such as after respawn).",
+        "dateAdded": 1212012000,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "1775d"
+        ],
+        "offset": [
+            "0x11BC80"
+        ],
+        "author": "Dev",
+        "description": "Initial NPC max spawn distance in SP and MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500d"
+        ],
+        "offset": [
+            "0x11BC68"
+        ],
+        "author": "Dev",
+        "description": "NPC max spawn distance in SP and MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "7A"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0C1771"
+        ],
+        "author": "Gold_Sear",
+        "description": "Allow NPC max spawn distance below 2500.",
+        "dateAdded": 1683803580,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/6223/trying-to-understand-how-npc-spawning-works/28?_=1714942171867"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "3.0f"
+        ],
+        "offset": [
+            "0x0BA57A"
+        ],
+        "author": "adoxa",
+        "description": "SpacePop 'heartbeat' interval in seconds.",
+        "dateAdded": 1682997120,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/6223/trying-to-understand-how-npc-spawning-works/21?_=1714942171867"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x0D3C36"
+        ],
+        "author": "foxUnit01",
+        "description": "Maximum distance that NPCs will persist in SP.",
+        "dateAdded": 1212012000,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x0D3D6E"
+        ],
+        "author": "Dev",
+        "description": "Maximum distance that NPCs will persist in MP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "3750f"
+        ],
+        "offset": [
+            "0x058F46"
+        ],
+        "author": "Dev",
+        "description": "Distance over which NPC spawning will ignore density cap in SP.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "7500f"
+        ],
+        "offset": [
+            "0x117A68"
+        ],
+        "author": "Dev",
+        "description": "Distance over which NPC spawning will ignore density cap in MP (in other words, players within this distance to another will 'share spawns' and must move this distance away to start spawning 'own' NPCs).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "200f"
+        ],
+        "offset": [
+            "0x118578"
+        ],
+        "author": "Vital",
+        "description": "Multiplier for patrol_path spawn distances, double this to double patrol_path spawn ranges, use in tandem with below (715 = 10k).",
+        "dateAdded": 1265214480,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/271?_=1714942171880"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x0C4974"
+        ],
+        "author": "foxUnit01",
+        "description": "patrol_path NPC min spawn distance check, patrol_path spawns below this distance will be rejected, use in tandem with above.",
+        "dateAdded": 1243981200,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/120?_=1714942171894"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2000f"
+        ],
+        "offset": [
+            "0x0BB1DA"
+        ],
+        "author": "Vital",
+        "description": "Distance from the edge of the zone NPCs begin to spawn.",
+        "dateAdded": 1242549180,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/73?_=1714942171898"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x0C48D7"
+        ],
+        "author": "Vital",
+        "description": "Distance that patrol_path NPCs spawn when players are close to each other in patrol path (so far seems like closer than 300m).",
+        "dateAdded": 1262346420,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/234?_=1714942171898"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "1400i"
+        ],
+        "offset": [
+            "0x0D8AAF"
+        ],
+        "author": "Vital",
+        "description": "Distance from a disrupted tradelane that tradelaneattackers are created.",
+        "dateAdded": 1259518440,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/222?_=1714942171902"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2000f"
+        ],
+        "offset": [
+            "0x0BB1DA"
+        ],
+        "author": "Vital",
+        "description": "Distance from the last tradelane ring that FL will generate NPCs from when you enter tradelane (note: same offset as zone edge NPC spawn distance).",
+        "dateAdded": 1259518440,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/222?_=1714942171902"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "4000f"
+        ],
+        "offset": [
+            "0x0D3D93"
+        ],
+        "author": "Vital",
+        "description": "Distance from the last tradelane ring that patrol_path NPCs created when you enter tradelane will still exist.",
+        "dateAdded": 1259518440,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/222?_=1714942171902"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "1200f"
+        ],
+        "offset": [
+            "0x11BB58"
+        ],
+        "author": "Vital",
+        "description": "Distance from the last tradelane ring that patrol_path NPCs are created (2750 and more, no NPCs are created (unless patrol_path spawn distance is raised?)).",
+        "dateAdded": 1259518440,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/222?_=1714942171902"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "3750f"
+        ],
+        "offset": [
+            "0x0C5D53"
+        ],
+        "author": "Vital",
+        "description": "Distance from the tradelane ring (except the nearest one) at which NPCs with `arrival = tradelane` encounters are created (negative numbers accepted, though terminal ring will act up), there may be more 3750f in content.dll which may be relevant.",
+        "dateAdded": 1247671560,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/125?_=1714942171904"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "5000i"
+        ],
+        "offset": [
+            "0x0C2946"
+        ],
+        "author": "Vital",
+        "description": "Minimum spawn distance for tradelane NPCs, tradelane spawns below this distance will be rejected and transferred to the next ring instead.",
+        "dateAdded": 1279320600,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/466?_=1714942171906"
+    },
+    {
+        "moduleName": [
             "freelancer.exe",
             "freelancer.exe"
         ],
