@@ -1062,7 +1062,8 @@
         "categories": [
             "trade",
             "UI",
-            "HUD: MavMap"
+            "HUD",
+            "NavMap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -1085,7 +1086,8 @@
         "categories": [
             "trade",
             "UI",
-            "HUD: MavMap"
+            "HUD",
+            "NavMap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -1108,7 +1110,8 @@
         "categories": [
             "trade",
             "UI",
-            "HUD: MavMap"
+            "HUD",
+            "NavMap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -3037,7 +3040,7 @@
             "0x0B88A4"
         ],
         "author": "Adoxa",
-        "description": "Disable \"Select Ship\" ship dealer button.",
+        "description": "Disable \"Select Ship\"ship dealer button.",
         "dateAdded": 1258158240,
         "categories": [
             "equipment"
@@ -3655,7 +3658,8 @@
         "description": "Expansion time for target brackets (seconds).",
         "dateAdded": 1421539200,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -3673,7 +3677,8 @@
         "description": "Multiplier for size of non-targeted brackets, depending on the distance.",
         "dateAdded": 1421539200,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -3691,7 +3696,8 @@
         "description": "Scanner range (modified by interference) under which solars won't show up on your contact list.",
         "dateAdded": 1421539200,
         "categories": [
-            "HUD: Contacts/Weapons List/Wireframe"
+            "HUD",
+            "Contacts/Weapons List/Wireframe"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -3709,7 +3715,8 @@
         "description": "Distance over which non-selected arrows of important contacts on the edge of the screen start fading (note: same offset as adoxa's trade initiate distance).",
         "dateAdded": 1421539200,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -3727,7 +3734,8 @@
         "description": "Maximum number of chat lines in chat history window (signed byte, so max of 127).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3744,7 +3752,8 @@
         "description": "Time in milliseconds chat text is displayed before disappearing.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3761,7 +3770,8 @@
         "description": "Maximum number of chat lines displayed at once -1.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3781,7 +3791,8 @@
         "description": "Prevent chat from being displayed (but not new/departing player messages).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3798,7 +3809,8 @@
         "description": "Y position of chat input box.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3815,7 +3827,8 @@
         "description": "Height of chat input box.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3832,7 +3845,8 @@
         "description": "Width of chat input box.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3849,7 +3863,8 @@
         "description": "X-position of the chat history section in the Chat window.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3866,7 +3881,8 @@
         "description": "Y-position of the chat history section in the Chat window.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3883,7 +3899,8 @@
         "description": "Maximum number of characters in chat input box (signed byte, so max of 127).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3900,7 +3917,8 @@
         "description": "RGB color as Hex value of the messages 'New Player' etc.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3920,7 +3938,8 @@
         "description": "Disable new player messages.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3940,7 +3959,8 @@
         "description": "Disable departing player messages.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Chat"
+            "HUD",
+            "Chat"
         ]
     },
     {
@@ -3957,7 +3977,7 @@
         "description": "Distance over which kilometers rather than meters are displayed (in the contact list).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -3974,7 +3994,7 @@
         "description": "Distance over which kilometers rather than meters are displayed (target bracket in space).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -3991,7 +4011,7 @@
         "description": "Distance over which fractions of kilometers are not displayed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4008,7 +4028,7 @@
         "description": "Distance over which 'far' is displayed rather than an actual distance.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4025,7 +4045,7 @@
         "description": "Speed over which '---' is displayed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4045,7 +4065,7 @@
         "description": "Remove speed display limit. (Alternative to 0x0D597A)",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4062,7 +4082,7 @@
         "description": "Cruise speed display limit (note: same offset as Schmackbolzen's tradelane waypoint reached distance).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4070,7 +4090,7 @@
             "0F 85"
         ],
         "replacement": [
-            " 90 E9"
+            "90 E9"
         ],
         "moduleName": [
             "freelancer.exe"
@@ -4082,7 +4102,7 @@
         "description": "Remove speed display limit. (Alternative to 0x1D7E80)",
         "dateAdded": 0,
         "categories": [
-            "HUD: Limits"
+            "HUD"
         ]
     },
     {
@@ -4099,7 +4119,8 @@
         "description": "Width of bars for energy, shield and hull gauges (for example, set to 1.0 to make the bars solid).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4116,7 +4137,8 @@
         "description": "Total width of bars for energy, shield and hull gauges (set to 1.0 to cover the entire bottom part of the screen from left to right).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4133,7 +4155,8 @@
         "description": "Height of the energy bars.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4150,7 +4173,8 @@
         "description": "Individual width of the energy bars (each individual block is a set size - you can only notice this change when the bars are not solid but are standard FL like).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4167,7 +4191,8 @@
         "description": "Color of power bar (blue,green,red,alpha).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4184,7 +4209,8 @@
         "description": "Color of shield bar (blue,green,red,alpha).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4201,7 +4227,8 @@
         "description": "Color of hull bar (blue,green,red,alpha).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Status Bars"
+            "HUD",
+            "Status Bars"
         ]
     },
     {
@@ -4218,7 +4245,8 @@
         "description": "Damage indicator sensitivity.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Damage Indicators"
+            "HUD",
+            "Damage Indicators"
         ]
     },
     {
@@ -4235,7 +4263,8 @@
         "description": "Damage indicator fade time.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Damage Indicators"
+            "HUD",
+            "Damage Indicators"
         ]
     },
     {
@@ -4252,7 +4281,8 @@
         "description": "Multiplier for distance at which brackets around non-targeted ships in space will appear (1.25 = 3km, 37.5 = ~93km, etc).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4269,7 +4299,8 @@
         "description": "Reciproke of brackets drawn distance.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4289,7 +4320,8 @@
         "description": "Remove brackets from objects in space",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4309,7 +4341,8 @@
         "description": "Remove non-targeted brackets from objects in space",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4329,7 +4362,8 @@
         "description": "Remove HUD elements on objects in space - includes text, brackets, targeting reticles, and missile warnings.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4349,7 +4383,8 @@
         "description": "Remove top-right bracket of target.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4369,7 +4404,8 @@
         "description": "Remove bottom-left bracket of target.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4389,7 +4425,8 @@
         "description": "Remove top-left bracket of target.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4409,7 +4446,8 @@
         "description": "Remove bottom-right bracket of target.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Ship Brackets"
+            "HUD",
+            "Ship Brackets"
         ]
     },
     {
@@ -4429,7 +4467,8 @@
         "description": "Add faction name to players in contact list.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4449,7 +4488,8 @@
         "description": "Remove hostile & group ships from 'important' filter.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4469,7 +4509,8 @@
         "description": "Remove hostile solars from 'important' filter.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4489,7 +4530,8 @@
         "description": "Freighters are named as large ships.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4509,7 +4551,8 @@
         "description": "Include player ships in 'ship' filter.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4526,7 +4569,8 @@
         "description": "Vertical offset of player name in contact list.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4543,7 +4587,8 @@
         "description": "Seconds between updates of the distances in the contact list.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Contact List"
+            "HUD",
+            "Contact List"
         ]
     },
     {
@@ -4560,7 +4605,8 @@
         "description": "Seconds between updates of displays in weapons list.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Weapon List"
+            "HUD",
+            "Weapon List"
         ]
     },
     {
@@ -4580,7 +4626,8 @@
         "description": "Remove flashing in wireframe for items with hit_pts = 0 (replace XX with: 4E for yellow, 58 for aqua, 15 for dark blue).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Wireframes"
+            "HUD",
+            "Wireframes"
         ]
     },
     {
@@ -4600,7 +4647,8 @@
         "description": "Disable nanobot button.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4620,7 +4668,8 @@
         "description": "Remove nanobot count.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4640,7 +4689,8 @@
         "description": "Disable battery button.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4660,7 +4710,8 @@
         "description": "Remove battery count.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4680,7 +4731,8 @@
         "description": "Remove Shield Battery use icon.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4700,7 +4752,8 @@
         "description": "Remove Nanobot use icon.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4720,7 +4773,8 @@
         "description": "Maximum number of nanobots displayed in HUD.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4740,7 +4794,8 @@
         "description": "Ignore nanobot HUD display limit (alternative to 0x0DE317 and 0x0DE310).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4760,7 +4815,8 @@
         "description": "Maximum number of batteries displayed in HUD",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4780,7 +4836,8 @@
         "description": "Ignore battery HUD display limit (alternative to 0x0DE369 and 0x0DE362).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Nanobots/Shield Batteries"
+            "HUD",
+            "Nanobots/Shield Batteries"
         ]
     },
     {
@@ -4797,7 +4854,8 @@
         "description": "Multiplier for subtargeting HUD animations (make smaller for faster).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Animation Speeds"
+            "HUD",
+            "Animation Speeds"
         ]
     },
     {
@@ -4814,7 +4872,8 @@
         "description": "Multiplier for HUD animations from user NN bar (make smaller for faster).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Animation Speeds"
+            "HUD",
+            "Animation Speeds"
         ]
     },
     {
@@ -4831,7 +4890,8 @@
         "description": "Multiplier for HUD animations from base NN bar (make smaller for faster).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Animation Speeds"
+            "HUD",
+            "Animation Speeds"
         ]
     },
     {
@@ -4848,7 +4908,8 @@
         "description": "Multiplier for left HUD minimize animation (make smaller for faster).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Animation Speeds"
+            "HUD",
+            "Animation Speeds"
         ]
     },
     {
@@ -4865,7 +4926,8 @@
         "description": "Multiplier for right HUD minimize animation (make smaller for faster).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Animation Speeds"
+            "HUD",
+            "Animation Speeds"
         ]
     },
     {
@@ -4882,7 +4944,8 @@
         "description": "NavMap fade in/out speed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4899,7 +4962,8 @@
         "description": "Time taken to zoom out on NavMap (not zero).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4916,7 +4980,8 @@
         "description": "Time taken to zoom in on NavMap (not zero).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4933,7 +4998,8 @@
         "description": "NavMap zoom factor (lower increases zoom).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4953,7 +5019,8 @@
         "description": "Remove tradelane lines in NavMap.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4970,7 +5037,8 @@
         "description": "NavMap protect-plane against shooting (height) (set 0 to shoot through NavMap).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -4987,7 +5055,8 @@
         "description": "NavMap protect-plane against shooting (width) (set 0 to shoot through NavMap).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5004,7 +5073,8 @@
         "description": "Width of system connection line.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5021,7 +5091,8 @@
         "description": "Red component of system connection line.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5038,7 +5109,8 @@
         "description": "Green component of system connection line.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5055,7 +5127,8 @@
         "description": "Blue component of system connection line.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5072,7 +5145,8 @@
         "description": "Alpha component of system connection line.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5089,7 +5163,8 @@
         "description": "Size range of universe map stars.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5106,7 +5181,8 @@
         "description": "Minimum size universe map stars.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5126,7 +5202,8 @@
         "description": "Color of universe map stars (x = 0-6 for RGBCMYW).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5150,7 +5227,8 @@
         "description": "Prevent universe map stars from pulsing.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5170,7 +5248,8 @@
         "description": "Prevent universe map stars from blinking.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5187,7 +5266,8 @@
         "description": "Negative z-coordinate of border between sectors 4 and 5 (divided by NavMapScale; set 0 to make the system map exactly according to system ini file).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5204,7 +5284,8 @@
         "description": "NavMap letter grid alignment on screen, x-axis.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5221,7 +5302,8 @@
         "description": "NavMap number grid alignment on screen, y-axis.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5238,7 +5320,8 @@
         "description": "NavMap letter/number grid spacing.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5258,7 +5341,8 @@
         "description": "NavMap letter alignment perpendicular to grid (both offsets must be changed)",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5278,7 +5362,8 @@
         "description": "NavMap number alignment perpendicular to grid (both offsets must be changed).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5295,7 +5380,8 @@
         "description": "NavMap system/universe name x-displacement.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5312,7 +5398,8 @@
         "description": "NavMap system/universe name y-displacement.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5329,7 +5416,8 @@
         "description": "Stretch texture of Universe Map, x-axis.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5346,7 +5434,8 @@
         "description": "Stretch texture of Universe Map, y-axis.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5363,7 +5452,8 @@
         "description": "Bunch scale of all system diamonds on Universe Map and in the same way speed of tradelane animation on system map (method 1).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5380,7 +5470,8 @@
         "description": "Bunch scale of all system diamonds on Universe Map (method 2).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5397,7 +5488,8 @@
         "description": "Bunch scale of all system diamonds on Universe Map (method 3).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5414,7 +5506,8 @@
         "description": "Bunch scale of all system diamonds on Universe Map (method 4).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5431,7 +5524,8 @@
         "description": "Bunch coordinates of all system diamonds on Universe Map (xy-axis).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5448,7 +5542,8 @@
         "description": "Bunch coordinates of all system diamonds on Universe Map (y-axis).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5504,7 +5599,8 @@
         "description": "On 'NavMap not available' initially do hide some controls ",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5524,7 +5620,8 @@
         "description": "Allow all positions on Universe Map (visible region roughly -2.4,-2.7 to 17.3,17) (for system diamonds only; use below hacks to also allow player ship icon to move to all positions).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5544,7 +5641,8 @@
         "description": "Ignore +x limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5564,7 +5662,8 @@
         "description": "Ignore -x limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5584,7 +5683,8 @@
         "description": "Ignore +y limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5604,7 +5704,8 @@
         "description": "Ignore -y limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5624,7 +5725,8 @@
         "description": "Use new +x limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5644,7 +5746,8 @@
         "description": "Use new -x limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5664,7 +5767,8 @@
         "description": "Use new +y limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5684,7 +5788,8 @@
         "description": "Use new -y limit for player ship icon on system and universe map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5701,7 +5806,8 @@
         "description": "+x limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5718,7 +5824,8 @@
         "description": "-x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5735,7 +5842,8 @@
         "description": "+y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5752,7 +5860,8 @@
         "description": "-y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5769,7 +5878,8 @@
         "description": "Size of system map; beware, effects size of player ship icon as well.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5786,7 +5896,8 @@
         "description": "Size of sectors in F9 info screen; needs to keep ratio with variable above.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5803,7 +5914,8 @@
         "description": "Starting point of sector calculation in F9 info screen, needs to be -3*variable above.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5820,7 +5932,8 @@
         "description": "NavMap number lower limit when zoomed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5837,7 +5950,8 @@
         "description": "NavMap number upper limit when zoomed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5854,7 +5968,8 @@
         "description": "NavMap letter left limit when zoomed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5871,7 +5986,8 @@
         "description": "NavMap letter right limit when zoomed.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5891,7 +6007,8 @@
         "description": "NavMap letter/number zoom factor.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5911,7 +6028,8 @@
         "description": "Align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5928,7 +6046,8 @@
         "description": "MAP LEGEND identifier.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5945,7 +6064,8 @@
         "description": "MAP LEGEND tooltip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5962,7 +6082,8 @@
         "description": "BASE LIST identifier.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5979,7 +6100,8 @@
         "description": "BASE LIST tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -5996,7 +6118,8 @@
         "description": "PHYSICAL MAP identifier",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6013,7 +6136,8 @@
         "description": "PHYSICAL MAP tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6030,7 +6154,8 @@
         "description": "POLITICAL MAP identifier.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6047,7 +6172,8 @@
         "description": "POLITICAL MAP tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6064,7 +6190,8 @@
         "description": "PATROL PATH identifier.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6081,7 +6208,8 @@
         "description": "PATROL PATH tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6098,7 +6226,8 @@
         "description": "PATROL PATH tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6115,7 +6244,8 @@
         "description": "MINEABLE ZONES MAP identifier.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6132,7 +6262,8 @@
         "description": "MINEABLE ZONES MAP tool tip.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6149,7 +6280,8 @@
         "description": "Upper limit for labels on NavMap.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6166,7 +6298,8 @@
         "description": "Lower limit for labels on NavMap.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6194,7 +6327,8 @@
         "description": "NavMap zoom move limit",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6218,7 +6352,8 @@
         "description": "Always display the end points of trade lanes on the Nav Map. Effectively adds 'visit = 1' to each ring Object.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6238,7 +6373,8 @@
         "description": "Stop preventing solars with specified `ids_name` values from showing on the trade routes window",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6262,7 +6398,8 @@
         "description": "Group member's nav position refreshes every second",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6286,7 +6423,8 @@
         "description": "Show all group members on the nav map",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
@@ -6303,7 +6441,8 @@
         "description": "Distance from a waypoint when it is considered reached.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6320,7 +6459,8 @@
         "description": "Distance from a waypoint within a tradelane when it is considered reached.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6340,7 +6480,8 @@
         "description": "Show aiming lead on everything.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6360,7 +6501,8 @@
         "description": "Show aiming lead on all ships.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6377,7 +6519,8 @@
         "description": "Range at which an object is no longer 'unknown' as well as radar detection range for some solars such as Jump Holes",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6394,7 +6537,8 @@
         "description": "Aspect ratio of the cinematics.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6414,7 +6558,8 @@
         "description": "Remove mouse flight text.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6437,7 +6582,8 @@
         "description": "Disable F1 menu in space while playing multiplayer.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6454,7 +6600,8 @@
         "description": "Original font that will override Agency FB in a number of instances if detected on the system.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6483,7 +6630,8 @@
         "description": "Shoot through HUD",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6503,7 +6651,8 @@
         "description": "Bypass ESRB notice.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6531,7 +6680,8 @@
         "description": "Remove the NEW GAME and LOAD GAME buttons on the main menu.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6551,7 +6701,8 @@
         "description": "String ID for the 'VER. 1.0' text in the bottom-right of the main menu. Change this number to another string ID to make the element display different text. Both offsets must be changed!",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6568,7 +6719,8 @@
         "description": "String ID for the final section of the in-game credits. Change this number to another string ID to make the element display different text.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6585,7 +6737,8 @@
         "description": "Maximum value for the TOTAL SOUND ELEMENTS slider in the audio options menu.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6609,7 +6762,8 @@
         "description": "Use anti-aliased fonts if the user has 'Smooth edges of screen fonts' enabled in their Windows settings.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6633,7 +6787,8 @@
         "description": "Always use anti-aliased fonts",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6657,7 +6812,8 @@
         "description": "Fixes a bug that causes the clickable area height of the main menu buttons to be incorrect on higher resolutions.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6677,7 +6833,8 @@
         "description": "Updates the mouse-hover blinking animation of the load-save menu buttons (after loading a game) such that the colors transition smoothly, like with all other menu-style buttons.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -6694,7 +6851,8 @@
         "description": "Clickable area width of the load-save menu buttons (after loading a game). It's recommended to set this value to 0.13 so the property matches with all other menu-style buttons.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Other"
+            "HUD",
+            "Other"
         ]
     },
     {
@@ -7523,7 +7681,8 @@
         "description": "Shows trade lanes as unknown initially and allows them to be discovered both on the radar and the Nav Map.",
         "dateAdded": 0,
         "categories": [
-            "HUD: Navmap"
+            "HUD",
+            "Navmap"
         ]
     },
     {
