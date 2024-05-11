@@ -502,14 +502,14 @@
         "author": "Livsi",
         "description": "Possible heap corruption",
         "dateAdded": 1487102400
-    },  
+    },
     {
         "moduleName": "ntdll.dll",
         "offset": "0x000864ba",
         "author": "Aingar",
         "description": "Damaging/Destroying an incorrectly defined collision group",
         "dateAdded": 1711016777
-    }, 
+    },
     {
         "moduleName": "rendcomp.dll",
         "offset": "0x00011163",
@@ -619,7 +619,7 @@
         "moduleName": "content.dll",
         "offset": "0x000bd173",
         "author": "IrateRedKite, Laz & Raikkonen",
-        "description": "Converts an archID into a goodId and then uses the goodId for a lookup, which fails and is not checked, causing a crash. This occurred when ammo entries for loot were not defined in lootprops.ini. If a munition entry has 'requires_ammo = true', the ammo AND the gun both require a lootprops.ini entry. The server crash offset for this is 0xe06d7363 in kernelbase.dll",
+        "description": "Converts an archID into a goodId and then uses the goodId for a lookup, which fails and is not checked, causing a crash. This occurred when ammo entries for loot were not defined in lootprops.ini. If a munition entry has 'requires_ammo = true', the ammo AND the gun both require a lootprops.ini entry.",
         "dateAdded": 1704731478
     },
     {
@@ -712,7 +712,8 @@
         "author": "Beaglerush",
         "description": "Possibly relates to a malformed tradelane encounter, the exact cause of this crash is not known, but it appears to be correctly handled in Multiplayer and only occurs in Singleplayer.",
         "dateAdded": 1715157749
-    },{
+    },
+    {
         "moduleName": "Freelancer.exe",
         "offset": "0x0013b395",
         "author": "Katz, Ven",
