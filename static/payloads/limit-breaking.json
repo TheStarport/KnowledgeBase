@@ -477,6 +477,565 @@
     },
     {
         "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "5000f"
+        ],
+        "offset": [
+            "0x140810"
+        ],
+        "author": "Dev",
+        "description": "Max range at which NPCs will engage enemies, even if `attack_preference` under `jobblock` specify a higher range.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "10000f"
+        ],
+        "offset": [
+            "0x0A8AF0"
+        ],
+        "author": "FriendlyFire",
+        "description": "Maximum AI firing range.",
+        "dateAdded": 0,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "2i"
+        ],
+        "offset": [
+            "0x18C754"
+        ],
+        "author": "adoxa",
+        "description": "First value of Act_PlayerEnemyClamp. This determines how many NPCs will attack the player in SP (and also MP?).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/959?_=1714942171912"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "2i"
+        ],
+        "offset": [
+            "0x18C758"
+        ],
+        "author": "adoxa",
+        "description": "Second value of Act_PlayerEnemyClamp. This determines how many NPCs will attack the player in SP (and also MP?).",
+        "dateAdded": 1470701880,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/959?_=1714942171912"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "7E 31"
+        ],
+        "replacement": [
+            "EB 39"
+        ],
+        "offset": [
+            "0x08E86A"
+        ],
+        "author": "adoxa",
+        "description": "Alternative to above: disable Act_PlayerEnemyClamp altogether, instead making NPC enemy target selection random.",
+        "dateAdded": 1470701880,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/998?_=1714942171912"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x08E6D8"
+        ],
+        "author": "adoxa",
+        "description": "Remove FIGHTER/FREIGHTER testing on Player for `attack_preference` under `jobblock`.",
+        "dateAdded": 1279379880,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/3109/hack-request-multi-line-attack_preference-fix/4?_=1715291668310"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "04"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x13E52C"
+        ],
+        "author": "adoxa",
+        "description": "NPCs use scanner (enables CMs).",
+        "dateAdded": 1279263300,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/3104/hack-request-proper-ai-cm-usage/4?_=1715291668312"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "5000f",
+            "5000f"
+        ],
+        "offset": [
+            "0x0D0630",
+            "0x11DB10"
+        ],
+        "author": "Dev",
+        "description": "Max range at which NPCs will go hostile upon seeing their allies go hostile (both offsets must be changed).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "500i"
+        ],
+        "offset": [
+            "0x06C470"
+        ],
+        "author": "Dev",
+        "description": "Max range at which NPCs will scan your cargo.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x06C717"
+        ],
+        "author": "Dev",
+        "description": "Max range at which NPCs will initiate scan of your cargo.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x0C4C01"
+        ],
+        "author": "M0tah, Gold_Sear",
+        "description": "Min distance from player position at spawn moment that an NPC patrol with `arrival = cruise` will fly to when spawned.",
+        "dateAdded": 1421598480,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?_=1714942171929"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2000f"
+        ],
+        "offset": [
+            "0x0C4C06"
+        ],
+        "author": "M0tah, Gold_Sear",
+        "description": "Max distance from player position at spawn moment that an NPC patrol with `arrival = cruise` will fly to when spawned.",
+        "dateAdded": 1421598480,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?_=1714942171929"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "25000000f"
+        ],
+        "offset": [
+            "0x1195D4"
+        ],
+        "author": "Vital",
+        "description": "Square of the distance from the end of the patrol_path to the object over which NPCs won't dock with it (so far only tested with jumpgates; increasing this may prevent PP crashes?).",
+        "dateAdded": 1233424900,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/28?_=1714942171931"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "200f"
+        ],
+        "offset": [
+            "0x07AE5E"
+        ],
+        "author": "Vital",
+        "description": "unknown, increasing this to 1000f and more makes patrol_path NPCs stand still after spawn (side note by fox: this range seems to also denote the range which MsnRandEnc ships spawned with story scripting cut cruise and engage targets; if you're spawning ships with MsnRandEnc, try increasing this to make them more combat-effective).",
+        "dateAdded": 1233426720,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/29?_=1714942171931"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0.0001f"
+        ],
+        "offset": [
+            "0x13E518"
+        ],
+        "author": "adoxa",
+        "description": "`nudge_force` sensitivity (higher = less auto-dodging from autopilot and AI).",
+        "dateAdded": 1281946800,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/3230/disable-nudge_force-object-avoidance/2?_=1714942171933"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "1.5f"
+        ],
+        "offset": [
+            "0x13E6D0"
+        ],
+        "author": "foxUnit01",
+        "description": "Autopilot helper value used by all AI functions, including NPC maneuvering and player autopilot; generally, set lower for a more accurate and picky autopilot (beware, has massive effect on how AI handle and may break your NPCs, so be very careful! - 1.34 is good).",
+        "dateAdded": 1243238340,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/1734/autopilot-helper-value-used-by-all-ai-functions?_=1714942171937"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "50f"
+        ],
+        "offset": [
+            "0x13E6D4"
+        ],
+        "author": "foxUnit01",
+        "description": "Default follow offset for following NPCs using FollowOp; a following NPC is to the right by default, but will appear on the left, below and above after jumping systems.",
+        "dateAdded": 0,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "54 72 61 69 6C 4F 70 40 41 49 40 70 75 62 40 40 51 41 45 40 58 5A 00"
+        ],
+        "replacement": [
+            "46 6F 6C 6C 6F 77 4F 70 40 41 49 40 70 75 62 40 40 51 41 45 40 58 5A"
+        ],
+        "offset": [
+            "0x129058"
+        ],
+        "author": "foxUnit01",
+        "description": "Replace TrailOp behavior with FollowOp behavior.",
+        "dateAdded": 1277863620,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/3062/hack-request-redirect-trailop-to-followop?_=1714942171939"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "33 FF 89 7C 24",
+            "06",
+            "14",
+            "18",
+            "1C"
+        ],
+        "replacement": [
+            "E9 23 F9 FF FF",
+            "07",
+            "4C",
+            "50",
+            "54"
+        ],
+        "offset": [
+            "0x085D6F",
+            "0x06CDF5",
+            "0x06CE24",
+            "0x0875BC",
+            "0x0875C2"
+        ],
+        "author": "adoxa",
+        "description": "Replace TrailOp behavior with FollowOp behavior (addition to above, untested).",
+        "dateAdded": 1278140220,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/3062/hack-request-redirect-trailop-to-followop?_=1714942171939"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "D9 44",
+            "DC 0D",
+            "D9 44"
+        ],
+        "replacement": [
+            "EB 0F",
+            "EB 04",
+            "EB 20"
+        ],
+        "offset": [
+            "0x08C322",
+            "0x08C35C",
+            "0x08C4C4",
+        ],
+        "author": "Gold_Sear",
+        "description": "Make formation leader independent of escorts (this will make formation leaders able to flee).",
+        "dateAdded": 1499247060,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/984?_=1714942171941"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x06C017"
+        ],
+        "author": "Gold_Sear, M0tah",
+        "description": "Distance ahead of formation leader escorts 'anticipate' to go to when catching up in cruise (decrease this to make escorts go in a straighter line towards the leader, but setting this too low causes them swing back and forth after a minor turn).",
+        "dateAdded": 1432644480,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/897?_=1714942171943"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x075B36"
+        ],
+        "author": "Gold_Sear",
+        "description": "Distance from formation leader an escort will cruise to (before dropping out of cruise) when the leader is not cruising, as well as cruise catch up trail range.",
+        "dateAdded": 1432644480,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/897?_=1714942171943"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "200f"
+        ],
+        "offset": [
+            "0x06C00D"
+        ],
+        "author": "M0tah",
+        "description": "Increase this to enable large formations to dock with jumpgate; raise with caution however.",
+        "dateAdded": 0,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/819/npc-jumpgate-docking-problems-fighters-hpdockmounts-questions/8?_=1714942171948"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "07"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x08ADD7"
+        ],
+        "author": "adoxa",
+        "description": "Disable NPC firing timing delay.",
+        "dateAdded": 1584021840,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/6070/solved-fixing-broken-behaviour-with-npc-gunfire/2?_=1714942171950"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "83 EC 34 53 56"
+        ],
+        "replacement": [
+            "B0 01 C2 04 00"
+        ],
+        "offset": [
+            "0x038590"
+        ],
+        "author": "adoxa",
+        "description": "Adjusts CEGun::CanSeeTargetObject, allowing NPCs to 'see' everything (care: has a pretty significant impact on firing behavior).",
+        "dateAdded": 1584081240,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/6070/solved-fixing-broken-behaviour-with-npc-gunfire/3?_=1714942171950"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "0.0523599f",
+            "0.0523599f"
+        ],
+        "offset": [
+            "0x08A185",
+            "0x08AE95"
+        ],
+        "author": "adoxa",
+        "description": "NPC muzzle cone angle (guns, radians).",
+        "dateAdded": 1585878420,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/6070/solved-fixing-broken-behaviour-with-npc-gunfire/9?_=1714942171950"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "84 C0"
+        ],
+        "replacement": [
+            "90 90"
+        ],
+        "offset": [
+            "0x0763B6"
+        ],
+        "author": "Venemon",
+        "description": "Autopilot will use thruster to catch up with formation.",
+        "dateAdded": 1705373880,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1043?_=1714942171952"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "03"
+        ],
+        "replacement": [
+            "7F"
+        ],
+        "offset": [
+            "0x066148"
+        ],
+        "author": "Aingar",
+        "description": "Force NPCs to use correct chasing behavior for shiptypes other than FIGHTER and FREIGHTER.",
+        "dateAdded": 0,
+        "categories": [
+            "NPCs"
+        ]
+    },
+    {
+        "moduleName": [
             "freelancer.exe",
             "freelancer.exe"
         ],
