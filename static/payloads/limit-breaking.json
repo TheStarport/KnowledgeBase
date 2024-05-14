@@ -7449,10 +7449,11 @@
         ],
         "author": "Adoxa",
         "description": "Update objects once (fixes bug that causes solar guns reduce refire delay when multiple players are around).",
-        "dateAdded": 0,
+        "dateAdded": 1431504720,
         "categories": [
             "Server Operation"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5596/station-rate-of-fire-multiplier/6?_=1714942171972"
     },
     {
         "moduleName": [
@@ -7554,10 +7555,11 @@
         ],
         "author": "Adoxa",
         "description": "Disable encryption on creating MP character.",
-        "dateAdded": 0,
+        "dateAdded": 1307688240,
         "categories": [
             "Server Operation"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4027/not-hack-request-single-player-save-files/2?_=1714942171962"
     },
     {
         "moduleName": [
@@ -7573,11 +7575,33 @@
             "0x06E10D"
         ],
         "author": "Adoxa",
-        "description": "Disable encryption on saving character/game",
-        "dateAdded": 0,
+        "description": "Disable encryption on saving character/game.",
+        "dateAdded": 1307688240,
         "categories": [
             "Save Games"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4027/not-hack-request-single-player-save-files/2?_=1714942171962"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "E4 B4"
+        ],
+        "replacement": [
+            "14 B3"
+        ],
+        "offset": [
+            "0x07399D"
+        ],
+        "author": "adoxa",
+        "description": "Disable encryption on creating restart.fl file.",
+        "dateAdded": 1307688240,
+        "categories": [
+            "Save Games"
+        ],
+        "url": "https://the-starport.com/forums/topic/4027/not-hack-request-single-player-save-files/2?_=1714942171962"
     },
     {
         "moduleName": [
@@ -8460,9 +8484,115 @@
         ],
         "author": "BC46",
         "description": "Prevents Freelancer from running in the background after exiting the game in some cases. This occurred because Freelancer would wait for an indefinitely running thread to finish.",
-        "dateAdded": 0,
+        "dateAdded": 1703581620,
         "categories": [
             "Server Operation"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/6260/freelancer-exe-don-t-close-after-playing-online/2?_=1714942171974"
+    },
+        {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "server.dll"
+        ],
+        "original": [
+            "5b",
+            "5b",
+            "5b"
+        ],
+        "offset": [
+            "0x16835B",
+            "0x169D2B",
+            "0x07417C"
+        ],
+        "author": "Zephyer, adoxa, M0tah",
+        "description": "Maximum number of characters per account.",
+        "dateAdded": 1271748600,
+        "categories": [
+            "Server Operation"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/384?_=1714942171988"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "60d"
+        ],
+        "offset": [
+            "0x085530"
+        ],
+        "author": "w0dk4",
+        "description": "Respawn time for any solar object to regain full health once destroyed in MP.",
+        "dateAdded": 1226615700,
+        "categories": [
+            "Server Operation"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/13?_=1714942171994"
+    },
+    {
+        "moduleName": [
+            "server.dll",
+            "server.dll"
+        ],
+        "original": [
+            "8b",
+            "8b"
+        ],
+        "offset": [
+            "0x03A068",
+            "0x03A46E"
+        ],
+        "author": "Sethernis",
+        "description": "Maximum group size.",
+        "dateAdded": 1279440900,
+        "categories": [
+            "Server Operation"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/470?_=1714942172002"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "48"
+        ],
+        "replacement": [
+            "50"
+        ],
+        "offset": [
+            "0x1628F4"
+        ],
+        "author": "adoxa",
+        "description": "Filter out incompatible builds on server list by default.",
+        "dateAdded": 1369899180,
+        "categories": [
+            "Server Operation"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/778?_=1714942172006"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "51 8D 4C 24 20 51 8D 8C 24 C8 00 00 00"
+        ],
+        "replacement": [
+            "40 74 63 48 51 8D 54 E4 20 52 83 E9 08"
+        ],
+        "offset": [
+            "0x1ACF6A"
+        ],
+        "author": "adoxa",
+        "description": "Prevent IPv6 addresses from being displayed in the server list.",
+        "dateAdded": 1375826400,
+        "categories": [
+            "Server Operation"
+        ],
+        "url": "http://web.archive.org/web/20150406020013/http://the-starport.net/modules/mediawiki/index.php/Disabling_IPv6"
     }
 ]
