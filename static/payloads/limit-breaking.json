@@ -7478,10 +7478,11 @@
         ],
         "author": "Adoxa, Schmackbolzen",
         "description": "Maximum FPS",
-        "dateAdded": 0,
+        "dateAdded": 1278903300,
         "categories": [
             "Framerate"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/461?_=1715792808225"
     },
     {
         "moduleName": [
@@ -7498,10 +7499,11 @@
         ],
         "author": "FriendlyFire",
         "description": "Prevent FL from reducing framerate to 25 in some instances (still need to manually limit framerate using external tool).",
-        "dateAdded": 0,
+        "dateAdded": 1548522360,
         "categories": [
             "Framerate"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5990/framerate-randomly-locks-at-25/4?_=1715792808227"
     },
     {
         "moduleName": [
@@ -7518,10 +7520,11 @@
         ],
         "author": "FuryFreelancer",
         "description": "Disable forced logging to FLSpew.txt (logging can still be defined to custom file in freelancer.ini)",
-        "dateAdded": 0,
+        "dateAdded": 1233575880,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/980/how-to-disable-client-side-logging/15?_=1715792808233"
     },
     {
         "moduleName": [
@@ -7615,10 +7618,11 @@
         ],
         "author": "M0tah",
         "description": "String used for lpName when FL calls CreateMutex (change this for multiple instances).",
-        "dateAdded": 0,
+        "dateAdded": 1238403480,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/41?_=1715792808249"
     },
     {
         "moduleName": [
@@ -7632,10 +7636,11 @@
         ],
         "author": "M0tah",
         "description": "Name of RemoteServer DLL filename used by FL (a duplicate RemoteServer.dll with different name is needed to play in MP with the multi-instance hack).",
-        "dateAdded": 0,
+        "dateAdded": 1238403480,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/41?_=1715792808249"
     },
     {
         "moduleName": [
@@ -7649,10 +7654,11 @@
         ],
         "author": "Crazy",
         "description": "Name of freelancer.exe for RemoteServer; if you're going to rename your freelancer.exe, you'll need to change it here as well, or it will crash when you try to join a server.",
-        "dateAdded": 0,
+        "dateAdded": 1238403480,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/41?_=1715792808249"
     },
     {
         "moduleName": [
@@ -7669,10 +7675,11 @@
         ],
         "author": "Adoxa",
         "description": "Don't run dxdiag on crash (client).",
-        "dateAdded": 0,
+        "dateAdded": 1257745740,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/194?_=1715792808249"
     },
     {
         "moduleName": [
@@ -7689,10 +7696,11 @@
         ],
         "author": "Adoxa, HeIIoween",
         "description": "Don't run dxdiag on crash (server).",
-        "dateAdded": 0,
+        "dateAdded": 1347893940,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/740?_=1715799407210"
     },
     {
         "moduleName": [
@@ -7709,10 +7717,11 @@
         ],
         "author": "OutCast",
         "description": "Supress unsupported video dialog.",
-        "dateAdded": 0,
+        "dateAdded": 1321674840,
         "categories": [
-            "Debugging"
-        ]
+            "Display"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/688?_=1715799407212"
     },
     {
         "moduleName": [
@@ -7752,7 +7761,8 @@
         "dateAdded": 0,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5862/keep-fl-window-running-on-background/2?_=1715799407218"
     },
     {
         "moduleName": [
@@ -7775,16 +7785,17 @@
         ],
         "offset": [
             "0x11D072",
-            "11D2F9",
-            "11D553",
-            "11D7C2"
+            "0x11D2F9",
+            "0x11D553",
+            "0x11D7C2"
         ],
         "author": "adoxa",
         "description": "Allow 64 simultaneous firings.",
-        "dateAdded": 0,
+        "dateAdded": 1288363740,
         "categories": [
             "Equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/528?_=1715799407222"
     },
     {
         "moduleName": [
@@ -7817,10 +7828,11 @@
         ],
         "author": "adoxa",
         "description": "Need level to buy ships/equipment in MP",
-        "dateAdded": 0,
+        "dateAdded": 1333520160,
         "categories": [
             "Equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3307/level-requirements-for-mp/19?_=1715799407245"
     },
     {
         "moduleName": [
@@ -7861,10 +7873,11 @@
         ],
         "author": "adoxa",
         "description": "Missiles continuously fire when holding button.",
-        "dateAdded": 0,
+        "dateAdded": 1309244820,
         "categories": [
-            "Display"
-        ]
+            "controls"
+        ],
+        "url": "https://the-starport.com/forums/topic/4045/quick-questions-by-bob-dynamic-asteroids/8?_=1715799407247"
     },
     {
         "moduleName": [
@@ -7878,10 +7891,11 @@
         ],
         "author": "w0dk4",
         "description": "Screen shake when hull is hit.",
-        "dateAdded": 0,
+        "dateAdded": 1275866400,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2984/offset-request-remove-screen-shake-under-fire/2?_=1715799407251"
     },
     {
         "moduleName": [
@@ -7895,10 +7909,32 @@
         ],
         "author": "w0dk4",
         "description": "Screen shake when shield is hit.",
-        "dateAdded": 0,
+        "dateAdded": 1275866400,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2984/offset-request-remove-screen-shake-under-fire/2?_=1715799407251"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x11DB44"
+        ],
+        "author": "adoxa",
+        "description": "Remove screen shake altogether (alternative to above).",
+        "dateAdded": 1275897960,
+        "categories": [
+            "Display"
+        ],
+        "url": "https://the-starport.com/forums/topic/2984/offset-request-remove-screen-shake-under-fire/5?_=1715799407251"
     },
     {
         "moduleName": [
@@ -7926,11 +7962,12 @@
             "0x103F3C"
         ],
         "author": "adoxa",
-        "description": "Make screen shake when jumping customizable; Encode desired jump screen shake at 0x103F3C, default is 0.015f",
-        "dateAdded": 0,
+        "description": "Make screen shake when jumping customizable; Encode desired jump screen shake at 0x103F3C, default is 0.015f.",
+        "dateAdded": 1457226480,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/934?_=1715799407253"
     },
     {
         "moduleName": [
@@ -7962,11 +7999,12 @@
             "0x0A8D59"
         ],
         "author": "adoxa",
-        "description": "NPCs are global, not local to base; in mbases.ini still need to define the [GF_NPC] per base",
-        "dateAdded": 0,
+        "description": "NPCs are global, not local to base; in mbases.ini still need to define the [GF_NPC] per base.",
+        "dateAdded": 1291360740,
         "categories": [
             "NPCs"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3558/mbase-ini-concept-fellow-travelers-meeting-the-same-people-at-different-bases/9?_=1715799407256"
     },
     {
         "moduleName": [
@@ -7991,10 +8029,11 @@
         ],
         "author": "adoxa",
         "description": "Save costume accessories",
-        "dateAdded": 0,
+        "dateAdded": 1546237440,
         "categories": [
             "Equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4408/where-d-my-neuralnet-go/7?_=1715799407258"
     },
     {
         "moduleName": [
@@ -8011,10 +8050,11 @@
         ],
         "author": "Laz",
         "description": "Don't show the EULA on first run",
-        "dateAdded": 0,
+        "dateAdded": 1600236420,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/6112/remove-microsoft-warning-for-mp?_=1715799407260"
     },
     {
         "moduleName": [
@@ -8038,59 +8078,23 @@
     },
     {
         "moduleName": [
-            "freelancer.exe"
-        ],
-        "original": [
-            "68 80"
-        ],
-        "replacement": [
-            "EB 0F"
-        ],
-        "offset": [
-            "01B2D72"
-        ],
-        "author": "BC46",
-        "description": "Never load EBUEula.dll from the root Freelancer folder (Freelancer.exe).",
-        "dateAdded": 0,
-        "categories": [
-            "Display"
-        ]
-    },
-    {
-        "moduleName": [
+            "freelancer.exe",
             "flserver.exe"
         ],
         "original": [
+            "68 80",
             "68 C4 57 42 00 8B"
         ],
         "replacement": [
+            "EB 0F"
             "89 CE 31 C0 EB 03"
         ],
         "offset": [
+            "01B2D72",
             "0x00B865"
         ],
         "author": "BC46",
-        "description": "Never load EBUEula.dll from the root Freelancer folder (FLServer.exe).",
-        "dateAdded": 0,
-        "categories": [
-            "Display"
-        ]
-    },
-    {
-        "moduleName": [
-            "freelancer.exe"
-        ],
-        "original": [
-            "84 C0 75 12"
-        ],
-        "replacement": [
-            "90 90 90 90"
-        ],
-        "offset": [
-            "0x1B16FC"
-        ],
-        "author": "BC46",
-        "description": "Don't show the unknown graphics card warning.",
+        "description": "Never load EBUEula.dll from the root Freelancer folder.",
         "dateAdded": 0,
         "categories": [
             "Display"
@@ -8106,12 +8110,13 @@
         "offset": [
             "0x142684"
         ],
-        "author": "Laz, BC46",
+        "author": "Laz, He||oween",
         "description": "Name of the folder inside AppData where FLSpew.txt is stored, and the name of the folder inside My Games in which the save files and user preferences are stored.",
-        "dateAdded": 0,
+        "dateAdded": 1443885500,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/921?_=1715799407266"
     },
     {
         "moduleName": [
@@ -8123,12 +8128,13 @@
         "offset": [
             "0x142690"
         ],
-        "author": "BC46",
+        "author": "adoxa",
         "description": "Name of the folder inside Documents in which the folder from offset 0x142684 is stored.",
-        "dateAdded": 0,
+        "dateAdded": 1447642320,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5680/change-default-save-location/3?_=1715799407270"
     },
     {
         "moduleName": [
@@ -8140,13 +8146,52 @@
         "offset": [
             "0x14269C"
         ],
-        "author": "BC46",
+        "author": "adoxa",
         "description": "Name of the folder inside Pictures where Freelancer screenshots are saved to.",
-        "dateAdded": 0,
+        "dateAdded": 1447642320,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5680/change-default-save-location/3?_=1715799407270"
     },
+        {
+        "moduleName": [
+            "common.dll",
+            "common.dll",
+            "common.dll",
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "56 6A 00 6A 00 68 05 80",
+            "21",
+            "13",
+            "56 6A 00 6A 00 68 27 80",
+            "'My Gam'"
+        ],
+        "replacement": [
+            "C7 06 2E 2E 00 00 EB 0E",
+            "0C",
+            "7C",
+            "C7 06 2E 2E 00 00 EB 0E",
+            "'Saves' 00"
+        ],
+        "offset": [
+            "0x0A2FB1",
+            "0x0A300A",
+            "0x0A3018",
+            "0x0A30BE",
+            "0x142690"
+        ],
+        "author": "adoxa",
+        "description": "Use '..\Saves' and '..\FreelancerShots' (relative to EXE) instead of your 'Documents\MyGames\Freelancer' and 'Pictures' folders.",
+        "dateAdded": 1447642320,
+        "categories": [
+            "Debugging"
+        ],
+        "url": "https://the-starport.com/forums/topic/5680/change-default-save-location/3?_=1715799407270"
+    },
+
     {
         "moduleName": [
             "freelancer.exe"
@@ -8181,11 +8226,36 @@
             "0x02490D"
         ],
         "author": "Adoxa, Laz",
-        "description": "Enable Borderless Window (disable caption flags)",
-        "dateAdded": 0,
+        "description": "Enable Borderless Window (disable caption flags).",
+        "dateAdded": 1472554800,
         "categories": [
             "Display"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5232/new-renderer-opengl-3-3/82?_=1715848780813"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "CA 02",
+            "CA 02"
+        ],
+        "replacement": [
+            "0A 00",
+            "0A 00"
+        ],
+        "offset": [
+            "0x02477A",
+            "0x02490D"
+        ],
+        "author": "adoxa",
+        "description": "Enable Borderless Window (disable caption flags), movable.",
+        "dateAdded": 1680079320,
+        "categories": [
+            "Display"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1020?_=1715848738560"
     },
     {
         "moduleName": [
@@ -8222,10 +8292,11 @@
         ],
         "author": "HeIIoween",
         "description": "Using thruster hp_type for [Light].",
-        "dateAdded": 0,
+        "dateAdded": 1652060880,
         "categories": [
             "Equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
     {
         "moduleName": [
@@ -8242,10 +8313,11 @@
         ],
         "author": "HeIIoween",
         "description": "Using thruster hp_type for [AttachedFX].",
-        "dateAdded": 0,
+        "dateAdded": 1652060880,
         "categories": [
             "Equipment"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
     {
         "moduleName": [
@@ -8323,10 +8395,11 @@
         ],
         "author": "Rimshot",
         "description": "Prevents the 'D3DERR_INVALIDCALL' error spam from occurring in FLSpew.txt.",
-        "dateAdded": 0,
+        "dateAdded": 1353013320,
         "categories": [
             "Debugging"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4972/fix-flspew-error/2?_=1715849170203"
     },
     {
         "moduleName": [
