@@ -866,7 +866,7 @@
         "offset": [
             "0x08C322",
             "0x08C35C",
-            "0x08C4C4",
+            "0x08C4C4"
         ],
         "author": "Gold_Sear",
         "description": "Make formation leader independent of escorts (this will make formation leaders able to flee).",
@@ -8086,7 +8086,7 @@
             "68 C4 57 42 00 8B"
         ],
         "replacement": [
-            "EB 0F"
+            "EB 0F",
             "89 CE 31 C0 EB 03"
         ],
         "offset": [
@@ -8184,7 +8184,7 @@
             "0x142690"
         ],
         "author": "adoxa",
-        "description": "Use '..\Saves' and '..\FreelancerShots' (relative to EXE) instead of your 'Documents\MyGames\Freelancer' and 'Pictures' folders.",
+        "description": "Use '..\\Saves' and '..\\FreelancerShots' (relative to EXE) instead of your 'Documents\\MyGames\\Freelancer' and 'Pictures' folders.",
         "dateAdded": 1447642320,
         "categories": [
             "Debugging"
