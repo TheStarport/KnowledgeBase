@@ -5777,73 +5777,25 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
-            "-0.257f"
-        ],
-        "offset": [
-            "0x1D3F30"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap number lower limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "0.274f"
-        ],
-        "offset": [
-            "0x1D3F34"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap number upper limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "0.31f"
-        ],
-        "offset": [
-            "0x1D3F38"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap letter left limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
+            "-0.257f",
+            "0.274f",
+            "0.31f",
             "-0.23f"
         ],
         "offset": [
+            "0x1D3F30",
+            "0x1D3F34",
+            "0x1D3F38",
             "0x1D3F3C"
         ],
         "author": "Gold_Sear",
-        "description": "NavMap letter right limit when zoomed.",
+        "description": "NavMap number/letter limits when zoomed (upper, lower, left, right respectively).",
         "dateAdded": 1677951120,
         "categories": [
             "HUD",
@@ -6510,73 +6462,25 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
-            "112000f"
-        ],
-        "offset": [
-            "0x0967F1"
-        ],
-        "author": "WhiskasTM",
-        "description": "+x limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge), only with above hack.",
-        "dateAdded": 1438480740,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
+            "112000f",
+            "-112000f",
+            "112000f",
             "-112000f"
         ],
         "offset": [
-            "0x096816"
-        ],
-        "author": "WhiskasTM",
-        "description": "-x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the left edge), only with above hack.",
-        "dateAdded": 1438480740,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "112000f"
-        ],
-        "offset": [
-            "0x09683B"
-        ],
-        "author": "WhiskasTM",
-        "description": "+y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the lower edge), only with above hack.",
-        "dateAdded": 1438480740,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "-112000f"
-        ],
-        "offset": [
+            "0x0967F1",
+            "0x096816",
+            "0x09683B",
             "0x096860"
         ],
         "author": "WhiskasTM",
-        "description": "-y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the upper edge), only with above hack.",
+        "description": "+x, -x, +y, -y limits for player ship icon on system and universe map (set to +-130000f (keep sign) to make the limit exactly on the edges), only with above hack.",
         "dateAdded": 1438480740,
         "categories": [
             "HUD",
@@ -6662,206 +6566,31 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
-            "1360i"
-        ],
-        "offset": [
-            "0x211C94"
-        ],
-        "author": "Gold_Sear",
-        "description": "MAP LEGEND identifier as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1358i"
-        ],
-        "offset": [
-            "0x08F0F1"
-        ],
-        "author": "Gold_Sear",
-        "description": "MAP LEGEND tooltip as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "968i"
-        ],
-        "offset": [
-            "0x211CA0"
-        ],
-        "author": "Gold_Sear",
-        "description": "BASE LIST identifier as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "964i"
-        ],
-        "offset": [
-            "0x08F158"
-        ],
-        "author": "Gold_Sear",
-        "description": "BASE LIST tool tip as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1338i"
-        ],
-        "offset": [
-            "0x211C84"
-        ],
-        "author": "Gold_Sear",
-        "description": "PHYSICAL MAP identifier as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1235i"
-        ],
-        "offset": [
-            "0x08F1C5"
-        ],
-        "author": "Gold_Sear",
-        "description": "PHYSICAL MAP tool tip as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1339i"
-        ],
-        "offset": [
-            "0x211C88"
-        ],
-        "author": "Gold_Sear",
-        "description": "POLITICAL MAP identifier as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1236i"
-        ],
-        "offset": [
-            "0x08F248"
-        ],
-        "author": "Gold_Sear",
-        "description": "POLITICAL MAP tool tip as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1340i"
-        ],
-        "offset": [
-            "0x211C8C"
-        ],
-        "author": "Gold_Sear",
-        "description": "PATROL PATH identifier as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "1313i"
-        ],
-        "offset": [
-            "0x08F2AF"
-        ],
-        "author": "Gold_Sear",
-        "description": "PATROL PATH tool tip as string ID in resources.dll.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
+            "1360i",
+            "968i",
+            "1338i",
+            "1339i",
+            "1340i",
             "1361i"
         ],
         "offset": [
+            "0x211C94",
+            "0x211CA0",
+            "0x211C84",
+            "0x211C88",
+            "0x211C8C",
             "0x211C98"
         ],
         "author": "Gold_Sear",
-        "description": "MINEABLE ZONES MAP identifier as string ID in resources.dll.",
+        "description": "System map filter identifiers (Map Legend, Base List, Physical Map, Political Map, Patrol Path Map, Mineable Zones Map) as string IDs in resources.dll.",
         "dateAdded": 1677951120,
         "categories": [
             "HUD",
@@ -6871,16 +6600,31 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
+            "1358i",
+            "964i",
+            "1235i",
+            "1236i",
+            "1313i",
             "1359i"
         ],
         "offset": [
+            "0x08F0F1",
+            "0x08F158",
+            "0x08F1C5",
+            "0x08F248",
+            "0x08F2AF",
             "0x08F31C"
         ],
         "author": "Gold_Sear",
-        "description": "MINEABLE ZONES MAP tool tip as string ID in resources.dll.",
+        "description": "System map filter tool tips (Map Legend, Base List, Physical Map, Political Map, Patrol Path Map, Mineable Zones Map) as string IDs in resources.dll.",
         "dateAdded": 1677951120,
         "categories": [
             "HUD",
