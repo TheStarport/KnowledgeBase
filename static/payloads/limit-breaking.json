@@ -1622,7 +1622,7 @@
             "trade",
             "UI",
             "HUD",
-            "NavMap"
+            "Navmap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -1646,7 +1646,7 @@
             "trade",
             "UI",
             "HUD",
-            "NavMap"
+            "Navmap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -1670,7 +1670,7 @@
             "trade",
             "UI",
             "HUD",
-            "NavMap"
+            "Navmap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1053"
     },
@@ -4256,7 +4256,7 @@
         "dateAdded": 1421539200,
         "categories": [
             "HUD",
-            "Contacts/Weapons List/Wireframe"
+            "Contact List"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -4291,11 +4291,12 @@
         ],
         "author": "M0tah",
         "description": "Maximum number of chat lines in chat history window (signed byte, so max of 127).",
-        "dateAdded": 0,
+        "dateAdded": 1234988400,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/3?_=1715991619394"
     },
     {
         "moduleName": [
@@ -4309,29 +4310,31 @@
         ],
         "author": "M0tah",
         "description": "Time in milliseconds chat text is displayed before disappearing.",
-        "dateAdded": 0,
+        "dateAdded": 1237537800,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/34?_=1715991619396"
     },
     {
         "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
-            "20b"
+            "32b"
         ],
         "offset": [
             "0x0691CF"
         ],
         "author": "M0tah",
         "description": "Maximum number of chat lines displayed at once -1.",
-        "dateAdded": 0,
+        "dateAdded": 1237537800,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/34?_=1715991619396"
     },
     {
         "original": [
@@ -4348,11 +4351,12 @@
         ],
         "author": "M0tah",
         "description": "Prevent chat from being displayed (but not new/departing player messages).",
-        "dateAdded": 0,
+        "dateAdded": 1240869600,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/55?_=1716499554426"
     },
     {
         "moduleName": [
@@ -4366,11 +4370,12 @@
         ],
         "author": "M0tah",
         "description": "Y position of chat input box.",
-        "dateAdded": 0,
+        "dateAdded": 1236138600,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/16?_=1716499554429"
     },
     {
         "moduleName": [
@@ -4384,11 +4389,12 @@
         ],
         "author": "M0tah",
         "description": "Height of chat input box.",
-        "dateAdded": 0,
+        "dateAdded": 1236138600,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/16?_=1716499554429"
     },
     {
         "moduleName": [
@@ -4402,11 +4408,12 @@
         ],
         "author": "M0tah",
         "description": "Width of chat input box.",
-        "dateAdded": 0,
+        "dateAdded": 1236138600,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/16?_=1716499554429"
     },
     {
         "moduleName": [
@@ -4460,7 +4467,8 @@
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1430/increasing-chatlog/13"
     },
     {
         "moduleName": [
@@ -4472,13 +4480,14 @@
         "offset": [
             "0x05E01B"
         ],
-        "author": "Viper",
+        "author": "viper",
         "description": "RGB color as Hex value of the messages 'New Player' etc.",
-        "dateAdded": 0,
+        "dateAdded": 1241804880,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/57?_=1716499554426"
     },
     {
         "original": [
@@ -4495,11 +4504,12 @@
         ],
         "author": "Cannon",
         "description": "Disable new player messages.",
-        "dateAdded": 0,
+        "dateAdded": 1255644960,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/186?_=1716499554433"
     },
     {
         "original": [
@@ -4516,11 +4526,12 @@
         ],
         "author": "Cannon",
         "description": "Disable departing player messages.",
-        "dateAdded": 0,
+        "dateAdded": 1255644960,
         "categories": [
             "HUD",
             "Chat"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/186?_=1716499554433"
     },
     {
         "moduleName": [
@@ -4534,10 +4545,12 @@
         ],
         "author": "Dev",
         "description": "Distance over which kilometers rather than meters are displayed (in the contact list).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
-            "HUD"
-        ]
+            "HUD",
+            "HUD Limits"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -4551,10 +4564,12 @@
         ],
         "author": "Dev",
         "description": "Distance over which kilometers rather than meters are displayed (target bracket in space).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -4568,10 +4583,12 @@
         ],
         "author": "Dev",
         "description": "Distance over which fractions of kilometers are not displayed.",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -4585,10 +4602,12 @@
         ],
         "author": "Dev",
         "description": "Distance over which 'far' is displayed rather than an actual distance.",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -4600,12 +4619,14 @@
         "offset": [
             "0x0D597A"
         ],
-        "author": "Dev",
+        "author": "Stone-D",
         "description": "Speed over which '---' is displayed.",
-        "dateAdded": 0,
+        "dateAdded": 1080756120,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
     {
         "original": [
@@ -4620,12 +4641,14 @@
         "offset": [
             "0x0D5984"
         ],
-        "author": "Unknown",
+        "author": "Stone-D",
         "description": "Remove speed display limit. (Alternative to 0x0D597A)",
-        "dateAdded": 0,
+        "dateAdded": 1080756120,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
     {
         "moduleName": [
@@ -4637,12 +4660,14 @@
         "offset": [
             "0x1D7E80"
         ],
-        "author": "M0tah",
+        "author": "Stone-D",
         "description": "Cruise speed display limit (note: same offset as Schmackbolzen's tradelane waypoint reached distance).",
-        "dateAdded": 0,
+        "dateAdded": 1080756120,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
     {
         "original": [
@@ -4657,12 +4682,14 @@
         "offset": [
             "0x0D5936"
         ],
-        "author": "Unknown",
+        "author": "Stone-D",
         "description": "Remove speed display limit. (Alternative to 0x1D7E80)",
-        "dateAdded": 0,
+        "dateAdded": 1080756120,
         "categories": [
-            "HUD"
-        ]
+            "HUD"",
+            "HUD Limits"
+        ],
+        "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
     {
         "moduleName": [
@@ -4676,11 +4703,12 @@
         ],
         "author": "Dev",
         "description": "Width of bars for energy, shield and hull gauges (for example, set to 1.0 to make the bars solid).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -4694,11 +4722,12 @@
         ],
         "author": "Cheese on Toast",
         "description": "Total width of bars for energy, shield and hull gauges (set to 1.0 to cover the entire bottom part of the screen from left to right).",
-        "dateAdded": 0,
+        "dateAdded": 1217130000,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/3?_=1716537923030"
     },
     {
         "moduleName": [
@@ -4712,11 +4741,12 @@
         ],
         "author": "Cheese on Toast",
         "description": "Height of the energy bars.",
-        "dateAdded": 0,
+        "dateAdded": 1217130000,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/3?_=1716537923030"
     },
     {
         "moduleName": [
@@ -4730,65 +4760,69 @@
         ],
         "author": "Cheese on Toast",
         "description": "Individual width of the energy bars (each individual block is a set size - you can only notice this change when the bars are not solid but are standard FL like).",
-        "dateAdded": 0,
+        "dateAdded": 1217130000,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/3?_=1716537923030"
     },
     {
         "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
-            "5EA1A7FF"
+            "5E A1 A7 FF"
         ],
         "offset": [
             "0x0D57AC"
         ],
         "author": "Adoxa",
         "description": "Color of power bar (blue,green,red,alpha).",
-        "dateAdded": 0,
+        "dateAdded": 1320489900,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
     {
         "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
-            "B53D3EFF"
+            "B5 3D 3E FF"
         ],
         "offset": [
             "0x0D5843"
         ],
         "author": "Adoxa",
         "description": "Color of shield bar (blue,green,red,alpha).",
-        "dateAdded": 0,
+        "dateAdded": 1320489900,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
     {
         "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
-            "332A78FF"
+            "33 2A 78 FF"
         ],
         "offset": [
             "0x0D588D"
         ],
         "author": "Adoxa",
         "description": "Color of hull bar (blue,green,red,alpha).",
-        "dateAdded": 0,
+        "dateAdded": 1320489900,
         "categories": [
             "HUD",
             "Status Bars"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
     {
         "moduleName": [
@@ -4802,11 +4836,12 @@
         ],
         "author": "M0tah",
         "description": "Damage indicator sensitivity.",
-        "dateAdded": 0,
+        "dateAdded": 1237279260,
         "categories": [
             "HUD",
             "Damage Indicators"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/37?_=1716586772560"
     },
     {
         "moduleName": [
@@ -4820,11 +4855,12 @@
         ],
         "author": "M0tah",
         "description": "Damage indicator fade time.",
-        "dateAdded": 0,
+        "dateAdded": 1237279260,
         "categories": [
             "HUD",
             "Damage Indicators"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/37?_=1716586772560"
     },
     {
         "moduleName": [
@@ -4837,12 +4873,32 @@
             "0x1C9804"
         ],
         "author": "Dev",
-        "description": "Multiplier for distance at which brackets around non-targeted ships in space will appear (1.25 = 3km, 37.5 = ~93km, etc).",
-        "dateAdded": 0,
+        "description": "Multiplier for distance at which brackets around non-targeted ships in space will appear (1.25 = 3km, 37.5 = ~93km, etc) (note: same offset as Legion's tractor beam width multiplier) (side note by FriendlyFire: increasing this will mess up asteroid spawning).",
+        "dateAdded": 1155821760,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.25f"
+        ],
+        "offset": [
+            "0x1C9804"
+        ],
+        "author": "Legion",
+        "description": "Multiplier for width of tractor beams (note: same offset as Dev's bracket drawn distance).",
+        "dateAdded": 1252015800,
+        "categories": [
+            "cargo",
+            "VFX"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/164?_=1716586772584"
     },
     {
         "moduleName": [
@@ -4856,11 +4912,12 @@
         ],
         "author": "Adoxa",
         "description": "Reciproke of brackets drawn distance.",
-        "dateAdded": 0,
+        "dateAdded": 1252304400,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/169?_=1716586772584"
     },
     {
         "original": [
@@ -4877,11 +4934,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove brackets from objects in space",
-        "dateAdded": 0,
+        "dateAdded": 1252304400,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/169?_=1716586772584"
     },
     {
         "original": [
@@ -4898,11 +4956,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove non-targeted brackets from objects in space",
-        "dateAdded": 0,
+        "dateAdded": 1302672480,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3881/a-couple-of-interesting-problems/8?_=1716588642852"
     },
     {
         "original": [
@@ -4919,11 +4978,12 @@
         ],
         "author": "M0tah",
         "description": "Remove HUD elements on objects in space - includes text, brackets, targeting reticles, and missile warnings.",
-        "dateAdded": 0,
+        "dateAdded": 1243148160,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/85?_=1716588642870"
     },
     {
         "original": [
@@ -4940,11 +5000,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove top-right bracket of target.",
-        "dateAdded": 0,
+        "dateAdded": 1292857080,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/582?_=1716588642872"
     },
     {
         "original": [
@@ -4961,11 +5022,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove bottom-left bracket of target.",
-        "dateAdded": 0,
+        "dateAdded": 1292857080,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/582?_=1716588642872"
     },
     {
         "original": [
@@ -4982,11 +5044,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove top-left bracket of target.",
-        "dateAdded": 0,
+        "dateAdded": 1292857080,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/582?_=1716588642872"
     },
     {
         "original": [
@@ -5003,11 +5066,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove bottom-right bracket of target.",
-        "dateAdded": 0,
+        "dateAdded": 1292857080,
         "categories": [
             "HUD",
             "Ship Brackets"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/582?_=1716588642872"
     },
     {
         "original": [
@@ -5024,11 +5088,12 @@
         ],
         "author": "M0tah",
         "description": "Add faction name to players in contact list.",
-        "dateAdded": 0,
+        "dateAdded": 1233872040,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1357/disabling-the-auto-rename-on-marked-objects?_=1716588642888"
     },
     {
         "original": [
@@ -5045,11 +5110,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove hostile & group ships from 'important' filter.",
-        "dateAdded": 0,
+        "dateAdded": 1272258180,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/397?_=1716588642890"
     },
     {
         "original": [
@@ -5066,11 +5132,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove hostile solars from 'important' filter.",
-        "dateAdded": 0,
+        "dateAdded": 1272258180,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/397?_=1716588642890"
     },
     {
         "original": [
@@ -5087,11 +5154,12 @@
         ],
         "author": "Adoxa",
         "description": "Freighters are named as large ships.",
-        "dateAdded": 0,
+        "dateAdded": 1280120760,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3151/hack-request-big-ship-names-on-freighter-type/3?_=1716588642892"
     },
     {
         "original": [
@@ -5108,11 +5176,12 @@
         ],
         "author": "Adoxa",
         "description": "Include player ships in 'ship' filter.",
-        "dateAdded": 0,
+        "dateAdded": 1272434820,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/415?_=1716588642894"
     },
     {
         "moduleName": [
@@ -5137,18 +5206,19 @@
             "Freelancer.exe"
         ],
         "original": [
-            "1.0f"
+            "3.0f"
         ],
         "offset": [
             "0x1D7964"
         ],
         "author": "Dev",
         "description": "Seconds between updates of the distances in the contact list.",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "HUD",
             "Contact List"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -5162,32 +5232,87 @@
         ],
         "author": "Fox",
         "description": "Seconds between updates of displays in weapons list.",
-        "dateAdded": 0,
+        "dateAdded": 1248665100,
         "categories": [
             "HUD",
             "Weapon List"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1953/delaydisplay?_=1716586779870"
     },
     {
         "original": [
-            "D9 54 24 18 D8 1D 74 74 5C 00 DF E0 F6 C4 41 75 18 8B 4C 24 18"
+            "54 24 18 D8 1D 74 74 5C 00 DF E0 F6 C4 41 75 18 8B 4C 24 18"
         ],
         "replacement": [
-            "D9 5C E4 18 8B 4C E4 18 85 C9 7E 1D 81 F9 00 00 80 3F 74 XX 90"
+            "5C E4 18 8B 4C E4 18 85 C9 7E 1D 81 F9 00 00 80 3F 74 XX 90"
         ],
         "moduleName": [
             "freelancer.exe"
         ],
         "offset": [
-            "0x0E6F67"
+            "0x0E6F68"
         ],
         "author": "Adoxa",
         "description": "Remove flashing in wireframe for items with hit_pts = 0 (replace XX with: 4E for yellow, 58 for aqua, 15 for dark blue).",
-        "dateAdded": 0,
+        "dateAdded": 1279172040,
         "categories": [
             "HUD",
             "Wireframes"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3103/hack-request-items-with-hit_pts-0-flash-in-wireframe/2?_=1716586779873"
+    },
+    {
+        "original": [
+            "33 F6",
+            "B5",
+            "B5",
+            "B5"
+        ],
+        "replacement": [
+            "B3 0x",
+            "9D",
+            "8D",
+            "8D"
+        ],
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0CF4E6",
+            "0x0CF501",
+            "0x0CF4F0",
+            "0x0CF518"
+        ],
+        "author": "Venemon",
+        "description": "Contact list switch before launch (x = 0 for important, 1 for ships, 2 for solar, 3 for loot, 4 for all).",
+        "dateAdded": 1705793940,
+        "categories": [
+            "HUD",
+            "Contact List"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1044?_=1716586779875"
+    },
+    {
+        "original": [
+            "3000f"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x1D95A8"
+        ],
+        "author": "Venemon",
+        "description": "Distance under which player names will appear in the contact list.",
+        "dateAdded": 1705793940,
+        "categories": [
+            "HUD",
+            "Contact List"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1044?_=1716586779875"
     },
     {
         "original": [
@@ -5204,11 +5329,12 @@
         ],
         "author": "Adoxa",
         "description": "Disable nanobot button.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "original": [
@@ -5225,11 +5351,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove nanobot count.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "original": [
@@ -5246,11 +5373,12 @@
         ],
         "author": "Adoxa",
         "description": "Disable battery button.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "original": [
@@ -5267,11 +5395,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove battery count.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "original": [
@@ -5288,11 +5417,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove Shield Battery use icon.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "original": [
@@ -5309,11 +5439,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove Nanobot use icon.",
-        "dateAdded": 0,
+        "dateAdded": 1262806320,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/239?_=1716586779877"
     },
     {
         "moduleName": [
@@ -5330,11 +5461,12 @@
         ],
         "author": "adoxa",
         "description": "Maximum number of nanobots displayed in HUD.",
-        "dateAdded": 0,
+        "dateAdded": 1258763500,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2356/exe-offset-bot-bat-hud-limit/3?_=1716586779879"
     },
     {
         "original": [
@@ -5351,11 +5483,12 @@
         ],
         "author": "Adoxa",
         "description": "Ignore nanobot HUD display limit (alternative to 0x0DE317 and 0x0DE310).",
-        "dateAdded": 0,
+        "dateAdded": 1258763500,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2356/exe-offset-bot-bat-hud-limit/3?_=1716586779879"
     },
     {
         "moduleName": [
@@ -5372,11 +5505,12 @@
         ],
         "author": "adoxa",
         "description": "Maximum number of batteries displayed in HUD",
-        "dateAdded": 0,
+        "dateAdded": 1258763500,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2356/exe-offset-bot-bat-hud-limit/3?_=1716586779879"
     },
     {
         "original": [
@@ -5393,11 +5527,12 @@
         ],
         "author": "Adoxa",
         "description": "Ignore battery HUD display limit (alternative to 0x0DE369 and 0x0DE362).",
-        "dateAdded": 0,
+        "dateAdded": 1258763500,
         "categories": [
             "HUD",
             "Nanobots/Shield Batteries"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2356/exe-offset-bot-bat-hud-limit/3?_=1716586779879"
     },
     {
         "moduleName": [
@@ -5411,11 +5546,12 @@
         ],
         "author": "Dev",
         "description": "Multiplier for subtargeting HUD animations (make smaller for faster).",
-        "dateAdded": 0,
+        "dateAdded": 1155821760,
         "categories": [
             "HUD",
             "Animation Speeds"
-        ]
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
     {
         "moduleName": [
@@ -5501,11 +5637,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap fade in/out speed.",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859?_=1716586779881"
     },
     {
         "moduleName": [
@@ -5519,11 +5656,12 @@
         ],
         "author": "Adoxa",
         "description": "Time taken to zoom out on NavMap (not zero).",
-        "dateAdded": 0,
+        "dateAdded": 1258296000,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/209?_=1716586779883"
     },
     {
         "moduleName": [
@@ -5537,11 +5675,12 @@
         ],
         "author": "Adoxa",
         "description": "Time taken to zoom in on NavMap (not zero).",
-        "dateAdded": 0,
+        "dateAdded": 1258296000,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/209?_=1716586779883"
     },
     {
         "moduleName": [
@@ -5555,11 +5694,12 @@
         ],
         "author": "Adoxa",
         "description": "NavMap zoom factor (lower increases zoom).",
-        "dateAdded": 0,
+        "dateAdded": 1279441680,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3119/hack-request-amount-of-zoom-in-system-navmap/2?_=1716586779885"
     },
     {
         "original": [
@@ -5576,11 +5716,12 @@
         ],
         "author": "Adoxa",
         "description": "Remove tradelane lines in NavMap.",
-        "dateAdded": 0,
+        "dateAdded": 1275034620,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3119/hack-request-amount-of-zoom-in-system-navmap/2?_=1716586779885"
     },
     {
         "moduleName": [
@@ -5594,11 +5735,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap protect-plane against shooting (height) (set 0 to shoot through NavMap).",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859?_=1716586779881"
     },
     {
         "moduleName": [
@@ -5612,11 +5754,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap protect-plane against shooting (width) (set 0 to shoot through NavMap).",
-        "dateAdded": 0,
+        "dateAdded": 1394236320,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/859?_=1716586779881"
     },
     {
         "moduleName": [
@@ -5630,83 +5773,40 @@
         ],
         "author": "Adoxa",
         "description": "Width of system connection line.",
-        "dateAdded": 0,
+        "dateAdded": 1392190620,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/844?_=1716586772604"
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
-            "00b"
+            "00",
+            "40",
+            "80",
+            "FF"
         ],
         "offset": [
-            "0x097501"
-        ],
-        "author": "Adoxa",
-        "description": "Red component of system connection line.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "40b"
-        ],
-        "offset": [
-            "0x097506"
-        ],
-        "author": "Adoxa",
-        "description": "Green component of system connection line.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "80b"
-        ],
-        "offset": [
-            "0x09750B"
-        ],
-        "author": "Adoxa",
-        "description": "Blue component of system connection line.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "FFb"
-        ],
-        "offset": [
+            "0x097501",
+            "0x097506",
+            "0x09750B",
             "0x097510"
         ],
         "author": "Adoxa",
-        "description": "Alpha component of system connection line.",
-        "dateAdded": 0,
+        "description": "RGBA of system connection line.",
+        "dateAdded": 1392190620,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/844?_=1716586772604"
     },
     {
         "moduleName": [
@@ -5718,13 +5818,14 @@
         "offset": [
             "0x0915F4"
         ],
-        "author": "Adoxa",
+        "author": "WhiskasTM",
         "description": "Size range of universe map stars.",
-        "dateAdded": 0,
+        "dateAdded": 1351314540,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4934/universe-map-background/3?_=1716586772614"
     },
     {
         "moduleName": [
@@ -5738,11 +5839,12 @@
         ],
         "author": "Adoxa",
         "description": "Minimum size universe map stars.",
-        "dateAdded": 0,
+        "dateAdded": 1392275100,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/846?_=1716586772620"
     },
     {
         "moduleName": [
@@ -5759,11 +5861,12 @@
         ],
         "author": "Adoxa",
         "description": "Color of universe map stars (x = 0-6 for RGBCMYW).",
-        "dateAdded": 0,
+        "dateAdded": 1392275100,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/846?_=1716586772620"
     },
     {
         "moduleName": [
@@ -5784,11 +5887,12 @@
         ],
         "author": "Adoxa",
         "description": "Prevent universe map stars from pulsing.",
-        "dateAdded": 0,
+        "dateAdded": 1392275100,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/846?_=1716586772620"
     },
     {
         "moduleName": [
@@ -5805,11 +5909,12 @@
         ],
         "author": "Adoxa",
         "description": "Prevent universe map stars from blinking.",
-        "dateAdded": 0,
+        "dateAdded": 1392275100,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/846?_=1716586772620"
     },
     {
         "moduleName": [
@@ -5823,11 +5928,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Negative z-coordinate of border between sectors 4 and 5 (divided by NavMapScale; set 0 to make the system map exactly according to system ini file).",
-        "dateAdded": 0,
+        "dateAdded": 1432644480,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/897?_=1714942171943"
     },
     {
         "moduleName": [
@@ -5841,11 +5947,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap letter grid alignment on screen, x-axis.",
-        "dateAdded": 0,
+        "dateAdded": 1321987500,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4423/probably-hack-request-increased-navmap-map-limit-break?_=1716586772630"
     },
     {
         "moduleName": [
@@ -5859,11 +5966,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap number grid alignment on screen, y-axis.",
-        "dateAdded": 0,
+        "dateAdded": 1321987500,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4423/probably-hack-request-increased-navmap-map-limit-break?_=1716586772630"
     },
     {
         "moduleName": [
@@ -5877,11 +5985,12 @@
         ],
         "author": "WhiskasTM",
         "description": "NavMap letter/number grid spacing.",
-        "dateAdded": 0,
+        "dateAdded": 1321987500,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4423/probably-hack-request-increased-navmap-map-limit-break?_=1716586772630"
     },
     {
         "moduleName": [
@@ -5898,11 +6007,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap letter alignment perpendicular to grid (both offsets must be changed)",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -5919,11 +6029,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap number alignment perpendicular to grid (both offsets must be changed).",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -5937,11 +6048,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap system/universe name x-displacement.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -5955,11 +6067,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap system/universe name y-displacement.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -5972,12 +6085,13 @@
             "0x1D3C48"
         ],
         "author": "WhiskasTM",
-        "description": "Stretch texture of Universe Map, x-axis.",
-        "dateAdded": 0,
+        "description": "Stretch texture of Universe Map, x-axis (set to 1.32d for complexe texture).",
+        "dateAdded": 1321987500,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4423/probably-hack-request-increased-navmap-map-limit-break?_=1716586772630"
     },
     {
         "moduleName": [
@@ -5991,11 +6105,31 @@
         ],
         "author": "WhiskasTM",
         "description": "Stretch texture of Universe Map, y-axis.",
-        "dateAdded": 0,
+        "dateAdded": 1321987500,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4423/probably-hack-request-increased-navmap-map-limit-break?_=1716586772630"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.01f"
+        ],
+        "offset": [
+            "0x1C99C8"
+        ],
+        "author": "WhiskasTM",
+        "description": "Frequency of twinkling diamonds on Universe Map.",
+        "dateAdded": 132416860,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6009,11 +6143,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map and in the same way speed of tradelane animation on system map (method 1).",
-        "dateAdded": 0,
+        "dateAdded": 132416860,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6027,11 +6162,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map (method 2).",
-        "dateAdded": 0,
+        "dateAdded": 132416860,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6045,11 +6181,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map (method 3).",
-        "dateAdded": 0,
+        "dateAdded": 132416860,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6061,13 +6198,14 @@
         "offset": [
             "0x915C8"
         ],
-        "author": "Gold_Sear",
+        "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map (method 4).",
-        "dateAdded": 0,
+        "dateAdded": 1351314540,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/4934/universe-map-background/3?_=1716586772614"
     },
     {
         "moduleName": [
@@ -6081,11 +6219,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch coordinates of all system diamonds on Universe Map (xy-axis).",
-        "dateAdded": 0,
+        "dateAdded": 132416860,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6099,11 +6238,12 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch coordinates of all system diamonds on Universe Map (y-axis).",
-        "dateAdded": 0,
+        "dateAdded": 132416860,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/690?_=1716586772632"
     },
     {
         "moduleName": [
@@ -6155,12 +6295,13 @@
             "0x0946DE"
         ],
         "author": "WhiskasTM",
-        "description": "On 'NavMap not available' initially do hide some controls ",
-        "dateAdded": 0,
+        "description": "On 'NavMap not available' initially do hide some controls.",
+        "dateAdded": 1394929560,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/867?_=1716586772634"
     },
     {
         "moduleName": [
@@ -6176,180 +6317,44 @@
             "0x0967CD"
         ],
         "author": "Adoxa",
-        "description": "Allow all positions on Universe Map (visible region roughly -2.4,-2.7 to 17.3,17) (for system diamonds only; use below hacks to also allow player ship icon to move to all positions).",
-        "dateAdded": 0,
+        "description": "Allow all positions on Universe Map for system diamonds as well as allow all positions on system map for object thumbnails (use below hacks to also allow player ship icon to move to all positions).",
+        "dateAdded": 1398185280,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/870?_=1716586772638"
     },
     {
         "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
-            "75"
+            "68 3E 5D",
+            "64 3E 5D",
+            "68 3E 5D",
+            "64 3E 5D"
         ],
         "replacement": [
-            "EB"
+            "F1 67 49",
+            "16 68 49",
+            "3B 68 49",
+            "60 68 49"
         ],
         "offset": [
-            "0x096A1B"
-        ],
-        "author": "WhiskasTM",
-        "description": "Ignore +x limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "75"
-        ],
-        "replacement": [
-            "EB"
-        ],
-        "offset": [
-            "0x096A36"
-        ],
-        "author": "WhiskasTM",
-        "description": "Ignore -x limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "75"
-        ],
-        "replacement": [
-            "EB"
-        ],
-        "offset": [
-            "0x096A4D"
-        ],
-        "author": "WhiskasTM",
-        "description": "Ignore +y limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "75"
-        ],
-        "replacement": [
-            "EB"
-        ],
-        "offset": [
-            "0x096A68"
-        ],
-        "author": "WhiskasTM",
-        "description": "Ignore -y limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "68 3E 5D 00"
-        ],
-        "replacement": [
-            "F1 67 49 00"
-        ],
-        "offset": [
-            "0x0967E3"
-        ],
-        "author": "WhiskasTM",
-        "description": "Use new +x limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "68 3E 5D 00"
-        ],
-        "replacement": [
-            "16 68 49 00"
-        ],
-        "offset": [
-            "0x096808"
-        ],
-        "author": "WhiskasTM",
-        "description": "Use new -x limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "68 3E 5D 00"
-        ],
-        "replacement": [
-            "3B 68 49 00"
-        ],
-        "offset": [
-            "0x09682D"
-        ],
-        "author": "WhiskasTM",
-        "description": "Use new +y limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "68 3E 5D 00"
-        ],
-        "replacement": [
-            "60 68 49 00"
-        ],
-        "offset": [
+            "0x0967E3",
+            "0x096808",
+            "0x09682D",
             "0x096852"
         ],
         "author": "WhiskasTM",
-        "description": "Use new -y limit for player ship icon on system and universe map.",
-        "dateAdded": 0,
+        "description": "Use new limits for player ship icon on system and universe map (+x,-x,y,-y resp.), use with below offsets.",
+        "dateAdded": 1438480740,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
     },
     {
         "moduleName": [
@@ -6362,12 +6367,13 @@
             "0x0967F1"
         ],
         "author": "WhiskasTM",
-        "description": "+x limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
-        "dateAdded": 0,
+        "description": "+x limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge), only with above hack.",
+        "dateAdded": 1438480740,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
     },
     {
         "moduleName": [
@@ -6380,12 +6386,13 @@
             "0x096816"
         ],
         "author": "WhiskasTM",
-        "description": "-x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
-        "dateAdded": 0,
+        "description": "-x limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the left edge), only with above hack.",
+        "dateAdded": 1438480740,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
     },
     {
         "moduleName": [
@@ -6398,12 +6405,13 @@
             "0x09683B"
         ],
         "author": "WhiskasTM",
-        "description": "+y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the right edge).",
-        "dateAdded": 0,
+        "description": "+y limit for player ship icon on system and universe map (set to 130000f to make the limit exactly on the lower edge), only with above hack.",
+        "dateAdded": 1438480740,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
     },
     {
         "moduleName": [
@@ -6416,12 +6424,13 @@
             "0x096860"
         ],
         "author": "WhiskasTM",
-        "description": "-y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the right edge).",
-        "dateAdded": 0,
+        "description": "-y limit for player ship icon on system and universe map (set to -130000f to make the limit exactly on the upper edge), only with above hack.",
+        "dateAdded": 1438480740,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/912?_=1716586772640"
     },
     {
         "moduleName": [
@@ -6434,12 +6443,13 @@
             "0x917CC"
         ],
         "author": "Gold_Sear",
-        "description": "Size of system map; beware, effects size of player ship icon as well.",
-        "dateAdded": 0,
+        "description": "Size of system map; beware, affects size of player ship icon as well.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6453,11 +6463,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Size of sectors in F9 info screen; needs to keep ratio with variable above.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6471,11 +6482,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Starting point of sector calculation in F9 info screen, needs to be -3*variable above.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6489,11 +6501,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap number lower limit when zoomed.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6507,11 +6520,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap number upper limit when zoomed.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6525,11 +6539,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap letter left limit when zoomed.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6543,11 +6558,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap letter right limit when zoomed.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6563,12 +6579,13 @@
             "0x9FC9B"
         ],
         "author": "Gold_Sear",
-        "description": "NavMap letter/number zoom factor.",
-        "dateAdded": 0,
+        "description": "NavMap letter/number zoom factor (both offsets must be changed).",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6585,11 +6602,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6602,12 +6620,13 @@
             "0x211C94"
         ],
         "author": "Gold_Sear",
-        "description": "MAP LEGEND identifier.",
-        "dateAdded": 0,
+        "description": "MAP LEGEND identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6620,12 +6639,13 @@
             "0x08F0F1"
         ],
         "author": "Gold_Sear",
-        "description": "MAP LEGEND tooltip.",
-        "dateAdded": 0,
+        "description": "MAP LEGEND tooltip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6638,12 +6658,13 @@
             "0x211CA0"
         ],
         "author": "Gold_Sear",
-        "description": "BASE LIST identifier.",
-        "dateAdded": 0,
+        "description": "BASE LIST identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6656,12 +6677,13 @@
             "0x08F158"
         ],
         "author": "Gold_Sear",
-        "description": "BASE LIST tool tip.",
-        "dateAdded": 0,
+        "description": "BASE LIST tool tip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6674,12 +6696,13 @@
             "0x211C84"
         ],
         "author": "Gold_Sear",
-        "description": "PHYSICAL MAP identifier",
-        "dateAdded": 0,
+        "description": "PHYSICAL MAP identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6692,12 +6715,13 @@
             "0x08F1C5"
         ],
         "author": "Gold_Sear",
-        "description": "PHYSICAL MAP tool tip.",
-        "dateAdded": 0,
+        "description": "PHYSICAL MAP tool tip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6710,12 +6734,13 @@
             "0x211C88"
         ],
         "author": "Gold_Sear",
-        "description": "POLITICAL MAP identifier.",
-        "dateAdded": 0,
+        "description": "POLITICAL MAP identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6728,12 +6753,13 @@
             "0x08F248"
         ],
         "author": "Gold_Sear",
-        "description": "POLITICAL MAP tool tip.",
-        "dateAdded": 0,
+        "description": "POLITICAL MAP tool tip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6746,12 +6772,13 @@
             "0x211C8C"
         ],
         "author": "Gold_Sear",
-        "description": "PATROL PATH identifier.",
-        "dateAdded": 0,
+        "description": "PATROL PATH identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6764,30 +6791,13 @@
             "0x08F2AF"
         ],
         "author": "Gold_Sear",
-        "description": "PATROL PATH tool tip.",
-        "dateAdded": 0,
+        "description": "PATROL PATH tool tip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
         ],
-        "original": [
-            "1313i"
-        ],
-        "offset": [
-            "0x08F2AF"
-        ],
-        "author": "Gold_Sear",
-        "description": "PATROL PATH tool tip.",
-        "dateAdded": 0,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ]
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6800,12 +6810,13 @@
             "0x211C98"
         ],
         "author": "Gold_Sear",
-        "description": "MINEABLE ZONES MAP identifier.",
-        "dateAdded": 0,
+        "description": "MINEABLE ZONES MAP identifier as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6818,12 +6829,13 @@
             "0x08F31C"
         ],
         "author": "Gold_Sear",
-        "description": "MINEABLE ZONES MAP tool tip.",
-        "dateAdded": 0,
+        "description": "MINEABLE ZONES MAP tool tip as string ID in resources.dll.",
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6837,11 +6849,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Upper limit for labels on NavMap.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6855,11 +6868,12 @@
         ],
         "author": "Gold_Sear",
         "description": "Lower limit for labels on NavMap.",
-        "dateAdded": 0,
+        "dateAdded": 1677951120,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6884,11 +6898,12 @@
         ],
         "author": "Gold_Sear",
         "description": "NavMap zoom move limit",
-        "dateAdded": 0,
+        "dateAdded": 1678402200,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1008?_=1716586779887"
     },
     {
         "moduleName": [
@@ -6942,19 +6957,19 @@
             "freelancer.exe"
         ],
         "original": [
-            "D8 15 40 3E 5D 00",
-            "D8 25 40 3E 5D 00"
+            "40 3E",
+            "40 3E"
         ],
         "replacement": [
-            "D8 15 CC 2E 5D 00",
-            "D8 25 CC 2E 5D 00"
+            "CC 2E",
+            "CC 2E"
         ],
         "offset": [
-            "0x96323",
-            "0x96336"
+            "0x96325",
+            "0x96338"
         ],
         "author": "Venemon",
-        "description": "Group member's nav position refreshes every second",
+        "description": "Group member's nav position refreshes every second.",
         "dateAdded": 0,
         "categories": [
             "HUD",
@@ -6980,11 +6995,12 @@
         ],
         "author": "Venemon, BC46",
         "description": "Show all group members on the nav map",
-        "dateAdded": 0,
+        "dateAdded": 1714946280,
         "categories": [
             "HUD",
             "Navmap"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1086?_=1716586779892"
     },
     {
         "moduleName": [
@@ -6998,11 +7014,12 @@
         ],
         "author": "M0tah",
         "description": "Distance from a waypoint when it is considered reached.",
-        "dateAdded": 0,
+        "dateAdded": 1248655080,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1945/changing-the-waypoint-size/9?_=1716586779894"
     },
     {
         "moduleName": [
@@ -7016,11 +7033,12 @@
         ],
         "author": "Schmackbolzen",
         "description": "Distance from a waypoint within a tradelane when it is considered reached.",
-        "dateAdded": 0,
+        "dateAdded": 1248688260,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/1945/changing-the-waypoint-size/18?_=1716586779894"
     },
     {
         "moduleName": [
@@ -7037,11 +7055,34 @@
         ],
         "author": "Adoxa",
         "description": "Show aiming lead on everything.",
-        "dateAdded": 0,
+        "dateAdded": 1276417980,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/3006/hack-request-display-aiming-lead-red-x-on-solars/2?_=1716586779898"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0F 85"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "offset": [
+            "0x0F0459"
+        ],
+        "author": "adoxa",
+        "description": "Hide aiming lead on everything.",
+        "dateAdded": 1483752260,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/25?_=1716586779900"
     },
     {
         "moduleName": [
@@ -7058,11 +7099,102 @@
         ],
         "author": "Adoxa",
         "description": "Show aiming lead on all ships.",
-        "dateAdded": 0,
+        "dateAdded": 1377735240,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/5262/giving-all-ships-a-lead-indicator-when-unselected/2?_=1716586779904"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0F 84"
+        ],
+        "replacement": [
+            "90 E9"
+        ],
+        "offset": [
+            "0x0EC286"
+        ],
+        "author": "adoxa",
+        "description": "Hide aiming lead on hostile ships.",
+        "dateAdded": 1377735240,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/5262/giving-all-ships-a-lead-indicator-when-unselected/2?_=1716586779904"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "33 C0 8A C1 0F",
+            "B6 FE C1 E7 08",
+            "0F B6 CD 0B"
+        ],
+        "replacement": [
+            "BF <bbggrraa>",
+            "BB <bbggrraa>",
+            "33 F6 EB 18"
+        ],
+        "offset": [
+            "0x0F20A4",
+            "0x0F20A9",
+            "0x0F20AE"
+        ],
+        "author": "adoxa",
+        "description": "Crosshair color.",
+        "dateAdded": 1483793840,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2.0f"
+        ],
+        "offset": [
+            "0x0F216C"
+        ],
+        "author": "adoxa",
+        "description": "Crosshair horizontal thickness.",
+        "dateAdded": 1483793840,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "2.0f"
+        ],
+        "offset": [
+            "0x0F21BD"
+        ],
+        "author": "adoxa",
+        "description": "Crosshair vertical thickness.",
+        "dateAdded": 1483793840,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
     },
     {
         "moduleName": [
@@ -7075,12 +7207,31 @@
             "0x0D1750"
         ],
         "author": "FriendlyFire",
-        "description": "Range at which an object is no longer 'unknown' as well as radar detection range for some solars such as Jump Holes",
+        "description": "Range at which an object is no longer 'unknown' as well as radar detection range for some solars such as Jump Holes.",
         "dateAdded": 0,
         "categories": [
             "HUD",
-            "Other"
+            "Contact List"
         ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "200f"
+        ],
+        "offset": [
+            "0x213EC4"
+        ],
+        "author": "adoxa",
+        "description": "Solar radius (<root.3db=''>\Level0\VMeshRef) under which range above applies.",
+        "dateAdded": 1292855820,
+        "categories": [
+            "HUD",
+            "Contact List"
+        ],
+        "url": "https://the-starport.com/forums/topic/3598/scanner-detection-range-of-special-solars/9?_=1716586779910"
     },
     {
         "moduleName": [
@@ -7094,11 +7245,12 @@
         ],
         "author": "Adoxa",
         "description": "Aspect ratio of the cinematics.",
-        "dateAdded": 0,
+        "dateAdded": 1251714240,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/142?_=1716586779912"
     },
     {
         "moduleName": [
@@ -7137,13 +7289,14 @@
             "0x0A6CCE",
             "0x0A6CD9"
         ],
-        "author": "Cannon",
+        "author": "adoxa",
         "description": "Disable F1 menu in space while playing multiplayer.",
-        "dateAdded": 0,
+        "dateAdded": 1251125100,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2104/making-f1-behave-as-in-sp/2?_=1716586779916"
     },
     {
         "moduleName": [
@@ -7186,12 +7339,13 @@
             "0x19E103"
         ],
         "author": "adoxa",
-        "description": "Shoot through HUD",
-        "dateAdded": 0,
+        "description": "Shoot through HUD.",
+        "dateAdded": 1272969780,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2870/steering-arrows/9?_=1716586779926"
     },
     {
         "moduleName": [
@@ -7208,11 +7362,62 @@
         ],
         "author": "Adoxa",
         "description": "Bypass ESRB notice.",
-        "dateAdded": 0,
+        "dateAdded": 1271227440,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "E8 05 D5 F0 FF",
+            "8B 44 24 10"
+        ],
+        "replacement": [
+            "B8 01 00 00 00",
+            "90 90 90 90"
+        ],
+        "offset": [
+            "0x166D56",
+            "0x166D66"
+        ],
+        "author": "Adoxa",
+        "description": "Auto-select internet.",
+        "dateAdded": 1271227440,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "E8 05 D5 F0 FF",
+            "48"
+        ],
+        "replacement": [
+            "B8 01 00 00 00",
+            "90"
+        ],
+        "offset": [
+            "0x166D56",
+            "0x166D6A"
+        ],
+        "author": "Adoxa",
+        "description": "Auto-select LAN.",
+        "dateAdded": 1271227440,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
     },
     {
         "moduleName": [
@@ -7237,11 +7442,38 @@
         ],
         "author": "adoxa",
         "description": "Remove the NEW GAME and LOAD GAME buttons on the main menu.",
-        "dateAdded": 0,
+        "dateAdded": 1259362800,
         "categories": [
             "HUD",
             "Other"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/2769/how-do-i-change-button-text/5?_=1716760502434"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "C7 44 24 70 00 00 00 00 C7 44 24 74 00 00 00 00 C7 44 24 78",
+            "80 3E"
+        ],
+        "replacement": [
+            "E8 47 E5 EA FF 83 7C 24 50 02 75 11 DB 05 4C 46 57 00 EB 0D",
+            "00 00",
+        ],
+        "offset": [
+            "0x174634",
+            "0x174744"
+        ],
+        "author": "adoxa",
+        "description": "Remove the MULTIPLAYER button on the main menu.",
+        "dateAdded": 1404020520,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/20?_=1716586779932"
     },
     {
         "moduleName": [
@@ -7284,23 +7516,26 @@
     },
     {
         "moduleName": [
+            "freelancer.exe",
             "freelancer.exe"
         ],
         "original": [
-            "32b"
+            "32b",
+            "8b"
         ],
         "offset": [
-            "0x0B1375"
+            "0x0B1375",
+            "0x0B1377"
         ],
         "author": "Adoxa",
-        "description": "Maximum value for the TOTAL SOUND ELEMENTS slider in the audio options menu.",
-        "dateAdded": 0,
+        "description": "Max and min value for the TOTAL SOUND ELEMENTS slider in the audio options menu.",
+        "dateAdded": 1419817440,
         "categories": [
             "HUD",
             "Other"
-        ]
-    },
-    {
+        ],
+        "url": "https://the-starport.com/forums/topic/5153/optlist-ini/7?_=1716586779936"
+    },    {
         "moduleName": [
             "Freelancer.exe",
             "common.dll"
@@ -7793,7 +8028,7 @@
         "description": "Allow 64 simultaneous firings.",
         "dateAdded": 1288363740,
         "categories": [
-            "equipment"
+            "Equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/528?_=1715799407222"
     },
@@ -7830,7 +8065,7 @@
         "description": "Need level to buy ships/equipment in MP",
         "dateAdded": 1333520160,
         "categories": [
-            "equipment"
+            "Equipment"
         ],
         "url": "https://the-starport.com/forums/topic/3307/level-requirements-for-mp/19?_=1715799407245"
     },
@@ -8031,7 +8266,7 @@
         "description": "Save costume accessories",
         "dateAdded": 1546237440,
         "categories": [
-            "equipment"
+            "Equipment"
         ],
         "url": "https://the-starport.com/forums/topic/4408/where-d-my-neuralnet-go/7?_=1715799407258"
     },
@@ -8294,7 +8529,7 @@
         "description": "Using thruster hp_type for [Light].",
         "dateAdded": 1652060880,
         "categories": [
-            "equipment"
+            "Equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
@@ -8315,7 +8550,7 @@
         "description": "Using thruster hp_type for [AttachedFX].",
         "dateAdded": 1652060880,
         "categories": [
-            "equipment"
+            "Equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
@@ -8357,7 +8592,7 @@
         "description": "Removes the initial angular velocity of mines when dropped.",
         "dateAdded": 0,
         "categories": [
-            "equipment"
+            "Equipment"
         ]
     },
     {
