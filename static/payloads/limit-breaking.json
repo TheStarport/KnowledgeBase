@@ -4566,7 +4566,7 @@
         "description": "Distance over which kilometers rather than meters are displayed (target bracket in space).",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
@@ -4585,7 +4585,7 @@
         "description": "Distance over which fractions of kilometers are not displayed.",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
@@ -4604,7 +4604,7 @@
         "description": "Distance over which 'far' is displayed rather than an actual distance.",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
@@ -4623,7 +4623,7 @@
         "description": "Speed over which '---' is displayed.",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
@@ -4645,7 +4645,7 @@
         "description": "Remove speed display limit. (Alternative to 0x0D597A)",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
@@ -4664,7 +4664,7 @@
         "description": "Cruise speed display limit (note: same offset as Schmackbolzen's tradelane waypoint reached distance).",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
@@ -4686,7 +4686,7 @@
         "description": "Remove speed display limit. (Alternative to 0x1D7E80)",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD"",
+            "HUD",
             "HUD Limits"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
