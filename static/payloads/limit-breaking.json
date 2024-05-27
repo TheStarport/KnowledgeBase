@@ -8028,7 +8028,7 @@
         "description": "Allow 64 simultaneous firings.",
         "dateAdded": 1288363740,
         "categories": [
-            "Equipment"
+            "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/528?_=1715799407222"
     },
@@ -8065,7 +8065,7 @@
         "description": "Need level to buy ships/equipment in MP",
         "dateAdded": 1333520160,
         "categories": [
-            "Equipment"
+            "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/3307/level-requirements-for-mp/19?_=1715799407245"
     },
@@ -8266,7 +8266,7 @@
         "description": "Save costume accessories",
         "dateAdded": 1546237440,
         "categories": [
-            "Equipment"
+            "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/4408/where-d-my-neuralnet-go/7?_=1715799407258"
     },
@@ -8529,7 +8529,7 @@
         "description": "Using thruster hp_type for [Light].",
         "dateAdded": 1652060880,
         "categories": [
-            "Equipment"
+            "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
@@ -8550,7 +8550,7 @@
         "description": "Using thruster hp_type for [AttachedFX].",
         "dateAdded": 1652060880,
         "categories": [
-            "Equipment"
+            "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1005?_=1715848738576"
     },
@@ -8592,7 +8592,7 @@
         "description": "Removes the initial angular velocity of mines when dropped.",
         "dateAdded": 0,
         "categories": [
-            "Equipment"
+            "equipment"
         ]
     },
     {
