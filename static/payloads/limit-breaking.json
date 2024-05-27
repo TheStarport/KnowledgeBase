@@ -5702,6 +5702,156 @@
         "url": "https://the-starport.com/forums/topic/3119/hack-request-amount-of-zoom-in-system-navmap/2?_=1716586779885"
     },
     {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "8.6f",
+            "8.6f"
+        ],
+        "offset": [
+            "0x9FCF6",
+            "0x9FC9B"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter/number zoom factor (both offsets must be changed).",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 0D 28 3F 5D"
+        ],
+        "replacement": [
+            "D8 35 F6 FC 49"
+        ],
+        "offset": [
+            "0x9F2B4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "E0 75 5C",
+            "E0 75 5C",
+            "90 90 90 90"
+        ],
+        "replacement": [
+            "9C 63 49",
+            "9C 63 49",
+            "0.5f"
+        ],
+        "offset": [
+            "0x095900",
+            "0x095916",
+            "0x09639C"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap zoom move limit",
+        "dateAdded": 1678402200,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1008?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.257f"
+        ],
+        "offset": [
+            "0x1D3F30"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap number lower limit when zoomed.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.274f"
+        ],
+        "offset": [
+            "0x1D3F34"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap number upper limit when zoomed.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.31f"
+        ],
+        "offset": [
+            "0x1D3F38"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter left limit when zoomed.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-0.23f"
+        ],
+        "offset": [
+            "0x1D3F3C"
+        ],
+        "author": "Gold_Sear",
+        "description": "NavMap letter right limit when zoomed.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
         "original": [
             "64"
         ],
@@ -5921,25 +6071,6 @@
             "Freelancer.exe"
         ],
         "original": [
-            "2700f"
-        ],
-        "offset": [
-            "0x1D2EF4"
-        ],
-        "author": "Gold_Sear",
-        "description": "Negative z-coordinate of border between sectors 4 and 5 (divided by NavMapScale; set 0 to make the system map exactly according to system ini file).",
-        "dateAdded": 1432644480,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/897?_=1714942171943"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
             "0.279f"
         ],
         "offset": [
@@ -6079,6 +6210,27 @@
             "Freelancer.exe"
         ],
         "original": [
+            "-0.198f",
+            "0.192f"
+        ],
+        "offset": [
+            "0x1D3EF0",
+            "0x1D3EF4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Upper resp. lower limit for labels on NavMap.",
+        "dateAdded": 1677951120,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
             "1.5d"
         ],
         "offset": [
@@ -6124,7 +6276,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Frequency of twinkling diamonds on Universe Map.",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6143,7 +6295,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map and in the same way speed of tradelane animation on system map (method 1).",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6162,7 +6314,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map (method 2).",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6181,7 +6333,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch scale of all system diamonds on Universe Map (method 3).",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6219,7 +6371,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch coordinates of all system diamonds on Universe Map (xy-axis).",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6238,7 +6390,7 @@
         ],
         "author": "WhiskasTM",
         "description": "Bunch coordinates of all system diamonds on Universe Map (y-axis).",
-        "dateAdded": 132416860,
+        "dateAdded": 1322416860,
         "categories": [
             "HUD",
             "Navmap"
@@ -6437,6 +6589,25 @@
             "Freelancer.exe"
         ],
         "original": [
+            "2700f"
+        ],
+        "offset": [
+            "0x1D2EF4"
+        ],
+        "author": "Gold_Sear",
+        "description": "Negative z-coordinate of border between sectors 4 and 5 (divided by NavMapScale; set 0 to make the system map exactly according to system ini file).",
+        "dateAdded": 1432644480,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/897?_=1714942171943"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
             "112000f"
         ],
         "offset": [
@@ -6482,126 +6653,6 @@
         ],
         "author": "Gold_Sear",
         "description": "Starting point of sector calculation in F9 info screen, needs to be -3*variable above.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "-0.257f"
-        ],
-        "offset": [
-            "0x1D3F30"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap number lower limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "0.274f"
-        ],
-        "offset": [
-            "0x1D3F34"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap number upper limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "0.31f"
-        ],
-        "offset": [
-            "0x1D3F38"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap letter left limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "-0.23f"
-        ],
-        "offset": [
-            "0x1D3F3C"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap letter right limit when zoomed.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe",
-            "Freelancer.exe"
-        ],
-        "original": [
-            "8.6f",
-            "8.6f"
-        ],
-        "offset": [
-            "0x9FCF6",
-            "0x9FC9B"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap letter/number zoom factor (both offsets must be changed).",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "DC 0D 28 3F 5D"
-        ],
-        "replacement": [
-            "D8 35 F6 FC 49"
-        ],
-        "offset": [
-            "0x9F2B4"
-        ],
-        "author": "Gold_Sear",
-        "description": "Align NavMap zoom factor to letter/number zoom factor; redundants adoxa's NavMap zoom factor, now controlled by the NavMap letter/number zoom factor.",
         "dateAdded": 1677951120,
         "categories": [
             "HUD",
@@ -6836,74 +6887,6 @@
             "Navmap"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "-0.198f"
-        ],
-        "offset": [
-            "0x1D3EF0"
-        ],
-        "author": "Gold_Sear",
-        "description": "Upper limit for labels on NavMap.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "Freelancer.exe"
-        ],
-        "original": [
-            "0.192f"
-        ],
-        "offset": [
-            "0x1D3EF4"
-        ],
-        "author": "Gold_Sear",
-        "description": "Lower limit for labels on NavMap.",
-        "dateAdded": 1677951120,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1007?_=1716586779887"
-    },
-    {
-        "moduleName": [
-            "freelancer.exe",
-            "freelancer.exe",
-            "freelancer.exe"
-        ],
-        "original": [
-            "E0 75 5C",
-            "E0 75 5C",
-            "90 90 90 90"
-        ],
-        "replacement": [
-            "9C 63 49",
-            "9C 63 49",
-            "0.5f"
-        ],
-        "offset": [
-            "0x095900",
-            "0x095916",
-            "0x09639C"
-        ],
-        "author": "Gold_Sear",
-        "description": "NavMap zoom move limit",
-        "dateAdded": 1678402200,
-        "categories": [
-            "HUD",
-            "Navmap"
-        ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1008?_=1716586779887"
     },
     {
         "moduleName": [
