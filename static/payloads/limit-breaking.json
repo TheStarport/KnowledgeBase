@@ -7225,7 +7225,7 @@
             "0x213EC4"
         ],
         "author": "adoxa",
-        "description": "Solar radius (<root.3db=''>\Level0\VMeshRef) under which range above applies.",
+        "description": "Solar radius (<root.3db=''>\\Level0\\VMeshRef) under which range above applies.",
         "dateAdded": 1292855820,
         "categories": [
             "HUD",
@@ -7460,7 +7460,7 @@
         ],
         "replacement": [
             "E8 47 E5 EA FF 83 7C 24 50 02 75 11 DB 05 4C 46 57 00 EB 0D",
-            "00 00",
+            "00 00"
         ],
         "offset": [
             "0x174634",
