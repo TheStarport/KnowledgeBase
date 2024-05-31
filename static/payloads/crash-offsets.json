@@ -719,5 +719,12 @@
         "author": "Katz, Ven",
         "description": "Possibly relates to a bad ship archetype. The function this crashes in is related to creating or showing a ship in a player's scanner range. Exact cause is unclear.",
         "dateAdded": 1715263201
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x000f1e2a",
+        "author": "McDyson",
+        "description": "Possibly relates to a malformed .cmp or .3db model. Exact cause is currently unclear.",
+        "dateAdded": 1717192266
     }
 ]
