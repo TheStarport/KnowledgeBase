@@ -126,11 +126,11 @@
         ],
         "author": "Adoxa",
         "description": "Allow the `fc_n_grp` faction to drop `[phantom_loot]` loot.",
-        "dateAdded": 1312196400,
+        "dateAdded": 1296749520,
         "categories": [
             "cargo"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/667?_=1706352734818"
+        "url": "https://the-starport.com/forums/topic/1368/missions-missions/47?_=1717279429694"
     },
     {
         "moduleName": [
@@ -6431,6 +6431,9 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
             "Freelancer.exe"
         ],
         "original": [
@@ -8629,5 +8632,601 @@
             "Server Operation"
         ],
         "url": "http://web.archive.org/web/20150406020013/http://the-starport.net/modules/mediawiki/index.php/Disabling_IPv6"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "34",
+            "34"
+        ],
+        "replacement": [
+            "00",
+            "00"
+        ],
+        "offset": [
+            "0x0518C7",
+            "0x0519B7"
+        ],
+        "author": "adoxa",
+        "description": "Allow fc_n_grp for randommissions.",
+        "dateAdded": 1296749520,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/1368/missions-missions/47?_=1717279429694"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2500f"
+        ],
+        "offset": [
+            "0x11C2C4"
+        ],
+        "author": "Vital",
+        "description": "Distance at which NPC mission target ships in randommissions are created.",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2625f"
+        ],
+        "offset": [
+            "0x0F17D9"
+        ],
+        "author": "Vital",
+        "description": "Distance at which NPC wave ships in randommissions are created.",
+        "dateAdded": 1243098100,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/82?_=1717279429714"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "7500f"
+        ],
+        "offset": [
+            "0x11C2B0"
+        ],
+        "author": "Vital",
+        "description": "Distance at which mission target solars in randommissions are created.",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "6000f"
+        ],
+        "offset": [
+            "0x11CBCC"
+        ],
+        "author": "Vital",
+        "description": "Distance from 1st mission waypoint that second waypoint and ships at it in randommissions are created.",
+        "dateAdded": 1243050480,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/81?_=1717279429714"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "3500f"
+        ],
+        "offset": [
+            "0x11C2C8"
+        ],
+        "author": "Vital",
+        "description": "Core retreat distance from randommission waypoint, modified by content.dll 0x11CAB4.",
+        "dateAdded": 1243153080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/86?_=1717279429714"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "250f"
+        ],
+        "offset": [
+            "0x11CAB4"
+        ],
+        "author": "Vital",
+        "description": "Amount to add to core retreat distance (content.dll 0x11C2C8) to work out a real retreat distance, and amount to subtract from core retreat distance to work out a real back-in-range distance.",
+        "dateAdded": 1243153080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/86?_=1717279429714"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "2000f"
+        ],
+        "offset": [
+            "0x11C2CC"
+        ],
+        "author": "Vital",
+        "description": "Max range at which randommission NPCs will engage enemies; outside of this range, their behavior will be strange (fly around in circles, ignore fire etc).",
+        "dateAdded": 1243195800,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/87?_=1717279429714"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "300f"
+        ],
+        "offset": [
+            "0x117608"
+        ],
+        "author": "adoxa",
+        "description": "Multiplier for zone distance, increase to allow randommissions further from base.",
+        "dateAdded": 1265504220,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/276?_=1717279429718"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "30f"
+        ],
+        "offset": [
+            "0x12E778"
+        ],
+        "author": "adoxa",
+        "description": "Return to battle time in SP.",
+        "dateAdded": 1272368640,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/409?_=1717279429720"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "45f"
+        ],
+        "offset": [
+            "0x11C2DC"
+        ],
+        "author": "adoxa",
+        "description": "Return to battle time in MP.",
+        "dateAdded": 1272368640,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/409?_=1717279429720"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "5f"
+        ],
+        "offset": [
+            "0x0ECED5"
+        ],
+        "author": "adoxa",
+        "description": "Return to battle update interval.",
+        "dateAdded": 1272368640,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/409?_=1717279429720"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "99 B9 03 00 00 00 F7 F9 85 D2 74 33 D9 05 30 B2 FB 06 DD 5C 24 04 FF D6 99 DD 44 24 04 B9 03 00 00 00 F7 F9 8D 54 12"
+        ],
+        "replacement": [
+            "89 44 E4 04 D9 44 E4 20 D8 64 E4 1C EB 04 66 B8 FB 06 DB 44 E4 04 D8 0D D0 97 39 06 DE C9 D8 44 E4 1C 5E 83 C4 10 C3"
+        ],
+        "offset": [
+            "0x0AAD7A"
+        ],
+        "author": "adoxa",
+        "description": "Make MP job difficulty exactly between min and max difficulty in mbases.ini.",
+        "dateAdded": 1275571740,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/10?_=1717279429722"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x1143D4"
+        ],
+        "author": "adoxa",
+        "description": "Maximum value of misn difficulty.",
+        "dateAdded": 1307156700,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/20?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x1175F0"
+        ],
+        "author": "adoxa",
+        "description": "Maximum value of DestroyMission difficulty.",
+        "dateAdded": 1307156700,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/20?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x11B22C"
+        ],
+        "author": "adoxa",
+        "description": "Maximum value of rank_diff and generated mission difficulty.",
+        "dateAdded": 1307156700,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/20?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "(0,0,3,9,6,2,1,1,1)f"
+        ],
+        "offset": [
+            "0x11CC58"
+        ],
+        "author": "adoxa",
+        "description": "Weighted vector used to determine how many ships should occur in random missions in SP; 0 to 8 ships.",
+        "dateAdded": 1307176080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/22?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "(0,0,2,3,9,6,4,2,1)f"
+        ],
+        "offset": [
+            "0x11CC7C"
+        ],
+        "author": "adoxa",
+        "description": "Weighted vector used to determine how many ships should occur in random missions in MP; 0 to 8 ships.",
+        "dateAdded": 1307176080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/22?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "58 CC FB"
+        ],
+        "replacement": [
+            "00 CB FC"
+        ],
+        "offset": [
+            "0x0F8A4B"
+        ],
+        "author": "adoxa",
+        "description": "Use 30-float array at 12CB08 (created manually!) for the SP ship weighting vector; 2 to 31 ships.",
+        "dateAdded": 1307176080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/22?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "7C CC FB"
+        ],
+        "replacement": [
+            "80 CB FC"
+        ],
+        "offset": [
+            "0x0F8A54"
+        ],
+        "author": "adoxa",
+        "description": "Use 30-float array at 12CB88 (created manually!) for the MP ship weighting vector; 2 to 31 ships.",
+        "dateAdded": 1307176080,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/2636/higher-rank-missions/22?_=1717279429725"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "FF 10",
+            "FF 12"
+        ],
+        "replacement": [
+            "90 90",
+            "90 90"
+        ],
+        "offset": [
+            "0x0995B6",
+            "0x0995FC"
+        ],
+        "author": "adoxa",
+        "description": "Disable 'ArchDB::Get' random mission spew warning.",
+        "dateAdded": 1333334880,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/1222/invisible-gun-fire-from-mission-solars/24?_=1717279429727"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "07"
+        ],
+        "offset": [
+            "0x0F20F0"
+        ],
+        "author": "BC46",
+        "description": "Random mission NPCs will use missiles (changes their attack_preference to GUNS|GUIDED|UNGUIDED).",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "0F"
+        ],
+        "offset": [
+            "0x0F20F0"
+        ],
+        "author": "BC46",
+        "description": "Random mission NPCs will use missiles and torpedoes (changes their attack_preference to GUNS|GUIDED|UNGUIDED|TORPEDO).",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x03A03E"
+        ],
+        "author": "M0tah",
+        "description": "Bypass mission check on player invite (beware, may bug up RandomMissions).",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x03A438"
+        ],
+        "author": "M0tah",
+        "description": "Remove mission check on group invite accept (beware, may bug up RandomMissions).",
+        "dateAdded": 0,
+        "categories": [
+            "Missions"
+        ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "75 17"
+        ],
+        "replacement": [
+            "EB 0E"
+        ],
+        "offset": [
+            "0x019A59"
+        ],
+        "author": "M0tah",
+        "description": "Prevent mission failures due to attacking a neutral/friendly object.",
+        "dateAdded": 1241538660,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/56?_=1717279429739"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x08A521"
+        ],
+        "author": "Venemon",
+        "description": "Pub::Player::PopUpDialog won't pause the game in SP.",
+        "dateAdded": 1706684580,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1048?_=1717279429741"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x08A53D"
+        ],
+        "author": "Venemon",
+        "description": "Pub::Player::PopUpDialog won't lock controls.",
+        "dateAdded": 1706684580,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1048?_=1717279429741"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "3500f",
+            "5200f",
+            "7000f",
+            "10000f",
+            "16000f",
+            "0f",
+            "36000f",
+            "30000f",
+            "0f",
+            "0f",
+            "0f",
+            "0f",
+            "0f"
+        ],
+        "offset": [
+            "0x005E5F",
+            "0x005E69",
+            "0x005E73",
+            "0x005E7D",
+            "0x005E87",
+            "0x005E91",
+            "0x005E9B",
+            "0x005EA5",
+            "0x005EAF",
+            "0x005EB9",
+            "0x005EC3",
+            "0x005ECD",
+            "0x005ED7"
+        ],
+        "author": "Stone-D",
+        "description": "Next level requirements in SP in addition to worth at mission end; formatted Freetime_01_02, Freetime_02_03, Freetime_03_04, Freetime_04_05, Freetime_05_06, Mission_07, Freetime_07_08, Freetime_08_09, Mission_10, Mission_11, Mission_12, Mission_13, Mission_End.",
+        "dateAdded": 1080756120,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     }
 ]
