@@ -7723,7 +7723,7 @@
         ],
         "author": "adoxa",
         "description": "Keep Freelancer running in the background when Alt-Tabbed, but not the window.",
-        "dateAdded": 0,
+        "dateAdded": 1509332340,
         "categories": [
             "Display"
         ],
@@ -9228,5 +9228,181 @@
             "Missions"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "-1.04719758034f",
+            "-1.04719758034f"
+        ],
+        "offset": [
+            "0x1DBE0C",
+            "0x11AA41"
+        ],
+        "author": "M0tah, foxUnit01",
+        "description": "Lower limit of y/z-axis rotation in turret view, in radians.",
+        "dateAdded": 1213825320,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/2?_=1717321282594"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "1.04719758034f",
+            "1.04719758034f"
+        ],
+        "offset": [
+            "0x1DBE10",
+            "0x11A9F4"
+        ],
+        "author": "M0tah, foxUnit01",
+        "description": "Upper limit of y/z-axis rotation in turret view, in radians.",
+        "dateAdded": 1213825320,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/2?_=1717321282594"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "42",
+            "74",
+            "74",
+            "74",
+            "74"
+        ],
+        "replacement": [
+            "00",
+            "EB",
+            "EB",
+            "EB",
+            "EB"
+        ],
+        "offset": [
+            "0x0C7903",
+            "0x0DBB12",
+            "0x0DBB58",
+            "0x0DBB9E",
+            "0x0DBBE4"
+        ],
+        "author": "adoxa",
+        "description": "Keyboard moves ship in turret view.",
+        "dateAdded": 1275894360,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/2983/hack-request-allow-turn-ship-keys-to-function-while-in-turret-view/5?_=1717321282600"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "42",
+            "0F 85"
+        ],
+        "replacement": [
+            "00",
+            "90 E9"
+        ],
+        "offset": [
+            "0x0C7EDB",
+            "0x11A8ED"
+        ],
+        "author": "adoxa",
+        "description": "Mouse moves ship in turret view, a bit buggy though.",
+        "dateAdded": 1275985860,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/2983/hack-request-allow-turn-ship-keys-to-function-while-in-turret-view/10?_=1717321282600"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "D9 1D 7C 52 67 00",
+            "D9 1D 70 52 67 00",
+            "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+            "00 00 00 00 00 00 00 00"
+        ],
+        "replacement": [
+            "E8 2F 82 0A 00 90",
+            "E8 F0 81 0A 00 90",
+            "D9 15 70 52 67 00 D8 0D 84 90 67 00 D9 1D 7C 90 67 00 C3",
+            "D9 15 7C 52 67 00 EB DE"
+        ],
+        "offset": [
+            "0x11D89C",
+            "0x11D8BB",
+            "0x1C5AB0",
+            "0x1C5AD0"
+        ],
+        "author": "adoxa",
+        "description": "Camera is independent of left/right ship movement in turret view. Do not use with FLHack.",
+        "dateAdded": 1275894360,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/2983/hack-request-allow-turn-ship-keys-to-function-while-in-turret-view/13?_=1717321282600"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "A1 A0 4A 67 00 8A 88 B9 05 00 00 84 C9 74 38 A1 44 97 67 00 85 C0 74 05 83 C0 F8 EB 02 33 C0 50 FF 15 70 64 5C 00 83 C4 04 85 C0 74 08 8B C8"
+        ],
+        "replacement": [
+            "9C A1 44 97 67 00 83 C0 F8 50 FF 15 70 64 5C 00 59 91 9D 74 0D A0 CA EC 67 00 88 81 F9 00 00 00 EB 25 B0 00 86 81 F9 00 00 00 A2 CA EC 67 00"
+        ],
+        "offset": [
+            "0x14A65B"
+        ],
+        "author": "adoxa",
+        "description": "Turn off camera level during Turret View (fixes ship movement bugs in this view).",
+        "dateAdded": 1280613600,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/3111/hack-request-disable-auto-rolling-when-in-turret-view/2?_=1717365448513"
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "0.05f"
+        ],
+        "offset": [
+            "0x1186F0"
+        ],
+        "author": "Venemon",
+        "description": "Multiplier for third person view inertia.",
+        "dateAdded": 1703210220,
+        "categories": [
+            "Turret View"
+        ],
+        "url": "https://the-starport.com/forums/topic/6257/3rd-person-camera-issue/6?_=1717365448516"
     }
 ]
