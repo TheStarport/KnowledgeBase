@@ -9404,5 +9404,27 @@
             "Turret View"
         ],
         "url": "https://the-starport.com/forums/topic/6257/3rd-person-camera-issue/6?_=1717365448516"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x019B57"
+        ],
+        "author": "Venemon",
+        "description": "Cutscenes in space will not use your camera. Gives you ability to freely roam during these events.",
+        "dateAdded": 1710974580,
+        "categories": [
+            "Turret View",
+            "Missions"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1069?_=1717369265250"
     }
 ]
