@@ -9426,5 +9426,494 @@
             "Missions"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1069?_=1717369265250"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "05 7B"
+        ],
+        "replacement": [
+            "41 74"
+        ],
+        "offset": [
+            "0x0DAD24"
+        ],
+        "author": "adoxa",
+        "description": "Make drag_modifier independent of interference or damage.",
+        "dateAdded": 1333434120,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/2989/offset-request-unlink-drag_modifier-and-interference/7?_=1717321282606"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "562500000000d"
+        ],
+        "offset": [
+            "0x08B450"
+        ],
+        "author": "Dev",
+        "description": "Square of distance from the center of the system over which your ship explodes in multiplayer (no 1.0 offset, this feature was added in 1.1).",
+        "dateAdded": 1180017060,
+        "categories": [
+            "Systems"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438_start=60.html"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "6250000f"
+        ],
+        "offset": [
+            "0x086AEC"
+        ],
+        "author": "foxUnit01",
+        "description": "Square of distance from the center of the system over which bases no longer wish you well when un-docking in multiplayer (note: same offset as NPC disappear distance).",
+        "dateAdded": 0,
+        "categories": [
+            "Systems"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0173DA"
+        ],
+        "author": "Laz",
+        "description": "Activate undock chatter in MP (redundants variable at server.dll 0x86AEC).",
+        "dateAdded": 1678428540,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/6218/enabling-undock-chatter-in-mp/3?_=1717518960438"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x05B336"
+        ],
+        "author": "FuryFreelancer",
+        "description": "Don't print system arrival text.",
+        "dateAdded": 1235297940,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/1441/house-name-after-system-name-let-s-solve-this-basterd/6?_=1717518960441"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "77"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x05B029"
+        ],
+        "author": "M0tah",
+        "description": "Force '%s System.' (IDS 1373 in resources.dll) to be used for all system arrival text (no house is displayed).",
+        "dateAdded": 1235440140,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/1441/house-name-after-system-name-let-s-solve-this-basterd/8?_=1717518960441"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "83 FF FF FC FF 83 F8"
+        ],
+        "replacement": [
+            "AB 01 00 00 00 EB 2F"
+        ],
+        "offset": [
+            "0x05B021"
+        ],
+        "author": "M0tah",
+        "description": "Make the house in the system arrival text the system's IDS+1.",
+        "dateAdded": 1235450760,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/1441/house-name-after-system-name-let-s-solve-this-basterd/10?_=1717518960441"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "83 FF FF FC FF 83 F8"
+        ],
+        "replacement": [
+            "9B 01 00 00 00 EB 2D"
+        ],
+        "offset": [
+            "0x05B021"
+        ],
+        "author": "M0tah",
+        "description": "Make the system arrival text the system's IDS+1 (be sure to also change IDS 1373 to just '%s').",
+        "dateAdded": 1235450760,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/1441/house-name-after-system-name-let-s-solve-this-basterd/10?_=1717518960441"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "1.74f"
+        ],
+        "offset": [
+            "0x13DFDC"
+        ],
+        "author": "w0dk4, OutCast",
+        "description": "Multiplier for fill_dist in CmnAsteroid::CAsteroidField::near_field_calculation, increase this to make FL render asteroid fields from greater distances.",
+        "dateAdded": 1242240240,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/62?_=1717518960445"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "7C"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0E698E"
+        ],
+        "author": "adoxa",
+        "description": "Some planets keep on spinning.",
+        "dateAdded": 1277392440,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/3047/wreck-rotation/5?_=1717518960447"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "03"
+        ],
+        "replacement": [
+            "02"
+        ],
+        "offset": [
+            "0x0E79BD"
+        ],
+        "author": "adoxa",
+        "description": "Planets (and more) keep on spinning, needs patch at 0xE698E.",
+        "dateAdded": 1294565040,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/3047/wreck-rotation/8?_=1717518960447"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "C6 44 24 30 01"
+        ],
+        "replacement": [
+            "E9 47 FF FF FF"
+        ],
+        "offset": [
+            "0x0D670F"
+        ],
+        "author": "adoxa",
+        "description": "Suns will honor visit flag (without having to add visit = 1 to revert to known suns, as long as the visit line appears after the star line).",
+        "dateAdded": 1294565040,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/3047/wreck-rotation/8?_=1717518960447"
+    },
+    {
+        "moduleName": [
+            "common.dll",
+            "common.dll",
+            "common.dll"
+        ],
+        "original": [
+            "07",
+            "07",
+            "07"
+        ],
+        "offset": [
+            "0x0460A9",
+            "0x0460AC",
+            "0x0460AF"
+        ],
+        "author": "adoxa",
+        "description": "Exponents for max distance from center of system (x,y,z-axes resp.) static asteroids will be spawned (07 = 130k, 08 = 260k, 09 = 520k, etc).",
+        "dateAdded": 1266949800,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/326?_=1717518960455"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "81 F9"
+        ],
+        "replacement": [
+            "EB 15"
+        ],
+        "offset": [
+            "0x0460B0"
+        ],
+        "author": "w0dk4",
+        "description": "Always render static asteroids (alternative to common.dll 0x460A9-F).",
+        "dateAdded": 1266943080,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/325?_=1717518960455"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "90 90 90 90 90 90 90 90 90 90 90",
+            "5B 33 C0 5E C3"
+        ],
+        "replacement": [
+            "5B 31 C0 5E 83 04 E4 11 C2 08 00",
+            "E9 79 FF FF FF"
+        ],
+        "offset": [
+            "0x04B101",
+            "0x04B183"
+        ],
+        "author": "adoxa",
+        "description": "Don't append dash to msg_id_prefix in mbases.ini.",
+        "dateAdded": 1288282260,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/3437/fix-hack-request-let-bases-use-the-msg_id_prefix-for-factions/2?_=1717518960461"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "64",
+            "64",
+            "64",
+            "64",
+            "64",
+            "64",
+            "64",
+            "64",
+            "64",
+            "64"
+        ],
+        "replacement": [
+            "65",
+            "65",
+            "65",
+            "65",
+            "65",
+            "65",
+            "65",
+            "65",
+            "65",
+            "65"
+        ],
+        "offset": [
+            "0x037148",
+            "0x039684",
+            "0x039AA3",
+            "0x039CE1",
+            "0x03AA92",
+            "0x03AE02",
+            "0x03BA22",
+            "0x03F0A6",
+            "0x041A74",
+            "0x041C75"
+        ],
+        "author": "adoxa",
+        "description": "Don't append dash to msg_id_prefix in universe.ini.",
+        "dateAdded": 1513488960,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/995?_=1717518960463"
+    },
+    {
+        "moduleName": [
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll",
+            "content.dll"
+        ],
+        "original": [
+            "5F",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "2C",
+            "72 74 00 00 'gcs_refer_faction_player' 00 00"
+        ],
+        "replacement": [
+            "00",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "28",
+            "'gcs_refer_faction_player_short'"
+        ],
+        "offset": [
+            "0x116324",
+            "0x036F5F",
+            "0x0385B1",
+            "0x03948E",
+            "0x03A123",
+            "0x03A42B",
+            "0x03D8DF",
+            "0x03E547",
+            "0x03EB48",
+            "0x03EC5C",
+            "0x0401C8",
+            "0x040C3B",
+            "0x04172C",
+            "0x045DB0",
+            "0x045EC4",
+            "0x116328",
+        ],
+        "author": "adoxa",
+        "description": "Don't append _short to gcs_refer_faction in faction_prop.ini.",
+        "dateAdded": 1513985520,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/997?_=1717518960463"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "44 24 20 B8 15 9C 42 D6 06 D8 32"
+        ],
+        "replacement": [
+            "05 DE 97 42 00 8B 15 9C 42 01 05"
+        ],
+        "offset": [
+            "0x00A552"
+        ],
+        "author": "Venemon",
+        "description": "Change zone damage from percentage to flat 100 per tick.",
+        "dateAdded": 1703276100,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1036?_=1717518960467"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "25000000f"
+        ],
+        "offset": [
+            "0x13FBD8"
+        ],
+        "author": "Venemon",
+        "description": "Square of distance over which you can't join formation.",
+        "dateAdded": 1706441100,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046?_=1717518960467"
     }
 ]
