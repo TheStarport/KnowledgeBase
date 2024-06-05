@@ -5141,6 +5141,50 @@
     },
     {
         "original": [
+            "57"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D0A4E"
+        ],
+        "author": "Jolly_Roger",
+        "description": "Remove hostile freighters from 'important' filter.",
+        "dateAdded": 1333794420,
+        "categories": [
+            "HUD",
+            "Contact List"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/713?_=1717519230396"
+    },
+    {
+        "original": [
+            "57"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0D0DC3"
+        ],
+        "author": "Jolly_Roger",
+        "description": "Remove hostile fighters from 'important' filter.",
+        "dateAdded": 1333794420,
+        "categories": [
+            "HUD",
+            "Contact List"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/713?_=1717519230396"
+    },
+    {
+        "original": [
             "03"
         ],
         "replacement": [
@@ -9915,5 +9959,482 @@
             "Systems"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046?_=1717518960467"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "10000f"
+        ],
+        "offset": [
+            "0x0A8AF0"
+        ],
+        "author": "foxUnit01",
+        "description": "Range at which fuses for solars activate.",
+        "dateAdded": 0,
+        "categories": [
+            "VFX"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1.0f"
+        ],
+        "offset": [
+            "0x0F86A3"
+        ],
+        "author": "w0dk4",
+        "description": "Time in seconds for particle effects to stay after emitter died.",
+        "dateAdded": 1276647420,
+        "categories": [
+            "VFX"
+        ],
+        "url": "https://the-starport.com/forums/topic/3017/hack-request-emitter-particle-death-timer/3?post_id=30270"
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "6250000f"
+        ],
+        "offset": [
+            "0x086AEC"
+        ],
+        "author": "FriendlyFire",
+        "description": "Square of maximum effect draw distance (vis_beam)(note: same offset as MP NPC disappear distance).",
+        "dateAdded": 0,
+        "categories": [
+            "VFX"
+        ]
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x111BA5"
+        ],
+        "author": "adoxa",
+        "description": "Display sun spines within tradelane.",
+        "dateAdded": 1393991340,
+        "categories": [
+            "VFX",
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/854?_=1717519230396"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74",
+            "0D",
+            "0D"
+        ],
+        "replacement": [
+            "EB",
+            "00",
+            "00"
+        ],
+        "offset": [
+            "0x111C3C",
+            "0x11C8FB",
+            "0x11C9BB"
+        ],
+        "author": "adoxa",
+        "description": "Display sun spines within nebula.",
+        "dateAdded": 1294920480,
+        "categories": [
+            "VFX",
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/611?_=1717519230383"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x111C80"
+        ],
+        "author": "adoxa",
+        "description": "Display sun spines within asteroid field.",
+        "dateAdded": 1294920480,
+        "categories": [
+            "VFX",
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/611?_=1717519230383"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "5F 5E",
+            "0F 84 49 01 00 00",
+            "5B",
+            "03",
+            "CB"
+        ],
+        "replacement": [
+            "EB 6D",
+            "90 90 90 90 90 90",
+            "53",
+            "02",
+            "CA"
+        ],
+        "offset": [
+            "0x12D132",
+            "0x12D052",
+            "0x12D0F6",
+            "0x12D0F9",
+            "0x12D100"
+        ],
+        "author": "w0dk4",
+        "description": "Activate [gun] light_anim entries.",
+        "dateAdded": 1267116300,
+        "categories": [
+            "VFX"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/347?_=1717519230399"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0F 94 C0"
+        ],
+        "replacement": [
+            "B0 01 90"
+        ],
+        "offset": [
+            "0x131D2B"
+        ],
+        "author": "adoxa",
+        "description": "Activate [light] lightsource_cone entries.",
+        "dateAdded": 1307543040,
+        "categories": [
+            "VFX"
+        ],
+        "url": "https://the-starport.com/forums/topic/4017/hack-request-enable-unused-feature/8?_=1717519230401"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "45"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x1C8890"
+        ],
+        "author": "Dev",
+        "description": "Prevent parser from reading EffectType from effect_types.ini, forcing the default values below; allows for vis_beam effects to appear beyond 2k.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_explosion_large (limited duration)",
+            "VFX: eft_weapon_large_proj (infinite duration)",
+            "VFX: eft_damage_large_smoke (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x212AF0"
+        ],
+        "author": "Dev",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_explosion_large (limited duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "15f"
+        ],
+        "offset": [
+            "0x212AF8"
+        ],
+        "author": "Dev",
+        "description": "Max run time of effects.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_explosion_large (limited duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x212B00"
+        ],
+        "author": "Dev",
+        "description": "Unknown, likely the first value of pbubble.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_explosion_large (limited duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x212B04"
+        ],
+        "author": "Dev",
+        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_explosion_large (limited duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x212C58"
+        ],
+        "author": "Dev",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-1f"
+        ],
+        "offset": [
+            "0x212C60"
+        ],
+        "author": "Dev",
+        "description": "Max run time of effects.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x212C68"
+        ],
+        "author": "Dev",
+        "description": "Unknown, likely the first value of pbubble.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x212C6C"
+        ],
+        "author": "Dev",
+        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "15f"
+        ],
+        "offset": [
+            "0x213158"
+        ],
+        "author": "Dev",
+        "description": "On-screen radius of vis_beam effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x213168"
+        ],
+        "author": "Dev",
+        "description": "Unknown, likely the first value of pbubble for vis_beam.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x21316C"
+        ],
+        "author": "Dev",
+        "description": "vis_beam cutoff range (second value of pbubble for vis_beam).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_weapon_large_proj (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "20f"
+        ],
+        "offset": [
+            "0x212DE8"
+        ],
+        "author": "Dev",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_damage_large_smoke (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "-1f"
+        ],
+        "offset": [
+            "0x212DF0"
+        ],
+        "author": "Dev",
+        "description": "Max run time of effects.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_damage_large_smoke (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "100f"
+        ],
+        "offset": [
+            "0x212DF8"
+        ],
+        "author": "Dev",
+        "description": "Unknown, likely the first value of pbubble.",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_damage_large_smoke (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "500f"
+        ],
+        "offset": [
+            "0x212DFC"
+        ],
+        "author": "Dev",
+        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "dateAdded": 1155821760,
+        "categories": [
+            "VFX: eft_damage_large_smoke (infinite duration)"
+        ],
+        "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     }
 ]
