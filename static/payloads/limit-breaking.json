@@ -9911,7 +9911,7 @@
             "0x04172C",
             "0x045DB0",
             "0x045EC4",
-            "0x116328",
+            "0x116328"
         ],
         "author": "adoxa",
         "description": "Don't append _short to gcs_refer_faction in faction_prop.ini.",
