@@ -109,7 +109,7 @@ The location of these INI file types is hardcoded or otherwise unchangable via n
 | factionsets.ini                                                              | This file is unused.                                                         | `DATA\MISSIONS\`     |
 | [formations.ini](hardcoded-inis/data/missions/formations.ini.md)             | Defines formations used by NPCs in space.                                    | `DATA\MISSIONS\`     |
 | [lootprops.ini](hardcoded-inis/data/missions/lootprops.ini.md)               | Defines the innate drop properties of equipment.                             | `DATA\MISSIONS\`     |
-| [missions](hardcoded-inis/data/missions/missions.md)                         | Defines some script and event elements of single-player missions.            | `DATA\MISSIONS\M**\` |
+| [missions](hardcoded-inis/data/missions/missions.ini.md)                         | Defines some script and event elements of single-player missions.            | `DATA\MISSIONS\M**\` |
 | [mbases.ini](hardcoded-inis/data/missions/mbases.ini.md)                     | Defines missions and NPCs available at bases.                                | `DATA\MISSIONS\`     |
 | [news.ini](hardcoded-inis/data/missions/news.ini.md)                         | Defines the news and where (and when) it is available.                       | `DATA\MISSIONS\`     |
 | [npcships.ini](hardcoded-inis/data/missions/npcships.ini.md)                 | Defines NPC pilot types, their ships and loadout.                            | `DATA\MISSIONS\`     |
