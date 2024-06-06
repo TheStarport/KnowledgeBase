@@ -2112,10 +2112,10 @@
             "0x00960C"
         ],
         "author": "M0tah",
-        "description": "Fix explosion damage not causing full or no damage damage on large ships and bases (side note by adoxa: this hack will generate additional damage in SP).",
+        "description": "Fix explosion damage not causing full or no damage on large ships and bases (side note by adoxa: this hack will generate additional damage in SP).",
         "dateAdded": 1269671760,
         "categories": [
-            "damage, repair"
+            "damage"
         ],
         "url": "https://the-starport.com/forums/topic/2553/missile-explosions-and-hull-damage-detection/30"
     },
@@ -2136,7 +2136,7 @@
         "description": "Energy weapons don't damage power.",
         "dateAdded": 1276601260,
         "categories": [
-            "damage, repair"
+            "damage"
         ],
         "url": "https://the-starport.com/forums/topic/3011/hack-request-preventing-energy_damage-from-damaging-the-power-resource/6?_=1714251894090"
     },
@@ -2181,7 +2181,8 @@
         "description": "Minimum fraction of damage required in order to use nanobots or shield batteries. In other words, if your Nanobot heals 1000 damage, you will need to have at least 50 points of damage to be able to repair).",
         "dateAdded": 1278025200,
         "categories": [
-            "damage, repair"
+            "damage",
+            "Nanobots/Shield Batteries"
         ],
         "url": "https://the-starport.com/forums/topic/3066/hack-request-minimum-nanobot-battery-heal-value/2?_=1707140865575"
     },
@@ -2245,7 +2246,7 @@
         "dateAdded": 1295827200,
         "categories": [
             "equipment",
-            "damage, repair"
+            "damage"
         ],
         "url": "https://the-starport.com/forums/topic/3092/hack-request-radiation-damage-fix/6?_=1707140865581"
     },
@@ -4088,7 +4089,7 @@
         "categories": [
             "reputation"
         ],
-        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/557?_=1713801803796"
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/556?_=1713801803796"
     },
     {
         "original": [
@@ -4125,7 +4126,8 @@
         "dateAdded": 1289925000,
         "categories": [
             "reputation"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/556?_=1713801803796"
     },
     {
         "original": [
@@ -4145,7 +4147,8 @@
         "dateAdded": 1289925000,
         "categories": [
             "reputation"
-        ]
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/556?_=1713801803796"
     },
     {
         "original": [
@@ -4463,7 +4466,7 @@
         ],
         "author": "M0tah",
         "description": "Maximum number of characters in chat input box (signed byte, so max of 127).",
-        "dateAdded": 0,
+        "dateAdded": 1236108840,
         "categories": [
             "HUD",
             "Chat"
@@ -7495,7 +7498,7 @@
     },
     {
         "moduleName": [
-            "server.dll"
+            "Freelancer.exe"
         ],
         "original": [
             "D9 1D 0C 0A 61 00"
@@ -10436,5 +10439,253 @@
             "VFX: eft_damage_large_smoke (infinite duration)"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
-    }
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "75"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0C8864"
+        ],
+        "author": "adoxa",
+        "description": "Steering arrows always go to mouse.",
+        "dateAdded": 1272785700,
+        "categories": [
+            "HUD",
+            "Steering Arrows"
+        ],
+        "url": "https://the-starport.com/forums/topic/2870/steering-arrows/2?_=1717575456259"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 75 5C",
+            "1.0f"
+        ],
+        "replacement": [
+            "F8 1A 48",
+            "1.8f"
+        ],
+        "offset": [
+            "0x0C885B",
+            "0x0C886A"
+        ],
+        "author": "adoxa",
+        "description": "Increase to 12 steering arrows.",
+        "dateAdded": 1272785700,
+        "categories": [
+            "HUD",
+            "Steering Arrows"
+        ],
+        "url": "https://the-starport.com/forums/topic/2870/steering-arrows/2?_=1717575456259"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 6E 5D
+            "90 90 90 90"
+        ],
+        "replacement": [
+            "74 86 4C",
+            "0.15f"
+        ],
+        "offset": [
+            "0x0C8AE0",
+            "0x0C8674"
+        ],
+        "author": "adoxa",
+        "description": "Distance between steering arrows."
+        "dateAdded": 1272785700,
+        "categories": [
+            "HUD",
+            "Steering Arrows"
+        ],
+        "url": "https://the-starport.com/forums/topic/2870/steering-arrows/2?_=1717575456259"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "E0 75 5C",
+            "90 90 90 90"
+        ],
+        "replacement": [
+            "78 86 4C",
+            "0.5f"
+        ],
+        "offset": [
+            "0x0C8A6F",
+            "0x0C8678"
+        ],
+        "author": "adoxa",
+        "description": "Size multiplier for steering arrows.",
+        "dateAdded": 1272785700,
+        "categories": [
+            "HUD",
+            "Steering Arrows"
+        ],
+        "url": "https://the-starport.com/forums/topic/2870/steering-arrows/2?_=1717575456259"
+    },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "-0.6f"
+        ],
+        "offset": [
+            "0x13E548"
+        ],
+        "author": "Gold_Sear",
+        "description": "Hostile threshold for Closest Enemy.",
+        "dateAdded": 1717665420,
+        "categories": [
+            "reputation"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1106?_=1713801803796"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0F 95 C1"
+        ],
+        "replacement": [
+            "B1 01 90"
+        ],
+        "offset": [
+            "0x0E3D09"
+        ],
+        "author": "Jeider",
+        "description": "Camera of target wireframe on the top (like a playership wireframe).",
+        "dateAdded": 1586386740,
+        "categories": [
+            "HUD",
+            "Wireframes"
+        ],
+        "url": "https://the-starport.com/forums/topic/6020/advanced-widescreen-hud/16?_=1717519230403"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "01",
+            "0F 84",
+            "74",
+            "0F 85 8F 02 00 00",
+            "74 60",
+            "08"
+        ],
+        "replacement": [
+            "00",
+            "90 E9",
+            "EB",
+            "90 90 90 90 90 90",
+            "90 90",
+            "30"
+        ],
+        "offset": [
+            "0x0CFE75",
+            "0x0E203E",
+            "0x0E20FF",
+            "0x0E3CE0",
+            "0x0E1F91",
+            "0x0E36DA"
+        ],
+        "author": "WhiskasTM",
+        "description": "Always show target wireframe.",
+        "dateAdded": 1564397460,
+        "categories": [
+            "HUD",
+            "Wireframes"
+        ],
+        "url": "https://the-starport.com/forums/topic/6020/advanced-widescreen-hud/10?_=1717519230403"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "13",
+            "EB 05"
+        ],
+        "replacement": [
+            "07",
+            "6A 00"
+        ],
+        "offset": [
+            "0x0DB6A5",
+            "0x0DB6B7"
+        ],
+        "author": "WhiskasTM",
+        "description": "Force 1st weapon group to be set on entering space.",
+        "dateAdded": 1564432620,
+        "categories": [
+            "HUD",
+            "Weapon List"
+        ],
+        "url": "https://the-starport.com/forums/topic/6020/advanced-widescreen-hud/11?_=1717519230403"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B0 01"
+        ],
+        "replacement": [
+            "30 C0"
+        ],
+        "offset": [
+            "0x0E7DF9"
+        ],
+        "author": "WhiskasTM",
+        "description": "Make target wireframe ignore all mouse events.",
+        "dateAdded": 1562939760,
+        "categories": [
+            "HUD",
+            "Wireframes"
+        ],
+        "url": "https://the-starport.com/forums/topic/6020/advanced-widescreen-hud/5?_=1717519230403"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "10000000f"
+        ],
+        "offset": [
+            "0x1DC130"
+        ],
+        "author": "Gold_Sear",
+        "description": "Max selection distance.",
+        "dateAdded": 1717665420,
+        "categories": [
+            "Visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1106?_=1713801803796"
+    },
 ]
