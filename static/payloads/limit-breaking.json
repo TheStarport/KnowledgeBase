@@ -10494,7 +10494,7 @@
             "Freelancer.exe"
         ],
         "original": [
-            "DC 6E 5D
+            "DC 6E 5D",
             "90 90 90 90"
         ],
         "replacement": [
@@ -10506,7 +10506,7 @@
             "0x0C8674"
         ],
         "author": "adoxa",
-        "description": "Distance between steering arrows."
+        "description": "Distance between steering arrows.",
         "dateAdded": 1272785700,
         "categories": [
             "HUD",
@@ -10687,5 +10687,5 @@
             "Visibility"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1106?_=1713801803796"
-    },
+    }
 ]
