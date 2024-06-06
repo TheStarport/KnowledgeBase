@@ -726,5 +726,12 @@
         "author": "McDyson",
         "description": "Possibly relates to a malformed .cmp or .3db model. Exact cause is currently unclear.",
         "dateAdded": 1717192266
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x000512ac",
+        "author": "EngiN33R, IrateRedKite",
+        "description": "Faction prop is missing but initial world and empathy configuration are correct. Possibly relates to how bases are constructed.",
+        "dateAdded": 1717681897
     }
 ]
