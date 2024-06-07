@@ -10687,5 +10687,309 @@
             "Visibility"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1106?_=1713801803796"
-    }
+    },
+    {
+        "moduleName": [
+            "RemoteClient.dll",
+            "RemoteClient.dll",
+            "RemoteClient.dll",
+            "remoteserver.dll",
+        ],
+        "original": [
+            "00 28",
+            "00 90 01",
+            "90 01",
+            "00 28",
+        ],
+        "replacement": [
+            "D0 27",
+            "30 20 03",
+            "20 03",
+            "D0 27",
+        ],
+        "offset": [
+            "0x0096B1",
+            "0x0096E8"
+            "0x009707"
+            "0x009AE5"
+        ],
+        "author": "Jolly_Roger, adoxa",
+        "description": "Make accounts less vulnerable to crashes due to too many cargo/base_cargo lines in character files. Double the size of Freelancer's 'visit' packet (for MP).",
+        "dateAdded": 1664607900,
+        "categories": [
+            "Debugging"
+        ],
+        "url": "https://the-starport.com/forums/topic/6203/limit-in-cargo-hold-and-characters/2"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "43",
+            "61",
+            "70"
+        ],
+        "offset": [
+            "0x0BD8EC",
+            "0x0BD8F1",
+            "0x0BD8F6"
+        ],
+        "author": "adoxa",
+        "description": "RGB of tooltip background.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "B9",
+            "F7",
+            "E0",
+            "0E"
+        ],
+        "replacement": [
+            "B9",
+            "F7",
+            "FF",
+            "0F",
+        ],
+        "offset": [
+            "0x0BD933",
+            "0x0BD938",
+            "0x0BD90B",
+            "0x0BD92A"
+        ],
+        "author": "adoxa",
+        "description": "RGB of tooltip text.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "FF",
+            "FF",
+            "00",
+            "FF"
+        ],
+        "offset": [
+            "0x15B22C",
+            "0x15B231",
+            "0x15B236",
+            "0x15B2F6
+        ],
+        "author": "adoxa",
+        "description": "RGBA of selected maneuver icon.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "FF",
+            "FF",
+            "00",
+            "FF"
+        ],
+        "offset": [
+            "0x15B2CB",
+            "0x15B2D0",
+            "0x15B2D5",
+            "0x15B2F6
+        ],
+        "author": "adoxa",
+        "description": "RGBA of selected neural net icon.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "87",
+            "C3",
+            "E0",
+            "C0"
+        ],
+        "offset": [
+            "0x161BE6",
+            "0x161BED",
+            "0x161BF4",
+            "0x161BFB
+        ],
+        "author": "adoxa",
+        "description": "RGBA of main text (aqua).",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "87",
+            "C3",
+            "E0",
+            "FF"
+        ],
+        "offset": [
+            "0x161C06",
+            "0x161C0D",
+            "0x161C14",
+            "0x161C1B
+        ],
+        "author": "adoxa",
+        "description": "RGBA of main color (aqua).",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "F5",
+            "EA",
+            "52",
+            "FF"
+        ],
+        "offset": [
+            "0x161C66",
+            "0x161C6D",
+            "0x161C74",
+            "0x161C7B
+        ],
+        "author": "adoxa",
+        "description": "RGBA of selected color (yellow).",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80",
+            "80",
+            "80",
+            "FF"
+        ],
+        "offset": [
+            "0x161CE1",
+            "0x161CE1",
+            "0x161CE1",
+            "0x161CF7
+        ],
+        "author": "adoxa",
+        "description": "RGBA of disabled icons.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "87 C3 E0",
+            "87 C3 E0"
+        ],
+        "offset": [
+            "0x199DA6",
+            "0x199DAB"
+        ],
+        "author": "adoxa",
+        "description": "RGB of some buttons.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "80 80 80",
+            "80 80 80"
+        ],
+        "offset": [
+            "0x199DC6",
+            "0x199DCB"
+        ],
+        "author": "adoxa",
+        "description": "RGB of disabled buttons.",
+        "dateAdded": 1262861880,
+        "categories": [
+            "HUD",
+            "Colors"
+        ],
+        "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
 ]
