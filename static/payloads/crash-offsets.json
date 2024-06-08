@@ -94,7 +94,7 @@
         "moduleName": "common.dll",
         "offset": "0x000c22fe",
         "author": "Cpt_Rei_Fukai",
-        "description": "Occurs when you try to load a save game that contains a reputation to a faction that doesn't exist in initialworld.ini",
+        "description": "Occurs when you try to load a save game that contains a reputation to a faction that doesn't exist in initialworld.ini. This offset also seems to show up where faction objects are missing from save games as well.",
         "dateAdded": 1532371740
     },
     {
