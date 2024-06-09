@@ -2953,7 +2953,8 @@
         "description": "Overall sun color impact in universe (larger for brighter).",
         "dateAdded": 1702949940,
         "categories": [
-            "visibility"
+            "visibility",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
     },
@@ -3032,7 +3033,8 @@
         "description": "Sun green color impact in universe.",
         "dateAdded": 1702949940,
         "categories": [
-            "visibility"
+            "visibility",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
     },
@@ -3050,7 +3052,8 @@
         "description": "Sun blue color impact in universe.",
         "dateAdded": 1702949940,
         "categories": [
-            "visibility"
+            "visibility",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
     },
@@ -4488,7 +4491,8 @@
         "dateAdded": 1241804880,
         "categories": [
             "HUD",
-            "Chat"
+            "Chat",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/57?_=1716499554426"
     },
@@ -4785,7 +4789,8 @@
         "dateAdded": 1320489900,
         "categories": [
             "HUD",
-            "Status Bars"
+            "Status Bars",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
@@ -4804,7 +4809,8 @@
         "dateAdded": 1320489900,
         "categories": [
             "HUD",
-            "Status Bars"
+            "Status Bars",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
@@ -4823,7 +4829,8 @@
         "dateAdded": 1320489900,
         "categories": [
             "HUD",
-            "Status Bars"
+            "Status Bars",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/4385/health-and-shield-bar-colours/6?_=1716537923036"
     },
@@ -6013,7 +6020,8 @@
         "dateAdded": 1392275100,
         "categories": [
             "HUD",
-            "Navmap"
+            "Navmap",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/846?_=1716586772620"
     },
@@ -6931,7 +6939,8 @@
         "dateAdded": 1483793840,
         "categories": [
             "HUD",
-            "Other"
+            "Other",
+            "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
     },
