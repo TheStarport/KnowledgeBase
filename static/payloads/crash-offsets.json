@@ -733,5 +733,12 @@
         "author": "EngiN33R, IrateRedKite",
         "description": "Faction prop is missing but initial world and empathy configuration are correct. Possibly relates to how bases are constructed.",
         "dateAdded": 1717681897
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0012d1e4",
+        "author": "IrateRedKite",
+        "description": "Attempted to fire an equipment object with a missing or malformed HpFire hardpoint.",
+        "dateAdded": 1719042382
     }
 ]
