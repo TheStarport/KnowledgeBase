@@ -10702,24 +10702,24 @@
             "RemoteClient.dll",
             "RemoteClient.dll",
             "RemoteClient.dll",
-            "remoteserver.dll",
+            "remoteserver.dll"
         ],
         "original": [
             "00 28",
             "00 90 01",
             "90 01",
-            "00 28",
+            "00 28"
         ],
         "replacement": [
             "D0 27",
             "30 20 03",
             "20 03",
-            "D0 27",
+            "D0 27"
         ],
         "offset": [
             "0x0096B1",
-            "0x0096E8"
-            "0x009707"
+            "0x0096E8",
+            "0x009707",
             "0x009AE5"
         ],
         "author": "Jolly_Roger, adoxa",
@@ -10772,7 +10772,7 @@
             "B9",
             "F7",
             "FF",
-            "0F",
+            "0F"
         ],
         "offset": [
             "0x0BD933",
@@ -11000,5 +11000,5 @@
             "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
-    },
+    }
 ]
