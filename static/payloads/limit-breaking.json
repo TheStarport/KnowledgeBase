@@ -113,6 +113,48 @@
     },
     {
         "moduleName": [
+            "soundmanager.dll"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0089B8"
+        ],
+        "author": "Venemon",
+        "description": "Turn off non-music sounds.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "audio"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "01"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x12E368"
+        ],
+        "author": "Venemon",
+        "description": "Turn off combat chatter.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "audio"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
             "content.dll"
         ],
         "original": [
@@ -6984,6 +7026,75 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe",
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.003f",
+            "0.003f",
+            "0.003f",
+            "0.003f"
+        ],
+        "offset": [
+            "0x1A36B4",
+            "0x1A374B",
+            "0x1A37B7",
+            "0x1A383B"
+        ],
+        "author": "Venemon",
+        "description": "Thickness of F1 menu/Inventory Rectangle bars.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "0.00390625f"
+        ],
+        "offset": [
+            "0x1D748C"
+        ],
+        "author": "Venemon",
+        "description": "Icon size multiplier (0.03 max).",
+        "dateAdded": 1720975080,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74 05"
+        ],
+        "replacement": [
+            "90 90"
+        ],
+        "offset": [
+            "0x15B28F"
+        ],
+        "author": "Venemon",
+        "description": "Neural Net icons will always flash.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "HUD",
+            "Other"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
@@ -9506,6 +9617,30 @@
     },
     {
         "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "7A 4C",
+            "0F 85"
+        ],
+        "replacement": [
+            "EB 65",
+            "EB 04"
+        ],
+        "offset": [
+            "0x0D7A6F",
+            "0x0D7AF0"
+        ],
+        "author": "adoxa, josbyte",
+        "description": "Allow drag_modifier below 1.0.",
+        "dateAdded": 1719535800,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1110?_=1722628348397"
+    },
+    {
+        "moduleName": [
             "server.dll"
         ],
         "original": [
@@ -9769,6 +9904,27 @@
             "Systems"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/325?_=1717518960455"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x122669"
+        ],
+        "author": "Venemon",
+        "description": "Turn off rendering of static debris.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "Systems"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
     },
     {
         "moduleName": [
@@ -10699,6 +10855,27 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x152E7C"
+        ],
+        "author": "Venemon",
+        "description": "Turn off rendering background universe.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
+    },
+    {
+        "moduleName": [
             "RemoteClient.dll",
             "RemoteClient.dll",
             "RemoteClient.dll",
@@ -10729,6 +10906,31 @@
             "Debugging"
         ],
         "url": "https://the-starport.com/forums/topic/6203/limit-in-cargo-hold-and-characters/2"
+    },
+    {
+        "moduleName": [
+            "remoteserver.dll",
+            "common.dll",
+        ],
+        "original": [
+            "8B 7D 38 8B C8 8B D1",
+            "90 90 90 90 90 90 90 90 90 90 90 90 90"
+        ],
+        "replacement": [
+            "BF 21 9A 30 06 FF D7",
+            "BF 71 9B 30 06 89 7D 38 8B C8 8B D1 C3"
+        ],
+        "offset": [
+            "0x0249B1",
+            "0x0A9A21"
+        ],
+        "author": "Venemon",
+        "description": "Bugfix for FLHook RequestSpaceScript, fixes server sided cutscene crashes.",
+        "dateAdded": 1720975080,
+        "categories": [
+            "Debugging"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
     },
     {
         "moduleName": [
