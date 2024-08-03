@@ -80,15 +80,15 @@ All infocards must be written in valid XML. Some important tips to remember:
 
 There are some basic XML sections that you will be frequently using. These include:
 
-Start (mandatory): `<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TEXT>`
-Line break (single): `</TEXT><PARA/><TEXT>`
-Line break (double): `</TEXT><PARA/><PARA/><TEXT>`
-End (mandatory): `</TEXT><PARA/><POP/></RDL>`
-- `% symbol: `%%`
-- & symbol: `&amp;`
-- > symbol: `&gt;`
-- < symbol: `&lt;`
-- 
+- Start (mandatory): `<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TEXT>`
+- Line break (single): `</TEXT><PARA/><TEXT>`
+- Line break (double): `</TEXT><PARA/><PARA/><TEXT>`
+- End (mandatory): `</TEXT><PARA/><POP/></RDL>`
+- `%` symbol: `%%`
+- `&` symbol: `&amp;`
+- `>` symbol: `&gt;`
+- `<` symbol: `&lt;`
+  
 Bolding, colours and italics are an enormous pain to apply, so I won't be covering them in this basic guide. If you do want to make use of them, I would recommend finding an existing example and examining the XML they use.
 
 ## 3. Implementing Base and Object Infocards.
@@ -143,9 +143,9 @@ file = universe\systems\br01\bases\br01_04_base.ini
 BGCS_base_run_by = W02bF23
 ```
 
-All we need to do here is make sure the strid_name matches the IDS_name assigned in the system file. If you're changing the number, make sure to change it in both places.
+All we need to do here is make sure the `strid_name` matches the `IDS_name` assigned in the system file. If you're changing the number, make sure to change it in both places.
 
-Next, the IDS_info value works slightly differently depending on whether the object is a dockable base or not. For dockable stations, the IDS_info data is the text that you can see using F9 before you dock with the base. Waterloo is a typical example, providing fluff information about the station class, amenities, crew, etc.
+Next, the `IDS_info` value works slightly differently depending on whether the object is a dockable base or not. For dockable stations, the `IDS_info` data is the text that you can see using F9 before you dock with the base. Waterloo is a typical example, providing fluff information about the station class, amenities, crew, etc.
 
 ```xml
 <?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TEXT>CLASS: Zeus</TEXT><PARA/><TEXT>GRAVITY: Complete</TEXT><PARA/><TEXT>DOCKING: Yes</TEXT><PARA/><TEXT>AMENITIES: Yes</TEXT><PARA/><TEXT>CREW: 1090</TEXT><PARA/><POP/></RDL>
@@ -166,13 +166,13 @@ InfocardMap creates linked pairs of infocards for dockable stations. If you use 
 
 `Map = 65727, 65728`
 
-This is telling the game that when you dock on the object associated with IDS 65727, it must append IDS 65728 to the end of the station's description. If you are editing an existing station's infocard, you don't need to worry too much about this. If you are adding a brand-new station or changing a station's IDS_info number, you will need to add an InfocardMap entry too.
+This is telling the game that when you dock on the object associated with IDS 65727, it must append IDS 65728 to the end of the station's description. If you are editing an existing station's infocard, you don't need to worry too much about this. If you are adding a brand-new station or changing a station's `IDS_info` number, you will need to add an InfocardMap entry too.
 
-Objects that aren't dockable stations are much more straightforward - the full infocard is simply included under a single reference in IDS_info. Note that some kinds of Objects are not able to display infocards.
+Objects that aren't dockable stations are much more straightforward - the full infocard is simply included under a single reference in `IDS_info`. Note that some kinds of Objects are not able to display infocards.
 
 This depends on the Object's Archetype (Waterloo's is largestation1), which is defined in `DATA\SOLAR\SolarArch.ini` - this is really a system modding issue, so it will be covered in more detail in a later tutorial.
 
-An extreme simplification is that only Archetypes with the Type of either `MISSION_SATELLITE` or `STATION` can have both IDS_names and IDS_infocards freely assigned. Other types either cannot display infocards at all, or make use of specific hardcoded infocards for their name, infocard or both.
+An extreme simplification is that only Archetypes with the Type of either `MISSION_SATELLITE` or `STATION` can have both `IDS_name` and `IDS_info` cards freely assigned. Other types either cannot display infocards at all, or make use of specific hardcoded infocards for their name, infocard or both.
 
 ## 4. Rumours and Bar NPCs.
 
