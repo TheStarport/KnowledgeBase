@@ -10910,7 +10910,7 @@
     {
         "moduleName": [
             "remoteserver.dll",
-            "common.dll",
+            "common.dll"
         ],
         "original": [
             "8B 7D 38 8B C8 8B D1",
