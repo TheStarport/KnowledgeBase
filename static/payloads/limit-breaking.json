@@ -3020,6 +3020,29 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "DC 2D B8 89 5C 00",
+            "00 64 80 5B 00 64 80 5B"
+        ],
+        "replacement": [
+            "DC 2D 3B 90 5C 00",
+            "00 00 00 00 00 00 24 40"
+        ],
+        "offset": [
+            "0x11250D",
+            "0x11250D"
+        ],
+        "author": "Venemon",
+        "description": "Make sun flare size modifiable. 1 = 3FF0, 10 = 24 40",
+        "dateAdded": 0,
+        "categories": [
+            "visibility"
+        ]
+    },
+    {
+        "moduleName": [
             "Freelancer.exe",
             "Freelancer.exe"
         ],
@@ -7432,7 +7455,8 @@
             "Other"
         ],
         "url": "https://the-starport.com/forums/topic/5153/optlist-ini/7?_=1716586779936"
-    },    {
+    },
+    {
         "moduleName": [
             "Freelancer.exe",
             "common.dll"
@@ -8286,7 +8310,7 @@
         ],
         "url": "https://the-starport.com/forums/topic/5680/change-default-save-location/3?_=1715799407270"
     },
-        {
+    {
         "moduleName": [
             "common.dll",
             "common.dll",
@@ -8323,7 +8347,6 @@
         ],
         "url": "https://the-starport.com/forums/topic/5680/change-default-save-location/3?_=1715799407270"
     },
-
     {
         "moduleName": [
             "freelancer.exe"
@@ -8695,7 +8718,7 @@
         ],
         "url": "https://the-starport.com/forums/topic/6260/freelancer-exe-don-t-close-after-playing-online/2?_=1714942171974"
     },
-        {
+    {
         "moduleName": [
             "Freelancer.exe",
             "Freelancer.exe",
@@ -9672,6 +9695,40 @@
         "dateAdded": 0,
         "categories": [
             "Systems"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "25000000f"
+        ],
+        "offset": [
+            "0x086AF0"
+        ],
+        "author": "Dev",
+        "description": "Square of player disappear distance in MP.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "server.dll"
+        ],
+        "original": [
+            "100000000f"
+        ],
+        "offset": [
+            "0x086AF4"
+        ],
+        "author": "Dev",
+        "description": "Square of grouped player disappear distance in MP.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
         ]
     },
     {
@@ -11202,5 +11259,219 @@
             "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/2422/menu-color-help/15?_=1717700691983"
+    },
+    {
+        "moduleName": [
+            "rendcomp.dll"
+        ],
+        "original": [
+            "1000000f"
+        ],
+        "offset": [
+            "0x014053"
+        ],
+        "author": "Adoxa",
+        "description": "Multiplier for planet draw distance (so far can be safely increased).",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "83 FE 08",
+            "7D 16"
+        ],
+        "replacement": [
+            "90 90",
+            "D8 C0 90"
+        ],
+        "offset": [
+            "0x002389",
+            "0x00238C"
+        ],
+        "author": "adoxa",
+        "description": "Double existing LODranges",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe",
+            "freelancer.exe"
+        ],
+        "original": [
+            "83 FE 08",
+            "7D 16"
+        ],
+        "replacement": [
+            "D8 C0 90",
+            "D8 C0"
+        ],
+        "offset": [
+            "0x002389",
+            "0x00238C"
+        ],
+        "author": "adoxa",
+        "description": "Quadruple  existing LODranges",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "DC 05"
+        ],
+        "replacement": [
+            "EB 04"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0244F5"
+        ],
+        "author": "Adoxa",
+        "description": "Gamma ranges from 0.0 to 1.0, not 1.0 to 2.0.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "B8 89"
+        ],
+        "replacement": [
+            "E8 75"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0244F7"
+        ],
+        "author": "Adoxa",
+        "description": "Gamma ranges from 0.5 to 1.5, not 1.0 to 2.0.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "B8 89 5C"
+        ],
+        "replacement": [
+            "F8 EB 5D"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x0244F7"
+        ],
+        "author": "BC46",
+        "description": "Gamma ranges from 0.75 to 1.75, not 1.0 to 2.0.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "80 00"
+        ],
+        "replacement": [
+            "00 20"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x01AD6F"
+        ],
+        "author": "Schmackbolzen",
+        "description": "Gamma ranges from 0.75 to 1.75, not 1.0 to 2.0.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "02"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "moduleName": [
+            "rendcomp.dll"
+        ],
+        "offset": [
+            "0x00C499"
+        ],
+        "author": "Adoxa",
+        "description": "Always use high-quality sphere rendering. Makes planets look more round from far distances.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "2B",
+            "2B",
+            "1B",
+            "1B"
+        ],
+        "replacement": [
+            "3B",
+            "3B",
+            "3B",
+            "2B/4B/8B/16B"
+        ],
+        "moduleName": [
+            "rp8.dll"
+        ],
+        "offset": [
+            "0x01A48C",
+            "0x01A4C5",
+            "0x01A4FE",
+            "0x01A5B8"
+        ],
+        "author": "BC46",
+        "description": "Changes the magnification filtering mode from 'linear' to 'anisotropic'. Third offset changes the mipmap filtering mode from 'nearest' to 'anisotropic'. Final offset changes the maximum anisotropy from 1 to either 2, 4, 8, or 16, respectively ",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
+    },
+    {
+        "original": [
+            "1B"
+        ],
+        "replacement": [
+            "2B"
+        ],
+        "moduleName": [
+            "rendcomp.dll"
+        ],
+        "offset": [
+            "0x01A4FE"
+        ],
+        "author": "BC46",
+        "description": "Changes the mipmap filtering mode from 'nearest' to 'linear'. Makes the textures appear better than with the default option, but worse than with 'anisotropic'.",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
     }
 ]
