@@ -31,8 +31,6 @@ space_farclip = FLOAT
 | rpop_solar_detection | Allows NPCs to spawn inside the bounding box of extremely large models like the Dyson Sphere when set to True.                                                                                 |
 | space_farclip        | Minimum value of `1000`. Overrides LOD ranges in the system. used to force ale effects like in Omega-41 to display beyond 17k. Causes graphical glitches to planets when set higher than 150k. |
 
-                                                                              |
-
 ### Archetype
 
 These entries seem to be used to keep certain objects preloaded and in the memory. Vanilla Freelancer uses those entries exclusively for story-related objects in the system files.
