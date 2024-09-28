@@ -11473,5 +11473,26 @@
         "categories": [
             "Visibility"
         ]
+    },
+    {
+        "original": [
+            "D9 44 24 20 8B 15 9C 42 E3 04 D8 32 8B 07"
+        ],
+        "replacement": [
+            "D9 05 DE 97 42 00 8B 15 9C 42 01 05 8B 07"
+        ],
+        "moduleName": [
+            "server.dll"
+        ],
+        "offset": [
+            "0x00A551"
+        ],
+        "author": "Venemon",
+        "description": "Change zone damage from percentage to flat 100 per tick (higher the zone damage faster it applies).",
+        "dateAdded": 0,
+        "categories": [
+            "Visibility"
+        ]
     }
+    
 ]
