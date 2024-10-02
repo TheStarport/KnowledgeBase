@@ -740,5 +740,89 @@
         "author": "IrateRedKite",
         "description": "Attempted to fire an equipment object with a missing or malformed HpFire hardpoint.",
         "dateAdded": 1719042382
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x0001aa9f",
+        "author": "Ven",
+        "description": "_SendMessage (Server uses this to communicate with every function) crashes due to following reason; if anyone calls Story mission 'Act_State = SUCCEED' server will call DestroyInstance for every story instances are running, it will crash the server if there are more than 1 in action. This can be temporarily fixed by altering the function, which prevents DestroyInstance erase Story instances (it will only stop the last instance which Co-Op mod does for 0x1 iClientID)",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x00049c95",
+        "author": "Ven",
+        "description": "settimer assignment error, unstable instance for unknown reasons",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x00089651",
+        "author": "Ven",
+        "description": "reputation based error (happened when SP Story reputation functions are enabled in MP)",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x0002d541",
+        "author": "Ven",
+        "description": "Story manager tried to submit an order/reputation to a NPC that does not exist. Documented this bug at SpawnShip within initState = ACTIVE trigger",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x00055796",
+        "author": "Ven",
+        "description": "Client crashed during MP base cutscene when server shut down (crash in DestroyInstance)",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x00025cc9",
+        "author": "Ven",
+        "description": "Story trigger, Act_LockDock error?, possible nullpointer base? it might be related to other story triggers too(Previous OPjump does initilaize every trigger of story manager)",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x0002fe8f",
+        "author": "Ven",
+        "description": "AI logic error, as far as I can tell, 3 different functions use this area, one of them controls their orders as they spawn and the other one upon destruction",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x0006c282",
+        "author": "Ven",
+        "description": "Group formation leader error",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0013d55a",
+        "author": "Ven",
+        "description": "Client tried to dock to a solar that does not exist from its perspective, either done through SwitchOut or following a formation leader that is docking",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x001469f6",
+        "author": "Ven",
+        "description": "Client tried to sends its targetting information to the server, but failed (tried to target during SystemSwitchOut)",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x001aad50",
+        "author": "Ven",
+        "description": "Based on pure speculation, Client tried to switch chars during server froze and it crashed",
+        "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "server.dll",
+        "offset": "0x0000f988",
+        "author": "Ven",
+        "description": "Client and Server failed to sync jump destination system, causes crash in Singleplayer",
+        "dateAdded": 1727879140
     }
 ]
