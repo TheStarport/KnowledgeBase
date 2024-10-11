@@ -710,7 +710,7 @@
         "moduleName": "Freelancer.exe",
         "offset": "0x0014661b",
         "author": "Beaglerush",
-        "description": "Possibly relates to a malformed tradelane encounter, the exact cause of this crash is not known, but it appears to be correctly handled in Multiplayer and only occurs in Singleplayer.",
+        "description": "Occurs when an NPC is destroyed after it is spawned, but still has logic tied to it, For example during a trade-lane encounter. This originally occured when an NPC with a fuse to instantly destroy it was referenced the lane's destination population zone. This specific instance is handled in multiplayer, but not singleplayer, leading to this crash.",
         "dateAdded": 1715157749
     },
     {
