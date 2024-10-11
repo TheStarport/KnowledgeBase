@@ -824,5 +824,12 @@
         "author": "Ven",
         "description": "Client and Server failed to sync jump destination system, causes crash in Singleplayer",
         "dateAdded": 1727879140
+    },
+    {
+        "moduleName": "rp8.dll",
+        "offset": "0x00033b2f",
+        "author": "JosByte",
+        "description": "Occurs if in the current system there is one or more objects that doesn't have power of two size textures",
+        "dateAdded": 1728371464
     }
 ]
