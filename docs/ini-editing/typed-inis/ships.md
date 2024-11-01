@@ -25,7 +25,7 @@ linear_drag = sum of linear_drag value on engine and ship
 
 $$
 S = strafe_force/(linear_drag)
-&&
+$$
 
 Strafe Speed =  strafe_force/(linear_drag)
 Max Turn Speed = steering_torque/angular_drag
