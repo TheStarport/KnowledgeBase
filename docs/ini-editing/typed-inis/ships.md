@@ -21,12 +21,18 @@ Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable
 
 ### Ship Handling
 
+Ship handling is dictated by several keys found in the `[Engine]` block from [equipment](./equipment.md), as well as keys attributed to the `[Ship]` entry itself. The `mass` of a ship attenuates any change in speed and influences behaviour when colliding with other objects. `rotation_inertia` operates in much the same manner, but for turning.
+
+`rotation_inertia` should typically be between 10 to 20% of `angular_drag` to avoid strange behaviour from the autopilot.
+
 Where `linear_drag` = the sum of engine and ship `linear_drag` values:
 $Strafe\ Speed = strafe\_force/(linear\_drag)$
 
 $Max\ Turn\ Speed = steering\_torque/angular\_drag$
 
-$Top\ Speed = max\_force/linear\_drag$
+$Top\ Speed = max\_force*/linear\_drag$
+
+*Value is defined in an [equipment](./equipment.md) entry.
 
 ## Syntax
 
@@ -138,7 +144,7 @@ hp_type = STRING, STRING
 | explosion_arch                      |             |
 | surface_hit_effects                 |             |
 | steering_torque                     |             |
-| angular_drag                        | Effectively turn rate, the same formula can             |
+| angular_drag                        |             |
 | rotation_inertia                    |             |
 | nudge_force                         |             |
 | strafe_force                        |             |
@@ -176,22 +182,22 @@ explosion_resistance = FLOAT ;optional
 linked_equip = STRING, FLOAT ;optional
 ```
 
-| Parameter            | Information |
-| -------------------- | ----------- |
-| obj                  |             |
-| separable            |             |
-| parent_impulse       |             |
-| child_impulse        |             |
-| dmg_hp               |             |
-| dmg_obj              |             |
-| mass                 |             |
-| fuse                 |             |
-| group_dmg_hp         |             |
-| group_dmg_obj        |             |
-| debris_type          |             |
-| separation_explosion |             |
-| type                 |             |
-| hit_pts              | The amount of hitpoints this collision group has. |
-| root_health_proxy    | Decides whether any damage applied to this collision group is also applied to the root object, too. `true` applies the damage to the root object, `false` does not forward the damage and keeps it just to this group. |
-| explosion_resistance | Defines a factor by which damage caused by explosions is multiplied. Defaults to 1. 0 means no explosion damage is applied ever.  |
+| Parameter            | Information                                                                                                                                                                                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| obj                  |                                                                                                                                                                                                                                                                                                                   |
+| separable            |                                                                                                                                                                                                                                                                                                                   |
+| parent_impulse       |                                                                                                                                                                                                                                                                                                                   |
+| child_impulse        |                                                                                                                                                                                                                                                                                                                   |
+| dmg_hp               |                                                                                                                                                                                                                                                                                                                   |
+| dmg_obj              |                                                                                                                                                                                                                                                                                                                   |
+| mass                 |                                                                                                                                                                                                                                                                                                                   |
+| fuse                 |                                                                                                                                                                                                                                                                                                                   |
+| group_dmg_hp         |                                                                                                                                                                                                                                                                                                                   |
+| group_dmg_obj        |                                                                                                                                                                                                                                                                                                                   |
+| debris_type          |                                                                                                                                                                                                                                                                                                                   |
+| separation_explosion |                                                                                                                                                                                                                                                                                                                   |
+| type                 |                                                                                                                                                                                                                                                                                                                   |
+| hit_pts              | The amount of hitpoints this collision group has.                                                                                                                                                                                                                                                                 |
+| root_health_proxy    | Decides whether any damage applied to this collision group is also applied to the root object, too. `true` applies the damage to the root object, `false` does not forward the damage and keeps it just to this group.                                                                                            |
+| explosion_resistance | Defines a factor by which damage caused by explosions is multiplied. Defaults to 1. 0 means no explosion damage is applied ever.                                                                                                                                                                                  |
 | linked_equip         | When this collision group is being destroyed, it causes damage to a type of equipment on the ship. The first entry accept a defined set of equipment types, which are: scanner, engine, weapon, shield, thruster, power, light, tractor, attached_fx, internal_fx, tradelane, repairdroid, cloaking_device, armor |
