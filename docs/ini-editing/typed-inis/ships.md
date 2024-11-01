@@ -30,9 +30,9 @@ $Strafe\ Speed = strafe\_force/(linear\_drag)$
 
 $Max\ Turn\ Speed = steering\_torque/angular\_drag$
 
-$Top\ Speed = max\_force*/linear\_drag$
+$Top\ Speed = max\_force†/linear\_drag$
 
-*Value is defined in an [equipment](./equipment.md) entry.
+†Value is defined in an [equipment](./equipment.md) entry.
 
 ## Syntax
 
