@@ -18,8 +18,14 @@ Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable
 ### Ship Handling
 
 $$
-`strafe_speed` = \int_0^{2\pi} \sin(x)\,dx
+strafe_speed = \int_0^{2\pi} \sin(x)\,dx
 $$
+
+`strafe_speed` =
+
+`rotation_speed` =
+
+`steering_torque` =
 
 ### Vanilla Examples
 
