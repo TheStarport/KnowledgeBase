@@ -24,8 +24,9 @@ Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable
 linear_drag = sum of linear_drag value on engine and ship
 
 $$
-S = strafe_force/(linear_drag)
+Strafe Speed = strafe\_force/(linear\_drag)
 $$
+
 
 Strafe Speed =  strafe_force/(linear_drag)
 Max Turn Speed = steering_torque/angular_drag
