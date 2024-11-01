@@ -14,19 +14,6 @@ There may be missing, incomplete or incorrect information on this page as it's s
 
 Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable locations in `freelancer.ini`, ships used by NPCs _must_ be in the default `shiparch.ini` file or crashes may occur.
 
-
-### Ship Handling
-
-$$
-strafe_speed = \int_0^{2\pi} \sin(x)\,dx
-$$
-
-`strafe_speed` =
-
-`rotation_speed` =
-
-`steering_torque` =
-
 ### Vanilla Examples
 
 * `DATA\SHIPS\shiparch.ini`
