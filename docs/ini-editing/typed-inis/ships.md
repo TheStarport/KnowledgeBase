@@ -19,6 +19,19 @@ Although `shiparch.ini` and `rtc_shiparch.ini` are listed as having configurable
 * `DATA\SHIPS\shiparch.ini`
 * `DATA\SHIPS\rtc_shiparch.ini`
 
+### Ship Handling
+
+linear_drag = sum of linear_drag value on engine and ship
+
+$$
+S = strafe_force/(linear_drag)
+&&
+
+Strafe Speed =  strafe_force/(linear_drag)
+Max Turn Speed = steering_torque/angular_drag
+Top Speed = max_force/linear_drag
+
+
 ## Syntax
 
 ### Simple
@@ -129,7 +142,7 @@ hp_type = STRING, STRING
 | explosion_arch                      |             |
 | surface_hit_effects                 |             |
 | steering_torque                     |             |
-| angular_drag                        |             |
+| angular_drag                        | Effectively turn rate, the same formula can             |
 | rotation_inertia                    |             |
 | nudge_force                         |             |
 | strafe_force                        |             |
