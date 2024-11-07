@@ -563,7 +563,7 @@
         "moduleName": "Freelancer.exe",
         "offset": "0x0008381a",
         "author": "IrateRedKite",
-        "description": "Bad goods.ini entry. In the instance where this was occurring, the 'price' field contained invalid data.",
+        "description": "Bad goods.ini entry. In the instance where this was occurring, the 'price' field contained invalid data. This can also occur when an item is sold for 0 credits.",
         "dateAdded": 1701467816
     },
     {
@@ -745,7 +745,7 @@
         "moduleName": "content.dll",
         "offset": "0x0001aa9f",
         "author": "Ven",
-        "description": "_SendMessage (Server uses this to communicate with every function) crashes due to following reason; if anyone calls Story mission 'Act_State = SUCCEED' server will call DestroyInstance for every story instances are running, it will crash the server if there are more than 1 in action. This can be temporarily fixed by altering the function, which prevents DestroyInstance erase Story instances (it will only stop the last instance which Co-Op mod does for 0x1 iClientID)",
+        "description": "_SendMessage (Server uses this to communicate with every function) crashes due to following reason; if anyone calls Story mission 'Act_State = SUCCEED' server will call DestroyInstance for every story instances are running, it will crash the server if there are more than 1 in action. This can be temporarily fixed by altering the function, which prevents DestroyInstance erase Story instances (it will only stop the last instance which Co-Op mod does for 0x1 iClientID). This crash has also bee observed in single player where there was a problem establishing the mission status of the player.",
         "dateAdded": 1727879140
     },
     {
