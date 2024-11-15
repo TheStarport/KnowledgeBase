@@ -46,17 +46,17 @@ run_time = INT
 pbubble = INT, INT
 ```
 
-| Parameter        | Information                                        |
-| ---------------- | -------------------------------------------------- |
-| nickname         | How the effect is referenced by `[Effect]` blocks. |
-| priority         |                                                    |
-| generic_priority |                                                    |
-| lod_type         |                                                    |
-| radius           |                                                    |
-| visibility       | Options are `EXIST_OFFSCREEN` or `CULL_OFFSCREEN`  |
-| update           | Options are `UPDATE_OFFSCREEN` or `CULL_UPDATE`    |
-| run_time         | Maximum run time for effects of this type.         |
-| pbubble          |                                                    |
+| Parameter        | Information                                                                                                                                                                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| nickname         | How the effect is referenced by `[Effect]` blocks.                                                                                                                                                                                   |
+| priority         | Sets the effect's render priority. This appears to determine culling order when particle cap is reached.                                                                                                                             |
+| generic_priority | Same as `priority`, but for the effect referenced by `vis_generic`. in `[Effect]` blocks.                                                                                                                                            |
+| lod_type         | Options are `EFT_LOD_NONE`, `EFT_LOD_TRAIL`, `EFT_LOD_WEAPON`, `EFT_LOD_SMALL`, `EFT_LOD_MEDIUM`, `EFT_LOD_LARGE` and `EFT_LOD_SMALL_DISTANT`.                                                                                       |
+| radius           | Range: 0 to infty. Approximates the size of the object; may be used in the calculations for `visibility` and `update`.                                                                                                               |
+| visibility       | Determines the visibility of the effect. Options are `EXIST_OFFSCREEN` or `CULL_OFFSCREEN`                                                                                                                                           |
+| update           | Determines whether the effect is updated when offsceen. Options are `UPDATE_OFFSCREEN` or `CULL_UPDATE`                                                                                                                              |
+| run_time         | Maximum run time for effects of this type.                                                                                                                                                                                           |
+| pbubble          | Determines the maximum and minimum view distance of the effect. Note that any radius higher than the hardcoded maximum draw range or the maximum effect view distance will not be used, defaulting to the hardcoded maximum instead. |
 
 ### VisEffect
 
@@ -175,25 +175,25 @@ trail_texture = STRING
 flash_size = INT
 ```
 
-| Parameter        | Information                                                   |
-| ---------------- | ------------------------------------------------------------- |
-| nickname         | How the BeamSpear is referred to in `[Effect]` blocks.        |
-| tip_length       | Length of the tip element of the beam                         |
-| tail_length      | Length of the tail element of the beam                        |
-| head_width       | Width of the head element of the beam                         |
-| core_width       | Width of the core element of the beam                         |
-| sec_core_width   |                                                               |
-| tip_color        | RGB color of the tip element of the beam                      |
-| core_color       | RGB color of the core element of the beam                     |
-| outter_color     | RBG color of the outer 'glow' of the beam                     |
-| sec_core_color   |                                                               |
-| sec_outter_color |                                                               |
-| tail_color       | RGB color of the tail element of the beam                     |
-| head_brightness  | Alpha of the head element of the beam (0-1 range)             |
-| trail_brightness | Alpha of the trail element of the beam (0-1 range)            |
-| head_texture     | Texture of the head element of the beam (Can be ball or star) |
-| trail_texture    | Texture of the trail element of the beam (Be be wide or thin) |
-| flash_size       | Flash size of the beam when it is created.                    |
+| Parameter        | Information                                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| nickname         | How the BeamSpear is referred to in `[Effect]` blocks.                                                                                   |
+| tip_length       | Length of the tip element of the beam                                                                                                    |
+| tail_length      | Length of the tail element of the beam                                                                                                   |
+| head_width       | Width of the head element of the beam                                                                                                    |
+| core_width       | Width of the core element of the beam                                                                                                    |
+| sec_core_width   | Sets the diameter of the secondary core.                                                                                                 |
+| tip_color        | RGB color of the tip element of the beam                                                                                                 |
+| core_color       | RGB color of the core element of the beam                                                                                                |
+| outter_color     | RBG color of the outer 'glow' of the beam                                                                                                |
+| sec_core_color   | Sets the color inside of the secondary core.                                                                                             |
+| sec_outter_color | Sets the color of the outter ring of the secondary core. The secondary core color is a gradient from sec_core_color to sec_outter_color. |
+| tail_color       | RGB color of the tail element of the beam                                                                                                |
+| head_brightness  | Alpha of the head element of the beam (0-1 range)                                                                                        |
+| trail_brightness | Alpha of the trail element of the beam (0-1 range)                                                                                       |
+| head_texture     | Texture of the head element of the beam (Can be ball or star)                                                                            |
+| trail_texture    | Texture of the trail element of the beam (Be be wide or thin)                                                                            |
+| flash_size       | Flash size of the beam when it is created.                                                                                               |
 
 #### Beam Breakdown
 
