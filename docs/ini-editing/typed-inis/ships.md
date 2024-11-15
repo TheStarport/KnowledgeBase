@@ -42,19 +42,19 @@ $Top\ Speed = max\_force†/linear\_drag$
 [Simple]
 nickname = STRING
 DA_archetype = PATH
-material_library = PATH
+material_library = PATH ;repeatable
 LODranges = INT, INT, ...
 MinSpecLOD = INT
 ```
 
-| Parameter        | Information |
-| ---------------- | ----------- |
-| nickname         |             |
-| DA_archetype     |             |
-| material_library |             |
-| ScreenReset      |             |
-| LODranges        |             |
-| MinSpecLOD       |             |
+| Parameter        | Information                                                                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| nickname         | How this simple object is referenced elsewhere in the game's files.                                                                                              |
+| DA_archetype     | The path to the archetype model to use for the simple. Typically a .3db or .cmp file.                                                                            |
+| material_library | The path to a material library (.mat) file that the `DA_archetype` uses. Missing .mat files will cause the ship, or parts of the model to render inconsistently. |
+| ScreenReset      |                                                                                                                                                                  |
+| LODranges        |                                                                                                                                                                  |
+| MinSpecLOD       |                                                                                                                                                                  |
 
 ### Ship
 
@@ -74,7 +74,7 @@ type = STRING
 mass = INT
 hold_size = INT
 linear_drag = INT
-fuse = STRING, FLOAT, FLOAT
+fuse = STRING, FLOAT, FLOAT ;repeatable
 max_bank_angle = INT
 camera_offset = INT, INT
 camera_angular_acceleration = FLOAT
@@ -86,7 +86,7 @@ nanobot_limit = INT
 shield_battery_limit = INT
 hit_pts = INT
 DA_archetype = PATH
-material_library = PATH
+material_library = PATH ;repeatable
 envmap_material = STRING
 cockpit = PATH
 pilot_mesh = STRING
@@ -106,58 +106,58 @@ HP_bay_external = STRING
 num_exhaust_nozzles = INT
 HP_tractor_source = STRING
 shield_link = STRING, STRING, STRING
-hp_type = STRING, STRING
+hp_type = STRING, STRING ;repeatable
 ```
 
-| Parameter                           | Information |
-| ----------------------------------- | ----------- |
-| ids_name                            |             |
-| ids_info                            |             |
-| ids_info1                           |             |
-| ids_info2                           |             |
-| ids_info3                           |             |
-| ship_class                          |             |
-| nickname                            |             |
-| LODranges                           |             |
-| msg_id_prefix                       |             |
-| mission_property                    |             |
-| type                                |             |
-| mass                                |             |
-| hold_size                           |             |
-| linear_drag                         |             |
-| fuse                                |             |
-| max_bank_angle                      |             |
-| camera_offset                       |             |
-| camera_angular_acceleration         |             |
-| camera_horizontal_turn_angle        |             |
-| camera_vertical_turn_up_angle       |             |
-| camera_vertical_turn_down_angle     |             |
-| camera_turn_look_ahead_slerp_amount |             |
-| nanobot_limit                       |             |
-| shield_battery_limit                |             |
-| hit_pts                             |             |
-| DA_archetype                        |             |
-| material_library                    |             |
-| envmap_material                     |             |
-| cockpit                             |             |
-| pilot_mesh                          |             |
-| explosion_arch                      |             |
-| surface_hit_effects                 |             |
-| steering_torque                     |             |
-| angular_drag                        |             |
-| rotation_inertia                    |             |
-| nudge_force                         |             |
-| strafe_force                        |             |
-| strafe_power_usage                  |             |
-| bay_door_anim                       |             |
-| bay_doors_open_snd                  |             |
-| bay_doors_close_snd                 |             |
-| HP_bay_surface                      |             |
-| HP_bay_external                     |             |
-| num_exhaust_nozzles                 |             |
-| HP_tractor_source                   |             |
-| shield_link                         |             |
-| hp_type                             |             |
+| Parameter                           | Information                                                                                                                                                                         |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ids_name                            | The string ID name of the ship.                                                                                                                                                     |
+| ids_info                            | The stat description text used in the ship dealer.                                                                                                                                  |
+| ids_info1                           | The 'flavour text' used in a ship's description.                                                                                                                                    |
+| ids_info2                           | The stats 'fields' used in the ship infobox when examining it outside the ship dealer. In vanilla this value is typically always `66608`                                            |
+| ids_info3                           | The stats 'numbers' used in the ship infobox when examining it outside the ship dealer.                                                                                             |
+| ship_class                          | A value between 0 and 3. Determines the ship class displayed in the dealer where 0 = 'Light Fighter', 1 = 'Heavy Fighter', 2 = 'Freighter', 3 = 'Very Heavy Fighter' and 4 =        |
+| nickname                            | The internal nickname of the ship, i.e. how this will be referred to elsewhere in the game's INI files.                                                                             |
+| LODranges                           |                                                                                                                                                                                     |
+| msg_id_prefix                       |                                                                                                                                                                                     |
+| mission_property                    | Determines what the ship is able to dock to. Valid options seem to be `can_use_berths` (Which allows the ship to use docking rings), `can_use_med_moors` and `can_use_large_moors`. |
+| type                                |                                                                                                                                                                                     |
+| mass                                | The mass of the ship. This value attenuates any changes in speed that the ship makes. A higher value results in greater attenuation.                                                |
+| hold_size                           | The cargo size of the ship.                                                                                                                                                         |
+| linear_drag                         |                                                                                                                                                                                     |
+| fuse                                | A fuse applied to the ship. Values here are typically a [`fuse`](./fuses.md), a delay in seconds and a hit_pts threshold for the fuse to trigger.                                   |
+| max_bank_angle                      |                                                                                                                                                                                     |
+| camera_offset                       |                                                                                                                                                                                     |
+| camera_angular_acceleration         |                                                                                                                                                                                     |
+| camera_horizontal_turn_angle        |                                                                                                                                                                                     |
+| camera_vertical_turn_up_angle       |                                                                                                                                                                                     |
+| camera_vertical_turn_down_angle     |                                                                                                                                                                                     |
+| camera_turn_look_ahead_slerp_amount |                                                                                                                                                                                     |
+| nanobot_limit                       | Determines the maximum number of Nanobots a ship can carry.                                                                                                                         |
+| shield_battery_limit                | Determines the maximum number of Shield Batteries a ship can carry.                                                                                                                 |
+| hit_pts                             | Determines the ship's maximum hit points.                                                                                                                                           |
+| DA_archetype                        | The path to the archetype model to use for the ship. Typically a .3db or .cmp file.                                                                                                 |
+| material_library                    | The path to a material library (.mat) file that the `DA_archetype` uses. Missing .mat files will cause the ship, or parts of the model to render inconsistently.                    |
+| envmap_material                     |                                                                                                                                                                                     |
+| cockpit                             | Path to a [Cockpit](./cockpits.md) ini entry. Determines the properties of the ship's cockpit when in first-person view.                                                            |
+| pilot_mesh                          | References a `[Simple]` block to attach at the HpPilot hardpoint.                                                                                                                   |
+| explosion_arch                      |                                                                                                                                                                                     |
+| surface_hit_effects                 |                                                                                                                                                                                     |
+| steering_torque                     |                                                                                                                                                                                     |
+| angular_drag                        |                                                                                                                                                                                     |
+| rotation_inertia                    |                                                                                                                                                                                     |
+| nudge_force                         |                                                                                                                                                                                     |
+| strafe_force                        |                                                                                                                                                                                     |
+| strafe_power_usage                  |                                                                                                                                                                                     |
+| bay_door_anim                       | The animation in the model file to use when opening and closing the cargo bay doors.                                                                                                |
+| bay_doors_open_snd                  | The [sound](./sounds.md) played when opening the bay doors.                                                                                                                         |
+| bay_doors_close_snd                 | The [sound](./sounds.md) played when closing the bay doors.                                                                                                                         |
+| HP_bay_surface                      |                                                                                                                                                                                     |
+| HP_bay_external                     |                                                                                                                                                                                     |
+| num_exhaust_nozzles                 |                                                                                                                                                                                     |
+| HP_tractor_source                   |                                                                                                                                                                                     |
+| shield_link                         |                                                                                                                                                                                     |
+| hp_type                             |                                                                                                                                                                                     |
 
 ### CollisionGroup
 
@@ -184,7 +184,7 @@ linked_equip = STRING, FLOAT ;optional
 
 | Parameter            | Information                                                                                                                                                                                                                                                                                                       |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| obj                  |                                                                                                                                                                                                                                                                                                                   |
+| obj                  | References a `[Simple]` block defined elsewhere in the Shiparch file.                                                                                                                                                                                                                                             |
 | separable            |                                                                                                                                                                                                                                                                                                                   |
 | parent_impulse       |                                                                                                                                                                                                                                                                                                                   |
 | child_impulse        |                                                                                                                                                                                                                                                                                                                   |
