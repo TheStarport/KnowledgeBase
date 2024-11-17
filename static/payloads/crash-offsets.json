@@ -372,7 +372,7 @@
     },
     {
         "moduleName": "server.dll",
-        "offset": "0x00702064",
+        "offset": "0x000AB670",
         "author": "Laz",
         "description": "Triggered by warping to a base that doesn't have a physical presence, but has an mbase and universe entry",
         "dateAdded": 1586521320
