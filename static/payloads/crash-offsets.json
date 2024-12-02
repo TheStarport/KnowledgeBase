@@ -120,7 +120,7 @@
     },
     {
         "moduleName": "common.dll",
-        "offset": "0x062ffbeb",
+        "offset": "0x0009fbeb",
         "author": "IrateRedKite",
         "description": "Relates to a bad NPC costume (inconsistent gender choices according to IDA) in mBases.ini",
         "dateAdded": 1627306740
@@ -155,17 +155,24 @@
     },
     {
         "moduleName": "common.dll",
-        "offset": "0x0635C376",
+        "offset": "0x000FC376",
         "author": "FriendlyFire",
         "description": "Related to ray collision, involves PhySys::FindRayCollisions. More information can be found at https://the-starport.com/forums/topic/5738/common-dll-0x0635c376-crash?_=1715267168399.",
         "dateAdded": 1466107080
     },
     {
         "moduleName": "common.dll",
-        "offset": "0x0635d32b",
+        "offset": "0x000FD32B",
         "author": "FriendlyFire",
         "description": "Occurs sometimes when switching systems. Relates to a broken quaternion conversion somewhere. More information can be found at https://the-starport.com/forums/topic/5772/crash-at-0x635d32b-common-dll-dump-attached/7?_=1715267168404.",
         "dateAdded": 1473274200
+    },
+    {
+        "moduleName": "common.dll",
+        "offset": "0x000C9B78",
+        "author": "Aingar",
+        "description": "Cause unknown, has to do with rendering of multiplayer text and/or console window.",
+        "dateAdded": 1733163912
     },
     {
         "moduleName": "content.dll",
