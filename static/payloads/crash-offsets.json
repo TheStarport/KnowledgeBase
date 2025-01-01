@@ -831,5 +831,12 @@
         "author": "JosByte",
         "description": "Occurs if in the current system there is one or more objects that doesn't have power of two size textures",
         "dateAdded": 1728371464
+    },
+    {
+        "moduleName": "Content.dll",
+        "offset": "0x00055540",
+        "author": "IrateRedKite",
+        "description": "Bad encounter permutations value",
+        "dateAdded": 1735747338
     }
 ]
