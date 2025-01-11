@@ -61,8 +61,9 @@ Each entry in tree block is 44 bytes.
 | accessTime           | uint32 | File last access timestamp.                    |
 | modifyTime           | uint32 | File last modification timestamp.              |
 
-- Tree root entry name should be "/", but other names are possible.
+- Tree root entry name should be "\\", but other names are possible.
 - For attributes see Win32 API dwFileAttributes. In short it should be either 0x80 for file or 0x10 for folder. It is not necessary, however, that all three bytes after the first here are zero, and, in fact, in some vanilla files, they are not.
 - When entry is a folder the childOffset points to first child byte offset, relative to treeOffset in header, and dataSize* are all zeroes.
 - When entry is a file the childOffset points to data block, relative to dataOffset in header, and dataSize* indicate file size.
-- Timestamps are DOS file timestamp, see: [https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653](https://blogs.msdn.microsoft.com/oldnewthing/20030905-02/?p=42653)
+- Timestamps are 16-bit DOS date followed by 16-bit DOS time, layed out as here: [https://learn.microsoft.com/en-us/cpp/c-runtime-library/32-bit-windows-time-date-formats](https://learn.microsoft.com/en-us/cpp/c-runtime-library/32-bit-windows-time-date-formats?view=msvc-170)
+- The game does not require that entries be at least 44 bytes apart in the file. In principle, one could save on the timestamps, so long as no entry linked to down the chain from root begins fewer than 44 bytes before EOF. The game does not check these timestamps for validity, nor makes any other use of them.
