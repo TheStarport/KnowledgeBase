@@ -716,7 +716,7 @@
     {
         "moduleName": "Freelancer.exe",
         "offset": "0x0013b395",
-        "author": "Katz, Ven",
+        "author": "Katzenkebap, Ven",
         "description": "Possibly relates to a bad ship archetype. The function this crashes in is related to creating or showing a ship in a player's scanner range. Exact cause is unclear.",
         "dateAdded": 1715263201
     },
@@ -838,5 +838,12 @@
         "author": "IrateRedKite",
         "description": "Bad encounter permutations value",
         "dateAdded": 1735747338
+    },
+    {
+        "moduleName": "Common.dll",
+        "offset": "0x00010ac1",
+        "author": "Katzenkebap",
+        "description": "A package has attenoted to access a ship hull that doesn't exist.",
+        "dateAdded": 1737879823
     }
 ]
