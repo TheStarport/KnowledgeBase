@@ -43,7 +43,6 @@ npc_ship_file = PATH
 | reward        | The credit reward for completing the mission.                                                                                                             |
 | npc_ship_file | References the [npcships.ini](./npcships.ini.md) file used for the mission. Each mission has it's own file located in the same folder as the mission ini. |
 
-
 ### [NPC]
 
 Appears to follow a similar syntax to [specific_npc.ini](./specific_npc.ini.md), but with the addition of the `npc_ship_arch` key.
@@ -55,17 +54,17 @@ space_costume = STRING, STRING, STRING
 affiliation = STRING
 npc_ship_arch = STRING ;optional
 individual_name = INT
-voice = STRING
+voice = STRING ;optional
 ```
 
-| Parameter       | Information |
-| --------------- | ----------- |
-| nickname        |             |
-| space_costume   |             |
-| affiliation     |             |
-| npc_ship_arch   |             |
-| individual_name |             |
-| voice           |             |
+| Parameter       | Information                                                                                                |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| nickname        | How this NPC is referenced by `[MsnShip]` blocks                                                           |
+| space_costume   | References a `Head`, `Body` and `Accessory` entry from [bodyparts.ini](./../../../typed-inis/bodyparts.md) |
+| affiliation     | References a `FactionProps` entry from [faction_prop.ini](./faction_prop.ini.md)                           |
+| npc_ship_arch   | References an NpcShipArch from either the [npcships.ini](./npcships.ini.md) file used for the mission.     |
+| individual_name | The IDS name displayed in space for this NPC. This can be overridden by the `random_name` key in `MsnShip` |
+| voice           | The voice entry used for the NPC from [voices.ini](../../../typed-inis/voices.md)                          |
 
 ### [Dialog]
 
@@ -83,6 +82,8 @@ line = STRING, STRING, STRING, FLOAT, FLOAT
 | line      |             |
 
 ### [Trigger]
+
+A trigger represents a set of actions to perform when conditions are met.
 
 ```ini
 [Trigger]
@@ -215,13 +216,13 @@ Act_DebugMsg = STRING ;optional
 
 | Parameter                | Information                                                                                                                                                                    |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| nickname                 |                                                                                                                                                                                |
-| repeatable               |                                                                                                                                                                                |
-| system                   |                                                                                                                                                                                |
-| InitState                | Enum is `ACTIVE`                                                                                                                                                               |
-| Cnd_True                 |                                                                                                                                                                                |
-| Cnd_Destroyed            |                                                                                                                                                                                |
-| Cnd_Timer                |                                                                                                                                                                                |
+| nickname                 | How this trigger is referred to elsewhere in the file, typically by `Act_ActTrig`                                                                                              |
+| repeatable               | Whether or not this trigger can be fired more than once. This key only needs to be present to work and typically takes `no_params` as a value.                                 |
+| system                   | System the trigger will fire in, taken from [Universe.ini](../../../typed-inis/universe.md).                                                                                   |
+| InitState                | Enum is `ACTIVE`. Where this key is present the trigger starts in an activated state.                                                                                          |
+| Cnd_True                 | Required where there are no other conditions present. Takes a value of `no_params`                                                                                             |
+| Cnd_Destroyed            | Trigger requires specified entities to be destroyed. References a `MsnShip`, `MsnSolar`, `label` or `MsnFormation`, an integer (presumably the amount remaining or destroyed, `-1` seems to be used in the case of all entities in the group), and an optional Enum that seems to determine the destroy method.                                                                                                                                                                               |
+| Cnd_Timer                | Trigger will count down from it's activation time in seconds before firing.                                                                                                                                                                               |
 | Cnd_CharSelect           |                                                                                                                                                                                |
 | Cnd_CargoScanned         |                                                                                                                                                                                |
 | Cnd_CommComplete         |                                                                                                                                                                                |
@@ -229,21 +230,21 @@ Act_DebugMsg = STRING ;optional
 | Cnd_JumpInComplete       |                                                                                                                                                                                |
 | Cnd_JumpgateAct          |                                                                                                                                                                                |
 | Cnd_PlayerLaunch         |                                                                                                                                                                                |
-| Cnd_SpaceEnter           |                                                                                                                                                                                |
+| Cnd_SpaceEnter           | Takes `no_params`, which means the trigger requires the player to enter space via undocking before firing, or a [system](../../../typed-inis/universe.md), which presumably requires the player to enter space in that specific system to fire.                                                                                                                                                                               |
 | Cnd_SpaceExit            |                                                                                                                                                                                |
 | Cnd_SystemEnter          |                                                                                                                                                                                |
 | Cnd_SystemExit           |                                                                                                                                                                                |
-| Cnd_BaseEnter            |                                                                                                                                                                                |
+| Cnd_BaseEnter            | Trigger requires the player to dock at a specified base before firing. References a `Base` from [Universe.ini](../../../typed-inis/universe.md).                                                                                                                                                                            |
 | Cnd_BaseExit             |                                                                                                                                                                                |
 | Cnd_LocEnter             |                                                                                                                                                                                |
 | Cnd_InZone               |                                                                                                                                                                                |
 | Cnd_InTradelane          |                                                                                                                                                                                |
 | Cnd_InSpace              |                                                                                                                                                                                |
 | Cnd_DistShip             | Enum options are `INSIDE` or `OUTSIDE` and `TICK_AWAY`, `TICK_ALWAYS` AND `TICK_TOWARDS`                                                                                       |
-| Cnd_DistVec              |                                                                                                                                                                                |
-| Cnd_DistVecLbL           | Enum options are `INSIDE` or `OUTSIDE`                                                                                                                                         |
+| Cnd_DistVec              | Trigger requires en entity to be a certain distance from a defined vector. The first value is either `inside` or `outside` and determines whether the entity should be inside the distance defined or outside it to trigger. The second value is the entity, and can be a `MsnShip` or `Player`. The next 3 values are XYZ coordinates, and the next value is a float that defines the required distance. A final `tick_away` value has also been observed here but it's purpose is unclear.|
+| Cnd_DistVecLbL           | Seems to behave in the same manner as `Cnd_DistVec`, but for labelled groups.                                                                                                                                   |
 | Cnd_DistCircle           |                                                                                                                                                                                |
-| Cnd_HealthDec            |                                                                                                                                                                                |
+| Cnd_HealthDec            | Trigger requires a specific `MsnShip` or `MsnSolar` to be at or below a certain health value. The first value is the ship or solar and the second is a percentage value between 0 and 1.                                                                                                                                                                               |
 | Cnd_EncLaunched          |                                                                                                                                                                                |
 | Cnd_HasMsn               |                                                                                                                                                                                |
 | Cnd_WatchVibe            | Enum options are `REP_FRIEND_MAXIMUM`, `REP_FRIEND_THRESHOLD`, `REP_NEUTRAL_FRIENDLY`, `REP_NEUTRAL`, `REP_NEUTRAL_HOSTILE`, `REP_HOSTILE_THRESHOLD` and `REP_HOSTILE_MAXIMUM` |
@@ -256,37 +257,37 @@ Act_DebugMsg = STRING ;optional
 | Cnd_RumorHeard           |                                                                                                                                                                                |
 | Cnd_PlayerManeuver       | Enum options are `GOTO`, `DOCK` and `FORMATION`                                                                                                                                |
 | Cnd_NPCSystemEnter       |                                                                                                                                                                                |
-| Cnd_MsnResponse          | Enum options are `REJECT` or `ACCEPT`                                                                                                                                          |
+| Cnd_MsnResponse          | Requires a specific response from an `Act_AddRTC` trigger outcome. Enum options are `REJECT` or `ACCEPT`                                                                                                                                          |
 | Cnd_LootAcquired         |                                                                                                                                                                                |
-| Act_ActTrig              |                                                                                                                                                                                |
+| Act_ActTrig              | References a `Trigger` to activate. Triggers require all included conditions to be true before firing.                                                                                                                                                                                |
 | Act_DeactTrig            |                                                                                                                                                                                |
 | Act_ChangeState          | Enum options are `FAIL` or `SUCCEED`                                                                                                                                           |
 | Act_SetVibeLbl           | Enum options are `REP_FRIEND_MAXIMUM`, `REP_FRIEND_THRESHOLD`, `REP_NEUTRAL_FRIENDLY`, `REP_NEUTRAL`, `REP_NEUTRAL_HOSTILE`, `REP_HOSTILE_THRESHOLD` and `REP_HOSTILE_MAXIMUM` |
 | Act_SetVibeLblToShip     | Enum options are `REP_FRIEND_MAXIMUM`, `REP_FRIEND_THRESHOLD`, `REP_NEUTRAL_FRIENDLY`, `REP_NEUTRAL`, `REP_NEUTRAL_HOSTILE`, `REP_HOSTILE_THRESHOLD` and `REP_HOSTILE_MAXIMUM` |
 | Act_SetVibeShipToLbl     | Enum options are `REP_FRIEND_MAXIMUM`, `REP_FRIEND_THRESHOLD`, `REP_NEUTRAL_FRIENDLY`, `REP_NEUTRAL`, `REP_NEUTRAL_HOSTILE`, `REP_HOSTILE_THRESHOLD` and `REP_HOSTILE_MAXIMUM` |
 | Act_SetRep               | Enum options are `REP_FRIEND_MAXIMUM`, `REP_FRIEND_THRESHOLD`, `REP_NEUTRAL_FRIENDLY`, `REP_NEUTRAL`, `REP_NEUTRAL_HOSTILE`, `REP_HOSTILE_THRESHOLD` and `REP_HOSTILE_MAXIMUM` |
-| Act_Cloak                |                                                                                                                                                                                |
+| Act_Cloak                | Toggles a cloak or decloak state on a ship, if it has a cloaking device equipped. The first value is the ship, and the second is the true or false state for the cloak. Be aware NPCs will still chatter when cloaked if they have a voice defined.                                                                                                                                                                               |
 | Act_Invulnerable         |                                                                                                                                                                                |
-| Act_Destroy              | Enum options are `EXPLODE` or `SILENT`                                                                                                                                         |
-| Act_SetNNObj             | Enum options are `OBJECTIVE_HISTORY` or `OBJECTIVE`                                                                                                                            |
+| Act_Destroy              | Destroys a `MsnShip`, `MsnSolar` or `MsnFormation`. The first value is the object to be destroyed, and the second value is the method. Enum options are `EXPLODE` or `SILENT`                                                                                                                                         |
+| Act_SetNNObj             | Sets a Neural Net Objective, such as a waypoint or objective text. See the `[NNObjective]` block for further details. Enum options are `OBJECTIVE_HISTORY` or `OBJECTIVE`. Only one objective seems to be able to be set at a time.                                                                                                                            |
 | Act_SetNNState           | Enum options are `ACTIVE` or `COMPLETE`                                                                                                                                        |
 | Act_NNIds                | Enum opption is `HISTORY`                                                                                                                                                      |
 | Act_SetNNHidden          |                                                                                                                                                                                |
-| Act_GiveObjList          |                                                                                                                                                                                |
+| Act_GiveObjList          | Issues an `ObjList` to a `MsnShip`. The first value is the ship or formation to issue this to, and the second is the set of `ObjList` orders to issue.                                                                                                                                                                               |
 | Act_RpopAttClamp         |                                                                                                                                                                                |
 | Act_SetOffer             |                                                                                                                                                                                |
 | Act_SetTitle             |                                                                                                                                                                                |
-| Act_AddRTC               | Enum option is `REPEATABLE`                                                                                                                                                    |
-| Act_RemoveRTC            |                                                                                                                                                                                |
+| Act_AddRTC               | Activates a real-time-cutscene set from a config at a defined path. This can be repeatable if the `repeatable` value is provided as a second parameter.                                                                                                                                                   |
+| Act_RemoveRTC            | Unclear, this seems to disable the RTC state created by `Act_AddRTC`, but more testing is required.|
 | Act_RandomPopSphere      |                                                                                                                                                                                |
 | Act_Forceland            |                                                                                                                                                                                |
 | Act_PlayerCanDock        |                                                                                                                                                                                |
 | Act_LockDock             | Enum options are `UNLOCK` and `LOCK`                                                                                                                                           |
 | Act_PlayerCanTradelane   |                                                                                                                                                                                |
 | Act_PobjIdle             |                                                                                                                                                                                |
-| Act_SpawnShip            |                                                                                                                                                                                |
-| Act_SpawnSolar           |                                                                                                                                                                                |
-| Act_SpawnFormation       |                                                                                                                                                                                |
+| Act_SpawnShip            | Spawns a `MsnShip`. Only the first argument is required. Other arguments are an `ObjList`, a set of 3 floats for XYZ coordinates and a set of 4 floats for WXYZ orientation. These will override any values defined in the `MsnShip` entry.                                                                                                                                                                            |
+| Act_SpawnSolar           | Spawns a `MsnSolar`                                                                                                                                                                               |
+| Act_SpawnFormation       | Spawns a `MsnFormation`. Only the first argument is required. Other arguments are an `ObjList`, a set of 3 floats for XYZ coordinates and a set of 4 floats for WXYZ orientation. These will override any values defined in the `MsnFormation` entry.                                                                                                                                                                                |
 | Act_EtherComm            |                                                                                                                                                                                |
 | Act_SendComm             |                                                                                                                                                                                |
 | Act_StartDialog          |                                                                                                                                                                                |
@@ -314,9 +315,9 @@ Act_DebugMsg = STRING ;optional
 | Act_RelocateShip         |                                                                                                                                                                                |
 | Act_RelocateForm         |                                                                                                                                                                                |
 | Act_CallThorn            |                                                                                                                                                                                |
-| Act_PlaySoundEffect      |                                                                                                                                                                                |
+| Act_PlaySoundEffect      | Plays a [sound effect](../../../typed-inis/sounds.md). The sound does not seem to respect volume sliders and is played at full attenuation for the player.                                                                                                                                                                                |
 | Act_SetShipAndLoadout    |                                                                                                                                                                                |
-| Act_Popupdialog          | Enum option is `CLOSE`                                                                                                                                                         |
+| Act_Popupdialog          | Puts a pop-up onto the player's screen. This will pause the game if done in space. The first value is the IDS NAME for the box's title, and the second is the IDS INFO value for the box's content. Enum option is `CLOSE` and seems to be required.                                                                                                                                                         |
 | Act_AddAmbient           |                                                                                                                                                                                |
 | Act_RemoveAmbient        |                                                                                                                                                                                |
 | Act_HostileClamp         |                                                                                                                                                                                |
@@ -368,6 +369,8 @@ label = STRING
 
 ### [NNObjective]
 
+Represents an objective to display to the player in the form of a waypoint or text objective on-screen.
+
 ```ini
 [NNObjective]
 nickname = STRING
@@ -377,11 +380,13 @@ type = STRING, INT
 
 | Parameter | Information                                                          |
 | --------- | -------------------------------------------------------------------- |
-| nickname  |                                                                      |
-| state     | Enum options are `HIDDEN`, `ACTIVE` and `COMPLETE`                   |
-| type      | Can also be defined with the enums `ids`, `rep_inst` and `navmarker` |
+| nickname  | How this `NNObjective` is referred to elsewhere in the file.                                                                  |
+| state     | The initial state of the objective. Enum options are `HIDDEN`, `ACTIVE` and `COMPLETE`                   |
+| type      | NNObjectives can have one of three types: <br /><br /> `ids`: This is a string written to the Neural Net Log as an objective and displays the objective on screen. It takes a single string.<br /><br /> `rep_inst`: This marks a specific ship or solar with a marker as if it were set as a destination. This takes two strings to write to the Neural Net Log, a set of XYZ coordinates, and the object to mark. The coordinates may be vestigal and are set to 0 in many instances in vanilla.<br /><br /> `navmarker`: This creates a waypoint at coordinates in space. The values taken are a system, two strings to write to the Neural Net Log, and a set of XYZ coordinates. |
 
 ### [ObjList]
+
+Represents a series of orders to provide to an NPC, group of NPCs or formation.
 
 ```ini
 [ObjList]
@@ -458,7 +463,6 @@ label = STRING
 | voice       |             |
 | visit       |             |
 | label       |             |
-
 
 ### [MsnShip]
 
