@@ -654,7 +654,7 @@
         "moduleName": "common.dll",
         "offset": "0x0005da50",
         "author": "IrateRedKite",
-        "description": "Missing explosion archetype called. This occurred when ship collision groups with fuses attached were not included and then the main fuse was called.",
+        "description": "Missing explosion archetype called. This occurred when ship collision groups with fuses attached were not included and then the main fuse was called. This can also occur when an invalid fuse is specified.",
         "dateAdded": 1705143775
     },
     {
@@ -845,5 +845,40 @@
         "author": "Katzenkebap",
         "description": "A package has attenoted to access a ship hull that doesn't exist.",
         "dateAdded": 1737879823
+    },
+    {
+        "moduleName": "Freelancer.exe",
+        "offset": "0x0007e244",
+        "author": "JosByte",
+        "description": "Triggers where an NPCShips block has an invalid Shiparch entry specified.",
+        "dateAdded": 1737918755
+    },
+    {
+        "moduleName": "Common.dll",
+        "offset": "0x0005da50",
+        "author": "JosByte",
+        "description": "A package has attenoted to access a ship hull that doesn't exist.",
+        "dateAdded": 1737918755
+    },
+    {
+        "moduleName": "Shading.dll",
+        "offset": "0x00012f1e",
+        "author": "JosByte",
+        "description": "Invalid puff cloud defined in a Nebula entry. A crash will not always occur, but if no valid puff is present, the game will crash.",
+        "dateAdded": 1737918755
+    },
+    {
+        "moduleName": "content.dll",
+        "offset": "0x000f7bf2",
+        "author": "JosByte",
+        "description": "Triggers when Freelancer attempts to create a cargo retrieval/destroy random mission but there is no valid defined good provided in vignettecriticalloot.ini",
+        "dateAdded": 1737918755
+    },
+    {
+        "moduleName": "Common.dll",
+        "offset": "0x0005d9d4",
+        "author": "JosByte",
+        "description": "Triggers when a random mission solar is destroyed before the player reaches the mission waypoint, typically due to a zero or invalid hit point value.",
+        "dateAdded": 1737918755
     }
 ]
