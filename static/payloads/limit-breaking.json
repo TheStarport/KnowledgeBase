@@ -4345,8 +4345,7 @@
         "description": "Distance over which non-selected arrows of important contacts on the edge of the screen start fading (note: same offset as adoxa's trade initiate distance).",
         "dateAdded": 1421539200,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/883?post_id=59825"
     },
@@ -4619,8 +4618,7 @@
         "description": "Distance over which kilometers rather than meters are displayed (in the contact list).",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -4638,8 +4636,7 @@
         "description": "Distance over which kilometers rather than meters are displayed (target bracket in space).",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -4657,8 +4654,7 @@
         "description": "Distance over which fractions of kilometers are not displayed.",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -4676,8 +4672,7 @@
         "description": "Distance over which 'far' is displayed rather than an actual distance.",
         "dateAdded": 1155821760,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -4695,8 +4690,7 @@
         "description": "Speed over which '---' is displayed.",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
@@ -4717,8 +4711,7 @@
         "description": "Remove speed display limit. (Alternative to 0x0D597A)",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
@@ -4736,8 +4729,7 @@
         "description": "Cruise speed display limit (note: same offset as Schmackbolzen's tradelane waypoint reached distance).",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
@@ -4758,8 +4750,7 @@
         "description": "Remove speed display limit. (Alternative to 0x1D7E80)",
         "dateAdded": 1080756120,
         "categories": [
-            "HUD",
-            "HUD Limits"
+            "HUD"
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
@@ -6866,8 +6857,7 @@
         "description": "Distance from a waypoint when it is considered reached.",
         "dateAdded": 1248655080,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/1945/changing-the-waypoint-size/9?_=1716586779894"
     },
@@ -6885,8 +6875,7 @@
         "description": "Distance from a waypoint within a tradelane when it is considered reached.",
         "dateAdded": 1248688260,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/1945/changing-the-waypoint-size/18?_=1716586779894"
     },
@@ -6907,8 +6896,7 @@
         "description": "Show aiming lead on everything.",
         "dateAdded": 1276417980,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/3006/hack-request-display-aiming-lead-red-x-on-solars/2?_=1716586779898"
     },
@@ -6929,8 +6917,7 @@
         "description": "Hide aiming lead on everything.",
         "dateAdded": 1483752260,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/25?_=1716586779900"
     },
@@ -6951,8 +6938,7 @@
         "description": "Show aiming lead on all ships.",
         "dateAdded": 1377735240,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/5262/giving-all-ships-a-lead-indicator-when-unselected/2?_=1716586779904"
     },
@@ -6973,8 +6959,7 @@
         "description": "Hide aiming lead on hostile ships.",
         "dateAdded": 1377735240,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/5262/giving-all-ships-a-lead-indicator-when-unselected/2?_=1716586779904"
     },
@@ -7004,7 +6989,6 @@
         "dateAdded": 1483793840,
         "categories": [
             "HUD",
-            "Other",
             "Colors"
         ],
         "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
@@ -7023,8 +7007,7 @@
         "description": "Crosshair horizontal thickness.",
         "dateAdded": 1483793840,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
     },
@@ -7042,8 +7025,7 @@
         "description": "Crosshair vertical thickness.",
         "dateAdded": 1483793840,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/4395/changing-the-targeting-cross-hair/27?_=1716586779900"
     },
@@ -7070,8 +7052,7 @@
         "description": "Thickness of F1 menu/Inventory Rectangle bars.",
         "dateAdded": 1720975080,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
     },
@@ -7090,7 +7071,7 @@
         "dateAdded": 1720975080,
         "categories": [
             "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
     },
@@ -7112,7 +7093,7 @@
         "dateAdded": 1720975080,
         "categories": [
             "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1112?_=1722628348399"
     },
@@ -7167,8 +7148,8 @@
         "description": "Aspect ratio of the cinematics.",
         "dateAdded": 1251714240,
         "categories": [
-            "HUD",
-            "Other"
+            "UI",
+            "display"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/142?_=1716586779912"
     },
@@ -7189,8 +7170,7 @@
         "description": "Remove mouse flight text.",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ]
     },
     {
@@ -7213,8 +7193,7 @@
         "description": "Disable F1 menu in space while playing multiplayer.",
         "dateAdded": 1251125100,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2104/making-f1-behave-as-in-sp/2?_=1716586779916"
     },
@@ -7233,7 +7212,7 @@
         "dateAdded": 0,
         "categories": [
             "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7262,8 +7241,7 @@
         "description": "Shoot through HUD.",
         "dateAdded": 1272969780,
         "categories": [
-            "HUD",
-            "Other"
+            "HUD"
         ],
         "url": "https://the-starport.com/forums/topic/2870/steering-arrows/9?_=1716586779926"
     },
@@ -7284,8 +7262,7 @@
         "description": "Bypass ESRB notice.",
         "dateAdded": 1271227440,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
     },
@@ -7309,8 +7286,7 @@
         "description": "Auto-select internet.",
         "dateAdded": 1271227440,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
     },
@@ -7334,8 +7310,7 @@
         "description": "Auto-select LAN.",
         "dateAdded": 1271227440,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/6?_=1716586779930"
     },
@@ -7364,8 +7339,7 @@
         "description": "Remove the NEW GAME and LOAD GAME buttons on the main menu.",
         "dateAdded": 1259362800,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2769/how-do-i-change-button-text/5?_=1716760502434"
     },
@@ -7390,8 +7364,7 @@
         "description": "Remove the MULTIPLAYER button on the main menu.",
         "dateAdded": 1404020520,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/2781/which-type-of-multiplayer-game-button-removal/20?_=1716586779932"
     },
@@ -7412,8 +7385,7 @@
         "description": "String ID for the 'VER. 1.0' text in the bottom-right of the main menu. Change this number to another string ID to make the element display different text. Both offsets must be changed!",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7430,8 +7402,7 @@
         "description": "String ID for the final section of the in-game credits. Change this number to another string ID to make the element display different text.",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7451,8 +7422,7 @@
         "description": "Max and min value for the TOTAL SOUND ELEMENTS slider in the audio options menu.",
         "dateAdded": 1419817440,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ],
         "url": "https://the-starport.com/forums/topic/5153/optlist-ini/7?_=1716586779936"
     },
@@ -7478,7 +7448,7 @@
         "dateAdded": 0,
         "categories": [
             "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7503,7 +7473,7 @@
         "dateAdded": 0,
         "categories": [
             "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7527,8 +7497,7 @@
         "description": "Fixes a bug that causes the clickable area height of the main menu buttons to be incorrect on higher resolutions.",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7548,8 +7517,7 @@
         "description": "Updates the mouse-hover blinking animation of the load-save menu buttons (after loading a game) such that the colors transition smoothly, like with all other menu-style buttons.",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -7566,8 +7534,7 @@
         "description": "Clickable area width of the load-save menu buttons (after loading a game). It's recommended to set this value to 0.13 so the property matches with all other menu-style buttons.",
         "dateAdded": 0,
         "categories": [
-            "HUD",
-            "Other"
+            "UI"
         ]
     },
     {
@@ -10383,12 +10350,10 @@
             "0x1C8890"
         ],
         "author": "Dev",
-        "description": "Prevent parser from reading EffectType from effect_types.ini, forcing the default values below; allows for vis_beam effects to appear beyond 2k.",
+        "description": "Prevent parser from reading EffectType from effect_types.ini, forcing the default values below; allows for vis_beam effects to appear beyond 2k. This applies to `eft_explosion_large`, `eft_weapon_large_proj` and `eft_damage_large_smoke`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_explosion_large (limited duration)",
-            "VFX: eft_weapon_large_proj (infinite duration)",
-            "VFX: eft_damage_large_smoke (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10403,10 +10368,10 @@
             "0x212AF0"
         ],
         "author": "Dev",
-        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range). Applies to `eft_explosion_large`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_explosion_large (limited duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10421,10 +10386,10 @@
             "0x212AF8"
         ],
         "author": "Dev",
-        "description": "Max run time of effects.",
+        "description": "Max run time of effects. Applies to `eft_explosion_large`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_explosion_large (limited duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10439,10 +10404,10 @@
             "0x212B00"
         ],
         "author": "Dev",
-        "description": "Unknown, likely the first value of pbubble.",
+        "description": "Unknown, likely the first value of pbubble. Applies to `eft_explosion_large`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_explosion_large (limited duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10457,10 +10422,10 @@
             "0x212B04"
         ],
         "author": "Dev",
-        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "description": "Visual cutoff range of effects (second value of pbubble). Applies to `eft_explosion_large`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_explosion_large (limited duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10475,10 +10440,10 @@
             "0x212C58"
         ],
         "author": "Dev",
-        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range). Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10493,10 +10458,10 @@
             "0x212C60"
         ],
         "author": "Dev",
-        "description": "Max run time of effects.",
+        "description": "Max run time of effects. Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10511,10 +10476,10 @@
             "0x212C68"
         ],
         "author": "Dev",
-        "description": "Unknown, likely the first value of pbubble.",
+        "description": "Unknown, likely the first value of pbubble. Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10529,10 +10494,10 @@
             "0x212C6C"
         ],
         "author": "Dev",
-        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "description": "Visual cutoff range of effects (second value of pbubble). Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10547,10 +10512,10 @@
             "0x213158"
         ],
         "author": "Dev",
-        "description": "On-screen radius of vis_beam effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "description": "On-screen radius of vis_beam effects, affects size-on-screen-based cutoff (make larger to increase cutoff range). Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10565,10 +10530,10 @@
             "0x213168"
         ],
         "author": "Dev",
-        "description": "Unknown, likely the first value of pbubble for vis_beam.",
+        "description": "Unknown, likely the first value of pbubble for vis_beam. Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10583,10 +10548,10 @@
             "0x21316C"
         ],
         "author": "Dev",
-        "description": "vis_beam cutoff range (second value of pbubble for vis_beam).",
+        "description": "vis_beam cutoff range (second value of pbubble for vis_beam). Applies to `eft_weapon_large_proj`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_weapon_large_proj (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10601,10 +10566,10 @@
             "0x212DE8"
         ],
         "author": "Dev",
-        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range).",
+        "description": "On-screen radius of effects, affects size-on-screen-based cutoff (make larger to increase cutoff range). Applies to `eft_damage_large_smoke`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_damage_large_smoke (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10619,10 +10584,10 @@
             "0x212DF0"
         ],
         "author": "Dev",
-        "description": "Max run time of effects.",
+        "description": "Max run time of effects. Applies to `eft_damage_large_smoke`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_damage_large_smoke (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10637,10 +10602,10 @@
             "0x212DF8"
         ],
         "author": "Dev",
-        "description": "Unknown, likely the first value of pbubble.",
+        "description": "Unknown, likely the first value of pbubble. Applies to `eft_damage_large_smoke`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_damage_large_smoke (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
@@ -10655,10 +10620,10 @@
             "0x212DFC"
         ],
         "author": "Dev",
-        "description": "Visual cutoff range of effects (second value of pbubble).",
+        "description": "Visual cutoff range of effects (second value of pbubble). Applies to `eft_damage_large_smoke`",
         "dateAdded": 1155821760,
         "categories": [
-            "VFX: eft_damage_large_smoke (infinite duration)"
+            "VFX"
         ],
         "url": "http://lancersreactor.com/viewtopic.php_f=29_t=44438.html"
     },
