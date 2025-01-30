@@ -3475,12 +3475,30 @@
             "0x0057FA"
         ],
         "author": "FriendlyFire",
-        "description": "Default repair price ratio (ships and collision groups) (both offsets must be changed).",
+        "description": "Default repair price ratio for ships and collision groups (both offsets must be changed).",
         "dateAdded": 1487030400,
         "categories": [
             "equipment"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/980?_=1708185141820"
+    },
+	{
+        "original": [
+            "0.3f"
+        ],
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "offset": [
+            "0x1D51B4"
+        ],
+        "author": "adoxa",
+        "description": "Default repair price ratio for equipment.",
+        "dateAdded": 1475999640,
+        "categories": [
+            "equipment"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/969?_=1738273065631"
     },
     {
         "original": [
