@@ -11656,5 +11656,53 @@
             "display"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1121?_=1737961517595"
+    },
+    {
+        "original": [
+            "4C E4 14 C1 E9 07 EB 03"
+        ],
+        "replacement": [
+            "0C C2 8B 7C C2 04 C1 E1"
+        ],
+        "moduleName": [
+            "content.dll"
+        ],
+        "offset": [
+            "0x0C1F0B"
+        ],
+        "author": "Gold_Sear",
+        "description": "Add vertical component to random spawns",
+        "dateAdded": 1738490640,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1125"
+    },
+    {
+        "original": [
+            "45 00 EB 02",
+            "45 04 EB 02",
+            "45 08 EB 02"
+        ],
+        "replacement": [
+            "84 24 1C 0D",
+            "84 24 14 0D",
+            "84 24 18 0D"
+        ],
+        "moduleName": [
+            "content.dll"
+        ],
+        "offset": [
+            "0x0C2011",
+            "0x0C2022",
+            "0x0C2034"
+        ],
+        "author": "Gold_Sear",
+        "description": "Use spawn position instead of player position for arrival = cruise (allows to safely increase spawn distances)",
+        "dateAdded": 1738490640,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1125"
     }
 ]
