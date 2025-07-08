@@ -54,36 +54,36 @@ phantom_physics = BOOL
 
 ```
 
-| Parameter           | Information |
-| ------------------- | ----------- |
-| nickname            |             |
-| ids_name            |             |
-| ids_info            |             |
-| type                |             |
-| animated_textures   |             |
-| DA_archetype        |             |
-| material_library    |             |
-| distance_render     |             |
-| envmap_material     |             |
-| LODRanges           |             |
-| surface_hit_effects |             |
-| mass                |             |
-| loadout             |             |
-| nomad               |             |
-| open_anim           |             |
-| open_sound          |             |
-| close_sound         |             |
-| docking_sphere      |             |
-| docking_camera      |             |
-| jump_out_hp         |             |
-| solar_radius        |             |
-| shape_name          |             |
-| shield_link         |             |
-| explosion_arch      |             |
-| destructible        |             |
-| hit_pts             |             |
-| fuse                |             |
-| phantom_physics     |             |
+| Parameter           | Information                                                                                                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| nickname            | The internal nickname of the solar, i.e. how this will be referred to elsewhere in the game's INI files.                                                                                                     |
+| ids_name            | The string ID name of the solar.                                                                                                                                                                             |
+| ids_info            | The flavor text displayed when a player uses the 'info' option on a solar entity. This can be manipulated for dockable solars using [knowledgemap.ini](../hardcoded-inis/data/interface/knowledgemap.ini.md) |
+| type                |                                                                                                                                                                                                              |
+| animated_textures   |                                                                                                                                                                                                              |
+| DA_archetype        | The path to the archetype model to use for the solar. Typically a .3db or .cmp file.                                                                                                                         |
+| material_library    | The path to a material library (.mat) file that the `DA_archetype` uses. Missing .mat files will cause the solar, or parts of the model to render inconsistently.                                            |
+| distance_render     |                                                                                                                                                                                                              |
+| envmap_material     |                                                                                                                                                                                                              |
+| LODRanges           |                                                                                                                                                                                                              |
+| surface_hit_effects |                                                                                                                                                                                                              |
+| mass                |                                                                                                                                                                                                              |
+| loadout             |                                                                                                                                                                                                              |
+| nomad               |                                                                                                                                                                                                              |
+| open_anim           |                                                                                                                                                                                                              |
+| open_sound          |                                                                                                                                                                                                              |
+| close_sound         |                                                                                                                                                                                                              |
+| docking_sphere      |                                                                                                                                                                                                              |
+| docking_camera      |                                                                                                                                                                                                              |
+| jump_out_hp         |                                                                                                                                                                                                              |
+| solar_radius        |                                                                                                                                                                                                              |
+| shape_name          |                                                                                                                                                                                                              |
+| shield_link         |                                                                                                                                                                                                              |
+| explosion_arch      |                                                                                                                                                                                                              |
+| destructible        |                                                                                                                                                                                                              |
+| hit_pts             |                                                                                                                                                                                                              |
+| fuse                |                                                                                                                                                                                                              |
+| phantom_physics     | Determines whether or not the player is able to interact with the solar. If this is set to true, the player will ignore model hitboxes.                                                                      |
 
 ### CollisionGroup
 
