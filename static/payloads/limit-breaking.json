@@ -155,6 +155,49 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "38"
+        ],
+        "replacement": [
+            "83"
+        ],
+        "offset": [
+            "0x0B1503"
+        ],
+        "author": "BC46",
+        "description": "Interface volume can be controlled independently from sound effects volume.",
+        "dateAdded": 1716846540,
+        "categories": [
+            "audio"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "39"
+        ],
+        "replacement": [
+            "84"
+        ],
+        "offset": [
+            "0x0B1554"
+        ],
+        "author": "BC46",
+        "description": "Ambience volume can be controlled independently from music volume.",
+        "dateAdded": 1716846540,
+        "categories": [
+            "audio"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+
+    {
+        "moduleName": [
             "content.dll"
         ],
         "original": [
@@ -1076,6 +1119,28 @@
             "NPCs"
         ]
     },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "02"
+        ],
+	"replacement": [
+	    "03"
+	],
+        "offset": [
+            "0x037068"
+        ],
+        "author": "BC46",
+        "description": "Fix NPCs saying the first number of their call sign twice when requesting to dock.",
+        "dateAdded": 1744992780,
+        "categories": [
+            "NPCs"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/DLLS/BIN/Content.dll.patch"
+    },
+
     {
         "moduleName": [
             "freelancer.exe",
@@ -2460,14 +2525,36 @@
             "0x063645",
             "0x063650"
         ],
-        "author": "Adoxa",
-        "description": "F3 docking works with FREIGHTER type objects.",
+        "author": "adoxa",
+        "description": "F3 docking works with FREIGHTER type.",
         "dateAdded": 1276815600,
         "categories": [
             "docking"
         ],
         "url": "https://the-starport.com/forums/topic/3024/hack-request-enable-f3-dock-on-freighter/2?_=1707142856264"
     },
+    {
+        "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "00"
+        ],
+        "replacement": [
+            "20"
+        ],
+        "offset": [
+            "0x063657"
+        ],
+        "author": "BC46",
+        "description": "F3 docking works with CAPITAL type.",
+        "dateAdded": 1741635480,
+        "categories": [
+            "docking"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/common.dll.patch"
+    },
+
     {
         "moduleName": [
             "common.dll"
@@ -3181,6 +3268,27 @@
             "visibility"
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1032"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "7F"
+        ],
+        "replacement": [
+            "EB"
+        ],
+        "offset": [
+            "0x0A9326"
+        ],
+        "author": "BC46",
+        "description": "Always assume best machine speed for determining default performance options.",
+        "dateAdded": 1739616840,
+        "categories": [
+            "visibility"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
     },
     {
         "original": [
@@ -3926,6 +4034,28 @@
         ]
     },
     {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "29"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x07EC69"
+        ],
+        "author": "BC46",
+        "description": "Load purchased equipment into cargo hold if a suitable hardpoint is unavailable, rather than mounting it internally.",
+        "dateAdded": 1727374440,
+        "categories": [
+            "equipment"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+
+    {
         "original": [
             "00 00",
             "00 00",
@@ -4256,10 +4386,10 @@
     },
     {
         "original": [
-            "FF 15 20 36 FB 06"
+            "FF 15"
         ],
         "replacement": [
-            "EB 04 90 90 90 90"
+            "EB 04"
         ],
         "moduleName": [
             "content.dll"
@@ -4274,6 +4404,25 @@
             "reputation"
         ]
     },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "'li_p_grp' 00 00 00 00"
+        ],
+        "offset": [
+            "0x1D4848"
+        ],
+        "author": "BC46",
+        "description": "List of groups in nickname form that will automatically be added to your reputation screen (keep last 00).",
+        "dateAdded": 1735926120,
+        "categories": [
+            "reputation"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+
     {
         "original": [
             "-0.6f"
@@ -4292,6 +4441,46 @@
         ],
         "url": "https://the-starport.com/forums/topic/396/dev-s-limit-breaking-101-techniques/1046"
     },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "-0.1f"
+        ],
+        "offset": [
+            "0x0D00D4"
+        ],
+        "author": "BC46",
+        "description": "Reputation adjustment after destroying a DESTROYABLE_DEPOT.",
+        "dateAdded": 1733769960,
+        "categories": [
+            "reputation"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/DLLS/BIN/Content.dll.patch"
+    },
+    {
+        "moduleName": [
+            "MPRep.dll"
+        ],
+        "original": [
+            "3F"
+        ],
+        "replacement": [
+            "22"
+        ],
+        "offset": [
+            "0x000695"
+        ],
+        "author": "BC46",
+        "description": "Ship offer initially is greyed out until server confirmes necessary reputation requirements are met (MPRep plugin).",
+        "dateAdded": 1729708500,
+        "categories": [
+            "reputation"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/MPRep.dll.patch"
+    },
+
     {
         "moduleName": [
             "Freelancer.exe"
@@ -7648,6 +7837,48 @@
     },
     {
         "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "BC"
+        ],
+        "replacement": [
+            "C0"
+        ],
+        "offset": [
+            "0x158A10"
+        ],
+        "author": "BC46",
+        "description": "Prevent intentional framerate drops to 25 from occurring during cutscenes.",
+        "dateAdded": 1716846540,
+        "categories": [
+            "Framerate"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "6A 01"
+        ],
+        "replacement": [
+            "EB 0D"
+        ],
+        "offset": [
+            "0x02D7B8"
+        ],
+        "author": "BC46",
+        "description": "Prevent sudden framerate drops from occurring in space. Effectively removes sleep(1) from delta time calculation.",
+        "dateAdded": 1716846540,
+        "categories": [
+            "Framerate"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+    {
+        "moduleName": [
             "freelancer.exe"
         ],
         "original": [
@@ -9203,7 +9434,8 @@
         "description": "Disable 'ArchDB::Get' random mission spew warning.",
         "dateAdded": 1333334880,
         "categories": [
-            "Missions"
+            "Missions",
+	    "Debugging"
         ],
         "url": "https://the-starport.com/forums/topic/1222/invisible-gun-fire-from-mission-solars/24?_=1717279429727"
     },
@@ -9286,6 +9518,24 @@
         "categories": [
             "Missions"
         ]
+    },
+    {
+        "moduleName": [
+            "content.dll"
+        ],
+        "original": [
+            "'class_fighter'"
+        ],
+        "offset": [
+            "0x11CBE8"
+        ],
+        "author": "Skotty.",
+        "description": "NPC class to spawn in random missions.",
+        "dateAdded": 1744992780,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/DLLS/BIN/Content.dll.patch"
     },
     {
         "moduleName": [
@@ -9404,6 +9654,28 @@
         ],
         "url": "https://lancersreactor.com/viewtopic.php_f=18_t=29863.html"
     },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "74 25"
+        ],
+        "replacement": [
+            "90 90"
+        ],
+        "offset": [
+            "0x0CBEE7"
+        ],
+        "author": "Venemon",
+        "description": "Cnd_CommComplete is recognized in MP (packets are sent to server).",
+        "dateAdded": 1752614460,
+        "categories": [
+            "Missions"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+
     {
         "moduleName": [
             "freelancer.exe",
@@ -10974,6 +11246,27 @@
     },
     {
         "moduleName": [
+            "common.dll"
+        ],
+        "original": [
+            "0D"
+        ],
+        "replacement": [
+            "4E"
+        ],
+        "offset": [
+            "0x049775"
+        ],
+        "author": "adoxa",
+        "description": "Disable 'connecting internal type' spew warning for EngClass plugin.",
+        "dateAdded": 1729792740,
+        "categories": [
+            "Debugging"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/common.dll.patch"
+    },
+    {
+        "moduleName": [
             "Freelancer.exe",
             "Freelancer.exe",
             "Freelancer.exe"
@@ -11382,12 +11675,34 @@
             "0x01AD6F"
         ],
         "author": "Schmackbolzen",
-        "description": "Gamma ranges from 0.75 to 1.75, not 1.0 to 2.0.",
+        "description": "Fix bug with low resolution textures on some systems (sets maximum to 8192 instead of 128).",
         "dateAdded": 0,
         "categories": [
             "Visibility"
         ]
     },
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "07"
+        ],
+        "replacement": [
+            "00"
+        ],
+        "offset": [
+            "0x1B48B8"
+        ],
+        "author": "BC46",
+        "description": "Fix bug with low resolution textures of news entries and mission board pictures on some systems.",
+        "dateAdded": 1746348720,
+        "categories": [
+            "Visibility"
+        ],
+        "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/Freelancer.exe.patch"
+    },
+
     {
         "original": [
             "02"
