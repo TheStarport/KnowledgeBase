@@ -4480,7 +4480,26 @@
         ],
         "url": "https://github.com/Freelancer-Sirius-Revival/FLSR/blob/main/BinaryPatches/EXE/MPRep.dll.patch"
     },
-
+    {
+        "moduleName": [
+            "Freelancer.exe"
+        ],
+        "original": [
+            "1564i",
+	    "1564i"
+        ],
+        "offset": [
+            "0x08073C",
+	    "0x0B9011"
+        ],
+        "author": "BC46",
+        "description": "String ID for insufficient reputation message.",
+        "dateAdded": 1740957660,
+        "categories": [
+            "reputation"
+        ],
+        "url": "https://github.com/FLHDE/freelancer-hd-edition/blob/main/FLDOCS/BinaryEdits.txt"
+    },
     {
         "moduleName": [
             "Freelancer.exe"
@@ -7052,6 +7071,26 @@
     },
     {
         "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "1125i"
+        ],
+        "offset": [
+            "0x075A56"
+        ],
+        "author": "BC46",
+        "description": "ids_info of player waypoints; change to 1102i to decapitalize",
+        "dateAdded": 1752445140,
+        "categories": [
+            "HUD",
+            "Navmap"
+        ],
+        "url": "https://github.com/FLHDE/freelancer-hd-edition/blob/main/FLDOCS/BinaryEdits.txt"
+    },
+
+    {
+        "moduleName": [
             "Freelancer.exe"
         ],
         "original": [
@@ -7594,6 +7633,24 @@
         "categories": [
             "UI"
         ]
+    },
+    {
+        "moduleName": [
+            "freelancer.exe"
+        ],
+        "original": [
+            "393279i"
+        ],
+        "offset": [
+            "0x0AB150"
+        ],
+        "author": "BC46",
+        "description": "String ID for the first section of the in-game credits. Change this number to another string ID to make the element display different text.",
+        "dateAdded": 1676404560,
+        "categories": [
+            "UI"
+        ],
+        "url": "https://github.com/FLHDE/freelancer-hd-edition/blob/main/FLDOCS/BinaryEdits.txt"
     },
     {
         "moduleName": [
